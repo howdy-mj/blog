@@ -5,7 +5,7 @@ module.exports = {
   introduction: `간결한 코드를 작성하려 노력하는 프론트엔드 개발자 김민정입니다.`,
   siteUrl: `https://howdy-mj.netlify.app/`, // Your blog site url
   social: {
-    tstory: `https://kim-mj.tistory.com/`,
+    twitter: ``, // Your Twitter account
     github: `howdy-mj`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
