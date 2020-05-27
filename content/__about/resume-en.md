@@ -4,30 +4,41 @@ date: 2020-5-27 20:33:13
 lang: 'en'
 ---
 
-# MJ KIM
+# 김민정 (MJ KIM)
 
-<div>
-안녕하세요, 누구나 사용하기 편한 화면을 구현하고 싶은 프론트엔드
-개발자 김민정입니다.
-</div>
+**저는 `______` 프론트개발자 입니다.**
 
-<br>
+1. 좋은 코드, 간결한 코드를 작성하려는
+2. 새로운 기술에 관심을 갖고 공부하는
+3. 커뮤니티를 좋아하고 배운 것을 기록하려는
 
-<div>
-<ul>
-    <li>누구나 쉽게 읽을 수 있는 코드를 작성하려 노력합니다.  </li>
-    <li>새로운 기술에 관심이 많고 공부하는 것을 좋아합니다. </li>
-    <li>한 명이 특출나게 앞서 나가는 것보다 다 같이 성장하는 것을 더 선호합니다.  </li>
-    <li>언제나 투명하고 솔직한 소통을 좋아합니다. </li>
-</ul>
-</div>
+**저는 `______` 조직을 선호합니다.**
 
-<br>
+1. 언제나 투명하고 솔직한 의사소통이 이루어지는
+2. 구성원 간 신뢰를 기반으로 자율적으로 일하는
+3. 불필요한 커뮤니케이션을 줄여 효율적으로 움직이는
+4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
-<div>
-<p font-weight="bold">Contact</p>
-<p>Email: hi.minjungkim@gmail.com</p>
-<p>GitHub: https://github.com/howdy-mj</p>
-<p>Tistory: https://kim-mj.tistory.com/</p>
+|             |                               |
+| :---------: | ----------------------------- |
+| **GitHub**  | <https://github.com/howdy-mj> |
+| **Tistory** | <https://kim-mj.tistory.com/> |
+| **Contact** | <hi.minjungkim@gmail.com>     |
+
+<br />
+
+# Education
+
+### Wecode
+
+(20.03 ~ 20.06) WeCode 부트캠프 과정 수료
+
+<div align="center" class="final">
+
+_감사합니다._
+
+<br/>
+
+<sub><sup>Front-End Engineer, <a href="https://github.com/howdy-mj">@howdy-mj</a></sup></sub>
 
 </div>
