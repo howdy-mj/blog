@@ -12,10 +12,10 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [`frontend`, `react`, `javascript`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'howdy-mj/mj-blog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
