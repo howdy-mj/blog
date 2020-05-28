@@ -5,8 +5,8 @@ module.exports = {
   introduction: `간결한 코드를 작성하려 노력하는 프론트엔드 개발자 김민정입니다.`,
   siteUrl: `https://howdy-mj.netlify.app/`, // Your blog site url
   social: {
-    twitter: ``, // Your Twitter account
-    github: `howdy-mj`, // Your GitHub account
+    github: `howdy-mj`,
+    tistory: `kim-mj`,
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -18,7 +18,7 @@ module.exports = {
     utterances: 'howdy-mj/mj-blog', // Your repository for archive comment
   },
   configs: {
-    countOfInitialPost: 10, // Config your initial count of post
+    countOfInitialPost: 10,
   },
   sponsor: {
     buyMeACoffeeId: 'jbee',
@@ -26,5 +26,5 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: 'UA-167852618-1',
 }
