@@ -86,4 +86,4 @@ import { Spring } from 'react-spring/renderprops'
 
 <br>
 
-_오역이 있을 수 있습니다. 피드백은 언제나 환영합니다!_
+<p style="font-size: 13px; font-style: italic">오역이 있을 수 있습니다. 피드백은 언제나 환영합니다!</p>
