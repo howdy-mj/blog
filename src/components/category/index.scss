@@ -34,5 +34,9 @@
 }
 
 .category-container::-webkit-scrollbar {
-  display: none; // Safari and Chrome
+  // display: none; // Safari and Chrome
+  width: 4px;
+}
+.category-container::-webkit-scrollbar-thumb {
+  background: #b8b8b8;
 }
