@@ -2,7 +2,7 @@
 title: 'Storybook 소개'
 date: 2020-6-2 09:10:00
 category: 'storybook'
-draft: true
+draft: false
 ---
 
 ### 현존하는 프론트 개발의 불편함
@@ -51,11 +51,25 @@ draft: true
 CRA 환경에서 설치해야 한다.
 
 ```sh
+# 원하는 폴더 위치에서
+npx create-react-app 폴더명
+cd 폴더명
 npx -p @storybook/cli sb init
 
 npm run storybook
-// or
+# or
 yarn storybook
 ```
 
 스토리북을 열면 9009 포트로 열리게 된다.
+
+![](./images/01-03.png)
+
+<p style="text-align: center;  font-size: 12px;">storybook 첫 화면</p>
+
+<p style="text-align: center"><img src="./images/01-04.PNG"></p>
+<p style="text-align: center;  font-size: 12px;">storybook 폴더 구조</p>
+
+<br>
+
+다음 글에서는 스토리북의 각종 편리한 기능을 제공해주는 addon을 다룰 것이다.
