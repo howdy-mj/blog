@@ -95,6 +95,8 @@ Trail 역시 useTrail과 비슷한데, native, from, immediate, onReset 등과 �
 | children | fn               | true     | -            | 하나의 item을 받는 단일 함수-자식(하위)으로 함수 컴포넌트를 리턴함 ex. (item, index) => props => view          |
 | reverse  | bool             | false    | -            | true일 때, triling 순서가 bottom => top으로 바뀜                                                               |
 
+<br>
+
 codesandbox에 구현되지 않아 코드로만 대체한다.
 
 ```js{28, 31}
@@ -177,7 +179,7 @@ item과 추가적으로 transition state(enter/leave/update)와 index를 받는 
 
 요약하자면, 필요한 경우 keys를 items에 표시하고, props로 넘겨주어 animation에 적용하면 된다.
 
-#### Transition Properties
+### Transition Properties
 
 native, from, immediate, onRest 등의 spring의 properties도 사용가능하다.
 
@@ -196,6 +198,8 @@ native, from, immediate, onRest 등의 spring의 properties도 사용가능하�
 | onDestoryed | fn     | false    | -            | transition이 끝날 때 콜백                                                                                                                                                                 |
 | items       | union  | true     | -            | 표시할 items의 배열(또는 모든 타입의 단일 item) 이며, Transition에 의해 변경 사항을 탐지하는 주요 수단으로 사용                                                                           |
 | children    | fn     | true     | -            | 하나의 item을 받는 단일 함수-자식(하위)으로 함수 컴포넌트를 리턴함 ex. (item, index) => props => view                                                                                     |
+
+<br>
 
 이것도 이상하게 codesandbox에서 구현되지 않아 코드만 올린다.
 
@@ -278,13 +282,15 @@ slot은 아래와 같은 것을 가질 수 있다:
 
 요약하자면, named-slots으로 Keyframe-object를 정의해야 한다.
 
-#### Keyframes Properties
+### Keyframes Properties
 
 resulting 컴포넌트는 native, from, immediate, onRest 등의 spring properties도 사용가능하다.
 
 | Property | Type   | Required | Default     | Description          |
 | -------- | ------ | -------- | ----------- | -------------------- |
 | state    | string | false    | \_\_default | 활성화된 slot의 이름 |
+
+<br>
 
 codesandbox에서 delay를 넣으면 실행이 안돼서 빼고 가져왔더니 animation이 온전하지 못하다.
 원본을 보고 싶다면 [SCRIPTED KEYFRAMES](https://www.react-spring.io/docs/props/keyframes) 여기서 확인하는 것을 추천한다.
@@ -297,7 +303,7 @@ codesandbox에서 delay를 넣으면 실행이 안돼서 빼고 가져왔더니 
      sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-```js{5, 52}
+```js{4, 53}
 import { Keyframes, animated, config } from 'react-spring/renderprops'
 // import delay from 'delay'
 
@@ -369,19 +375,21 @@ Keyframes를 이용해 모든 Spring들을 묶어준다. 그리고 `await`를 �
 
 Parallax는 시차(視差: 관측 위치에 따른 물체의 위치나 방향의 차이)란 뜻으로 주로 scroll container를 만들어 준다. 그리고 ParallaxLayers에 값을 넣어 offsets과 speeds등을 따라 움직일 수 있다.
 
-#### Parallax Properties
+### Parallax Properties
 
 **Parallax**
+<br>
 |Property | Type | Required | Default | Description |
-|-|-|-|-|-|
+|----|----|---|---|---|
 | config | object | false | config.slow | Spring config (선택) |
 | scrolling | bool | false | true | 스크롤 가능 여부 |
 | horizontal | bool | false | false | 스크롤의 가로, 세로 결정|
 | pages | number | true | - | 각 page에 100%를 차지하는 container의 내부 공간(space) 설정 |
 
 **ParallaxLayer**
+<br>
 |Property | Type | Required | Default | Description |
-|-|-|-|-|-|
+|---|----|---|---|---|
 |factor|number|false|1|page 사이즈 (1=100%, 1.5= 150%, ...) |
 |offset | number | false | 0 | layer가 언제 scroll될 지 결정 (0=start, 1=1page, ...) |
 | speed | number | false | 0 | offset에 따라 layer 변경, 값은 +, - 값이 올수 있음
