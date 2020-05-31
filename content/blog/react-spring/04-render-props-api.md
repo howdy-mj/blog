@@ -379,20 +379,22 @@ Parallax는 시차(視差: 관측 위치에 따른 물체의 위치나 방향의
 
 **Parallax**
 <br>
-|Property | Type | Required | Default | Description |
-|----|----|---|---|---|
-| config | object | false | config.slow | Spring config (선택) |
-| scrolling | bool | false | true | 스크롤 가능 여부 |
-| horizontal | bool | false | false | 스크롤의 가로, 세로 결정|
-| pages | number | true | - | 각 page에 100%를 차지하는 container의 내부 공간(space) 설정 |
+
+| Property   | Type   | Required | Default     | Description                                                 |
+| ---------- | ------ | -------- | ----------- | ----------------------------------------------------------- |
+| config     | object | false    | config.slow | Spring config (선택)                                        |
+| scrolling  | bool   | false    | true        | 스크롤 가능 여부                                            |
+| horizontal | bool   | false    | false       | 스크롤의 가로, 세로 결정                                    |
+| pages      | number | true     | -           | 각 page에 100%를 차지하는 container의 내부 공간(space) 설정 |
 
 **ParallaxLayer**
 <br>
-|Property | Type | Required | Default | Description |
-|---|----|---|---|---|
-|factor|number|false|1|page 사이즈 (1=100%, 1.5= 150%, ...) |
-|offset | number | false | 0 | layer가 언제 scroll될 지 결정 (0=start, 1=1page, ...) |
-| speed | number | false | 0 | offset에 따라 layer 변경, 값은 +, - 값이 올수 있음
+
+| Property | Type   | Required | Default | Description                                           |
+| -------- | ------ | -------- | ------- | ----------------------------------------------------- |
+| factor   | number | false    | 1       | page 사이즈 (1=100%, 1.5= 150%, ...)                  |
+| offset   | number | false    | 0       | layer가 언제 scroll될 지 결정 (0=start, 1=1page, ...) |
+| speed    | number | false    | 0       | offset에 따라 layer 변경, 값은 +, - 값이 올수 있음    |
 
 <iframe
      src="https://codesandbox.io/embed/nwq4j1j6lm?fontsize=14&hidenavigation=1&theme=dark"
