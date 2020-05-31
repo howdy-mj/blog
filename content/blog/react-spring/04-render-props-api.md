@@ -377,7 +377,7 @@ Parallax는 시차(視差: 관측 위치에 따른 물체의 위치나 방향의
 
 ### Parallax Properties
 
-**Parallax**
+**1. Parallax**
 <br>
 
 | Property   | Type   | Required | Default     | Description                                                 |
@@ -387,7 +387,7 @@ Parallax는 시차(視差: 관측 위치에 따른 물체의 위치나 방향의
 | horizontal | bool   | false    | false       | 스크롤의 가로, 세로 결정                                    |
 | pages      | number | true     | -           | 각 page에 100%를 차지하는 container의 내부 공간(space) 설정 |
 
-**ParallaxLayer**
+**2. ParallaxLayer**
 <br>
 
 | Property | Type   | Required | Default | Description                                           |
