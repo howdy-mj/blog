@@ -44,6 +44,8 @@ draft: false
 
 ![](./images/01-02.jpg)
 
+<p style="font-size: 10px; text-align: center">https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/</p>
+
 예전에는 디자이너의 요구대로 개발자가 만들고 적용한 후 테스트 단계에서 같이 확인했었다면, 스토리북이 있다면 개발자가 개발하면서 디자이너가 직접 보면서 확인할 수 있어 빠른 수정이 가능하다.
 
 **Storybook 설치 및 실행**
@@ -63,7 +65,7 @@ yarn storybook
 
 스토리북을 열면 9009 포트로 열리게 된다.
 
-![](./images/01-03.png)
+![](./images/01-03.PNG)
 
 <p style="text-align: center;  font-size: 12px;">storybook 첫 화면</p>
 
