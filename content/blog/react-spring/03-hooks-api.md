@@ -15,6 +15,10 @@ Hooks api는 크게 5가지로 나뉜다.
 - **useTransition**: list의 아이템들이 추가/제거/업데이트 될 때 animation 발생
 - **useChain**: 다수의 animation을 묶어서 연쇄적으로 발생
 
+<br>
+
+_해당 글은 react-spring 8.0 기준으로 작성되었다._
+
 ### 1. useSpring
 
 <iframe
@@ -164,7 +168,7 @@ useTransition의 인자로는 items, keys(atomic이라면 `null`이 될 수 있�
 
 따라서 useTransition만 따로 쓰는 properties가 존재한다.
 
-##### useTransition Properties
+#### useTransition Properties
 
 | Property    | Type              | Description                                                                    |
 | ----------- | ----------------- | ------------------------------------------------------------------------------ |

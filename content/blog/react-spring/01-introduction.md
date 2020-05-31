@@ -10,6 +10,12 @@ draft: false
 react-spring은 spring-physics 기반의 애니메이션 라이브러리로, 대부분의 UI 애니메이션을 지원한다.
 본래 애니메이션은 퍼블리셔 단에서 많이 진행됐지만, 최근은 프론트엔드가 같이 하는 추세라 라이브러리가 많이 나오고 있다.
 
+**react-spring 설치**
+
+```sh
+npm install react-spring
+```
+
 react-spring은 cross platform으로 웹, react-native, react-native-web 등의 플랫폼에서 다 사용 가능하다.
 
 #### 왜 이름이 durations이 아니라 springs일까?

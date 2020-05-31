@@ -23,7 +23,7 @@ lang: 'ko'
 | :---------: | ----------------------------- |
 | **GitHub**  | <https://github.com/howdy-mj> |
 | **Tistory** | <https://kim-mj.tistory.com/> |
-| **Contact** | <hi.minjungkim@gmail.com>     |
+|  **Email**  | <hi.minjungkim@gmail.com>     |
 
 <br />
 
