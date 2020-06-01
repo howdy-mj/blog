@@ -63,7 +63,10 @@ npm run storybook
 yarn storybook
 ```
 
+![](./images/01-05.png)
+
 스토리북을 열면 9009 포트로 열리게 된다.
+컴퓨터 사양에 따라 켜지는 속도가 다른거 같은데, 나는 조금 오래 걸리는 편인 것 같다.
 
 ![](./images/01-03.PNG)
 
