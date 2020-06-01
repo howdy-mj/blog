@@ -15,28 +15,28 @@ React, Vue, Angular 등 자바스크립트 프레임워크를 사용해 본 사�
 
 > [Node.js](https://nodejs.org/ko/)는 크롬의 자바스크립트 엔진(V8 Engine)에 기반해 만들어진 서버 사이드 플랫폼이다.
 > <span style="font-size: 11px;">(\*서버 사이드 렌더링, SSR: 브라우저에 나타나는 형태 그대로를 HTML로 만들어 제공)</span>
+>
 > Node.js는 이벤트 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적이다.
+>
 > Node.js의 패키지 생태계인 npm은 세계에서 가장 큰 오픈 소스 라이브러리이기도 하다.
 > <br>
 
 npm은 세 가지 요소로 구성되어 있다.
 
-1. [Website](https://www.npmjs.com/)
+**[Website](https://www.npmjs.com/)**
 
 - 웹사이트를 통해 패키지들을 찾고, 관련 문서를 볼 수 있으며, 패키지를 공유하고 배포할 수 있다.
 
-2. [CLI](https://docs.npmjs.com/cli/npm)
+**[CLI](https://docs.npmjs.com/cli/npm)**
 
 - Command Line Interface의 줄임말로, 터미널을 뜻한다.
 - 대부분의 개발자들이 CLI를 통해 npm 패키지 업데이트/설치/제거/관리를 할 수 있다.
 
-3. [Registry](https://docs.npmjs.com/misc/registry)
+**[Registry](https://docs.npmjs.com/misc/registry)**
 
 - 레지스트리는 큰 규모의 public 데이터베이스를 뜻하며, npm 레지스트리에는 자바스크립트 소프트웨어와 메타 정보들이 들어 있다.
 - 현재 npm 레지스트리에는 100만개 이상의 패키지들가 있다.
 - package.json에 `private: true`를 설정하면 공개적 배포를 막아 줄 수 있다. (기본적으로 만든 CRA에는 다 true로 설정되어 있다.)
-
-<br>
 
 ## 2. npm으로 무엇을 할 수 있는가?
 
@@ -52,10 +52,10 @@ npm은 세 가지 요소로 구성되어 있다.
 - 같은 문제를 다양한 방법으로 푸는 해결책을 찾을 수 있다.
 - 유사한 문제와 프로젝트를 진행 중인 다른 개발자를 찾을 수 있다.
 
+<br>
+
 사실 공식 홈페이지에 들어가기 전까지 npm은 단순하게 패키지를 설치하는 거라고만 알고 있었다.
 하지만 단순히 패키지를 다운받는 것에 그치지 않고, npm [커뮤니티](https://npm.community/)에 자주 들어가보면 나에게 필요한 것을 많이 찾을 수 있을 것 같다.
-
-<br>
 
 ## 3. npm 설치하기
 
@@ -82,7 +82,9 @@ npm init -y
 
 `package.json`은 프로젝트의 mainfest<span style="font-size: 11px;">(\*컴퓨팅에서 집합의 일부 또는 논리정연한 단위인 파일들의 그룹을 위한 메타데이터를 포함하는 파일)</span> 파일이다. 프로젝트 정보와 의존성(dependencies)을 관리할 수 있으며 작성된 `package.json` 문서로 어느 곳에서든 동일한 개발 환경을 구축할 수 있게 해준다.
 
-> package.json
+<br>
+
+`package.json`
 
 ```json
 {
@@ -111,8 +113,6 @@ npm init -y
 }
 ```
 
-<br>
-
 ## 4. npm 버전
 
 ![](./images/01-01.jpeg)
@@ -132,8 +132,6 @@ npm init -y
 ```sh
 npm install 패키지명@x.y.z
 ```
-
-<br>
 
 ## 5. npm 명령어
 
