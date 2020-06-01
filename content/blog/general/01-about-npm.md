@@ -1,5 +1,5 @@
 ---
-title: 'npm 소개'
+title: 'npm에 대하여: 소개, 설치, 명령어, 배포'
 date: 2020-6-4 11:10:00
 category: 'general'
 draft: false
