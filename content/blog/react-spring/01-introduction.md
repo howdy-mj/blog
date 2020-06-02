@@ -13,7 +13,7 @@ react-spring은 spring-physics 기반의 애니메이션 라이브러리로, 대
 **react-spring 설치**
 
 ```sh
-npm install react-spring
+$ npm install react-spring
 ```
 
 react-spring은 cross platform으로 웹, react-native, react-native-web 등의 플랫폼에서 다 사용 가능하다.

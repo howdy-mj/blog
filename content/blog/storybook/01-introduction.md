@@ -54,13 +54,13 @@ CRA 환경에서 설치해야 한다.
 
 ```sh
 # 원하는 폴더 위치에서
-npx create-react-app 폴더명
-cd 폴더명
-npx -p @storybook/cli sb init
+$ npx create-react-app 폴더명
+$ cd 폴더명
+$ npx -p @storybook/cli sb init
 
-npm run storybook
+$ npm run storybook
 # or
-yarn storybook
+$ yarn storybook
 ```
 
 ![](./images/01-05.png)
