@@ -4,7 +4,7 @@ import * as Dom from '../../utils/dom'
 import { THEME } from '../../constants'
 
 const src = 'https://utteranc.es/client.js'
-const repo = 'howdy-mj/mj-blog'
+const repo = 'howdy-mj/blog'
 const branch = 'master'
 const DARK_THEME = 'photon-dark'
 const LIGHT_THEME = 'github-light'
