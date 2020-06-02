@@ -15,7 +15,7 @@ module.exports = {
   keywords: [`frontend`, `react`, `javascript`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'howdy-mj/blog', // Your repository for archive comment
+    utterances: 'howdy-mj/blog', 
   },
   configs: {
     countOfInitialPost: 10,
