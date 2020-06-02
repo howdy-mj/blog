@@ -20,9 +20,9 @@ module.exports = {
   configs: {
     countOfInitialPost: 10,
   },
-  // sponsor: {
-  //   buyMeACoffeeId: 'eDQ9SyAo0',
-  // },
+  sponsor: {
+    buyMeACoffeeId: 'eDQ9SyAo0',
+  },
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
