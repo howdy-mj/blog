@@ -17,11 +17,11 @@ addon은 Storybook의 plugin과 비슷한 역할로 고급 기능을 지원하�
 
 ### Actions
 
-원래 Actions도 따로 설치를 해야 보이는걸로 아는데, 업데이트 되면서 바뀌었는지 storybook을 설치하면 actinos도 같이 설치되어 있다.
+원래 Actions도 따로 설치를 해야 되는걸로 아는데, 업데이트 되면서 바뀌었는지 storybook을 설치하면 actinos도 같이 설치되어 있다.
 
 `.storybook/main.js`
 
-```js
+```js{5}
 module.exports = {
   stories: ['../src/**/*.stories.js'],
   addons: [
@@ -45,6 +45,22 @@ module.exports = {
 }
 ```
 
+만약 설치가 안되어있다면, 아래처럼 입력하면 된다.
+
+```sh
+$ npm install --save-dev @storybook/addon-actions
+```
+
+설치 후, `.sotrybook/main.js`에 아래 코드를 추가한다.
+
+```js
+module.exports = {
+  addons: ['@storybook/addon-actions/register'],
+}
+```
+
+<br>
+
 우선 storybook에 기본으로 세팅되어 있는 Button을 보자.
 
 ```
@@ -56,9 +72,11 @@ src
 
 버튼을 클릭하게 되면 아래 `Actions`탭에 clicked한 내용이 뜬다.
 
-![](./images/02-01.png)
+![actions](./images/02-01.png)
 
 더 정확하게는, Actions는 Componenet를 통해 특정 함수가 호출 되었을 때, 어떤 함수가 어떤 parameter를 넣어서 호출되었는지에 대한 정보를 알려준다.
+
+<br>
 
 ### Knobs
 
@@ -80,7 +98,7 @@ module.exports = {
 
 실행했던 storybook을 껐다가 다시 키면 Knobs 탭이 추가된 걸 확인할 수 있다.
 
-![](./images/02-02.png)
+![knobs](./images/02-02.png)
 
 아직 기능이 없기 때문에 Knobs 탭에도 아무것도 보이지 않는다.
 
@@ -96,6 +114,8 @@ $ npm audit fix
 ```
 
 나중에 원인을 알게되면 글에 추가하겠다.
+
+<br>
 
 ### Docs
 
@@ -119,7 +139,7 @@ module.exports = {
 
 storybook을 재실행하면 아래와 같이 Docs 탭이 생긴걸 볼 수 있다.
 
-![](./images/02-03.png)
+![docs](./images/02-03.png)
 
 <br>
 

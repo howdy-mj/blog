@@ -1,5 +1,5 @@
 ---
-title: 'npm에 대하여: 소개, 설치, 명령어, 배포'
+title: 'npm: 소개, 설치, 명령어, 배포'
 date: 2020-6-4 11:10:00
 category: 'general'
 draft: false
@@ -12,13 +12,6 @@ React, Vue, Angular 등 자바스크립트 프레임워크를 사용해 본 사�
 하지만 npm이 무엇이고, 어떻게 사용되는지 아는 사람은 많이 없다고 생각한다.
 
 [npm](https://www.npmjs.com/)은 Node Package Manager의 줄임말로 Node.js 패키지 관리를 원활하게 도와주는 것이다.
-
-> [Node.js](https://nodejs.org/ko/)는 크롬의 자바스크립트 엔진(V8 Engine)에 기반해 만들어진 서버 사이드 플랫폼이다.
-> <span style="font-size: 12px;">(\*서버 사이드 렌더링, SSR: 브라우저에 나타나는 형태 그대로를 HTML로 만들어 제공)</span>
->
-> Node.js는 이벤트 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적이다.
->
-> Node.js의 패키지 생태계인 npm은 세계에서 가장 큰 오픈 소스 라이브러리이기도 하다.
 
 <br>
 
