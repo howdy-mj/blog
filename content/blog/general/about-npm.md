@@ -11,7 +11,9 @@ React, Vue, Angular 등 자바스크립트 프레임워크를 사용해 본 사�
 
 하지만 npm이 무엇이고, 어떻게 사용되는지 아는 사람은 많이 없다고 생각한다.
 
-[npm](https://www.npmjs.com/)은 Node Package Manager의 줄임말로 Node.js 패키지 관리를 원활하게 도와주는 것이다.
+[npm](https://www.npmjs.com/)은 Node Package Manager의 줄임말로 Node.js 기반 패키지(모듈)<span style="font-size: 14px; font-style: italic">(\*moudule: 애플리케이션을 이루는 기본 조각, 쉽게 말해 어떤 물건을 만들기 위해 쓰는 부품)</span>들을 모아둔 저장소이다.
+
+Node.js에서 제공하는 내장 모듈도 있으며, 사용자들이 직접 만든 유저모듈도 있다. npm은 이런 모듈(패키지)의 관리를 원활하게 도와준다.
 
 <br>
 
@@ -74,9 +76,48 @@ npm init
 npm init -y
 ```
 
-`package.json`은 프로젝트의 mainfest<span style="font-size: 11px;">(\*컴퓨팅에서 집합의 일부 또는 논리정연한 단위인 파일들의 그룹을 위한 메타데이터를 포함하는 파일)</span> 파일이다. 프로젝트 정보와 의존성(dependencies)을 관리할 수 있으며 작성된 `package.json` 문서로 어느 곳에서든 동일한 개발 환경을 구축할 수 있게 해준다.
+`package.json`은 프로젝트의 mainfest<span style="font-size: 11px;">(\*컴퓨팅에서 집합의 일부 또는 논리정연한 단위인 파일들의 그룹을 위한 메타데이터를 포함하는 파일)</span> 파일이다. 프로젝트 정보와 **의존성(dependencies) 관리**가 가능하며 작성된 `package.json` 문서로 어느 곳에서든 동일한 개발 환경을 구축할 수 있게 해준다.
 
-<br>
+그렇다면 이 **의존성 관리**가 무엇인지 알아보자.
+
+초기의 자바스크립트는 간단한 작업을 위해 만들어졌지만, 웹 기술이 빠르게 발전하면서 점점 더 복잡한 코드가 늘어났다. 때문에 코드를 기능이나 페이지 단위로 분리하고 있지만, 아래 처럼 복잡한 의존 관계를 피할 수 없게 되었다.
+
+<img src="https://user-images.githubusercontent.com/35218826/59730495-9501c800-927d-11e9-9ba3-4e5d7b3b7301.png" alt="의존 관계">
+<p style="text-align: center; font-size: 10px">https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE/</p>
+
+### 모듈의 필요성
+
+자바스크립트는 파일이 나뉘어도 모두 같은 전역 스코프를 사용하며, 의도치 않게 다른 파일에 영향을 줄 수 있다. 하지만 자바스크립트 모듈 방식을 사용하면, 모듈의 독립된 스코프로 전역 스코프의 오염을 막을 뿐만 아니라 모듈 의존성을 코드로 작성할 수 있다. 따라서 복잡한 자바스크립트를 효율적으로 관리하기 위해서는 모듈 단위 개발을 해야 한다.
+
+**모듈 스코프**
+모듈 스코프는 전역과 분리된 모듈만의 독립된 스코프이다. 모듈 스코프에 선언된 변수나 함수는 외부에서 접근할 수 없고, 별도로 `export`한 변수와 함수만 외부에서 접근할 수 있다. (ex. `<script type="module" src="./A.js>`)
+
+`A.js`
+
+```js
+const name = 'foo'
+export function getName() {
+  return name
+}
+```
+
+`B.js`
+
+```js
+import { getName } from 'A'
+
+export function sayHello() {
+  alert('Hello' + getName()) // Hello foo
+}
+```
+
+모듈로 로드한 A.js에 정의된 name은 모듈 스코프에 포함한다. 따라서 B.js에서 name에 바로 접근할 수 없고 export된 getName 함수로만 name을 읽을 수 있다. 이처럼 모듈 스코프를 사용하면 전역 스코프가 여러 변수로 오염되는 것을 막을 수 있다. 또한, 코드 상에서 명시적으로 모듈을 가져오기 때문에 코드로 모듈간 의존성을 파악할 수 있다.
+
+### npm을 통한 외부 패키지 의존성 관리
+
+위처럼 `script`태그로 자바스크립트 파일을 import 한다면, 필요한 패키지를 의존성에 맞게 일일이 나열해야 하고 각 패키지의 버전을 알맞게 관리해야 한다. 하지만 npm을 사용하면 이 모든 것을 `package.json`으로 관리할 수 있다.
+
+`package.json`에 패키지 이름과 버전 등의 기본적인 정보와 해당 패키지의 의존성을 기입해야 한다.
 
 `package.json`
 
@@ -98,18 +139,52 @@ npm init -y
   "author": "MJ", // 작성자
   "license": "MIT",
   "dependencies": {
+    // 이 패키지를 실행하기 위해 필요한 의존성 정의
+    // 해당 패키지가 동작하는데 필요한 패키지로 배포나 번들 시에 포함
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-spring": "^9.0.0-rc.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    // 이 패키지를 개발할 때 필요한 의존성 정의
+    // 개발 단계에서만 필요하므로 배포나 번들 시에 포함되지 않음
+  }
 }
 ```
 
+**번들러?**
+
+번들러는 의존성이 있는 모듈 코드를 하나(또는 여러개)의 파일로 만들어주는 도구이다. 브라우저 환경에서는 CommonJS나 일부 ES6 Module로 작성된 코드를 바로 실행할 수 없으므로(크롬은 ES6 Module 지원), 모듈 코드를 분석하고 자바스크립트 모듈 스펙에 따라 새로운 코드로 가공이 필요하다. 이런 역할을 번들러가 해주고 있으며, 현재 [webpack](https://webpack.js.org/)이 각광받고 있다.
+
+<img src="https://miro.medium.com/max/1400/1*SL6RVjoNQaUdii2Qh9XeZg.png" alt="webpack">
+<p style="text-align: center; font-size: 10px">https://medium.com/@paul.allies/webpack-managing-javascript-and-css-dependencies-3b4913f49c58</p>
+
+<br>
+
+하지만 같은 `package.json`을 설치하더라도 설치 시점에 따라 설치되는 패키지가 완벽히 같지 않을 수 있다. 왜냐하면 설치 시점에 의존 패키지가 업데이트 되었을 수도 있기 때문이다. 때문에 완벽히 같은 <span style="font-style: italic">node modules</span>를 설치하기 위해 npm 5부터 `package-lock.json`이 생겼다.
+
+`package-lock.json`은 자동으로 생성되고 현재 설치된 패키지들의 버전과 의존성 관계를 모두 저장한다. 따라서 사용자가 개발 환경 그대로의 의존성 있는 패키지를 설치하여 사용할 수 있다.
+
+`package-lock.json`예시:
+
+```json
+"react-spring": {
+      "version": "8.0.27",
+      "resolved": "https://registry.npmjs.org/react-spring/-/react-spring-8.0.27.tgz",
+      "integrity": "sha512-nDpWBe3ZVezukNRandTeLSPcwwTMjNVu1IDq9qA/AMiUqHuRN4BeSWvKr3eIxxg1vtiYiOLy4FqdfCP5IoP77g==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "prop-types": "^15.5.8"
+      }
+    },
+```
+
+<br>
+
 ## 4. npm 버전
 
-![](./images/01-01.jpeg)
+![semantic versioning](./images/about-npm/01.jpeg)
 
 <p style="text-align: center; font-size: 10px">https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-npm-and-basic-npm-commands-18aa16f69f6b</p>
 
@@ -147,7 +222,7 @@ npm help # npm 관련 도움
 npm <command> -h # 특정 command 도움
 ```
 
-<p style="text-align: center"><img src="./images/01-02.png"></p>
+<p style="text-align: center"><img src="./images/about-npm/02.png" alt="npm help"></p>
 <p style="text-align: center; font-size: 12px">npm help 쳤을 때 화면</p>
 
 ### Installing packages:
