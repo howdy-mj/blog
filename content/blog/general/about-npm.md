@@ -168,17 +168,39 @@ export function sayHello() {
 
 `package-lock.json`예시:
 
-```json
-"react-spring": {
-      "version": "8.0.27",
-      "resolved": "https://registry.npmjs.org/react-spring/-/react-spring-8.0.27.tgz",
-      "integrity": "sha512-nDpWBe3ZVezukNRandTeLSPcwwTMjNVu1IDq9qA/AMiUqHuRN4BeSWvKr3eIxxg1vtiYiOLy4FqdfCP5IoP77g==",
-      "requires": {
-        "@babel/runtime": "^7.3.1",
-        "prop-types": "^15.5.8"
-      }
-    },
+```json{10, 25}
+"react-redux": {
+  "version": "7.2.0",
+  "resolved": "https://registry.npmjs.org/react-redux/-/react-redux-7.2.0.tgz",
+  "integrity": "sha512-EvCAZYGfOLqwV7gh849xy9/pt55rJXPwmYvI4lilPM5rUT/1NxuuN59ipdBksRVSvz0KInbPnp4IfoXJXCqiDA==",
+  "requires": {
+    "@babel/runtime": "^7.5.5",
+    "hoist-non-react-statics": "^3.3.0",
+    "loose-envify": "^1.4.0",
+    "prop-types": "^15.7.2",
+    "react-is": "^16.9.0"
+  }
+},
+"react-router": {
+  "version": "5.2.0",
+  "resolved": "https://registry.npmjs.org/react-router/-/react-router-5.2.0.tgz",
+  "integrity": "sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw==",
+  "requires": {
+    "@babel/runtime": "^7.1.2",
+    "history": "^4.9.0",
+    "hoist-non-react-statics": "^3.1.0",
+    "loose-envify": "^1.3.1",
+    "mini-create-react-context": "^0.4.0",
+    "path-to-regexp": "^1.7.0",
+    "prop-types": "^15.6.2",
+    "react-is": "^16.6.0",
+    "tiny-invariant": "^1.0.2",
+    "tiny-warning": "^1.0.0"
+  }
+},
 ```
+
+`react-redux`, `react-router` 모두 `react-is`라는 패키지를 참조하지만 서로 다른 버전을 사용하고 있다.
 
 <br>
 
@@ -320,6 +342,8 @@ Logged in as howdy-mj on https://registry.npmjs.org/
 }
 ```
 
+_필요한 최소의 정보만 썼다_
+
 ### 패키지 배포
 
 이제 터미널에 `npm publish`를 입력하면 배포가 완료된다.
@@ -340,7 +364,6 @@ npm notice version:       0.0.0
 ```
 
 [howdy-first 패키지 보러가기](https://www.npmjs.com/package/howdy-first)
-(package.json에 아무것도 쓰지 않아서 내용이 없다)
 
 <br>
 

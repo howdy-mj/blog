@@ -61,6 +61,16 @@ draft: false
 
 이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 콜백 큐(Callback queue)에 전달하고, 이를 콜 스택(Call stack)에 넘겨준다.
 
+```js
+console.log('Hi')
+setTimeout(function cb1() {
+  console.log('cb1')
+}, 5000)
+console.log('Bye')
+```
+
+자바스크립트는 위에서 아래로 실행되는데, `setTimeout()`은 비동기수이기 때문에 Web APIs에 보관되어 있다가 시간이 지나 호출될 때 콜백 큐에 전달 후, 콜 스택에 넘겨준다.
+
 <img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="event loop">
 <p style="text-align: center; font-size: 10px">https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5</p>
 
@@ -97,6 +107,4 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 - https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c
 - https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE/
 - https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
--
-
-* https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html
+- https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html
