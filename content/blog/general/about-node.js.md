@@ -27,7 +27,7 @@ draft: false
 
 ### V8
 
-[V8](https://v8.dev/)은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실행할 수 있는 새로운 유형의 코드) 엔진이다. Node.js의 런타임으로도 사용된다.
+[V8](https://v8.dev/)은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실행할 수 있는 새로운 유형의 코드, C/C++을 웹에서 동작할 수 있도록 컴파일 해줌) 엔진이다. Node.js의 런타임으로도 사용된다.
 
 ### 자바스크립트 엔진(JavaScript Engine)
 
@@ -59,10 +59,10 @@ draft: false
 
 단일 스레드이기 때문에, 발생하는 이벤트 순서대로 실행하기 위해 이벤트 루프라는 개념이 있다.
 
-이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 태스크(콜백) 큐(task queue)에 전달하고, 이를 콜 스택(call stack)에 넘겨준다.
+이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 콜백 큐(Callback queue)에 전달하고, 이를 콜 스택(Call stack)에 넘겨준다.
 
-<img src="https://miro.medium.com/max/1400/1*FA9NGxNB6-v1oI2qGEtlRQ.png" alt="event loop">
-<p style="text-align: center; font-size: 10px">https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c</p>
+<img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="event loop">
+<p style="text-align: center; font-size: 10px">https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5</p>
 
 발생한 이벤트에 대해서만 웹서버가 연결해주기 때문에 자원을 최소화할 수 있는 장점이 있다. 대부분의 웹서버는 사용자가 이벤트를 발생하기까지를 기다리면서 자원(대기시간/메모리)을 계속 소비한다.
 
@@ -81,13 +81,9 @@ draft: false
 
 사실 나는 Node.js가 자바스크립트 엔진으로 빌드된 것이기 때문에 당연히 자바스크립트에서만 사용할 수 있을 줄 알았다. 하지만 이는 편협된 사고였다.
 
-Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기능이 필요한 경우가 생긴다. 이럴 때 다른 프로그래밍 언어(Java, C, C++, Python)를 써야한다.
-
-성능문제 (C가 자바스크립트보다 빠름 혹은 공간을 덜 차지)
+Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기능이 필요하거나 더 좋은 성능(빠른 속도, 적은 메모리 등)이 필요 할 때가 있다. 이럴 때 다른 프로그래밍 언어(Java, C, C++, Python)를 활용할 수 있으며, 해당 언어의 라이브러리에도 연결할 수 있다.
 
 어떻게 import해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
-
-[Node.js Addons](http://nodejs.sideeffect.kr/docs/v0.10.7/api/addons.html)
 
 **참고**
 
@@ -100,7 +96,7 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 - https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html
 - https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c
 - https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE/
-
+- https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
 -
 
 * https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html
