@@ -72,6 +72,8 @@ react-spring에서 등장하는 interpolation이 무엇인지 간단하게 알�
      sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
+https://www.w3schools.com/graphics/game_controllers.asp
+
 하지만 움직이는 것이 매우 부자연스럽다. 이는 등속운동(균등한 속도로 움직이는 것)처럼 보여서 그런 것이다.
 자연스러운 애니메이션을 그리고 싶다면, 처음 속도를 빠르게 설정하고, 점차 느리게 움직여야 된다.
 

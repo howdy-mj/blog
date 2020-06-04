@@ -27,17 +27,15 @@ draft: false
 
 ### V8
 
-[V8](https://v8.dev/)은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실핼할 수 있는 새로운 유형의 코드) 엔진이다. Node.js의 런타임으로도 사용된다.
+[V8](https://v8.dev/)은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실행할 수 있는 새로운 유형의 코드) 엔진이다. Node.js의 런타임으로도 사용된다.
 
 ### 자바스크립트 엔진(JavaScript Engine)
 
 자바스크립트 코드를 해석하고 실행하는 프로그램 또는 인터프리터<span style="font-size: 14px; font-style: italic">(\*interpreter: 프로그래밍 언어를 바로 실행하는 컴퓨터 프로그램 또는 환경)</span>이다. 위에 설명한 V8가 대표적인 자바스크립트 엔진 중 하나다.
 
-HTML 파서는 script 태그를 만나면 자바스크립트 코드를 실행하기 위해 DOM 생성 프로세스를 중지하고 자바스크립트 엔진으로 제어 권한을 넘긴다. 제어 권한을 넘겨 받은 자바스크립트 엔진은 script 태그 내의 자바스크립트 코드 또는 자바스크립트 파일을 로드하고 파싱(Parsing)하여 실행한다. 자바스크립트의 실행이 완료되면 다시 HTML 파서로 제어 권한을 넘겨서 브라우저가 중지했던 시점부터 DOM 생성을 재개한다.
-
 ### 런타임(Runtime)
 
-런타임은 프로그램이 실행되고 있을 때 존재하는 곳을 말한다. 즉 컴퓨터 내에서 프로그램이 가동되면, 그것이 바로 그 프로그램의 런타임이다.
+런타임은 프로그램이 실행되고 있을 때 존재하는 곳을 말한다. 즉 컴퓨터 내에서 프로그램이 가동되면, 그것이 바로 그 프로그램의 런타임이다.  
 원래 자바스크립트는 웹 브라우저에서만 사용할 수 있었지만, Node.js를 통해 서버 사이드 애플리케이션에서도 사용가능한 범용 개발 언어가 되었다. 그럼에도 자바스크립트는 여전히 웹에서 제일 많이 사용된다.
 
 ### 스레드(Thread)
@@ -57,11 +55,11 @@ HTML 파서는 script 태그를 만나면 자바스크립트 코드를 실행하
 
 자바스크립트는 <span style="text-decoration: underline; font-weight: bold">한번에 하나의 작업만 수행</span>할 수 있는 **싱글 스레드(Single-Thread)**이다. 싱글 스레드는 먼저 들어온 요청을 전부 처리할 때까지 다른 요청을 받지 못한다. 따라서 자바스크립트에서는 비동기적 작업이 필수이다.
 
-단일 스레드: 적은 양의 자원으로 일을 처리할 수 있다는 장점, 하지만 어느 한곳에 예외상황 및 에러가 발생하면 전체 애플리케이션에 영향이 간다.
-
 ### 이벤트 루프(Event Loop)
 
-이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 태스크 큐(task queue)에 전달하고, 이를 콜 스택(call stack)에 넘겨준다.
+단일 스레드이기 때문에, 발생하는 이벤트 순서대로 실행하기 위해 이벤트 루프라는 개념이 있다.
+
+이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 태스크(콜백) 큐(task queue)에 전달하고, 이를 콜 스택(call stack)에 넘겨준다.
 
 <img src="https://miro.medium.com/max/1400/1*FA9NGxNB6-v1oI2qGEtlRQ.png" alt="event loop">
 <p style="text-align: center; font-size: 10px">https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c</p>
@@ -70,11 +68,14 @@ HTML 파서는 script 태그를 만나면 자바스크립트 코드를 실행하
 
 ### Blocking & Non-Blocking I/O
 
-I/O(input/output)은 데이터나 정보 등을 가공하는 프로세스의 전처리와 후처리라 생각하면 된다.
+**I/O**는 Input과 Output이 관련된 작업으로 http, Database CRUD, Third party API, Filtsystem 등 데이터나 정보를 가공하는 프로세스이다.
+이 외에도, 대표적인 Input 장치로 키보드, 마우스, Output 장치에는 프린터가 있다.
 
 **Blocking I/O**는 어떤 이벤트(작업)가 발생하면 그 이벤트가 완료될 때까지 기다려야 한다. 이는 이벤트 루프가 Blocking 작업을 하는 동안 JavaScript 실행을 계속 할 수 없기 때문이다. 또한 메모리 버퍼에 데이터를 차지하게 되므로 메모리도 소비한다.
 
 이러한 비효율성을 극복하고자 나온 것이 **Non-blocking I/O**이다. Non-Blocking은 비동기 방식으로 콜백 함수를 받는다. 또한, I/O 작업을 진행하는 동안 유저 프로세스의 작업을 중단하지 않고 모듈을 변환시켜 다른 작업을 하도록 준비를 한다. 그래서 속도가 동기식 보다 빠르고 메모리도 덜 차지한다.
+
+만약 Blocking I/O 였다면, 우리가 키보드를 칠 때 옆에있는 애니메이션이 멈출 것이다. 하지만 Non-Blocking I/O이기 때문에 타이핑을 하면서도 애니메이션이 끊기지 않는다.
 
 ## Node.js는 JavaScript만 돌아갈까?
 
@@ -82,7 +83,11 @@ I/O(input/output)은 데이터나 정보 등을 가공하는 프로세스의 전
 
 Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기능이 필요한 경우가 생긴다. 이럴 때 다른 프로그래밍 언어(Java, C, C++, Python)를 써야한다.
 
-어떻게 impot해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
+성능문제 (C가 자바스크립트보다 빠름 혹은 공간을 덜 차지)
+
+어떻게 import해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
+
+[Node.js Addons](http://nodejs.sideeffect.kr/docs/v0.10.7/api/addons.html)
 
 **참고**
 
@@ -95,3 +100,7 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 - https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html
 - https://medium.com/@vdongbin/javascript-%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC-single-thread-event-loop-asynchronous-e47e07b24d1c
 - https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE/
+
+-
+
+* https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html
