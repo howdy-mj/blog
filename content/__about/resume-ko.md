@@ -20,22 +20,36 @@ lang: 'ko'
 4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
 |             |                               |
-| :---------: | ----------------------------- |
-| **GitHub**  | <https://github.com/howdy-mj> |
+| ----------: | ----------------------------- |
+|  **GitHub** | <https://github.com/howdy-mj> |
 | **Tistory** | <https://kim-mj.tistory.com/> |
-|  **Email**  | <hi.minjungkim@gmail.com>     |
+|   **Email** | <hi.minjungkim@gmail.com>     |
 
 <br />
 
+# 학력
+
+### Peking Univ.
+
+# Internship
+
+# Project
+
+### Paulbassett
+
+### GDAC
+
 # Education
 
-### Wecode
+#### Wecode
 
 (20.03 ~ 20.06) WeCode 부트캠프 과정 수료
 
-# Portfolio
+# Experiences
 
-### Paulbassett
+#### BRPartners
+
+블록체인 컨설팅 업체
 
 <div style="text-align: center" class="final">
 

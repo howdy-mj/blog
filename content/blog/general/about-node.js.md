@@ -14,7 +14,7 @@ draft: false
 
 그렇다면 Node.js란 무엇일까?
 
-[공식 홈페이지](https://nodejs.org/en/about/)에서는 <span style="font-style: italic; font-weight: bold">Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임이다. Node.js는 단일 스레드 이벤트 루프 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적</span>이라 정의하고 있다.
+[공식 홈페이지](https://nodejs.org/en/about/)에서는 <span style="font-style: italic; font-weight: bold">Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임이다. Node.js는 싱글 스레드 이벤트 루프 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적</span>이라 정의하고 있다.
 
 그럼 다음의 키워드에 대해 하나씩 살펴보자.
 
@@ -22,7 +22,7 @@ draft: false
 - 자바스크립트 엔진
 - 런타임
 - Non-Blocking I/O
-- 단일 스레드
+- 싱글 스레드
 - 이벤트 루트 기반
 
 ### V8
@@ -57,11 +57,12 @@ draft: false
 
 ### 이벤트 루프(Event Loop)
 
-단일 스레드이기 때문에, 발생하는 이벤트 순서대로 실행하기 위해 이벤트 루프라는 개념이 있다.
+싱글 스레드이기 때문에, 발생하는 이벤트 순서대로 실행하기 위해 이벤트 루프라는 개념이 있다.
 
 이벤트 루프는 작업을 요청하면서 그 작업이 완료되었을 때 어떤 작업을 진행할지에 대한 콜백 함수를 지정하여 **동작이 완료되었을 때 해당 콜백 함수를 실행되는 동작 방식**을 말한다. 즉, 이벤트 발생 시 호출되는 콜백 함수들을 관리하여 콜백 큐(Callback queue)에 전달하고, 이를 콜 스택(Call stack)에 넘겨준다.
 
 ```js
+// 예시
 console.log('Hi')
 setTimeout(function cb1() {
   console.log('cb1')
@@ -69,7 +70,7 @@ setTimeout(function cb1() {
 console.log('Bye')
 ```
 
-자바스크립트는 위에서 아래로 실행되는데, `setTimeout()`은 비동기수이기 때문에 Web APIs에 보관되어 있다가 시간이 지나 호출될 때 콜백 큐에 전달 후, 콜 스택에 넘겨준다.
+자바스크립트는 위에서 아래로 실행되는데, `setTimeout()`은 비동기 콜백함수이기 때문에 Web APIs에 보관되어 있다가 시간이 지나 호출될 때 콜백 큐에 전달 후, 콜 스택에 넘겨준다.
 
 <img src="https://miro.medium.com/max/1400/1*TozSrkk92l8ho6d8JxqF_w.gif" alt="event loop">
 <p style="text-align: center; font-size: 10px">https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5</p>
@@ -95,7 +96,29 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 
 어떻게 import해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
 
+### 번외) JavaScript가 싱글 스레드인 이유?
+
+Node.js가 싱글 스레드인 이유는 자바스크립트가 싱글 스레드이기 때문이다.
+그렇다면 자바스크립트는 왜 싱글 스레드로 만들어 졌을까?
+
+처음에는 웹이 단순했기 때문에 빠른 처리를 위해 싱글 스레드로 만들거라 생각했다. 하지만 그 보다 예전 컴퓨터 사양을 보면 더 타당하게 추론할 수 있다.
+
+최근 컴퓨터나 노트북의 코어 수는 보통 2개로, 4개의 스레드로 이루어져있다. 맥북의 경우 3 코어, 6 스레드이다.
+
+<p style="font-size: 12px; font-style: italic; margin-bottom: 0;"><span style="font-weight: bold">코어</span>: 단일 컴퓨팅 구성 요소에 들어 있는 독립된 CPU(중앙 처리 장치) 수를 나타내는 하드웨어 용어</p>
+<p style="font-size: 12px; font-style: italic"><span style="font-weight: bold">스레드</span>: 스레드 또는 스레드 확장은 싱글 CPU 코어를 경유하거나 싱글 CPU 코어에 의해 처리될 수 있는 기본 순서로 구성된 명령어 시퀀스를 가리키는 소프트웨어 용어</p>
+
+하지만 자바스크립트가 탄생했던 90년대 후반에는 듀얼 코어가 매우 획기적이고 희귀했다. 대부분은 1코어, 1스레드였다.
+
+<p style="text-align: center;"><img src="./images/about-node/02.PNG" style="width: 600px;"></p>
+
+그렇기 때문에 누구든 웹 브라우저를 원활하게 사용할 수 있게 하기 위해 싱글 스레드로 만들었던게 아닐까 생각한다.
+
+<p style="font-size: 13px; font-style: italic">피드백은 언제나 환영합니다!</p>
+
 **참고**
+
+<div style="font-size: 12px;">
 
 - https://junspapa-itdev.tistory.com/3
 - https://geonlee.tistory.com/92
@@ -108,3 +131,5 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 - https://ui.toast.com/fe-guide/ko_DEPENDENCY-MANAGE/
 - https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5
 - https://tech.peoplefund.co.kr/2017/08/02/non-blocking-asynchronous-concurrency.html
+
+<div>

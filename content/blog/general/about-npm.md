@@ -368,11 +368,17 @@ npm notice version:       0.0.0
 
 [howdy-first 패키지 보러가기](https://www.npmjs.com/package/howdy-first)
 
+<p style="font-size: 13px; font-style: italic">피드백은 언제나 환영합니다!</p>
+
 <br>
 
 **참고**
+
+<div style="font-size: 12px;">
 
 - https://www.npmjs.com/
 - https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-npm-and-basic-npm-commands-18aa16f69f6b
 - https://medium.com/@shgautam/why-package-json-npm-basics-cab3e8cd150
 - https://www.daleseo.com/js-npm-publish/
+
+<div>

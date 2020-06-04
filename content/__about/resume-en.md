@@ -20,10 +20,10 @@ lang: 'en'
 4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
 |             |                               |
-| :---------: | ----------------------------- |
-| **GitHub**  | <https://github.com/howdy-mj> |
+| ----------: | ----------------------------- |
+|  **GitHub** | <https://github.com/howdy-mj> |
 | **Tistory** | <https://kim-mj.tistory.com/> |
-|  **Email**  | <hi.minjungkim@gmail.com>     |
+|   **Email** | <hi.minjungkim@gmail.com>     |
 
 <br />
 
