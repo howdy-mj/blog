@@ -155,7 +155,10 @@ export function sayHello() {
 
 **번들러?**
 
-번들러는 의존성이 있는 모듈 코드를 하나(또는 여러개)의 파일로 만들어주는 도구이다. 브라우저 환경에서는 CommonJS나 일부 ES6 Module로 작성된 코드를 바로 실행할 수 없으므로(크롬은 ES6 Module 지원), 모듈 코드를 분석하고 자바스크립트 모듈 스펙에 따라 새로운 코드로 가공이 필요하다. 이런 역할을 번들러가 해주고 있으며, 현재 [webpack](https://webpack.js.org/)이 각광받고 있다.
+번들러는 의존성이 있는 모듈 코드를 하나(또는 여러개)의 파일로 만들어주는 도구이다.
+처음부터 하나의 js파일로 만드는 방법도 있겠지만, 그러기엔 코드가 너무 복잡해져서 유지보수도 힘들다. 따라서 처음에 아예 따로 만든 다음에 번들링 작업을 진행하는 것이다.
+
+브라우저 환경에서는 CommonJS나 일부 ES6 Module로 작성된 코드를 바로 실행할 수 없으므로(크롬은 ES6 Module 지원), 모듈 코드를 분석하고 자바스크립트 모듈 스펙에 따라 새로운 코드로 가공이 필요하다. 이런 역할을 번들러가 해주고 있으며, 현재 [webpack](https://webpack.js.org/)이 각광받고 있다.
 
 <img src="https://miro.medium.com/max/1400/1*SL6RVjoNQaUdii2Qh9XeZg.png" alt="webpack">
 <p style="text-align: center; font-size: 10px">https://medium.com/@paul.allies/webpack-managing-javascript-and-css-dependencies-3b4913f49c58</p>

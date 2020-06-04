@@ -33,11 +33,13 @@ lang: 'ko'
 
 (20.03 ~ 20.06) WeCode 부트캠프 과정 수료
 
-<div align="center" class="final">
+# Portfolio
+
+### Paulbassett
+
+<div style="text-align: center" class="final">
 
 _감사합니다._
-
-<br/>
 
 <sub><sup>Front-End Engineer, <a href="https://github.com/howdy-mj">@howdy-mj</a></sup></sub>
 
