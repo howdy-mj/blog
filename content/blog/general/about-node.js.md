@@ -96,6 +96,8 @@ Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기�
 
 어떻게 import해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
 
+<br>
+
 ### 번외) JavaScript가 싱글 스레드인 이유?
 
 Node.js가 싱글 스레드인 이유는 자바스크립트가 싱글 스레드이기 때문이다.
@@ -105,8 +107,8 @@ Node.js가 싱글 스레드인 이유는 자바스크립트가 싱글 스레드�
 
 최근 컴퓨터나 노트북의 코어 수는 보통 2개로, 4개의 스레드로 이루어져있다. 맥북의 경우 3 코어, 6 스레드이다.
 
-<p style="font-size: 12px; font-style: italic; margin-bottom: 0;"><span style="font-weight: bold">코어</span>: 단일 컴퓨팅 구성 요소에 들어 있는 독립된 CPU(중앙 처리 장치) 수를 나타내는 하드웨어 용어</p>
-<p style="font-size: 12px; font-style: italic"><span style="font-weight: bold">스레드</span>: 스레드 또는 스레드 확장은 싱글 CPU 코어를 경유하거나 싱글 CPU 코어에 의해 처리될 수 있는 기본 순서로 구성된 명령어 시퀀스를 가리키는 소프트웨어 용어</p>
+<p style="font-size: 14px; font-style: italic; margin-bottom: 5px;"><span style="font-weight: bold">코어</span>: 단일 컴퓨팅 구성 요소에 들어 있는 독립된 CPU(중앙 처리 장치) 수를 나타내는 하드웨어 용어</p>
+<p style="font-size: 14px; font-style: italic"><span style="font-weight: bold">스레드</span>: 스레드 또는 스레드 확장은 싱글 CPU 코어를 경유하거나 싱글 CPU 코어에 의해 처리될 수 있는 기본 순서로 구성된 명령어 시퀀스를 가리키는 소프트웨어 용어</p>
 
 하지만 자바스크립트가 탄생했던 90년대 후반에는 듀얼 코어가 매우 획기적이고 희귀했다. 대부분은 1코어, 1스레드였다.
 
@@ -114,7 +116,11 @@ Node.js가 싱글 스레드인 이유는 자바스크립트가 싱글 스레드�
 
 그렇기 때문에 누구든 웹 브라우저를 원활하게 사용할 수 있게 하기 위해 싱글 스레드로 만들었던게 아닐까 생각한다.
 
+<br>
+
 <p style="font-size: 13px; font-style: italic">피드백은 언제나 환영합니다!</p>
+
+<br>
 
 **참고**
 

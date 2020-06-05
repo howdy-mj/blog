@@ -80,7 +80,7 @@ react-spring에는 Up-front interpolation과 View interpolation으로 나뉜다.
 
 interpolate은 '보간하다, (중간값을) 채우다'란 의미로 그래픽과 관련된 작업에서 많이 쓰인다. (다른 글에서 더 자세히 다룰 예정이다)
 
-clamp(고정?)나 extrapolate(보외법, 다른 값을 추정할 때)가 필요한 경우 사용되며, 각각의 animated 값은 view안에서 `interpolate`할 수 있다.
+clamp(어떤 값을 특정 범위의 값으로 고정)나 extrapolate(보외법, 범위 외의 값을 추정할 때)가 필요한 경우 사용되며, 각각의 animated 값은 view안에서 `interpolate`할 수 있다.
 `value.interpolate`은 object나 function을 가질 수 있다.
 
 | Value            | Default   | Description                                            |
