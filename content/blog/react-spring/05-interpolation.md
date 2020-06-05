@@ -53,7 +53,7 @@ react-spring에서 등장하는 interpolation이 무엇인지 간단하게 알�
 
 그라데이션도 interpolation으로 그릴 수 있다.
 
-<div style="text-align: center; height: 300px;"><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMTRfMTM3/MDAxNTczNzI3MTE2ODYz.xFHlMyyGhuGsjFDFUNSKLVsvziLrPsU5cpJsT7G6idsg.zaTkeKiHgqncc3CQRd9hoYg390FdFq_Kc4jcyYfx7JUg.PNG.mofakr/1573727114699.png?type=w800" alt="그라데이션"></div>
+<div style="text-align: center;"><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMTRfMTM3/MDAxNTczNzI3MTE2ODYz.xFHlMyyGhuGsjFDFUNSKLVsvziLrPsU5cpJsT7G6idsg.zaTkeKiHgqncc3CQRd9hoYg390FdFq_Kc4jcyYfx7JUg.PNG.mofakr/1573727114699.png?type=w800" alt="그라데이션" style="height: 300px;"></div>
 <p style="font-size: 10px; text-align: center">https://www.pinterest.co.kr/pin/760475087054803380/</p>
 
 우리는 맨 위에 있는 분홍색 rgba와 아래 있는 하늘색 rbga를 정확하게 안다면, interpolation이 알아서 중간 값을 찾아서 그려준다.
