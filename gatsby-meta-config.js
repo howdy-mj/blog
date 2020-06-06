@@ -7,9 +7,9 @@ module.exports = {
   social: {
     github: `howdy-mj`,
     tistory: `kim-mj`,
-    medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
+    resume: `about`, // Your Medium account
   },
   icon: `content/assets/lego_icon.png`,
   keywords: [`frontend`, `react`, `javascript`],

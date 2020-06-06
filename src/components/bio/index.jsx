@@ -32,9 +32,6 @@ export const Bio = () => (
                   {social.github && (
                     <a href={`https://github.com/${social.github}`}>GitHub</a>
                   )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                  )}
                   {social.tistory && (
                     <a href={`https://${social.tistory}.tistory.com/`}>
                       Tistory
@@ -48,6 +45,11 @@ export const Bio = () => (
                   {social.linkedin && (
                     <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
                       LinkedIn
+                    </a>
+                  )}
+                  {social.resume && (
+                    <a href={`https://howdy-mj.netlify.app/${social.resume}`}>
+                      About me
                     </a>
                   )}
                 </p>
