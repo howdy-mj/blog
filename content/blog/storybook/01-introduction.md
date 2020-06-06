@@ -39,8 +39,9 @@ draft: false
 
 > Storybook runs outside of the main app so users can develop UI components in isolation without worrying about app specific dependencies and requirements.
 
-스토리북은 외부 영향을 받지 않는 독립적인 UIComponent이다.
-<span style="font-size: 12px;">(\*User Interface: 사용자와 컴퓨터가 상호작용할 수 있는 접점)</span>
+스토리북은 외부 영향을 받지 않는 독립적인 UI Component이다.
+
+<p style="font-size: 12px;">(\*User Interface: 사용자와 컴퓨터가 상호작용할 수 있는 접점)</p>
 
 ![](./images/01-02.jpg)
 

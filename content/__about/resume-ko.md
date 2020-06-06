@@ -30,7 +30,7 @@ lang: 'ko'
 
 # Project
 
-## GDAC
+### GDAC
 
 |                  |                                                                       |
 | ---------------: | --------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ lang: 'ko'
 |        **stack** | JavaScript, React, React Hooks, react-router, Styled-Component, Redux |
 |         **repo** | [wedac](https://github.com/wecode-bootcamp-korea/wedac-frontend)      |
 
-### What I did
+#### What I did
 
 - 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악 및 소통
 - CRA 초기 세팅
@@ -62,7 +62,7 @@ lang: 'ko'
   (4) 입출금 성공을 감지하여 자동으로 원화 잔고 정보 fetch
 - Git rebase로 commit 통합
 
-## Paulbassett
+### Paulbassett
 
 |                  |                                                                      |
 | ---------------: | -------------------------------------------------------------------- |
@@ -71,7 +71,7 @@ lang: 'ko'
 |        **stack** | JavaScript, React(Class), react-router, SCSS                         |
 |         **repo** | [Paulba3](https://github.com/wecode-bootcamp-korea/PaulBa3-frontend) |
 
-### What I Did
+#### What I Did
 
 - 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악 및 소통
 - CRA 초기세팅
@@ -88,7 +88,7 @@ lang: 'ko'
 
 <br />
 
-# Employment History
+# Experience
 
 ## Planz Coffee
 
@@ -104,7 +104,7 @@ lang: 'ko'
 - 암호화폐 거래소 시장 조사 및 기획
 - 마케팅 기획안/제휴제안서 작성 및 진행
 - 퍼포먼스 마케팅(SNS, APP, 연관검색어, 웹 배너 등)
-- 중국어/영어 통번역 |
+- 중국어/영어 통번역
 
 <br />
 
