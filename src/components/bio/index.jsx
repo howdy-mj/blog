@@ -78,9 +78,9 @@ const bioQuery = graphql`
         social {
           tistory
           github
-          medium
           facebook
           linkedin
+          resume
         }
       }
     }
