@@ -9,7 +9,7 @@ module.exports = {
     tistory: `kim-mj`,
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
-    resume: `about`, // Your Medium account
+    resume: `about`,
   },
   icon: `content/assets/lego_icon.png`,
   keywords: [`frontend`, `react`, `javascript`],
