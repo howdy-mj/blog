@@ -16,7 +16,7 @@ _해당 글은 Storybook 5.3 기준으로 작성되었습니다._
 
 <br>
 
-```js{2, 10, 15}
+```js{2, 11, 16}
 import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { Button } from '@storybook/react/demo'
