@@ -11,6 +11,8 @@ addon은 Storybook의 plugin과 비슷한 역할로 고급 기능을 지원하�
 
 대표적인 addon은 Knobs, Actions, Source, Docs, Viewport, Storyshots, Backgrounds, Accessibility, Console, Links가 있으며 더 자세한 내용은 [홈페이지](https://storybook.js.org/addons/)에서 확인 가능하다.
 
+_해당 글은 Storybook 5.3 기준으로 작성되었습니다._
+
 <br>
 
 이번 글에서는 Actions, Knobs, Docs의 정의와 기본 세팅에 알아 보겠다.
