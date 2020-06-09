@@ -34,7 +34,7 @@ useSpring({ config: { duration: 250 }, ... })
 
 react-spring에서 자주 쓰일법한 config들을 미리 설정해주었다.
 
-```js
+```jsx
 import { ..., config } from 'react-spring'
 
 useSpring({ ..., config: config.default })
@@ -55,7 +55,7 @@ useSpring({ ..., config: config.default })
 
 모두 아래와 같은 property를 상속 받을 수 있다.
 
-```js
+```jsx
 useSpring({ from: { ... }, to: { ... }, delay: 100, onRest: () => ... })
 ```
 

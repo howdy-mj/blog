@@ -29,7 +29,7 @@ $ npm install emotion
 $ npm install @emotion/core
 ```
 
-_해당 글은 React, @emotion/core 10.0.28 기준으로 작성되었다._
+<p style="font-size: 14px; font-style: italic">해당 글은 React, @emotion/core 10.0.28 기준으로 작성되었다.<p>
 
 emotion.js를 사용해야 할 컴포넌트에 먼저 import를 해야 한다.
 
@@ -48,7 +48,7 @@ import { jsx, css } from '@emotion/core'
 
 <iframe
      src="https://codesandbox.io/embed/emotionjs-intro-1ysvo?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     style="width:100%; height:200px; border:0; border-radius: 4px; overflow:hidden;"
      title="emotion.js intro"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
@@ -56,7 +56,7 @@ import { jsx, css } from '@emotion/core'
 
 (기존 예문에서 구조만 살짝 수정했다)
 
-```js
+```jsx
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 
@@ -78,7 +78,7 @@ export default function App() {
 
 기존에 Styled-Component를 써본 사람이라면 익숙한 구조일 것이다.
 
-```js
+```jsx
 // Styled-Component
 import styled from 'styled-components'
 
@@ -116,7 +116,7 @@ $ npm install --save-dev babel-plugin-emotion
 $ yarn add --dev babel-plugin-emotion
 ```
 
-```js{10}
+```jsx{10}
 const divStyle = css`
   background-color: hotpink;
   font-size: 24px;
@@ -176,7 +176,7 @@ emotion.js를 재사용하는 것도 간단하다. component처럼 만들어서 
 
 [출처](https://emotion.sh/docs/css-prop)
 
-```js
+```jsx
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 
@@ -230,7 +230,7 @@ Styled-components는 다른 글에서 더 자세히 써보겠다.
 
 emotion.js에서 Nested도 사용가능하다.
 
-```js
+```jsx
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 
@@ -254,7 +254,7 @@ render(
 
 반응형을 구축해야 하는 미디어 쿼리는 일반 CSS(SCSS)에서 하는 것과 비슷하게 작성하면 된다.
 
-```js
+```jsx
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 

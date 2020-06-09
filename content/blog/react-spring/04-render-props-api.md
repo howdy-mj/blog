@@ -36,7 +36,7 @@ Spring은 Hooks-api의 useSpring(s)와 비슷하다.
 
 출처: [react-spring-examples](https://github.com/react-spring/react-spring-examples/tree/renderprops/demos/renderprops/auto)
 
-```js
+```jsx
 import { Spring, animated } from 'react-spring/renderprops'
 
 const LOREM = `Hello world`
@@ -99,7 +99,7 @@ Trail 역시 useTrail과 비슷한데, native, from, immediate, onReset 등과 �
 
 codesandbox에 구현되지 않아 코드로만 대체한다.
 
-```js{28, 31}
+```jsx{28, 31}
 import { Trail, animated } from 'react-spring/renderprops'
 
 export default class TrailsExample extends React.PureComponent {
@@ -203,7 +203,7 @@ native, from, immediate, onRest 등의 spring의 properties도 사용가능하�
 
 이것도 이상하게 codesandbox에서 구현되지 않아 코드만 올린다.
 
-```js
+```jsx
 import React from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
 import './styles.css'
@@ -254,7 +254,7 @@ export default class App extends React.PureComponent {
 
 `onClick()`에 따라 toggle값이 바뀌면서 'Hello'란 글자가 사라졌다 보여진다.
 
-```js
+```jsx
 <Transition
   native
   items={this.state.show}
@@ -303,7 +303,7 @@ codesandbox에서 delay를 넣으면 실행이 안돼서 빼고 가져왔더니 
      sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-```js{4, 53}
+```jsx{4, 53}
 import { Keyframes, animated, config } from 'react-spring/renderprops'
 // import delay from 'delay'
 

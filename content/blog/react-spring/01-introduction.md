@@ -37,7 +37,7 @@ Hooks api는 19년 2월에 도입되었다.
 두 가지의 가장 큰 차이점은 Hooks는 view를 모른다.
 만약 height를 해당 스코프 밖에서 선언했다면, Hooks의 경우 다른 해당 height를 알려주는 custom Hook을 사용해서 `<animated.div />`에 알려줘야 한다.
 
-```js
+```jsx
 const [bind, { height }] = useMeasure() // custom Hook
 const props = useSpring({ height })
 return (
@@ -56,7 +56,7 @@ _(조금 더 이해도가 높아졌을 때 다시 수정할 예정이다.)_
 
 #### (1) Hooks api 구조
 
-```js
+```jsx
 import { useSpring, animated } from 'react-spring'
 
 function App() {
@@ -67,7 +67,7 @@ function App() {
 
 #### (2) Render-props api 구조
 
-```js
+```jsx
 import { Spring } from 'react-spring/renderprops'
 
 function App() {
@@ -83,7 +83,7 @@ function App() {
 
 지금은 Hooks와 Render-props를 import 해오는 위치가 다르지만, react-spring 9.0(아직 배포 전)에서는 모두 `react-spring`에서 불러올 수 있다.
 
-```js
+```jsx
 import { Spring, useSpring } from 'react-spring'
 
 // 아래처럼 import하는 것도 여전히 가능하다:

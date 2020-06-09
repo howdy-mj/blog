@@ -31,7 +31,7 @@ _해당 글은 react-spring 8.0 기준으로 작성되었다._
 
 <br>
 
-```js{6}
+```jsx{6}
 import { useSpring, animated } from 'react-spring'
 ...
 
@@ -80,7 +80,7 @@ _추후 업데이트_
 useTrail이 어떤 것인지 가장 잘 보여주는 예시인 것 같다.
 마우스가 움직이는 대로 중간의 큰 동그라미가 따라온다.
 
-```js
+```jsx
 import { useTrail, animated } from 'react-spring'
 
 const fast = { tension: 1200, friction: 40 }
@@ -124,7 +124,7 @@ export default function Goo() {
 
 `trans`에는 마우스의 x, y값 대로 움직일 것을 미리 정의했다.
 
-```js{1}
+```jsx{1}
 const [trail, set] = useTrail(3, () => ({
   xy: [0, 0],
   config: i => (i === 0 ? fast : slow),
@@ -142,7 +142,7 @@ spring을 선언할 때, 어떤 값에 바로 선언해도 되지만, 위에 처
 
 초기의 xy값은 모두 0이고, `i===0`일 때 마우스 가장 가까이 있는 동그라미가 가장 빠른 것이 온다. `i===1`일 경우, 동그라미는 2개로 바뀌면서 제일 빨랐던 동그라미가 없어지고, 가장 큰 동그라미가 선두에 선다. 그리고 `i=== 2`일 경우, 여전히 두 개의 동그라미로 이루어져있으며, `i===1`일때와 반대로 작은 동그라미가 선두에 있다. (아직 제대로 파악하지 못했다.. 알게되면 수정하겠다)
 
-```js
+```jsx
 <div
   className="hooks-main"
   onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}
@@ -192,7 +192,7 @@ useTransition의 인자로는 items, keys(atomic이라면 `null`이 될 수 있�
      sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-```js
+```jsx
 import { useTransition, animated, config } from 'react-spring'
 
 const slides = [
@@ -249,7 +249,7 @@ const App = () => {
 useChain은 다른 spring들과 다르게 from => to가 아니라, spring 들의 순서를 정해주는 animation-hooks이다.
 useChian을 사용하기 위해서는 `useRef()`로 ref를 선언해 주고, 밑에 `useChain([firstRef, secondRef])`를 적어주면 이 순서대로 animation을 실행시켜준다.
 
-```js
+```jsx
 // spring과 springRef 묶어주기
 const springRef = useRef()
 const spring = useSpring({ ...values, ref: springRef })
@@ -273,7 +273,7 @@ return (
 
 useChain의 두 번째 인자로 timeSteps를 정의할 수 있다. timeSteps는 0-1 사이의 숫자로 이루어진 배열로, 처음 시작 시간과 끝나는 시간을 정의할 수 있다.
 
-```js
+```jsx
 useChain([springRef, transitionRef], [0, 0.5] /*1000*/)
 // springRef는 0.0 * 1000ms = 0ms로 바로 시작
 // transitionRef는 0.5 * 1000ms = 500ms 뒤에 시작
