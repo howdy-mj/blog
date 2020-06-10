@@ -37,12 +37,17 @@ lang: 'ko'
 |       **period** | 2020.05.11 - 2020.05.22 (약 2주)                                      |
 | **introduction** | 국내 암호화폐 거래소 지닥 클론                                        |
 |        **stack** | JavaScript, React, React Hooks, react-router, Styled-Component, Redux |
-|         **repo** | [wedac](https://github.com/wecode-bootcamp-korea/wedac-frontend)      |
+|         **repo** | [wedac](https://github.com/howdy-mj/wedac-frontend)                   |
+
+#### What We did
+
+- 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악
+- Git으로 버전 관리 및 rebase로 commit 통합
+- REST API 사용
 
 #### What I did
 
-- 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악 및 소통
-- CRA 초기 세팅
+- CRA 초기 세팅(ESLint, Prettier, react-router, Styled-component 설치)
 - 반응형 웹 구현 (Web, Tablet, Mobile)
 - Nav, Footer 작업 및 Link 구현
 - 로그인 유무에 따른 Nav 텍스트 및 링크 변경, 비로그인 상태로 특정 페이
@@ -54,30 +59,32 @@ lang: 'ko'
 - fetch한 '전일대비' 값이 양수, 음수, 0일 경우 조건식으로 '현재가' 및 '전
   일대비'의 텍스트 색상을 props로 넘겨주어 적용
 - Redux로 state 관리
-- Git rebase로 commit 통합
 
 ### Paulbassett
 
-|                  |                                                                      |
-| ---------------: | -------------------------------------------------------------------- |
-|       **period** | 2020.04.20 - 2020.05.01 (약 2주)                                     |
-| **introduction** | 카페 폴 바셋 클론                                                    |
-|        **stack** | JavaScript, React(Class), react-router, SCSS                         |
-|         **repo** | [Paulba3](https://github.com/wecode-bootcamp-korea/PaulBa3-frontend) |
+|                  |                                                         |
+| ---------------: | ------------------------------------------------------- |
+|       **period** | 2020.04.20 - 2020.05.01 (약 2주)                        |
+| **introduction** | 카페 폴 바셋 클론                                       |
+|        **stack** | JavaScript, React(Class), react-router, SCSS            |
+|         **repo** | [Paulba3](https://github.com/howdy-mj/PaulBa3-frontend) |
+
+#### What We did
+
+- 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악
+- Git으로 버전 관리 및 충돌 해결
+- REST API 사용
 
 #### What I Did
 
-- 매일 Scrum 회의 진행 및 트렐로로 팀원 간 업무 파악 및 소통
-- CRA 초기세팅
+- CRA 초기세팅(ESLint, Prettier, react-router, SCSS 설치)
 - Nav, Footer 작업 및 Link 구현
-- json 형태의 Mock data를 만들어 메인배너 내용 불러오기 및 자동 넘김
-  그리고 버튼 클릭으로 넘김 구현
+- json 형태의 Mock data를 만들어 메인배너 내용 불러오기 및 자동 넘김, 버튼 클릭으로 배너 넘김 구현
 - 메인에 ref()를 활용한 화면전환 스크롤 구현
 - 동적라우팅으로 카테고리 및 제품 상세 페이지 이동 구현
 - Backend API로 메뉴 리스트 구현
 - Google Map API를 활용해 현재 위치 기준의 폴바셋 지점 표시
 - 해당 시/도, 구/군에 있는 지점의 단계별 클릭 리스트 구현
-- Git으로 버전관리 및 충돌 해결
 - AWS EC2 배포
 
 <br />
@@ -88,7 +95,9 @@ lang: 'ko'
 
 자동화 음료 리테일 서비스 | 20.05 - 20.06 | Intern
 
-- react-spring, Storybook으로 디자인 시스템 구축
+- Jira와 Git-flow를 통해 업무 진행
+- Storybook, react-spring, Node.js에 관해 세미나 진행
+- Storybook으로 디자인 시스템 구축
 
 ## BRPartners
 
