@@ -47,11 +47,12 @@ export const Bio = () => (
                       LinkedIn
                     </a>
                   )}
-                  {social.resume && (
+                  {/* {social.resume && (
                     <a href={`https://howdy-mj.netlify.app/${social.resume}`}>
                       About me
                     </a>
-                  )}
+                  )} */}
+                  {social.resume && <Link to={'/about'}>About me</Link>}
                 </p>
               </div>
             </div>
