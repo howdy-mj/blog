@@ -39,7 +39,9 @@ Font는 벡터(vector)이기 때문에 CSS를 통해 해상도를 변경할 수 
 
 하지만 Icon Font에도 몇 가지 문제점이 있다.
 
-가장 큰 문제는 깨져서 보인다는 것이다. Font 자체는 벡터 그래픽 기반이지만, 브라우저에서는 텍스트로 취급되기 때문에 흐릿하게 보일 수도 있다. 그래서 렌더링할 때 [안티 에일리어싱](https://kbench.com/?q=node/1699)(Anti-Alising, AA, 모서리 선을 부드럽게 만드는 것) 문제를 해결하기 위해 정규화를 진행해야 한다.
+가장 큰 문제는 깨져서 보인다는 것이다.
+
+Font 자체는 벡터 그래픽 기반이지만, 브라우저에서는 텍스트로 취급되기 때문에 흐릿하게 보일 수도 있다. 그래서 렌더링할 때 [안티 에일리어싱](https://kbench.com/?q=node/1699)(Anti-Alising, AA, 모서리 선을 부드럽게 만드는 것) 문제를 해결하기 위해 정규화를 진행해야 한다.
 
 그리고 이미 웹에 올라온 아이콘을 사용할 때는 문제가 없지만, 직접 제작하려면 폰트 제작 서비스에 의존해야 하며, 추가/삭제 자동화가 어렵고 번거롭다.
 
@@ -49,7 +51,7 @@ Font는 벡터(vector)이기 때문에 CSS를 통해 해상도를 변경할 수 
 
 SVG(Scalable Vector Graphics)은 2차원 벡터 그래픽을 표현하기 위한 [XML](https://ko.wikipedia.org/wiki/XML) 기반의 파일 형식으로, 1999년 W3C 주도하에 개발된 오픈 그래픽 표준이다. IE7 이전 버전을 제외한 대부분의 브라우저에서 지원된다. 벡터 기반이기 때문에 어떤 사이즈에서든 깨지지 않는다.
 
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bitmap_VS_SVG.svg/450px-Bitmap_VS_SVG.svg.png" alt="SVG"/></p>
+<p style="text-align: center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bitmap_VS_SVG.svg/450px-Bitmap_VS_SVG.svg.png" alt="SVG"/></p>
 <p style="font-size: 10px; text-align: center;">https://en.wikipedia.org/wiki/Scalable_Vector_Graphics</p>
 
 ### import SVG
