@@ -34,6 +34,8 @@ AMD(Asynchronous Module Definition)는 비동기로 로딩되는 환경에서 �
 
 UMD(Universal Module Definition)는 AMD 기반으로 CommonJS 방식까지 지원하는 통합 형태이다.
 
+<br />
+
 `add.js`
 
 ```js
@@ -85,23 +87,23 @@ $ yarn add webpack-cli --dev
 
 ```sh
 Config options:
-  --mode                 Enable production optimizations or development hints.
-                         [선택: "development", "production", "none"]
+  --mode      Enable production optimizations or development hints.
+              [선택: "development", "production", "none"]
 
 Basic options:
-  --entry      The entry point(s) of the compilation.                   [문자열]
+  --entry      The entry point(s) of the compilation.        [문자열]
 
 Output options:
-  --output, -o                  The output path and file for compilation assets
+  --output, -o        The output path and file for compilation assets
 ```
 
-| 옵션     | 값                                                           |
-| -------- | ------------------------------------------------------------ |
-| --mode   | "development", "production", "none"                          |
-|          | - devleopment: 개발환경에서 사용, 개발 옵션을 추가할 때      |
+|   옵션   |                              값                              |
+| :------: | :----------------------------------------------------------: |
+|  --mode  |             "development", "production", "none"              |
+|          |   - devleopment: 개발환경에서 사용, 개발 옵션을 추가할 때    |
 |          | - production: 운영환경, 운영 배포 시 필요한 최적화 설정할 때 |
-| --entry  | 모듈이 시작하는 부분                                         |
-| --output | 모듈을 하나로 합쳐서 결과를 저장하는 경로 설정               |
+| --entry  |                     모듈이 시작하는 부분                     |
+| --output |        모듈을 하나로 합쳐서 결과를 저장하는 경로 설정        |
 
 최상의 폴더에 `webpack.config.js`를 만들고 아래와 같이 쓰면 기본적인 설정을 완료한 것이다.
 
@@ -185,6 +187,8 @@ body {
 
 따라서 웹팩이 다른 모듈들을 해석할 수 있도록 상황에 맞는 로더를 설치해줘야 한다.
 
+<br />
+
 ### css-loader
 
 [css-loader](https://webpack.js.org/loaders/css-loader/)는 웹팩이 CSS를 읽을 수 있도록 도와주는 로더이다.
@@ -236,6 +240,8 @@ Entrypoint main = main.js
 
 이는 자바스크립트에는 CSS가 적용되었지만, DOM에 아직 추가가 안돼서 브라우저가 아직 모르는 상태이기 때문이다. 이걸 도와주는 것이 [style-loader](https://webpack.js.org/loaders/style-loader/)이다.
 
+<br />
+
 ### styled-loader
 
 styled-loader는 자바스크립트 안에 있는 것을 HTML에 알려준다. 따라서 CSS를 모듈로 만들어 빌드하려면 css-loader와 styled-loader를 같이 사용해야 한다.
@@ -263,6 +269,8 @@ module: {
 
 HTML의 개발자 도구를 열어 Elements를 보면 `<head>`에 `<style>`에 인라인으로 스타일이 들어가 있는 것을 볼 수 있다.
 
+<br />
+
 ### file-loader
 
 로더는 CSS 뿐만 아니라, 이미지 파일도 처리할 수 있다.
@@ -286,7 +294,7 @@ $ npm install file-loader --save-dev
 
 `webpack.config.js`
 
-```js{7, 8, 9, 10}
+```js{8, 9}
 module: {
   rules: [
     {
@@ -325,6 +333,8 @@ module: {
 <p style="text-align: center;"><img src="./images/webpack/04.PNG"></p>
 
 설정을 마치고 웹팩을 빌드해주면 `bg.png` 이름 그대로 `dist` 폴더에 들어간 걸 볼 수 있으며, `index.html`도 배경이 이미지로 바뀐 걸 확인할 수 있다.
+
+<br />
 
 ### url-loader
 
@@ -367,6 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
 ```
 
 그리고 웹팩을 빌드하면, 아까 배경으로 넣었던 것은 그대로 `dist/bg.png`로 있지만, `howdy.png`는 5KB보다 작기 때문에 `main.js`에 인코딩되어 들어가 있다.
+
+<br />
 
 ### 정리
 
