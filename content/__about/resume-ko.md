@@ -38,6 +38,7 @@ lang: 'ko'
 | **introduction** | 국내 암호화폐 거래소 지닥 클론                                        |
 |        **stack** | JavaScript, React, React Hooks, react-router, Styled-Component, Redux |
 |         **repo** | [wedac](https://github.com/howdy-mj/wedac-frontend)                   |
+|         **demo** | [youtube](https://youtu.be/LdF1LG_R4Uo)                               |
 
 #### What We did
 
@@ -68,6 +69,7 @@ lang: 'ko'
 | **introduction** | 카페 폴 바셋 클론                                       |
 |        **stack** | JavaScript, React(Class), react-router, SCSS            |
 |         **repo** | [Paulba3](https://github.com/howdy-mj/PaulBa3-frontend) |
+|         **demo** | [youtube](https://youtu.be/a1vKyWHA8pE)                 |
 
 #### What We did
 
@@ -97,6 +99,7 @@ lang: 'ko'
 
 - Jira와 Git-flow를 통해 업무 진행
 - Storybook, react-spring, Node.js에 관해 세미나 진행
+- webpack으로 번들 최적화 작업
 - Storybook으로 디자인 시스템 구축
 
 ## BRPartners
