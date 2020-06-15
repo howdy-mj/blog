@@ -1,5 +1,5 @@
 ---
-title: 'Webpack 웹팩 알아보기 (feat. entry/output, loader)'
+title: 'Webpack 웹팩 알아보기(1): entry/output, loader'
 date: 2020-6-14 22:38:13
 category: 'general'
 draft: false
@@ -146,7 +146,7 @@ Entrypoint main = main.js
   },
 ```
 
-이제 `npm run build`를 치면 웹팩이 실행된다.
+이제 `npm run build`를 치면 웹팩이 빌드된다.
 
 ## 로더(Loader)
 
@@ -218,9 +218,6 @@ module.exports = {
 
 ```sh
 $ npm run build
-
-> webpack-inflearn@1.0.0 build D:\VSCode\webpack-inflearn
-> webpack
 
 Hash: 341fc5e0ff2d91722adf
 Version: webpack 4.43.0
@@ -393,6 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div style="font-size: 12px;">
 
+- https://webpack.js.org/
 - https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html
 - https://joshua1988.github.io/webpack-guide
 
