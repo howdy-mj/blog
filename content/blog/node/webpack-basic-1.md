@@ -1,7 +1,7 @@
 ---
 title: 'Webpack 웹팩 알아보기(1): entry/output, loader'
 date: 2020-6-14 22:38:13
-category: 'general'
+category: 'Node.js'
 draft: false
 ---
 
