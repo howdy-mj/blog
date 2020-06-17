@@ -98,9 +98,9 @@ lang: 'ko'
 자동화 음료 리테일 서비스 | 20.05 - 20.06 | Intern
 
 - Jira와 Git-flow를 통해 업무 진행
-- Storybook, react-spring, Node.js에 관해 세미나 진행
-- webpack으로 번들 최적화 작업
-- Storybook으로 디자인 시스템 구축
+- Storybook, react-spring, npm, Node.js 세미나 진행
+- webpack으로 icon 크기 최적화 번들링 작업
+- Storybook으로 디자인시스템(icon,font) 구축
 
 ## BRPartners
 
