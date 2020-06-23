@@ -2,6 +2,10 @@ useCallback
 
 비동기의 즉시 실행 함수 anonymous async function
 
+Promist, async await
+
+react-router 설정
+
 
 문제
 
