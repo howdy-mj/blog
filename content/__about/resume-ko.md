@@ -20,11 +20,12 @@ lang: 'ko'
 3. 불필요한 커뮤니케이션을 줄여 효율적으로 움직이는
 4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
-|             |                               |
-| ----------: | ----------------------------- |
-|  **GitHub** | <https://github.com/howdy-mj> |
-| **Tistory** | <https://kim-mj.tistory.com/> |
-|   **Email** | <hi.minjungkim@gmail.com>     |
+|             |                                 |
+| ----------: | ------------------------------- |
+|  **GitHub** | <https://github.com/howdy-mj>   |
+| **Tistory** | <https://kim-mj.tistory.com/>   |
+|    **Blog** | <https://howdy-mj.netlify.app/> |
+|   **Email** | <hi.minjungkim@gmail.com>       |
 
 <br />
 
@@ -100,7 +101,7 @@ lang: 'ko'
 - Jira와 Git-flow를 통해 업무 진행
 - Storybook, react-spring, npm, Node.js 세미나 진행
 - webpack으로 icon 크기 최적화 번들링 작업
-- Storybook으로 디자인시스템(icon,font) 구축
+- Storybook으로 디자인시스템(icon,font) 구축 및 배포
 
 ## BRPartners
 
