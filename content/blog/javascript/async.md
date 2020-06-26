@@ -33,6 +33,8 @@ console.log('End')
 
 자바스크립트에는 콜백 함수, Promise, async await 이렇게 크게 3가지 비동기 방식이 존재한다.
 
+<br />
+
 ### 콜백(Callback) 함수
 
 자바스크립트 비동기하면 '콜백 지옥'이라는 단어를 몇 번 봤을 것이다.
@@ -81,13 +83,15 @@ step1(function(err, value1) {
 })
 ```
 
+<br />
+
 ### Promise
 
 위의 콜백 문제를 해결하기 위해 ES2015에 Promise가 도입되었다.
 
 Promise는 latency, delay(지연) 때문에 현재 당장 얻을 수 없지만 가까운 미래에 얻을 수 있는 데이터에 접근하기 위한 방법을 제공한다. Promise로 비동기 작업이 완료된 후 결과 값을 받을 수 있다.
 
-#### Promise 생성 및 상태
+### Promise 생성 및 상태
 
 Promise는 `new Promise()`로 생성할 수 있으며, 종료될 때 세 가지 상태를 갖는다.
 
@@ -110,7 +114,9 @@ const promise = new Promise((res, rej) => {
 })
 ```
 
-Promise의 또 다른 특징은 메서드 체이닝(method chaining)인데, `.then()`을 이용해서 여러개의 Promise를 이을 수 있다는 것이다.
+### Promise Chaining
+
+Promise의 또 다른 특징은 체이닝(chaining)인데, `.then()`을 이용해서 여러개의 Promise를 이을 수 있다는 것이다.
 
 ```js
 new Promise(function(resolve, reject) {
@@ -145,6 +151,8 @@ const promise = new Promise((res, rej) => {
 promise.then(res => console.log(res)).catch(err => console.error(err))
 // output: 에러 발생
 ```
+
+<br />
 
 #### 어떤게 먼저 실행될까?
 
@@ -187,6 +195,8 @@ second
 
 _추후 내용 더 보완할 예정_
 
+<br />
+
 ### async await
 
 async await를 ES2017에 등장한 것인데, Promise의 메서드 체이닝을 더 깔끔한 코드를 작성할 수 있게끔 만들어진 것이다.
@@ -212,7 +222,9 @@ const asyncFunc = async () => {
 asyncFunc()
 ```
 
-이렇게 실행하면 먼저 'calling'이 찍히고, 2초 뒤에 'resolved'가 찍히는 것을 볼 수 있다.
+이렇게 실행하면 먼저 `calling`이 찍히고, 2초 뒤에 `resolved`가 찍히는 것을 볼 수 있다.
+
+<br />
 
 async await도 `try`와 `catch`로 성공 및 에러 여부를 감지할 수 있다.
 
@@ -248,7 +260,7 @@ const asyncFunc = async () => {
 asyncFunc()
 ```
 
-두 함수의 결과 모두 'first', 'end of function'이 바로 찍히고, 2초 후에 '2초 후'가 console에 찍힌다.
+두 함수의 결과 모두 `first`, `end of function`이 바로 찍히고, 2초 후에 `2초 후`가 console에 찍힌다.
 
 같은 비동기 함수임에도 async await을 사용하면 코드를 더 깔끔하게 작성할 수 있다.
 
