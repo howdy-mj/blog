@@ -1,8 +1,8 @@
 ---
-title: '자바스크립트의 비동기 함수 알아보기'
-date: 2020-5-21 23:21:13
+title: '자바스크립트 비동기 함수 알아보기'
+date: 2020-6-26 23:53:13
 category: 'JavaScript'
-draft: true
+draft: false
 ---
 
 ## 비동기(Asynchronous) 함수란?
@@ -14,6 +14,20 @@ draft: true
 카페에 비유하자면, 만약 알바생이 한 명이라면 주문과 음료 제조를 동시에 하지 못한다. 하지만 여러 명이 있다면, 한명이 주문을 받으면 그 순서에 맞게 다른 사람이 음료 제조를 하여 주문과 음료 제조를 동시에 할 수 있다.
 
 자바스크립트는 즉시 처리하지 못하는 이벤트들을 이벤트 루프에 모아 놓고, 먼저 처리해야하는 이벤트를 실행한다.
+
+자바스크립트에서 가장 대표적인 비동기 처리 사례에는 `setTimeout()`이 있으며 일정 시간 뒤에 함수를 실행시키는 것이다.
+
+```js
+console.log('Start')
+
+setTimeout(function() {
+  console.log('5초 후 실행')
+}, 5000)
+
+console.log('End')
+```
+
+위와 같은 코드가 있다면 console에는 'Start', 'End'가 바로 찍히고 그 다음에 '5초 후 실행'이 찍힌다.
 
 ## 비동기 방식
 
@@ -69,11 +83,174 @@ step1(function(err, value1) {
 
 ### Promise
 
-위의 콜백 문제를 해결하기 위해 ECMAScript 2015에 Promise가 도입되었다.
+위의 콜백 문제를 해결하기 위해 ES2015에 Promise가 도입되었다.
 
-Promise는 latency, delay(지연) 때문에 현재 당장 얻을 수 없지만 가까운 미래에 얻을 수 있는 데이터에 접근하기 위한 방법을 제공한다.
+Promise는 latency, delay(지연) 때문에 현재 당장 얻을 수 없지만 가까운 미래에 얻을 수 있는 데이터에 접근하기 위한 방법을 제공한다. Promise로 비동기 작업이 완료된 후 결과 값을 받을 수 있다.
+
+#### Promise 생성 및 상태
+
+Promise는 `new Promise()`로 생성할 수 있으며, 종료될 때 세 가지 상태를 갖는다.
+
+- Pending(대기): 이행하거나 거부되지 않은 초기 상태
+- Fulfilled(이행): 완료되어 프로미스가 결과 값을 반환해준 상태
+- Rejected(거부): 실패하거나 오류가 발생항 상태
+
+<div style="text-align: center;">
+<img src="https://mdn.mozillademos.org/files/8633/promises.png" alt="Promise">
+<p style="font-size: 10px;">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Promise</p>
+</div>
+
+Promise는 `resolve`와 `reject` 2개의 인자를 받으며, 비동기 처리가 성공하면 `resolve`가 호출되고, 실패하면 `reject`가 호출된다.
+
+```js
+const promise = new Promise((res, rej) => {
+  setTimeout(() => {
+    res('성공')
+  }, 1000)
+})
+```
+
+Promise의 또 다른 특징은 메서드 체이닝(method chaining)인데, `.then()`을 이용해서 여러개의 Promise를 이을 수 있다는 것이다.
+
+```js
+new Promise(function(resolve, reject) {
+  setTimeout(function() {
+    resolve(0)
+  }, 2000)
+})
+  .then(function(result) {
+    console.log(result) // output: 0
+    return result + 10
+  })
+  .then(function(result) {
+    console.log(result) // output: 10
+    return result + 20
+  })
+  .then(function(result) {
+    console.log(result) // output: 30
+  })
+```
+
+`.then()`으로 앞의 return 값을 받아서 최종 console 값이 30이 된 걸 볼 수 있다.
+
+이 외, Promise에서 에러 처리를 할 수도 있는데 보통 `catch()`를 사용한다.
+
+```js
+const promise = new Promise((res, rej) => {
+  setTimeout(() => {
+    rej('에러 발생')
+  }, 1000)
+})
+
+promise.then(res => console.log(res)).catch(err => console.error(err))
+// output: 에러 발생
+```
+
+#### 어떤게 먼저 실행될까?
+
+```js
+console.log('hi')
+
+setTimeout(function() {
+  console.log('0.1')
+}, 100)
+
+Promise.resolve()
+  .then(function() {
+    console.log('first')
+  })
+  .then(function() {
+    console.log('second')
+  })
+
+setTimeout(function() {
+  console.log('0')
+}, 0)
+
+console.log('end')
+```
+
+정답은
+
+```
+hi
+end
+first
+second
+0
+0.1
+```
+
+순 이다.
+
+`setTimeout()`과 `Promise`는 모두 비동기 함수이지만, Promise는 비동기 중에서도 먼저 실행되는 stack에 들어있기 때문에 먼저 실행이 된다.
+
+_추후 내용 더 보완할 예정_
 
 ### async await
+
+async await를 ES2017에 등장한 것인데, Promise의 메서드 체이닝을 더 깔끔한 코드를 작성할 수 있게끔 만들어진 것이다.
+
+async await의 기본 구조를 아래와 같다.
+
+```js
+const getSomthing = async () => {
+  await doSomething()
+}
+```
+
+함수 앞에 `async`를 붙이고, 비동기 처리할 코드 앞에 `await`를 붙인다.
+
+[MDN 예문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/async_function)을 가져와 보겠다.
+
+```js
+const asyncFunc = async () => {
+  console.log('calling')
+  await setTimeout(() => console.log('resolved'), 2000)
+}
+
+asyncFunc()
+```
+
+이렇게 실행하면 먼저 'calling'이 찍히고, 2초 뒤에 'resolved'가 찍히는 것을 볼 수 있다.
+
+async await도 `try`와 `catch`로 성공 및 에러 여부를 감지할 수 있다.
+
+Promise와 async await의 코드 차이를 한번에 보자.
+
+`Promise`
+
+```js
+const promise = new Promise((res, rej) => {
+  console.log('first')
+  setTimeout(() => {
+    res('2초 후')
+  }, 2000)
+  console.log('end of function')
+})
+
+promise.then(res => console.log(res)).catch(err => console.error(err))
+```
+
+`async await`
+
+```js
+const asyncFunc = async () => {
+  try {
+    console.log('first')
+    await setTimeout(() => console.log('2초 후'), 2000)
+  } catch (err) {
+    console.log(err)
+  }
+  console.log('end of function')
+}
+
+asyncFunc()
+```
+
+두 함수의 결과 모두 'first', 'end of function'이 바로 찍히고, 2초 후에 '2초 후'가 console에 찍힌다.
+
+같은 비동기 함수임에도 async await을 사용하면 코드를 더 깔끔하게 작성할 수 있다.
 
 <br />
 
@@ -86,5 +263,6 @@ Promise는 latency, delay(지연) 때문에 현재 당장 얻을 수 없지만 �
 - https://velog.io/@yejinh/%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0
 - https://librewiki.net/wiki/%EC%BD%9C%EB%B0%B1_%EC%A7%80%EC%98%A5
 - https://www.daleseo.com/js-async-callback/
+- https://ithub.tistory.com/223
 
 </div>
