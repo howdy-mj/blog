@@ -182,7 +182,7 @@ export default MyDocument
 
 React에서 프로젝트를 진행하면 렌더링 후에 `componentDidMount`나 `useEffect()`로 데이터를 불러와야 한다. 하지만 Next에서는 `getInitialProps`를 통해 데이터를 미리 불러와 한 번에 렌더링이 가능하다. 미리 데이터를 불러옴으로 속도가 빨라지며, 코드 상의 처리가 깔끔해진다.
 
-_Next 9.3 이후로는 `getStaticProps`나 `getServerSideProps` 사용을 권장한다. 추후 [추가](https://nextjs.org/docs/basic-features/data-fetching) 예정_
+_Next 9.3 이후로는 `getStaticProps`나 `getServerSideProps` 사용을 권장한다. 아래에서 더 자세히 설명._
 
 만약 어디에서나 공통된 데이터가 필요하다면 `_app.js`에 `getInitialProps`를 붙이면 되고, 각기 다른 데이터가 필요하다면 페이지마다 `getInitialProps`를 붙이면 된다.
 
@@ -207,7 +207,7 @@ export default Page
 - `getInitialProps`으로 리턴되는 객체는 Date, Map, Set으로 사용되는 것이 아닌 순수 객체여야 한다.
 - `getInitialProps`은 자식 컴포넌트에서 사용할 수 없으며, 오로지 default export 컴포넌트에서만 사용할 수 있다.
 
-<h4>Context Object</h4>
+**Context Object**
 
 `getInitialProps`는 `context`라는 단일 인자를 받는데, 설정하지 않는다면 기본값으로 설정된다.
 
@@ -218,7 +218,160 @@ export default Page
 - `res` - HTTP response object (server only)
 - `err` - Error object if any error is encountered during the rendering
 
-<br>
+## Data fetching
+
+Next 9.3에서는 `getInitialProps`보다 `getStaticProps`와 `getServerSideProps` 사용을 권장한다.
+
+간단히 먼저 소개하자면,
+
+- `getStaticProps` (Static Generation): 빌드(build)할 때 데이터를 불러옴
+- `getStaticPaths` (Static Generation): 데이터에 기반하여 pre-render때 특정한 동적 라우팅 구현
+- `getServerSideProps` (Server-side Rendering): 요청(request)아 있을 때 데이터를 불러옴
+
+<h3>getStaticProps</h3>
+
+어떤 페이지에서 `getStaticProps` 함수를 `async`로 export하면, `getStaticProps`에서 리턴되는 props를 가지고 페이지를 pre-render 한다.
+
+```js
+export async function getStaticProps(context) {
+  return {
+    props: {}, // 컴포넌트로 넘어갈 props
+  }
+}
+```
+
+`context`에 몇 가지 매개변수가 존재한다.
+
+- `params`: 페이지의 동적 라우팅에 사용되는 라우트 매개변수를 지닌다. 페이지 이름이 `[id].js`라면 `params`는 `{id: ...}`로 보인다.
+- `preview`: true일 때 preview 모드가 된다.
+- `previewData`: `setPreviewData`로 설정한 preview data를 지닌다.
+
+기본적인 틀은 아래와 같다.
+
+```js
+// getStaticProps()에 의해 build 시간에 게시물이 채워진다
+function Blog({ posts }) {
+  return (
+    <ul>
+      {posts.map(post => (
+        <li>{post.title}</li>
+      ))}
+    </ul>
+  )
+}
+
+// 아래 함수는 서버 단에서 build 시간에 호출된다.
+// 클라이언트 단에서 호출되지 않으므로, 직접 데이터베이스 쿼리에도 접근 가능하다.
+export async function getStaticProps() {
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+
+  // By returning { props: posts }을 리턴하여 Blog 컴포넌트는 build 시간에 'posts'를 props로 받는다.
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+export default Blog
+```
+
+**`getStaticProps`를 사용해야 될 때:**
+
+- 페이지를 렌더링 하는데 사용자의 요청보다 먼저 build 시간에 필요한 데이터를 가져올 때
+- headless CMS에서 데이터가 올 때
+- 공개적으로 캐시될 수 있는 데이터(특정 유저가 아닌)
+- 페이지가 사전 렌더링(ex. SEO)되어야 하고 엄청 빨라야 할 때(getStatidProps는 HTML과 JSON 파일을 생성하며, 이 두 파일 모두 CDN에서 성능을 위해 캐시할 수 있음)
+
+<h3>getStaticPaths</h3>
+
+동적 라우팅이 필요하다면 `getStaticPaths`로 경로 리스트를 정의해야하고, HTML에 build 시간에 렌더되어야 한다.
+
+Next는 pre-render에서 정적으로 `getStaticPaths`에서 호출하는 경로들을 가져올 것이다.
+
+```js
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { ... } }
+    ],
+    fallback: true or false
+  };
+}
+```
+
+**[paths](https://nextjs.org/docs/basic-features/data-fetching#the-paths-key-required)**
+
+- `paths`는 동적 라우팅 경로를 pre-render한다. (ex. `pages/posts/[id].js`)
+
+- `params`는 페이지 이름에 사용되는 매개변수와 일치해야 한다.
+  만약 페이지 이름이 `pages/posts/[postId]/[commentId]`라면, `params`는 `postId`와 `commentId`를 포함해야 한다.
+
+- 만약 페이지 이름이 `pages/[...slug]`와 같이 모든 경로를 사용한다면, `params`는 slug가 담긴 배열이어야 한다.
+
+**[fallback](https://nextjs.org/docs/basic-features/data-fetching#the-fallback-key-required)**
+
+- `false`라면 `getStaticPaths`로 리턴되지 않은 것은 모두 404 페이지가 뜰 것이다.
+- `true`라면 `getStaticPaths`로 리턴되는 것은 build 시간에 HTML이 렌더될 것이다.
+
+```js
+return {
+  paths: [
+    { params: { id: '1' } },
+    { params: { id: '2' } }
+  ],
+  fallback: ...
+}
+```
+
+<h3>getServerSideProps</h3>
+
+어떤 페이지에서 `getServerSideProps` 함수를 `async`로 export하면, Next는 각 요청(request)마다 리턴되는 데이터를 `getServerSideProps`로 pre-render한다.
+
+```js
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // 컴포넌트로 넘어갈 props
+  }
+}
+```
+
+**Context Object**
+
+`getServerSideProps`의 `context`는 `getStaticProps`의 것과 비슷한다.
+
+- `params` - 만약 해당 페이지가 동적 라우팅이 사용된다면 `params`는 라우팅 매개변수를 지닌다. 페이지 이름이 `[id].js`라면 `params`는 `{id: ...}`
+- `req` - HTTP request object
+- `res` - HTTP response object
+- `query` - 쿼리스트링
+- `preview`: true일 때 preview 모드가 된다.
+- `previewData`: `setPreviewData`로 설정한 preview data를 지닌다.
+
+```js
+function Page({ data }) {
+  // 렌더 데이터...
+}
+
+// 매 요청마다 호출된다
+export async function getServerSideProps() {
+  // 외부 API에서 데이터 호출
+  const res = await fetch(`https://.../data`)
+  const data = await res.json()
+
+  // 페이지에 props로 데이터 보내기
+  return { props: { data } }
+}
+
+export default Page
+```
+
+**`getServerSideProps`를 사용해야 될 때:**
+
+- 요청(request)할 때 데이터를 가져와야 하는 페이지를 미리 렌더해야 할때 사용한다. 서버가 모든 요청에 대한 결과를 계산하고, 추가 구성 없이 CDN에 의해 결과를 캐시할 수 없기 때문에 첫 번째 바이트까지의 시간(TTFB)은 `getStaticProps`보다 느리다.
+- 만약 미리 렌더를 하지 않아도 될 경우, [클라이언트 단](https://nextjs.org/docs/basic-features/data-fetching#fetching-data-on-the-client-side)에서 데이터를 불러오는 것을 고려해야 한다.
+
+<br />
 
 **참고**
 
