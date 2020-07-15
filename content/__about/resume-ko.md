@@ -31,6 +31,22 @@ lang: 'ko'
 
 # Project
 
+### BFRun
+
+|                  |                                                                             |
+| ---------------: | --------------------------------------------------------------------------- |
+|       **period** | 2020.06.23 - 현재                                                           |
+| **introduction** | 웹 개발 입문자가 보면 좋을 유명 크리에이터분들의 동영상(유튜브) 모음 사이트 |
+|        **stack** | JavaScript, Next.js, React, React Hooks, react-router, Styled-Component     |
+|         **repo** | 공개 예정                                                                   |
+|          **URL** | 공개 예정                                                                   |
+
+#### What We did
+
+- 기획, 디자인, 개발
+- Git으로 버전 관리
+- REST API 사용
+
 ### GDAC
 
 |                  |                                                                       |
