@@ -1,5 +1,5 @@
 ---
-title: 'Next.js theme.js, Globalstyle 적용하기'
+title: 'Next.js에서 Globalstyle 적용하기'
 date: 2020-7-15 20:38:43
 category: 'Next.js'
 draft: false
