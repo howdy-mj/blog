@@ -9,9 +9,11 @@ draft: false
 
 Flux(플럭스)는 데이터 흐름을 한 방향으로 유지하기 위해 페이스북에서 설계한 디자인 패턴<span style="font-size: 14px">(\*객체 지향 프로그래밍 설계를 할 때 자주 발생하는 문제들을 해결하기 위해 사용하는 패턴)</span>이다.
 
-그렇다면 페이스북은 왜 Flux를 만들었을까?
+_그렇다면 페이스북은 왜 Flux를 만들었을까?_
 
 Flux 이전에는 다양한 MVC 디자인 패턴이 웹 개발에서 주를 이루고 있었다.
+
+<br />
 
 ### MVC
 
@@ -25,13 +27,13 @@ MVC란 Model View Controller의 약자로 어플리케이션을 세 가지 역�
 
 따라서 프로젝트가 커질 경우, Model과 View의 전후 관계를 따지기가 매우 힘들다.
 
-페이스북의 경우, 알림이 떠서 알림창에 들어가보면 아무것도 없는 현상이 발생했다.
+페이스북의 경우, 알림이 떠서 알림창에 들어가보면 아무것도 없는 현상이 발생했다. 얽혀있는 데이터들이 너무 많았기 때문에 정확히 어떤 이유 때문에 알림이 울렸는지 찾을 수 없어서 단 방향으로 유지할 수 있는 Flux 디자인 패턴이 나오게 되었다.
 
-MVC에서 얽혀있는 것들이 너무 많았기 때문에 정확히 어떤 이유 때문에 알림이 울렸는지 찾을 수 없어서 단 방향으로 유지할 수 있는 Flux 디자인 패턴이 나오게 되었다.
+<br />
 
 ### Flux 구조
 
-<p style="text-align: center;font-size: 14px"><img src="https://facebook.github.io/flux/img/overview/flux-simple-f8-diagram-with-client-action-1300w.png" alt="MVC pattern"/>https://facebook.github.io/flux/docs/in-depth-overview</p>
+<p style="text-align: center;font-size: 14px; color: gray"><img src="https://facebook.github.io/flux/img/overview/flux-simple-f8-diagram-with-client-action-1300w.png" alt="MVC pattern"/>https://facebook.github.io/flux/docs/in-depth-overview</p>
 
 Flux는 단방향 데이터 흐름을 갖고 있다.
 
