@@ -7,8 +7,6 @@ draft: false
 
 ESLint, Prettier는 코드를 검사해서 깔끔하게 만들어주고 잠재적 에러를 제거해준다.
 
-<br />
-
 ## ESLint
 
 [ESLint](https://eslint.org/)는 ECMAScript/JavaSciprt 코드에서 자동으로 에러나 오류를 제거하고 더 단단한 코드로 만들어준다.
@@ -64,8 +62,6 @@ $ npx eslint app.js
 
 ESLint에는 자주 사용하는 규칙 모음이 있는데, 하나는 [airbnb 스타일](https://github.com/airbnb/javascript)이고, 나머지 하나는 [자바스크립트 standard 스타일](https://standardjs.com/)이다.
 
-<br />
-
 ## Prettier
 
 [Prettier](https://prettier.io/)는 code formatter로 코드를 더 이쁘게 만들어준다.
@@ -110,8 +106,6 @@ $ npm install --save-dev eslint-config-prettier
 }
 ```
 
-<br />
-
 ## ESLint, Prettier 간단 설정
 
 코딩할 때마다 확인해야 하는데, 매번 코드 치고 ESLint와 Prettier를 실행해야하는 건 매우 번거롭다.
@@ -132,6 +126,8 @@ $ npm install --save-dev eslint-config-prettier
 ```
 
 이렇게 설정해주면 저장할 때마다 자동으로 ESLint가 실행된다.
+
+<br />
 
 **참고**
 
