@@ -5,7 +5,7 @@ category: 'Git'
 draft: false
 ---
 
-<div style="text-align: center; font-size: 14px; color: gray"><img src="https://lh3.googleusercontent.com/proxy/gmTR26717mU2yroTNA87JngUDMGhWF0m5SqA892CJt8ckFKMGQtu7kXPpR-ym6wuzEfGx7uyUf5OczQ" style="width: 250px;"><p>출처: 구글</p></div>
+<div style="text-align: center; font-size: 14px; color: gray"><img src="./images/01.jpg" style="width: 300px;"><p>https://1boon.kakao.com/ppss/5944f90a6a8e510001e7201b</p></div>
 
 과제 혹은 업무를 할 때 다들 겪어봤을 법한 일이다.
 
