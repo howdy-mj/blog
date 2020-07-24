@@ -5,7 +5,7 @@ category: 'Git'
 draft: false
 ---
 
-<p style="text-align: center; font-size: 14px; color: gray"><img src="https://lh3.googleusercontent.com/proxy/gmTR26717mU2yroTNA87JngUDMGhWF0m5SqA892CJt8ckFKMGQtu7kXPpR-ym6wuzEfGx7uyUf5OczQ" style="display: block; width: 250px;">출처: 구글</p>
+<div style="text-align: center; font-size: 14px; color: gray"><img src="https://lh3.googleusercontent.com/proxy/gmTR26717mU2yroTNA87JngUDMGhWF0m5SqA892CJt8ckFKMGQtu7kXPpR-ym6wuzEfGx7uyUf5OczQ" style="width: 250px;"><p>출처: 구글</p></div>
 
 과제 혹은 업무를 할 때 다들 겪어봤을 법한 일이다.
 
@@ -27,17 +27,17 @@ Git은 VCS(Version Control System: 버전 관리 시스템)로, 여기서 버전
 
 우리가 '진짜 진짜 최종'이란 파일명을 만드는 것을 방지해준다. 우리 컴퓨터의 어느 공간에 파일의 수정 사항과 날짜 등의 메타 데이터를 저장한다. 이러한 저장 공간을 version database라 한다.
 
-<p style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/local.png" style="display: block;">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p>
+<div style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/local.png" style="width: 350px;"><p>https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p></div>
 
 그 후, 다른 개발자와 협업을 위해 **Centralized Version Control Systems(CVCSs, 중앙 버전 관리 시스템)**이 개발되었다.
 
-<p style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/centralized.png" style="display: block;">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p>
+<div style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/centralized.png"  style="width: 350px;"><p>https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p></div>
 
 하지만 치명적인 단점이 있었다. 만약 백업을 하지 않은 상태에서 중앙 서버가 털린다면 모든 작업물이 없어지는 것과 같았다.
 
 그래서 Git, Mercurial 등과 같은 **Distributed Version Control Systems(DVCSs, 분산 버전 관리 시스템)**이 나왔다.
 
-<p style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/distributed.png" style="display: block;">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p>
+<div style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/distributed.png"  style="width: 350px;"><p>https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</p></div>
 
 이로 인해, 서버가 죽더라도 각자의 컴퓨터에서 최신 버전의 코드들을 백업할 수 있다.
 
@@ -51,7 +51,7 @@ Git으로 버전 관리를 할 때 크게 _modified, stage, committed_ 이 3가�
 - **Staged**: 현재 버전에서 수정 사항을 체크하고 다음 커밋에 들어갈 상태
 - **Committed**: 로컬 데이터베이스에 저장된 상태
 
-<p style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/areas.png" style="display: block;">https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</p>
+<div style="text-align: center; font-size: 12px; color: gray"><img src="https://git-scm.com/book/en/v2/images/areas.png"  style="width: 400px;"><p>https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F</p></div>
 
 <br />
 
