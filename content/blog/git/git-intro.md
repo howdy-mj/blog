@@ -118,8 +118,42 @@ $ git remote add origin 주소
 $ git remote -v
 # 현재 폴더의 원격 저장소 보기
 
+$ git remote remove origin
+# 현재 remote repo 삭제하기
+
 $ git status
 # 현재 어떤 상태에 있는지 보기
+
+$ git stash
+# 작업 중이다 다른 브랜치로 이동할 때 저장해두는 작업
+
+$ git stash list
+# 저장 목록 조회
+
+$ git stash pop
+# 저장 내용 복구
+
+$ git stash apply
+# 저장된 내용을 다른 브랜치에 적용
+
+$ git stash drop
+# 저장된 내용 삭제
+```
+
+branch(브랜치) 관련 명령어:
+
+```sh
+$ git branch
+# 모든 브랜치 및 현재 위치한 브랜치 보기
+
+$ git checkout 브랜치명
+# '브랜치명'이란 브랜치 생성하기
+
+$ git branch -D 브랜치명
+# '브랜치명'의 브랜치 삭제
+
+$ git push origin :브랜치명
+# 삭제한 브랜치의 remote 브랜치도 삭제하기
 ```
 
 만약 원격 저장소에 올리고 싶지 않은 것이 있다면, `.gitignore` 파일을 만들어 안에 해당하는 파일 혹은 폴더명을 적으면 된다.

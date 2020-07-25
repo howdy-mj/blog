@@ -2,10 +2,14 @@
 title: '프론트엔드가 읽어보면 좋을 것'
 date: 2020-7-24 14:42:29
 category: 'bookmark'
-draft: true
+draft: false
 ---
 
 ## 프론트엔드
+
+프론트엔드가 읽어보면 좋을 글들 모음
+
+<p style="text-align: right; font-style: italic; font-size: 12px;">계속 업데이트 예정</p>
 
 ### CSS
 
@@ -15,14 +19,24 @@ draft: true
 
 - [8 Tips to keep your code clean in React](https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9) (?.06.30)
 
+### Webpack
+
+- [JavaScript Modules Part2 A Beginner’s Guide (번역)](https://hojong.me/javascript-modules-part-2) (2016.08.06)
+
+- [Webpack 4의 Tree Shaking에 대한 이해](https://huns.me/development/2265) (2018.11.08)
+
 ### UI 라이브러리
 
-- https://github.com/react-toolbox/react-toolbox
+- [Ant Design](https://ant.design/)
 
-- https://blueprintjs.com/
+- [Material-UI](https://material-ui.com/)
 
-- https://ant.design/
+- [Storybook](https://storybook.js.org/)
 
-- https://v2.grommet.io/
+- [React Toolbox](https://github.com/react-toolbox/react-toolbox)
 
-- https://github.com/Semantic-Org/Semantic-UI-React
+- [Blueprint](https://blueprintjs.com/)
+
+- [grommet](https://v2.grommet.io/)
+
+- [Semantic UI React](https://github.com/Semantic-Org/Semantic-UI-React)

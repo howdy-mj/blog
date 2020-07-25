@@ -5,6 +5,10 @@ category: 'bookmark'
 draft: true
 ---
 
+## 포트폴리오
+
+- [🖥 웹 개발자 포트폴리오를 위한 10가지 팁](https://velog.io/@chris/10-web-developer-portfolio-tips) (2019.02.25)
+
 ## 면접
 
 - [카카오 면접 시 듣게 되는 70가지 질문](http://www.bloter.net/archives/245529) (2015.12.08)

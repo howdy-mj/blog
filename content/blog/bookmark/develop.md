@@ -7,6 +7,10 @@ draft: true
 
 읽으면 좋을 글들 모음이다.
 
+## 블로그
+
+- [프로그래머 이규원의 웹사이트](https://gyuwon.github.io/)
+
 ## 회고록 & 동기부여
 
 - [30년간 개발자로 살면서 배운 것](https://taegon.kim/archives/6546)
