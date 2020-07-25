@@ -33,19 +33,32 @@ lang: 'ko'
 
 ### BFRun
 
-|                  |                                                                             |
-| ---------------: | --------------------------------------------------------------------------- |
-|       **period** | 2020.06.23 - 현재                                                           |
-| **introduction** | 웹 개발 입문자가 보면 좋을 유명 크리에이터분들의 동영상(유튜브) 모음 사이트 |
-|        **stack** | JavaScript, Next.js, React, React Hooks, react-router, Styled-Component     |
-|         **repo** | 공개 예정                                                                   |
-|          **URL** | 공개 예정                                                                   |
+|                  |                                                                                                  |
+| ---------------: | ------------------------------------------------------------------------------------------------ |
+|       **period** | 2020.06.23 - 2020.07.17 (기획 및 디자인 1주, 개발 3주)                                           |
+| **introduction** | 웹 개발 입문자가 보면 좋을 유명 크리에이터분들의 동영상(유튜브) 모음 사이트                      |
+|        **stack** | JavaScript, Next.js, React, React Hooks, react-router, Styled-Component                          |
+|         **repo** | https://github.com/one-iron/BFRun                                                                |
+|          **URL** | http://20.194.27.4/ (정식 배포가 아니라 열리지 않을 수 있습니다. 위 repo 가시면 확인 가능합니다) |
 
 #### What We did
 
-- 기획, 디자인, 개발
-- Git으로 버전 관리
+- Notion을 활용해 스케쥴 및 할 일 관리
+- Ovenapp.io로 디자인
 - REST API 사용
+
+#### What I did
+
+- Next.js 초기 세팅(ESLint, Prettier, Styled-component 등)
+- 반응형 웹 구현 (Web, Tablet, Mobile)
+- 구글 로그인 구현
+- 카테고리 및 메인 화면의 데이터는 getStaticProps로 render 전 불러오기
+- 카테고리 개발
+  (1) Contents와 Stacks, Creator는 공존 불가
+  (2) Stacks는 최대 3개만 고를 수 있도록 제한
+  (3) Stacks와 Creator를 같이 고를 경우 교집합으로 필요한 API를 axios로 불러옴
+- Nav 설정
+- 최대한 시맨틱 태그를 준수하려 노력
 
 ### GDAC
 
@@ -109,6 +122,10 @@ lang: 'ko'
 <br />
 
 # Experience
+
+## 루트에너지(Rootenergy)
+
+재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | 프론트엔드 개발자
 
 ## Planz Coffee
 
