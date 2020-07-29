@@ -29,6 +29,33 @@ lang: 'ko'
 
 <br />
 
+# Experience
+
+## 루트에너지(Rootenergy)
+
+재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | Frontend Developer
+
+## Planz Coffee
+
+자동화 음료 리테일 서비스 | 20.05 - 20.06 | Intern
+
+- Jira와 Git-flow를 통해 업무 진행
+- Storybook, react-spring, npm, Node.js 세미나 진행
+- webpack으로 icon 크기 최적화 번들링 작업
+- Storybook으로 디자인시스템(icon,font) 구축 및 배포
+
+## BRPartners
+
+블록체인 컨설팅 | 18.10 - 20.01 | Manager
+
+- 블록체인 프로젝트 검토 및 보고서 작성
+- 암호화폐 거래소 시장 조사 및 기획
+- 마케팅 기획안/제휴제안서 작성 및 진행
+- 퍼포먼스 마케팅(SNS, APP, 연관검색어, 웹 배너 등)
+- 중국어/영어 통번역
+
+<br />
+
 # Project
 
 ### BFRun
@@ -118,33 +145,6 @@ lang: 'ko'
 - Google Map API를 활용해 현재 위치 기준의 폴바셋 지점 표시
 - 해당 시/도, 구/군에 있는 지점의 단계별 클릭 리스트 구현
 - AWS EC2 배포
-
-<br />
-
-# Experience
-
-## 루트에너지(Rootenergy)
-
-재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | 프론트엔드 개발자
-
-## Planz Coffee
-
-자동화 음료 리테일 서비스 | 20.05 - 20.06 | Intern
-
-- Jira와 Git-flow를 통해 업무 진행
-- Storybook, react-spring, npm, Node.js 세미나 진행
-- webpack으로 icon 크기 최적화 번들링 작업
-- Storybook으로 디자인시스템(icon,font) 구축 및 배포
-
-## BRPartners
-
-블록체인 컨설팅 | 18.10 - 20.01 | Manager
-
-- 블록체인 프로젝트 검토 및 보고서 작성
-- 암호화폐 거래소 시장 조사 및 기획
-- 마케팅 기획안/제휴제안서 작성 및 진행
-- 퍼포먼스 마케팅(SNS, APP, 연관검색어, 웹 배너 등)
-- 중국어/영어 통번역
 
 <br />
 
