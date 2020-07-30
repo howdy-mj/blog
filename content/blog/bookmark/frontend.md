@@ -5,33 +5,31 @@ category: 'bookmark'
 draft: false
 ---
 
-## 프론트엔드
-
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
 
 - [Form Follows Function (fff project)](http://fff.cmiscm.com/#!/main)
 
-### CSS
+## CSS
 
 - [Pseudo Class와 Pseudo Element 활용하기](https://asfirstalways.tistory.com/184) (2016.07.04)
 
-### JavaScript
+## JavaScript
 
 - [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
 
-### TypeScript
+## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
 
-### React
+## React
 
 - [8 Tips to keep your code clean in React](https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9) (?.06.30)
 
 - [How to become a pro with React setState() in 10 minutes](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/) (2018.10.06)
 
-### Webpack
+## Webpack
 
 - [JavaScript Modules Part2 A Beginner’s Guide (번역)](https://hojong.me/javascript-modules-part-2) (2016.08.06)
 
@@ -41,19 +39,17 @@ draft: false
 
 - [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
 
-### 기타
+## 기타
 
 - [React-Spring Guide](https://bradwoods.io/guides/react-spring)
 
 - [React Spring Tutorial: Making Animated React Apps](https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps) (2020.03.03)
 
-## 사이트 모음
-
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 - [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
 
-### 디자인
+## 디자인
 
 - [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
 
@@ -106,7 +102,6 @@ draft: false
 - [Carbon Design System](https://www.carbondesignsystem.com/)
 
 <div style="text-align: right; font-style: italic; font-size: 12px;">
-계속 업데이트 예정
 <p>
 최초 업로드: 2020.07.25
 <br /> 
