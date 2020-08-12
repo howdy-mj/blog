@@ -17,7 +17,7 @@ draft: false
 
 <details>
   <summary>🔍용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
-  <ul>
+  <ul style="font-size: 14px;">
       <li><span style="font-weight: bold;">하이퍼텍스트(HyperText)</span>: 한 문서에서 다른 문서의 위치 정보를 심어서 양쪽을 연결해주는 텍스트</li>
       <li><span style="font-weight: bold;">HTML(HyperText Language)</span>: 웹을 위한 마크업*(태그 등을 이용해 문서나 데이터 구조를 명기하는 언어 중 하나)* 언어</li>
       <li><span style="font-weight: bold;">URL(Uniform Resource Locator)</span>: <span style="font-style: italic; color: gray;">https://www.rootenergy.co.kr/home</span> 와 같은 웹의 주소</li>
@@ -27,6 +27,7 @@ draft: false
 
 <details>
   <summary style="font-weight: bold;">프로토콜</summary>
+  <div style="font-size: 14px;">
   프로토콜은 5개의 계층으로 나뉘는데, 위로 갈수록 사용자(클라이언트)와 가까운 작업을, 아래로 갈수록 기계와 가까운 작업을 담당한다.
 
 ![](./images/protocol.png)
@@ -41,7 +42,11 @@ draft: false
 
 이 다섯 가지의 프로토콜을 조합하면 다양한 애플리케이션이나 기기를 처리할 수 있다.
 
+</div>
+
 </details>
+
+<br />
 
 ### 웹의 역사와 발전
 
@@ -55,13 +60,13 @@ draft: false
 - 2000년대 초, 사용자들이 웹에 글을 쓰거나 동영상을 올리는 등 직접 생산하고 참여하는 공간으로 바뀌었다.
 - 회원등록 및 조회, 메일링, 게시판, 방명록 등의 CGI 프로그램의 등장이 컸다고 본다.
 
-<details>
+  <details>
     <summary>🔍용어: CGI(Common Gateway Interface)</summary>
-    <ul>
+    <ul style="font-size: 14px;">
         <li>서버와 클라이언트 간의 정보 교환을 가능하게 해주는 것</li>
         <li>HTTP는 이전에 어떤 요청과 응답을 주고 받았는지 기억하지 못하는 일회성 규약이다. 하지만 CGI가 필요한 정보를 저장 했다가 다음에 필요할 때 다시 보낼 수 있게 되었다.</li>
     </ul>
-</details>
+  </details>
 
 **WEB 3.0**
 
@@ -69,11 +74,11 @@ draft: false
 
 <details>
     <summary>🔍용어: 시맨틱 웹</summary>
-    <ul>
+    <ul style="font-size: 14px;">
         <li>시맨틱: 페이지의 태그를 통해 의미 부여를 할 수 있는 기능</li>
+        <li>시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다.</li>
+        <li>HTML5에서 시맨틱 웹을 쉽게 구성할 수 있도록 시맨틱 태그 요소들이 추가되었다.</li>
     </ul>
-    시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다. <br />
-    HTML5에서 시맨틱 웹을 쉽게 구성할 수 있도록 시맨틱 태그 요소들이 추가되었다.
 </details>
 
 <br />
@@ -91,13 +96,14 @@ draft: false
 
 <details>
   <summary style="font-weight: bold;">브라우저 동작 원리</summary>
-  <p style="font-style: italic; font-size: 12px; color: gray;">- 참고: <a href="https://d2.naver.com/helloworld/59361" target="_blank">브라우저는 어떻게 동작하는가? 네이버 D2</a></p>
-  <div>
+  
+  <div style="font-size: 14px;">
   브라우저는 웹을 보기 위해 사용하는 프로그램으로 대표적인 브라우저에는 크롬, 사파리, IE, 파이어폭스 등이 있다.
 
   <h3>브라우저 구조</h3>
 
-![](./images/browser.png)
+<div style="text-align: center;"><img src="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png" >
+<p style="font-size: 11px; color: gray;">https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/</p></div>
 
   <ul>
       <li><span style="font-weight: bold;">사용자 인터페이스</span>: 주소 표시줄, 이전/다음 버튼, 북마크, 메뉴 등 요청한 페이지를 보여주는 창을 제외한 사용자가 컨트롤 가능한 부분</li>
@@ -113,7 +119,8 @@ draft: false
 
   <h3>렌더링 엔진(Webkit 기준)</h3>
 
-![](./images/rendering.png)
+<div style="text-align: center;"><img src="./images/rendering.png">
+<p style="font-size: 11px; color: gray;">https://d2.naver.com/helloworld/59361</p></div>
 
   <ol>
       <li><span style="font-weight: bold;">파싱(Parsing)</span>: 파싱은 서버로부터 받은 문서를 브라우저가 이해할 수 있는 구조로 변환하는 과정을 뜻한다. 파싱 결과는 문서 구조를 나타내는 노드 트리라 하는데, HTML 문서를 파싱하여 DOM 트리를 만들고, CSS 문서를 파싱하여 CCSOM 트리를 만든다. </li>
@@ -127,10 +134,8 @@ draft: false
 
 대표적인 Web Server에는 Nginx(ex. Dropbox, Netflix, Wordpress.com 등), Apache HTTP Server가 있다.
 
-<div style="text-align: center;"><img src="./images/webserver.png">
-<p style="font-size: 11px; color: gray;">cccd</p></div>
-
-![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/48d1c58b-3bdc-448d-9bc4-43b8a398dd36/Untitled.png)
+<div style="text-align: center; "><img src="./images/webserver.png">
+<p style="font-size: 11px; color: gray;">https://www.educative.io/edpresso/web-server-vs-application-server</p></div>
 
 ## WAS(Web Application Server)
 
@@ -142,15 +147,17 @@ draft: false
 
 <details>
     <summary>🔍용어: 비즈니스 로직(Business Logic)</summary>
-    <ul>
+    <ul style="font-size: 14px;">
         <li>동적 데이터 생성 및 작업</li>
         <li>클라이언트가 원하는 데이터를 보여주기 위해, 데이터베이스에 연결, 생성, 변경, 저장하는 작업</li>
         <li>ex. 회원 가입을 위해 아이디 작성 후 제출하면, 데이터베이스에 중복된 아이디가 있는지 연결하여 확인 및 결과를 클라이언트에 전달</li>
     </ul>
 </details>
 
+<br />
+
 <div style="text-align: center;"><img src="./images/was.png">
-<p style="font-size: 11px; color: gray;">cccd</p></div>
+<p style="font-size: 11px; color: gray;">https://www.educative.io/edpresso/web-server-vs-application-server</p></div>
 
 WAS는 Web server에 Application servers가 추가된 것이다. 애플리케이션 서버는 웹 서버와 데이터베이스 사이에서 웹 서버 대신 데이터베이스와 통신하여 동적인 데이터를 처리해주는 미들웨어이다.
 
@@ -173,12 +180,14 @@ WAS는 Web server에 Application servers가 추가된 것이다. 애플리케이
 
 <details>
     <summary>🔍용어: V8, JavaScript 엔진, 런타임</summary>
-    <ul>
+    <ul style="font-size: 14px;">
         <li>V8: C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 웹어셈블리(C/C++을 웹에서 동작할 수 있도록 컴파일) 엔진</li>
         <li>JavaScript 엔진: 자바스크립트를 해석하고 실행하는 프로그램 또는 언어</li>
         <li>런타임: 프로그램이 실행되는 환경</li>
     </ul>
 </details>
+
+<br />
 
 Node.js는 웹 서버가 아니지만 직접 HTTP 서버를 작성하면 웹 서버를 띄울 수 있는 환경을 만들어준다. 그러나 일일이 Node.js로 웹 서버에 필요한 기능을 짜면 해야할 것이 너무 많기 때문에, Node.js의 프레임워크 Express, Koa, Hapi 등을 사용하면 보다 더 간단하게 웹 서버를 구축할 수 있다.
 
