@@ -15,6 +15,27 @@ draft: false
 2. 해당 공간의 위치(주소) ex. URL
 3. 해당 문서나 자원에 접근하는 프로토콜 ex. HTTP
 
+  <details>
+    <summary style="font-weight: bold;">프로토콜</summary>
+    <div style="font-size: 14px;">
+    프로토콜은 5개의 계층으로 나뉘는데, 위로 갈수록 사용자(클라이언트)와 가까운 작업을, 아래로 갈수록 기계와 가까운 작업을 담당한다.
+
+![](./images/protocol.png)
+
+    <ol>
+        <li><span style="font-weight: bold;">애플리케이션 계층</span>: 서버와 클라이언트의 통신. ex. HTTP, SMTP, POP3, FTP 등</li>
+        <li><span style="font-weight: bold;">통신 계층</span>: 데이터를 확실히 송/수신하기 위해 작동. 데이터를 `패킷`이라는 단위로 나누어 보내고, 이를 다시 조립하여 원래 데이터로 만듬. ex. TCP, UDP</li>
+        <li><span style="font-weight: bold;">네트워크 계층</span>: 수신측 컴퓨터까지 데이터를 전달하기 위해 작동. 전달된 데이터의 손상 여부나 수신측이 잘 받았는지에 대해서는 관여하지 않음 ex. IP</li>
+        <li><span style="font-weight: bold;">데이터 링크 계층</span>: 네트워크에 직접 연결된 기기 간을 전송할 수 있도록 만듬. ex. Ethernet, PPP 등</li>
+        <li><span style="font-weight: bold;">물리 계층</span>: 데이터를 신호로, 신호를 데이터로 변환.</li>
+    </ol>
+
+이 다섯 가지의 프로토콜을 조합하면 다양한 애플리케이션이나 기기를 처리할 수 있다.
+
+    </div>
+
+  </details>
+
 <details>
   <summary>🔍용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
   <ul style="font-size: 14px;">
@@ -23,27 +44,6 @@ draft: false
       <li><span style="font-weight: bold;">URL(Uniform Resource Locator)</span>: <span style="font-style: italic; color: gray;">https://www.rootenergy.co.kr/home</span> 와 같은 웹의 주소</li>
       <li><span style="font-weight: bold;">HTTP(HyperText Transfer Protocol)</span>: 웹 상에서 정보(하이퍼텍스트 문서)를 주고 받을 때 사용 되는 통신 규약</li>
   </ul>
-</details>
-
-<details>
-  <summary style="font-weight: bold;">프로토콜</summary>
-  <div style="font-size: 14px;">
-  프로토콜은 5개의 계층으로 나뉘는데, 위로 갈수록 사용자(클라이언트)와 가까운 작업을, 아래로 갈수록 기계와 가까운 작업을 담당한다.
-
-![](./images/protocol.png)
-
-  <ol>
-      <li><span style="font-weight: bold;">애플리케이션 계층</span>: 서버와 클라이언트의 통신. ex. HTTP, SMTP, POP3, FTP 등</li>
-      <li><span style="font-weight: bold;">통신 계층</span>: 데이터를 확실히 송/수신하기 위해 작동. 데이터를 `패킷`이라는 단위로 나누어 보내고, 이를 다시 조립하여 원래 데이터로 만듬. ex. TCP, UDP</li>
-      <li><span style="font-weight: bold;">네트워크 계층</span>: 수신측 컴퓨터까지 데이터를 전달하기 위해 작동. 전달된 데이터의 손상 여부나 수신측이 잘 받았는지에 대해서는 관여하지 않음 ex. IP</li>
-      <li><span style="font-weight: bold;">데이터 링크 계층</span>: 네트워크에 직접 연결된 기기 간을 전송할 수 있도록 만듬. ex. Ethernet, PPP 등</li>
-      <li><span style="font-weight: bold;">물리 계층</span>: 데이터를 신호로, 신호를 데이터로 변환.</li>
-  </ol>
-
-이 다섯 가지의 프로토콜을 조합하면 다양한 애플리케이션이나 기기를 처리할 수 있다.
-
-</div>
-
 </details>
 
 <br />
@@ -72,27 +72,16 @@ draft: false
 
 - 2010년 이후, PC 뿐만이 아니라, 모바일, 태블릿 등 1인 1단말기가 보편화 되면서 개인화, 맞춤화 등의 인식이 생겼다. 컴퓨터 역시 시맨틱 웹(Semantic Web) 기술을 이용해 웹 페이지에 담긴 내용을 이해하고 사용자에게 맞춤형 콘텐츠 및 서비스를 제공할 수 있게 되었다.
 
-<details>
-    <summary>🔍용어: 시맨틱 웹</summary>
-    <ul style="font-size: 14px;">
-        <li>시맨틱: 페이지의 태그를 통해 의미 부여를 할 수 있는 기능</li>
-        <li>시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다.</li>
-        <li>HTML5에서 시맨틱 웹을 쉽게 구성할 수 있도록 시맨틱 태그 요소들이 추가되었다.</li>
-    </ul>
-</details>
+  <details>
+      <summary>🔍용어: 시맨틱 웹</summary>
+      <ul style="font-size: 14px;">
+          <li>시맨틱: 페이지의 태그를 통해 의미 부여를 할 수 있는 기능</li>
+          <li>시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다.</li>
+          <li>HTML5에서 시맨틱 웹을 쉽게 구성할 수 있도록 시맨틱 태그 요소들이 추가되었다.</li>
+      </ul>
+  </details>
 
 <br />
-
-## Web Server
-
-**웹 서버**는 사용자들이 요청하는 정적인 페이지를 보여줄 때 사용된다. 정적인 페이지는 WEB 2.0까지 주로 다뤄졌던 HTML, 파일, 이미지, 비디오 등의 컨텐츠로 이루어진 페이지이다.
-
-<details>
-    <summary>🔍용어: 서버</summary>
-    <ul>
-        <li>서버: 클라이언트에게 네트워크를 통해 정보나 서비스를 제공하는 컴퓨터 프로그램 또는 장치</li>
-    </ul>
-</details>
 
 <details>
   <summary style="font-weight: bold;">브라우저 동작 원리</summary>
@@ -132,6 +121,21 @@ draft: false
 
 </details>
 
+<br />
+
+## Web Server
+
+**웹 서버**는 사용자들이 요청하는 정적인 페이지를 보여줄 때 사용된다. 정적인 페이지는 WEB 2.0까지 주로 다뤄졌던 HTML, 파일, 이미지, 비디오 등의 컨텐츠로 이루어진 페이지이다.
+
+<details>
+    <summary>🔍용어: 서버</summary>
+    <ul>
+        <li>서버: 클라이언트에게 네트워크를 통해 정보나 서비스를 제공하는 컴퓨터 프로그램 또는 장치</li>
+    </ul>
+</details>
+
+<br />
+
 대표적인 Web Server에는 Nginx(ex. Dropbox, Netflix, Wordpress.com 등), Apache HTTP Server가 있다.
 
 <div style="text-align: center; "><img src="./images/webserver.png">
@@ -165,9 +169,7 @@ WAS는 Web server에 Application servers가 추가된 것이다. 애플리케이
 
 <br />
 
-### 실습
-
-**Docker로 cra+nginx, express 띄워보기 (Github repo)**
+**Docker로 cra+nginx, express 서버 띄워보기 (Github repo)**
 
 - [react-nginx-docker](https://github.com/howdy-mj/react-nginx-docker)
 - [express-with-docker](https://github.com/howdy-mj/express-with-docker)
@@ -213,7 +215,7 @@ server.listen(5000)
 console.log('Node.js web server at port 5000 is running')
 ```
 
-### 실습 (Github repo)
+**Node.js로 서버 띄워보기 (Github repo)**
 
 - [practice-node-server](https://github.com/howdy-mj/practice-node-server)
 
