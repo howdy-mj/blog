@@ -5,19 +5,31 @@ category: 'bookmark'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2020.08.16
+</div>
+
+<br />
+
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
 
 - [Form Follows Function (fff project)](http://fff.cmiscm.com/#!/main)
 
+- [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
+
 ## CSS
 
 - [Pseudo Class와 Pseudo Element 활용하기](https://asfirstalways.tistory.com/184) (2016.07.04)
+
+- [10 Best Practices for Improving Your CSS](https://medium.com/better-programming/10-best-practices-for-improving-your-css-84c69aac66e) (2020.05.12)
 
 ## JavaScript
 
 - [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
+
+- [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://medium.com/@Dongmin_Jang/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd) (2019.01.29)
 
 ## TypeScript
 
