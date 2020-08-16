@@ -25,8 +25,6 @@ draft: false
 
 ## JavaScript
 
-- [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
-
 - [JavaScript Event KeyCodes](https://keycode.info/)
 
 - [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://medium.com/@Dongmin_Jang/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd) (2019.01.29)
@@ -112,11 +110,3 @@ draft: false
 - [Semantic UI React](https://github.com/Semantic-Org/Semantic-UI-React)
 
 - [Carbon Design System](https://www.carbondesignsystem.com/)
-
-<div style="text-align: right; font-style: italic; font-size: 12px;">
-<p>
-최초 업로드: 2020.07.25
-<br /> 
-1차 업데이트: 2020.07.30
-</p>
-</div>
