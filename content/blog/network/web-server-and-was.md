@@ -1,7 +1,7 @@
 ---
 title: 'Web Server & WAS'
 date: 2020-8-12 23:12:01
-category: 'Web'
+category: 'Network'
 draft: false
 ---
 

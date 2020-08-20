@@ -1,6 +1,6 @@
 ---
 title: '웹 개발 공부 사이트'
-date: 2020-8-17 00:42:29
+date: 2020-7-31 00:42:29
 category: 'bookmark'
 draft: false
 ---
