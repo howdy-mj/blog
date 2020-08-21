@@ -7,11 +7,9 @@ draft: false
 
 <p style="color: gray; font-style: italic">해당 문서는 <span style="font-weight: bold;">RFC 3986</span>을 기준으로 작성되었습니다.</p>
 
-## URI(Uniform Resource Identifier)
+URI(Uniform Resource Identifier, 통합 자원 식별자)는 언제 어디서든 늘 같은 리소스(텍스트, 이미지, 비디오 등)를 보여줄 수 있도록 해주는 식별자이다.
 
-URI(통합 자원 식별자)는 언제 어디서든 늘 같은 리소스(텍스트, 이미지, 비디오 등)를 보여줄 수 있도록 해주는 식별자이다.
-
-### 1. URI 구조
+## 1. URI 구조
 
 ```
 scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
@@ -20,7 +18,9 @@ scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 - sheme과 host를 제외하고는 모두 선택 사항이다.
 - `[user[:password]@]host[:port]` 는 authority로 묶을 수 있다.
 
-다른 예시:
+<br />
+
+**다른 예시:**
 
 ```
 ftp://file.fileserver.com/entries/01
@@ -38,7 +38,7 @@ http://www.ietf.org/rfc/rfc2396.txt
 
 <br />
 
-#### 스킴(Scheme)
+### 스킴(Scheme)
 
 어떤 프로토콜을 사용할지 알린다.
 
@@ -54,7 +54,7 @@ scheme = 영문 * (영문 / 숫자 / "+" / "-" / "." )
 
 <br />
 
-#### Authority
+### Authority
 
 authority는 사용자 정보, 호스트, 포트번호의 조합이다.
 
@@ -95,7 +95,7 @@ port = 숫자
 
 <br />
 
-#### 경로(Path)
+### 경로(Path)
 
 리소스에 대한 경로이다.
 
@@ -109,7 +109,9 @@ path = /                 ; "/"로 시작하거나 비어있음
 
 - 물음표(`?`)나 크로스해치(`#`) 앞에서 종료되거나, URI의 끝일 수 있다.
 
-#### 쿼리(Query)
+<br />
+
+### 쿼리(Query)
 
 요청받을 리소스의 범위를 좁히기 위해 질문이나 질의로 식별할 수 있다.
 
@@ -124,7 +126,7 @@ query = * (문자 / "/" / "?" )
 
 <br />
 
-#### 부분 식별자(fragment identifier)
+### 부분 식별자(fragment identifier)
 
 북마크 역할을 한다.
 
@@ -152,9 +154,7 @@ query: tag=networking&order=newest
 fragment: top
 ```
 
-<br />
-
-### 2. 절대, 상대, 기준 URI
+## 2. 절대, 상대, 기준 URI
 
 URI에는 절대 URI, 상대 URI, 기준 URI가 존재한다.
 
@@ -188,19 +188,19 @@ URI는 URL과 URN로 분류될 수 있다.
 
 - 위가 URL, 밑이 URN이다.
 
-#### URL(Uniform Resource Locator)
+### URL(Uniform Resource Locator)
 
 URL은 현재 우리가 홈페이지 주소를 불렀을 때 사용하는 형식으로, 위에서 설명한 구조 모두 URL이다.
 
 정확히 어디에 있는지 경로까지 다 구체적으로 서술해야 접근이 가능하다.
 
-HTTP 명세에서는 URI를 더 일반화된 개념으로 사용하지만, 실제 HTTP 애플리케이션에서는 URL을 사용한다.
+_HTTP 명세에서는 URI를 더 일반화된 개념으로 사용하지만, 실제 HTTP 애플리케이션에서는 URL을 사용한다._
 
-#### URN(Uniform Resource Name)
+### URN(Uniform Resource Name)
 
 URN은 현재 그 리소스가 어디에 있든 상관없이 이름만으로 리소스를 식별한다.
 
-URL의 문제점은, 만약 [https://howdy-mj.netlify.app/web/web-server-and-was/](https://howdy-mj.netlify.app/network/web-server-and-was/) 에서 web이라는 카테고리를 network로 변경했을 때, 그 이전에 URL을 가져갔던 사람은 변경된 주소로 들어가지 못한다.
+URL의 문제점은, 만약 `howdy-mj.netlify.app/web/web-server-and-was/` 에서 web이라는 카테고리를 network로 변경했을 때, 그 이전에 URL을 가져갔던 사람은 변경된 주소로 들어가지 못한다.
 
 하지만 URN은 위치가 바뀌었더라도 리소스의 위치를 찾을 수 있다.
 
