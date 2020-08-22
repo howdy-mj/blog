@@ -213,6 +213,5 @@ URL의 문제점은, 만약 `howdy-mj.netlify.app/web/web-server-and-was/` 에�
 - [RFC3986 - Uniform Resource Identifier](https://tools.ietf.org/pdf/rfc3986.pdf)
 - [http://www.ktword.co.kr/abbr_view.php?m_temp1=2340](http://www.ktword.co.kr/abbr_view.php?m_temp1=2340)
 - [https://mygumi.tistory.com/139](https://mygumi.tistory.com/139)
-- [https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn](https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn)
 
 </div>
