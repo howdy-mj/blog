@@ -65,7 +65,7 @@ const finished = todo.finished
 console.log(`
     The Todo with ID: ${id}
     Has a title of: ${title}
-    Is if finished? ${finished}
+    Is it finished? ${finished}
   `)
 ```
 
@@ -84,6 +84,53 @@ interface Todo {
 `interface`는 타입을 정의하는 것이며, `Todo`안에 어떤 프로퍼티가 어떤 타입을 갖는지 미리 정한다.
 
 그리고 `const todo = response.data as Todo;`를 추가하면, 위에 작성했던 코드에 바로 빨간 줄이 쳐지는 걸 확인할 수 있다.
+
+아래에서 보기 쉽게 변수명을 변경하고 console을 따로 빼보자.
+
+```ts
+import axios from 'axios'
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+
+interface Todo {
+  id: number
+  title: string
+  completed: boolean
+}
+
+axios.get(url).then(response => {
+  const todo = response.data as Todo
+  const id = todo.id
+  const title = todo.title
+  const completed = todo.completed
+
+  logTodo(id, completed, title) // 일부로 completed를 두 번째에 썼다
+})
+
+const logTodo = (id, title, completed) => {
+  console.log(`
+    The Todo with ID: ${id}
+    Has a title of: ${title}
+    Is it completed? ${completed}
+  `)
+}
+```
+
+자바스크립트 처럼 아래 `logTodo`에 타입을 선언하지 않은 채 실행한다면, 내용이 반대로 나오는 것을 실행하고 나서야 알아챌 수 있다. 그럼 타입을 한번 선언해보자.
+
+```ts
+const logTodo = (id: number, title: string, completed: boolean) => {
+  console.log(`
+    The Todo with ID: ${id}
+    Has a title of: ${title}
+    Is if completed? ${completed}
+  `)
+}
+```
+
+위처럼 함수에 타입을 선언하면 `logTodo(id, completed, title)` 여기에 빨간줄이 쳐진다.
+
+이렇게 타입스크립트는 실행하기 전에, 코드를 작성하는 곳에서 에러를 알려주기 때문에 시간을 단축할 수 있다.
 
 <br />
 
