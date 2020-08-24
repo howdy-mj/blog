@@ -1,5 +1,5 @@
 ---
-title: '타입스크립트(TypeScript) 소개 및 기초'
+title: '타입스크립트(TypeScript) 소개 및 맛보기'
 date: 2020-8-22 14:22:13
 category: 'TypeScript'
 draft: false
@@ -13,7 +13,7 @@ draft: false
 
 타입스크립트는 이러한 맹점을 보완해준다. 타입스크립트는 개발자에 의해 의도적으로 타입을 변환하는 명시적 타입 변환(Explicit corecion)을 한다. 또한, 코드를 작성하는 그 환경에서 어떤 것이 에러가 나는지 보여주기 때문에 시간 절약을 할 수 있다. _(물론 타입스크립트를 쓰는 이유는 더 많이 있다.)_
 
-## 타입스크립트 설치
+## 타입스크립트 설치 및 맛보기
 
 타입스크립트 설치를 위해서 먼저 Node가 설치 되어 있어야 한다.
 
@@ -54,6 +54,8 @@ ts-node index.ts # index.js 파일 생성 및 실행
 # 결과
 # { userId: 1, id: 1, title: 'delectus aut autem', completed: false }
 ```
+
+<br />
 
 그럼 어떻게 타입스크립트가 우리가 쓴 코드의 에러를 알려주는지 알아보자. 위의 코드에서 조금 더 보기 편하게 각 변수에 할당하고 console을 찍어보자.
 

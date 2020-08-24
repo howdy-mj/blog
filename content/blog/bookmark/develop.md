@@ -43,4 +43,8 @@ draft: true
 
 - [JIHahnSol](https://velog.io/@zansol)
 
+## 개발환경 세팅
+
+- [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec) (2019.01.19)
+
 <div style="text-align: right; font-style: italic; font-size: 12px;">계속 업데이트 예정</div>
