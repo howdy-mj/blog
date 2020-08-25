@@ -5,6 +5,12 @@ category: 'bookmark'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2020.08.25
+</div>
+
+<br />
+
 웹 개발 공부에 도움이 되는 사이트 정리 모음
 
 ## 무료 강의
@@ -43,3 +49,5 @@ draft: false
 ## API 연습
 
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+
+- [Mocky](https://designer.mocky.io/)

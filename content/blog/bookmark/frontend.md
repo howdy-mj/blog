@@ -23,6 +23,8 @@ draft: false
 
 - [10 Best Practices for Improving Your CSS](https://medium.com/better-programming/10-best-practices-for-improving-your-css-84c69aac66e) (2020.05.12)
 
+- [Ten modern layouts in one line of CSS](https://web.dev/one-line-layouts/) (2020.07.07)
+
 ## JavaScript
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
@@ -48,6 +50,10 @@ draft: false
 - [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/) (2019.12)
 
 - [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
+
+## WebQL
+
+- [WebGL Fundamentals](https://webglfundamentals.org/)
 
 ## 기타
 
