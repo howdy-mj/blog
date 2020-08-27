@@ -21,7 +21,7 @@ HTTP는 브라우저와 서버가 대화를 할 때 사용하는 것이다. HTTP
 
 이때 주소창에 URL을 입력하고 엔터를 누르는 행위가 HTTP 요청을 보내는 것이고, 웹 페이지가 뜨는 것이 응답을 받은 것이다.
 
-[URI란? (+ URL, URN)](https://howdy-mj.netlify.app/network/what-is-uri/)
+<a href="https://howdy-mj.netlify.app/network/what-is-uri/" target="_blank">URI란? (feat. URL, URN)</a>
 
 <div style="text-align: center;"><img src="./images/google.png"></div>
 
@@ -174,8 +174,6 @@ Content-Length: 345
 
 브라우저와 서버 간의 통신을 더 안전하고 효율적으로 하기 위해 중개자 역할을 하는 구성 요소가 나왔다. 대표적인 것으로 캐시, 프록시, 게이트웨이 등이 있다.
 
-<br />
-
 ### 캐시(Cache)
 
 처음에 여는데 오래 걸렸던 사이트를 다시 들어가면 처음보다 빠르게 켜질 때가 있다. 이는 브라우저가 문서의 사본을 HTTP 헤더 지시에 따라 보관한 덕분이다. 캐시는 불필요한 데이터 전송을 줄여 시간과 비용을 줄여 준다.
@@ -193,7 +191,7 @@ _(HTTP 캐시와 브라우저 캐시의 차이는 추후 작성)_
 **프록시와 게이트웨이 차이점**:
 프록시와 밑에 설명하는 게이트웨이는 모두 중개자 역할을 한다. 하지만 프록시는 같은 프로토콜을 사용하는 애플리케이션을 연결한다면, 게이트웨이는 서로 다른 프로토콜을 사용하는 애플리케이션을 연결한다.
 
-<div style="text-align: center;"><img src="http://tlog.tammolo.com/static/c04cc3836b8b4a87edd088253a2d2fd8/01387/Untitled-d0b25c8e-aae1-4b5e-b4f6-0fd95ef0c195.png">
+<div style="text-align: center;"><img src="./images/diff-proxy-gateway.png">
 <p style="font-size: 11px; color: gray;">http://tlog.tammolo.com/blog/6-a52d91c3-232f-4b33-b9f3-4ef47fbbf973/</p></div>
 
 <br />
@@ -202,7 +200,7 @@ _(HTTP 캐시와 브라우저 캐시의 차이는 추후 작성)_
 
 게이트웨이는 서로 다른 프로토콜과 애플리케이션을 연결해준다. 우리가 WiFi를 사용하여 인터넷을 하려 할때, PC가 공유기, 인터넷 회사 라우터를 거쳐 인터넷에 연결이 되는 것 역시 게이트웨이다.
 
-<div style="text-align: center;"><img src="http://tlog.tammolo.com/static/8c502ebe4c92591e7bafa37f408a9ae8/8594d/Untitled-173d942d-cf69-4c7f-bc45-d81d9123779d.png">
+<div style="text-align: center;"><img src="./images/gateway.png">
 <p style="font-size: 11px; color: gray;">http://tlog.tammolo.com/blog/8-c3068a1a-9ace-450d-a87e-e3cc6213955e/</p></div>
 
 HTTP/FTP와 HTTP/POP 등은 다른 프로토콜이란 걸 바로 알 수 있지만, HTTP/CGI는 이해가 잘 안돼서 찾아봤다.

@@ -41,7 +41,7 @@ draft: false
   </details>
 
 <details>
-  <summary>🔍용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
+  <summary>🔍 용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
   <ul style="font-size: 14px;">
       <li><span style="font-weight: bold;">하이퍼텍스트(HyperText)</span>: 한 문서에서 다른 문서의 위치 정보를 심어서 양쪽을 연결해주는 텍스트</li>
       <li><span style="font-weight: bold;">HTML(HyperText Language)</span>: 웹을 위한 마크업*(태그 등을 이용해 문서나 데이터 구조를 명기하는 언어 중 하나)* 언어</li>
@@ -62,14 +62,14 @@ draft: false
 **WEB 2.0**
 
 - 2000년대 초, 사용자들이 웹에 글을 쓰거나 동영상을 올리는 등 직접 생산하고 참여하는 공간으로 바뀌었다.
-- 회원등록 및 조회, 메일링, 게시판, 방명록 등의 [CGI 프로그램](cgi)의 등장이 컸다고 본다.
+- 회원등록 및 조회, 메일링, 게시판, 방명록 등의 [CGI 프로그램](#cgi)의 등장이 컸다고 본다.
 
 **WEB 3.0**
 
 - 2010년 이후, PC 뿐만이 아니라, 모바일, 태블릿 등 1인 1단말기가 보편화 되면서 개인화, 맞춤화 등의 인식이 생겼다. 컴퓨터 역시 시맨틱 웹(Semantic Web) 기술을 이용해 웹 페이지에 담긴 내용을 이해하고 사용자에게 맞춤형 콘텐츠 및 서비스를 제공할 수 있게 되었다.
 
   <details>
-      <summary>🔍용어: 시맨틱 웹</summary>
+      <summary>🔍 용어: 시맨틱 웹</summary>
       <ul style="font-size: 14px;">
           <li>시맨틱: 페이지의 태그를 통해 의미 부여를 할 수 있는 기능</li>
           <li>시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다.</li>
@@ -139,7 +139,7 @@ draft: false
 여기서 알 수 있듯이, Web Server와 WAS의 가장 큰 차이는 동적 데이터(비즈니스 로직) 처리 가능 여부이다.
 
 <details>
-    <summary>🔍용어: 비즈니스 로직(Business Logic)</summary>
+    <summary>🔍 용어: 비즈니스 로직(Business Logic)</summary>
     <ul style="font-size: 14px;">
         <li>동적 데이터 생성 및 작업</li>
         <li>클라이언트가 원하는 데이터를 보여주기 위해, 데이터베이스에 연결, 생성, 변경, 저장하는 작업</li>
@@ -193,19 +193,19 @@ CGI는 하나의 요청을 하나의 프로세스를 생성해서 처리한다. 
 
 <br />
 
+<br />
+
 **Docker로 cra+nginx, express 서버 띄워보기 (Github repo)**
 
 - [react-nginx-docker](https://github.com/howdy-mj/react-nginx-docker)
 - [express-with-docker](https://github.com/howdy-mj/express-with-docker)
-
-<br />
 
 ## Node.js는 웹 서버인가?
 
 공식 홈페이지에 `Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임` 이라고 나와 있다.
 
 <details>
-    <summary>🔍용어: V8, JavaScript 엔진, 런타임</summary>
+    <summary>🔍 용어: V8, JavaScript 엔진, 런타임</summary>
     <ul style="font-size: 14px;">
         <li>V8: C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 웹어셈블리(C/C++을 웹에서 동작할 수 있도록 컴파일) 엔진</li>
         <li>JavaScript 엔진: 자바스크립트를 해석하고 실행하는 프로그램 또는 언어</li>
