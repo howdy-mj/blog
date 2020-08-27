@@ -5,6 +5,10 @@ category: 'Network'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2020.08.27
+</div>
+
 > 최초의 인터넷은 단순한 정보 전달만 가능했지만 점차 서로 정보를 교환할 수 있게 되었고, 최근은 개인 맞춤형 콘텐츠 및 서비스 제공 시대까지 이르렀다. 이러한 인터넷의 발전에 따라 웹의 동작 원리도 바뀌었다.
 
 ## Web이란?
@@ -58,15 +62,7 @@ draft: false
 **WEB 2.0**
 
 - 2000년대 초, 사용자들이 웹에 글을 쓰거나 동영상을 올리는 등 직접 생산하고 참여하는 공간으로 바뀌었다.
-- 회원등록 및 조회, 메일링, 게시판, 방명록 등의 CGI 프로그램의 등장이 컸다고 본다.
-
-  <details>
-    <summary>🔍용어: CGI(Common Gateway Interface)</summary>
-    <ul style="font-size: 14px;">
-        <li>서버와 클라이언트 간의 정보 교환을 가능하게 해주는 것</li>
-        <li>HTTP는 이전에 어떤 요청과 응답을 주고 받았는지 기억하지 못하는 일회성 규약이다. 하지만 CGI가 필요한 정보를 저장 했다가 다음에 필요할 때 다시 보낼 수 있게 되었다.</li>
-    </ul>
-  </details>
+- 회원등록 및 조회, 메일링, 게시판, 방명록 등의 [CGI 프로그램](cgi)의 등장이 컸다고 본다.
 
 **WEB 3.0**
 
@@ -159,6 +155,41 @@ draft: false
 WAS는 Web server에 Application servers가 추가된 것이다. 애플리케이션 서버는 웹 서버와 데이터베이스 사이에서 웹 서버 대신 데이터베이스와 통신하여 동적인 데이터를 처리해주는 미들웨어이다.
 
 대표적인 WAS에는 Apache Tomcat, Glassfish 등이 있다.
+
+<br />
+
+### CGI
+
+_RFC3875 - The Common Gateway Interface(CGI) Version 1.1 기준으로 작성했습니다._
+
+CGI(Common Gateway Interface, 공용 게이트웨이 인터페이스)는 웹 서버와 클라이언트 간에 필요한 정보 교환을 가능하게 해주는 인터페이스다.
+
+<div style="text-align: center;"><img src="https://networkencyclopedia.com/wp-content/uploads/2019/09/Common-Gateway-Interface.png">
+<p style="font-size: 11px; color: gray;">https://networkencyclopedia.com/common-gateway-interface-cgi/</p></div>
+
+웹 서버는 동적으로 처리해야 하는 요청을 CGI 프로그램에 넘긴다. CGI 프로그램은 데이터베이스를 기반으로 동적으로 페이지를 처리한 후, 해당 결과를 다시 브라우저에 전송한다.
+
+가장 대표적인 CGI로는 게시판, 설문조사, 회원가입 같은 폼(form)이 있다. 폼은 사용자들이 HTML로 서버에 정보를 제공할 수 있도록 해주고, 제출하면 작성한 내용이 서버로 전송 되면서 데이터베이스에 저장된다. (GET, POST 메서드 사용 가능)
+
+다시 말해 웹 서버는 정적 페이지에서 바뀌지 않으며, 데이터를 수정(생성)해서 응답하고 싶은 것을 CGI 프로그램이 해준다. 폼 작성하는 것 외에도, 파일 목록을 보여 준다거나 데이터베이스를 조회해서 돌려주는 것도 가능하다.
+
+<br />
+
+**Web Server + CGI vs. WAS**
+
+Web Server에서 CGI 프로그램을 통해 동적 처리가 가능하다고 했다. 그렇다면 WAS와 어떤 차이가 있을까?
+
+CGI는 하나의 요청을 하나의 프로세스를 생성해서 처리한다. 따라서 동일 페이지에 대한 요청이 늘어날 때마다, 계속 프로세스가 생성되기 때문에 CPU나 메모리 같은 자원이 금방 한계에 도달한다.
+
+반면 WAS는 동일 페이지에 대한 요청이 여러 개인 경우 1개의 프로세스에 요청된 개수만큼 스레드가 생성되어 처리하기 때문에 메모리 절약이 가능하다.
+
+  <details>
+    <summary>🔍 용어: 프로세스, 스레드</summary>
+    <ul style="font-size: 14px;">
+        <li><span style="font-weight: bold;">프로세스(Process)</span>: 컴퓨터에서 연속적으로 실행되고 있는 프로그램</li>
+        <li><span style="font-weight: bold;">스레드(Thread):</span>: 프로세스 내에서 실행되는 여러 흐름의 단위</li>
+    </ul>
+  </details>
 
 <br />
 
