@@ -7,7 +7,7 @@ draft: false
 
 <p style="color: gray; font-style: italic">해당 글은 <span style="font-weight: bold;"><a htef="https://www.rfc-editor.org/info/rfc7230" target="_blank">HTTP/1.1 - RFC7230 문서</a></span>를 기준으로 작성되었습니다.</p>
 
-HTTP는 브라우저와 서버가 대화를 할 때 사용하는 것이다. HTTP를 이해하면 웹의 동작 원리를 이해한 다는 것이며, 웹 서버와 네트워크를 관리할 때 정확한 근거로 올바른 판단을 내릴 때 도움이 될 수 있다.
+> HTTP는 브라우저와 서버가 대화를 할 때 사용하는 것이다. HTTP를 이해하면 웹의 동작 원리를 이해한 다는 것이며, 웹 서버와 네트워크를 관리할 때 정확한 근거로 올바른 판단을 내릴 때 도움이 될 수 있다.
 
 ## HTTP란?
 
