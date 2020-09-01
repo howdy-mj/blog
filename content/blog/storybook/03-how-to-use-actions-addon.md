@@ -12,7 +12,7 @@ _해당 글은 Storybook 5.3 기준으로 작성되었습니다._
 ## Actions
 
 - [Actions repo](https://github.com/storybookjs/storybook/tree/master/addons/actions)
-- [Actions 소개 및 설치](https://howdy-mj.netlify.app/storybook/02-addon-intro/#actions)
+- [Actions 소개 및 설치](https://howdy-mj.me/storybook/02-addon-intro/#actions)
 
 <br>
 

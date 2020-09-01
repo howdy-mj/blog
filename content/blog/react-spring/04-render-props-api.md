@@ -20,7 +20,7 @@ Render-props api도 크게 5가지로 나뉜다.
 
 _해당 글은 react-spring 8.0 기준으로 작성되었다._
 
-react-spring의 property는 [이전글](https://howdy-mj.netlify.app/react-spring/02-common-api/)을 참고하길 바란다.
+react-spring의 property는 [이전글](https://howdy-mj.me/react-spring/02-common-api/)을 참고하길 바란다.
 
 ### 1. Spring
 

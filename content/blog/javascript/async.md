@@ -7,7 +7,7 @@ draft: false
 
 ## 비동기(Asynchronous) 함수란?
 
-자바스크립트는 [싱글스레드](https://howdy-mj.netlify.app/node/about-node.js/#%EC%8A%A4%EB%A0%88%EB%93%9Cthread)이기 때문에 한 번에 하나의 작업만 수행할 수 있다. 이를 해결하기 위해 **비동기**가 생겼다.
+자바스크립트는 [싱글스레드](https://howdy-mj.me/node/about-node.js/#%EC%8A%A4%EB%A0%88%EB%93%9Cthread)이기 때문에 한 번에 하나의 작업만 수행할 수 있다. 이를 해결하기 위해 **비동기**가 생겼다.
 
 비동기란 특정 코드의 처리가 끝나기 전에 다음 코드를 실행할 수 있는 것을 뜻한다.
 

@@ -21,7 +21,7 @@ draft: false
 
 이때 주소창에 URL을 입력하고 엔터를 누르는 행위가 HTTP 요청을 보내는 것이고, 웹 페이지가 뜨는 것이 응답을 받은 것이다.
 
-<a href="https://howdy-mj.netlify.app/network/what-is-uri/" target="_blank">URI란? (feat. URL, URN)</a>
+<a href="https://howdy-mj.me/network/what-is-uri/" target="_blank">URI란? (feat. URL, URN)</a>
 
 <div style="text-align: center;"><img src="./images/google.png"></div>
 

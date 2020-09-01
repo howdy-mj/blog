@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-style: italic; font-size: 14px">
-<p>해당 글에서 자세히 설명되지 않은 용어는 <a href="https://howdy-mj.netlify.app/general/about-npm">npm:소개, 설치, 명령어, 배포</a> 글에서 볼 수 있다.</p>
+<p>해당 글에서 자세히 설명되지 않은 용어는 <a href="https://howdy-mj.me/general/about-npm">npm:소개, 설치, 명령어, 배포</a> 글에서 볼 수 있다.</p>
 <p>해당 글은 <a href="https://v4.webpack.js.org/">webpack4</a>를 기준으로 작성되었다.</p>
 </div>
 

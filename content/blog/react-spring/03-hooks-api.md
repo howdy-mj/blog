@@ -53,7 +53,7 @@ function App() {
 
 `onClick()`을 했을 때, open이 `true`로 바뀌면서 div의 색상과 숫자를 채워주고 있다.
 
-react-spring [introduction](https://howdy-mj.netlify.app/react-spring/01-introduction/) 글에서 썼듯이, Hooks api는 view를 모르기 때문에 `useMeasure()`라는 custom Hook으로 `{ width }`를 정의해서 return 안에 있는 `animated.div`에 알려주었다.
+react-spring [introduction](https://howdy-mj.me/react-spring/01-introduction/) 글에서 썼듯이, Hooks api는 view를 모르기 때문에 `useMeasure()`라는 custom Hook으로 `{ width }`를 정의해서 return 안에 있는 `animated.div`에 알려주었다.
 
 return문 안에 있는 두 개의 `animated.div`에 모두 props로 useSpring 값을 넘겨주었고, 만약 open이 `true`가 된다면, div의 width만큼 색상과 숫자(px)이 채워진다.
 
@@ -120,7 +120,7 @@ export default function Goo() {
 ```
 
 `fast`와 `slow`는 config의 mass, tension, friction으로 설정했다.
-아직 spring들의 property를 모르겠다면, [전글](https://howdy-mj.netlify.app/react-spring/02-common-api/)을 참고하길 바란다.
+아직 spring들의 property를 모르겠다면, [전글](https://howdy-mj.me/react-spring/02-common-api/)을 참고하길 바란다.
 
 `trans`에는 마우스의 x, y값 대로 움직일 것을 미리 정의했다.
 

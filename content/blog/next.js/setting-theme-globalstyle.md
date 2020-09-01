@@ -9,7 +9,7 @@ GlobalStyle은 User agent stylesheet(웹 브라우저의 기본 속성값)을 �
 
 ## Next.js에서 Globalstyle 적용하기
 
-Next.js는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. (참고: [Next.js 구동방식](https://howdy-mj.netlify.app/next.js/next-js-intro/#nextjs%EC%9D%98-ssr))
+Next.js는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. (참고: [Next.js 구동방식](https://howdy-mj.me/next.js/next-js-intro/#nextjs%EC%9D%98-ssr))
 
 ```
 node_modules/

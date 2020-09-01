@@ -20,12 +20,12 @@ lang: 'ko'
 3. 불필요한 커뮤니케이션을 줄여 효율적으로 움직이는
 4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
-|             |                                 |
-| ----------: | ------------------------------- |
-|  **GitHub** | <https://github.com/howdy-mj>   |
-| **Tistory** | <https://kim-mj.tistory.com/>   |
-|    **Blog** | <https://howdy-mj.netlify.app/> |
-|   **Email** | <hi.minjungkim@gmail.com>       |
+|             |                               |
+| ----------: | ----------------------------- |
+|  **GitHub** | <https://github.com/howdy-mj> |
+| **Tistory** | <https://kim-mj.tistory.com/> |
+|    **Blog** | <https://howdy-mj.me/>        |
+|   **Email** | <hi.minjungkim@gmail.com>     |
 
 <br />
 

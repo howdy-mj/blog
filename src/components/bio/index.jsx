@@ -48,7 +48,7 @@ export const Bio = () => (
                     </a>
                   )}
                   {/* {social.resume && (
-                    <a href={`https://howdy-mj.netlify.app/${social.resume}`}>
+                    <a href={`https://howdy-mj.me/${social.resume}`}>
                       About me
                     </a>
                   )} */}

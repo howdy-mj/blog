@@ -200,7 +200,7 @@ _HTTP 명세에서는 URI를 더 일반화된 개념으로 사용하지만, 실�
 
 URN은 현재 그 리소스가 어디에 있든 상관없이 이름만으로 리소스를 식별한다.
 
-URL의 문제점은, 만약 `howdy-mj.netlify.app/web/web-server-and-was/` 에서 web이라는 카테고리를 network로 변경했을 때, 그 이전에 URL을 가져갔던 사람은 변경된 주소로 들어가지 못한다.
+URL의 문제점은, 만약 `howdy-mj.me/web/web-server-and-was/` 에서 web이라는 카테고리를 network로 변경했을 때, 그 이전에 URL을 가져갔던 사람은 변경된 주소로 들어가지 못한다.
 
 하지만 URN은 위치가 바뀌었더라도 리소스의 위치를 찾을 수 있다.
 

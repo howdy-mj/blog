@@ -10,7 +10,7 @@ draft: false
 ## Knobs
 
 - [Knobs repo](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
-- [Knobs 소개 및 설치](https://howdy-mj.netlify.app/storybook/02-addon-intro/#knobs)
+- [Knobs 소개 및 설치](https://howdy-mj.me/storybook/02-addon-intro/#knobs)
 
 Knobs는 component에 props가 있을 때, 더 보기 쉽게 도와주는 addon이다.
 
