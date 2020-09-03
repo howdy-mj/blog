@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.08.16
+마지막 업데이트: 2020.09.03
 </div>
 
 <br />
@@ -17,6 +17,12 @@ draft: false
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
 
+## HTML
+
+- [HTML Entity Reference](https://css-tricks.com/snippets/html/glyphs/)
+
+- [HTML Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/)
+
 ## CSS
 
 - [Pseudo Class와 Pseudo Element 활용하기](https://asfirstalways.tistory.com/184) (2016.07.04)
@@ -25,11 +31,21 @@ draft: false
 
 - [Ten modern layouts in one line of CSS](https://web.dev/one-line-layouts/) (2020.07.07)
 
+- [cubie-bezier](https://cubic-bezier.com/#.17,.67,.83,.67)
+
+- [Easing 함수 치트 시트](https://easings.net/ko)
+
 ## JavaScript
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
 
 - [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://medium.com/@Dongmin_Jang/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd) (2019.01.29)
+
+- [How JavaScript works: Under the hood of custom elements + Best practices on building reusable components](https://blog.sessionstack.com/how-javascript-works-under-the-hood-of-custom-elements-best-practices-on-building-reusable-e118e888de0c) (2018.08.06)
+
+- [JavaScript Promise](https://www.hanbit.co.kr/store/books/look.php?p_code=E5027975256) (ebook 무료)
+
+- [ES6 Browser Compatibility Table](https://kangax.github.io/compat-table/es6/)
 
 ## TypeScript
 
@@ -65,6 +81,8 @@ draft: false
 
 - [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
 
+- [모두를 위한 대수적 효과](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/) (2019.07.21)
+
 ## 디자인
 
 - [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
@@ -84,6 +102,12 @@ draft: false
 - [Text fields & Forms design — UI components series](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0) (?.05.25)
 
 - [서핏 - 디자이너를 위한 모든 디자인 콘텐츠](https://www.surfit.io/)
+
+- [Mobbin - Latest Mobile Design Pattern](https://mobbin.design/)
+
+## Source
+
+- [Coverr](https://coverr.co/) (무료 동영상)
 
 ## 라이브러리
 

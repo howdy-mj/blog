@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.08.25
+마지막 업데이트: 2020.09.03
 </div>
 
 <br />
@@ -16,6 +16,8 @@ draft: false
 - [StackShare](https://stackshare.io/feed)
 
 - [npmview](https://npmview.now.sh/)
+
+- [StatCounter](https://gs.statcounter.com/)
 
 ## 커뮤니티
 
@@ -33,7 +35,9 @@ draft: false
 
 - [30년간 개발자로 살면서 배운 것](https://taegon.kim/archives/6546)
 
-## 블로그
+## 기술 블로그
+
+### 개인
 
 - [JBEE.io](https://jbee.io/)
 
@@ -50,6 +54,30 @@ draft: false
 - [Addy Osmani](https://medium.com/@addyosmani)
 
 - [JIHahnSol](https://velog.io/@zansol)
+
+### 기업
+
+- [카카오](https://tech.kakao.com/)
+
+- [당근마켓](https://medium.com/daangn)
+
+- [NHN](https://meetup.toast.com/)
+
+- [Naver D2](https://d2.naver.com/helloworld)
+
+- [라인 LINE](https://engineering.linecorp.com/ko/blog/)
+
+- [우아한 형제들](https://woowabros.github.io/)
+
+- [야놀자](https://yanolja.github.io/)
+
+- [쿠팡](https://medium.com/coupang-tech)
+
+- [레진코믹스](https://tech.lezhin.com/)
+
+- [리멤버](https://blog.dramancompany.com/)
+
+- [리디북스](https://www.ridicorp.com/blog/)
 
 ## 개발환경 세팅
 
