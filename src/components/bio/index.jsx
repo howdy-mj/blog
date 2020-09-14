@@ -23,7 +23,7 @@ export const Bio = () => (
                 }}
               />
               <div className="author-name">
-                {/* <span className="author-name-prefix">👆</span> */}
+                <span className="author-name-prefix">👆</span>
                 <Link to={'/about'} className="author-name-content">
                   <span>{author}</span>
                 </Link>
@@ -52,7 +52,7 @@ export const Bio = () => (
                       About me
                     </a>
                   )} */}
-                  {social.resume && <Link to={'/about'}>About me</Link>}
+                  {/* {social.resume && <Link to={'/about'}>About me</Link>} */}
                 </p>
               </div>
             </div>
