@@ -51,7 +51,7 @@ BEM은 Block, Element, Modifier의 줄임말로 CSS 방법론 중 하나로, 스
 </section>
 ```
 
-_전체 코드는 <a href="https://github.com/howdy-mj/advanced-css-course/blob/master/1-Natours/index.html" target="_blank">Github Repo</a>에서 볼 수 있다._
+<p style="font-style: italic;">전체 코드는 <a href="https://github.com/howdy-mj/advanced-css-course/blob/master/1-Natours/index.html" target="_blank">Github Repo</a>에서 볼 수 있다.</p>
 
 <br />
 
