@@ -25,6 +25,8 @@ $ yarn storybook
 
 `@storybook/*` 패키지 모두 업그레이드 된다.
 
+<br />
+
 ### 달라진 점
 
 **TypeScript 빌트인 지원 (zero-config)**
@@ -126,7 +128,7 @@ Storybook의 configure는 SB 5.3에서 개편되었다. `presets.js`는`main.js`
 메인 config 파일로 스토리북의 생성(generation)을 담당한다. 예를 들어, story 파일들의 위치, presets 관리(webpack, babel이 다른 파일을 허용할 수 있도록), webpack config 정규화 업무 그리고 기본적인 addon 설정도 `main.js`에 작성한다.
 
 <div style="text-align: center; font-size: 10px;">
-<img src="https://miro.medium.com/max/700/1*7qO4gGhxEcwW6FmA3sBPVw.png">
+<img src="https://miro.medium.com/max/700/1*7qO4gGhxEcwW6FmA3sBPVw.png" style="margin-bottom: 0;">
 https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
 </div>
 
@@ -137,7 +139,7 @@ https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
 `config.js`를 대체하며, stories의 렌더링을 설정한다. `config.js`와 달리 `preview.js`는 어느 stories의 로딩도 책임지지 않는다. 주 목적은 global parameters와 decorators를 추가하는 것이다.
 
 <div style="text-align: center; font-size: 10px;">
-<img src="https://miro.medium.com/max/700/1*FmtGe9jCMsrkfJYQ6AALYQ.png">
+<img src="https://miro.medium.com/max/700/1*FmtGe9jCMsrkfJYQ6AALYQ.png" style="margin-bottom: 0;">
 https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
 </div>
 
@@ -148,9 +150,11 @@ https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
 `addons.js`를 대체하며, Storybook의 UI 렌터를 커스텀할 수 있다. Canvas를 제외한 모든 화면을 뜻한다.
 
 <div style="text-align: center; font-size: 10px;">
-<img src="https://miro.medium.com/max/577/1*USRW0qjGyqcNQH5sWWpMDg.png">
+<img src="https://miro.medium.com/max/577/1*USRW0qjGyqcNQH5sWWpMDg.png" style="margin-bottom: 0;">
 https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
 </div>
+
+<br />
 
 ## Stories 포맷
 
@@ -193,11 +197,12 @@ Tertiary.args = {  ...Primary.args,  label: '📚📕📈🤓',};
 
 그리고 `addon-knobs` 보다 더 좋은 `controls`가 나타났다.
 
-<div>
+<div style="text-align: center; font-size: 10px;">
 <video style="max-width: 100%" autoplay loop>
   <source src="https://storybook.js.org/ab451447f5f33717ed2ae14567375bb5/addon-controls-demo-optimized.mp4">
   <source >
 </video>
+storybook 홈페이지
 </div>
 
 다음 몇 개의 글에서 더 자세한 stories 작성법, addons에 대해 다뤄보겠다.
@@ -210,8 +215,9 @@ Tertiary.args = {  ...Primary.args,  label: '📚📕📈🤓',};
 
 - https://github.com/storybookjs/storybook/blob/next/MIGRATION.md
 - https://medium.com/storybookjs/declarative-storybook-configuration-49912f77b78
-- 출처가 쓰여 있지 않은 것은 공식 홈페이지에서 가져왔습니다
 
 <div>
 
-<p style="font-size: 13px; font-style: italic">피드백은 언제나 환영합니다</p>
+<br />
+
+<p style="font-size: 13px; font-style: italic; text-align: center;">피드백은 언제나 환영합니다</p>
