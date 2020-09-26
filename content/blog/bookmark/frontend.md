@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.03
+마지막 업데이트: 2020.09.26
 </div>
 
 <br />
@@ -18,6 +18,8 @@ draft: false
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
 
 ## HTML
+
+- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
 
 - [HTML Entity Reference](https://css-tricks.com/snippets/html/glyphs/)
 
@@ -47,6 +49,8 @@ draft: false
 
 - [ES6 Browser Compatibility Table](https://kangax.github.io/compat-table/es6/)
 
+- [Deep JavaScript](https://exploringjs.com/deep-js/toc.html)
+
 ## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
@@ -67,7 +71,7 @@ draft: false
 
 - [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
 
-## WebQL
+## WebGL
 
 - [WebGL Fundamentals](https://webglfundamentals.org/)
 
@@ -108,35 +112,3 @@ draft: false
 ## Source
 
 - [Coverr](https://coverr.co/) (무료 동영상)
-
-## 라이브러리
-
-- [React](https://ko.reactjs.org/)
-
-- [React Hook Form](https://react-hook-form.com/kr/)
-
-- [react-spring](https://www.react-spring.io/)
-
-- [SASS](https://sass-lang.com/)
-
-- [Emotion](https://emotion.sh/docs/introduction)
-
-- [SVGR - Transform SVG into React components](https://react-svgr.com/)
-
-### UI 라이브러리
-
-- [Ant Design](https://ant.design/)
-
-- [Material-UI](https://material-ui.com/)
-
-- [Storybook](https://storybook.js.org/)
-
-- [React Toolbox](https://github.com/react-toolbox/react-toolbox)
-
-- [Blueprint](https://blueprintjs.com/)
-
-- [grommet](https://v2.grommet.io/)
-
-- [Semantic UI React](https://github.com/Semantic-Org/Semantic-UI-React)
-
-- [Carbon Design System](https://www.carbondesignsystem.com/)
