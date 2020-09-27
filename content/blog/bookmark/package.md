@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.26
-</div> -->
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2020.09.27
+</div>
 
 <br />
 
@@ -23,23 +23,47 @@ draft: false
 
 - [Angular](https://angular.io/)
 
+- [Redux](https://redux.js.org/)
+
+- [Rematch](https://rematch.netlify.app/#/introduction)
+
+- [GraphQL](https://graphql.org/)
+
 ### React
+
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+
+- [React Redux](https://react-redux.js.org/)
+
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 - [React Hook Form](https://react-hook-form.com/kr/)
 
 - [react-spring](https://www.react-spring.io/)
 
-<br />
-
 ## Styling
 
 - [SASS](https://sass-lang.com/)
+
+- [Less](http://lesscss.org/)
 
 ### CSS-in-JS
 
 - [Styled components](https://styled-components.com/)
 
 - [Emotion](https://emotion.sh/docs/introduction)
+
+## Development Environment
+
+- [Webpack](https://webpack.js.org/)
+
+- [Babel](https://babeljs.io/)
+
+- [Rollup](https://rollupjs.org/guide/en/)
+
+- [Prettier](https://prettier.io/)
+
+- [ESLint](https://eslint.org/)
 
 ## Image
 
