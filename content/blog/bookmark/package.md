@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.27
+마지막 업데이트: 2020.09.30
 </div>
 
 <br />
@@ -40,6 +40,8 @@ draft: false
 - [React Hook Form](https://react-hook-form.com/kr/)
 
 - [react-spring](https://www.react-spring.io/)
+
+- [Loadable Components - React code splitting](https://loadable-components.com/)
 
 ## Styling
 
@@ -77,12 +79,12 @@ draft: false
 
 - [Storybook](https://storybook.js.org/)
 
-- [React Toolbox (github)](https://github.com/react-toolbox/react-toolbox)
+- [React Toolbox - implement Google's Material Design specification](https://github.com/react-toolbox/react-toolbox) (github)
 
-- [Blueprint](https://blueprintjs.com/)
+- [Blueprint - A React-based UI toolkit for the web](https://blueprintjs.com/)
 
-- [grommet](https://v2.grommet.io/)
+- [grommet - react-based theming framework](https://v2.grommet.io/)
 
-- [Semantic UI React (github)](https://github.com/Semantic-Org/Semantic-UI-React)
+- [Semantic UI React](https://react.semantic-ui.com/)
 
 - [Carbon Design System](https://www.carbondesignsystem.com/)

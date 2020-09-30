@@ -6,14 +6,14 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.03
+마지막 업데이트: 2020.09.30
 </div>
 
 <br />
 
 개발자가 읽으면 좋을 글 혹은 사이트 모음
 
-- [StackShare](https://stackshare.io/feed)
+- [StackShare - Stacks used by top companies](https://stackshare.io/)
 
 - [npmview](https://npmview.now.sh/)
 
@@ -24,6 +24,8 @@ draft: false
 - [Social Network for Programmers and Developers](https://morioh.com/explore)
 
 - [자바스크립트 개발자 포럼](https://jsdev.kr/)
+
+- [DEV Community](https://dev.to/)
 
 ## CS(개발 지식)
 
@@ -54,6 +56,8 @@ draft: false
 - [Addy Osmani](https://medium.com/@addyosmani)
 
 - [JIHahnSol](https://velog.io/@zansol)
+
+- [ahn.heejong](https://ahnheejong.name/)
 
 ### 기업
 
