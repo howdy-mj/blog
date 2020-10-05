@@ -35,7 +35,7 @@ lang: 'ko'
 
 재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | Frontend Developer
 
-- React, Redux, Rematch
+- TypeScript, React, Redux, Rematch
 - SCSS
 - Git flow, Notion, Slack으로 업무 진행
 - HTTP, Web Server와 WAS 세미나 발표

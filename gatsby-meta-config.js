@@ -11,7 +11,7 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
     resume: `about`,
   },
-  icon: `content/assets/lego_icon.png`,
+  icon: `content/assets/logo_white.png`,
   keywords: [`frontend`, `react`, `javascript`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
