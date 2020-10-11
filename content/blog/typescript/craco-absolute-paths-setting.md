@@ -81,7 +81,11 @@ module.exports = {
 }
 ```
 
-"<span style="color: darkred;">Can't parse tsconfig.extend.json.</span>"이라는 에러가 뜬다면, `tsconfig.extend.json` 마지막 줄에 콤마(,)가 있는지 확인하고 없애야 한다. (ex. `"@styles/*": ["./styles/*"],`와 같다면 마지막 `,`를 삭제)
+<span style="color: red;">"Can't parse tsconfig.extend.json."</span>이라는 에러가 뜬다면, `tsconfig.extend.json` 마지막 줄에 콤마(`,`)가 있는지 확인하고 없애야 한다.
+
+ex. `"@styles/*": ["./styles/*"],`이라면 마지막 `,`를 삭제
+
+<br />
 
 그리고 `tsconfig.json`, `package.json` 파일에서 아래의 항목을 추가/수정 한다.
 
