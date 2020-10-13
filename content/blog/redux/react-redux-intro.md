@@ -239,7 +239,7 @@ connect()() // output: '하우디엠제이'
 
 `src/components/SongList.js`
 
-```js
+```js{11}
 import React from 'react'
 import { connect } from 'react-redux'
 
@@ -268,7 +268,7 @@ export default connect(mapStateToProps)(SongList)
 위의 이미지에서 확인할 수 있듯이, state가 객체에 한번 감싸져 온다.
 비구조화 할당을 통해 바로 꺼낼 수 있도록 가져오자.
 
-```js
+```js{4}
 // src/components/SongList.js
 // ...
 const mapStateToProps = state => {
@@ -284,7 +284,7 @@ const mapStateToProps = state => {
 
 그리고 이제 컴포넌트 안에서도 props로 제대로 가져오고 있는지 확인해보자.
 
-```js
+```js{4}
 // src/components/SongList.js
 // ...
 const SongList = props => {
@@ -357,7 +357,7 @@ const App = () => {
 
 `src/components/SongList.js`
 
-```js
+```js{26,27,28}
 import React from 'react'
 import { connect } from 'react-redux'
 import { selectSong } from '../actions'
@@ -399,7 +399,7 @@ export default connect(mapStateToProps, {
 
 `src/components/SongList.js`
 
-```js
+```js{10}
 // ...
 const SongList = props => {
   const renderList = () => {
@@ -559,3 +559,5 @@ const SongDetail = ({ selectedSong }) => {
 </div>
 
 정상적으로 화면에 구현되는 것을 확인할 수 있다.
+
+완성 코드: [songs-react-redux](https://github.com/howdy-mj/songs-react-redux)
