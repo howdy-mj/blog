@@ -321,7 +321,7 @@ Home.args = {
 
 Home과 같은 방식으로 다른 Svg도 두개 더 작성해보자.
 
-```ts
+```tsx
 // Svg.Stories.tsx
 // 위 내용 생략
 
@@ -350,7 +350,7 @@ Compass.args = {
 
 `src/stories/Svg.stories.tsx`
 
-```ts
+```tsx
 // ...
 export default {
   title: 'Components/SVG',
@@ -414,6 +414,10 @@ parameters의 componentSubtitle는 Docs의 'SVG'아래 있는 서브타이틀을
 수정한 코드: [Github - SVG 컴포넌트 생성, 스토리북 적용](https://github.com/howdy-mj/insta-clone/commit/256db473c65d832442ca316642d6243fd539e73c), [Github - SVG Docs](https://github.com/howdy-mj/insta-clone/commit/6510fde436ab0e24b4526f5eec0610e66210224d)
 
 SVG를 만든 것 처럼, 나머지도 추상화하고 스토리북으로 만든 후, 전체 페이지를 어떻게 스토리북에 적용할지 알아보자.
+
+--
+
+[Github - 다른것 추상화](https://github.com/howdy-mj/insta-clone/commit/4b000c0ca7b8481de5866db77b7441bb841fec7a)
 
 --
 
