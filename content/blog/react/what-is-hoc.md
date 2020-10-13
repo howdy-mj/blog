@@ -1,7 +1,7 @@
 ---
 title: 'React HOC(Higher-Order Components)'
 date: 2020-7-19 20:10:43
-category: 'React'
+category: 'react'
 draft: true
 ---
 

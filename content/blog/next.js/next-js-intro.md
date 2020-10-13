@@ -1,7 +1,7 @@
 ---
 title: 'Next.js 설치, 라우팅, 구동방식'
 date: 2020-7-03 20:10:43
-category: 'Next.js'
+category: 'next.js'
 draft: false
 ---
 

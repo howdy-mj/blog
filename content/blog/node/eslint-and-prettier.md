@@ -1,7 +1,7 @@
 ---
 title: 'ESLint & Prettier 알아보기'
 date: 2020-7-23 00:54:55
-category: 'Node.js'
+category: 'node'
 draft: false
 ---
 

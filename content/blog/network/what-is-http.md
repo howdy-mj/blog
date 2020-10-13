@@ -1,7 +1,7 @@
 ---
 title: 'HTTP란? HTTP 메세지, 웹의 구성요소'
 date: 2020-8-27 13:12:01
-category: 'Network'
+category: 'network'
 draft: false
 ---
 

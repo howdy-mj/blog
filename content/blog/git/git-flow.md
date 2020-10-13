@@ -1,7 +1,7 @@
 ---
 title: 'Git flow: 배경, 브랜치'
 date: 2020-7-25 15:50:08
-category: 'Git'
+category: 'git'
 draft: false
 ---
 

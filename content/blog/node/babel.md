@@ -1,7 +1,7 @@
 ---
 title: 'Babel 알아보기'
 date: 2020-7-20 00:38:13
-category: 'Node.js'
+category: 'node'
 draft: false
 ---
 

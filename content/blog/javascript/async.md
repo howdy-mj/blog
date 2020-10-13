@@ -1,7 +1,7 @@
 ---
 title: '자바스크립트 비동기 함수 알아보기'
 date: 2020-6-26 23:53:13
-category: 'JavaScript'
+category: 'javascript'
 draft: false
 ---
 

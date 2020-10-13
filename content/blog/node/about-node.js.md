@@ -1,7 +1,7 @@
 ---
 title: 'Node.js란?'
 date: 2020-6-5 11:10:00
-category: 'Node.js'
+category: 'node'
 draft: false
 ---
 

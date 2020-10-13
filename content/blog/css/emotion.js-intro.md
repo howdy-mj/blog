@@ -1,7 +1,7 @@
 ---
 title: 'emotion.js 소개 및 사용법 (feat. CSS-in-JS)'
 date: 2020-6-9 12:04:13
-category: 'CSS'
+category: 'css'
 draft: false
 ---
 

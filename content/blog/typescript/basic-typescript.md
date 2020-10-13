@@ -1,7 +1,7 @@
 ---
 title: '타입스크립트(TypeScript) 소개 및 맛보기'
 date: 2020-8-22 14:22:13
-category: 'TypeScript'
+category: 'typescript'
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Flux(플럭스)'
 date: 2020-7-19 16:42:23
-category: 'React'
+category: 'react'
 draft: false
 ---
 

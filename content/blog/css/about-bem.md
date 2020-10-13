@@ -1,7 +1,7 @@
 ---
 title: 'BEM(Block Element Modifier)이란?'
 date: 2020-9-23 00:04:13
-category: 'CSS'
+category: 'css'
 draft: false
 ---
 

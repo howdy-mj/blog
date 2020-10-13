@@ -1,7 +1,7 @@
 ---
 title: 'Next.js getStaticProps undefined 에러'
 date: 2020-7-06 02:57:43
-category: 'Next.js'
+category: 'next.js'
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'URI란? (feat. URL, URN)'
 date: 2020-8-21 16:12:01
-category: 'Network'
+category: 'network'
 draft: false
 ---
 

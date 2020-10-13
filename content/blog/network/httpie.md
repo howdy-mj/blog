@@ -1,7 +1,7 @@
 ---
 title: 'HTTPie 소개 및 사용법'
 date: 2020-8-26 00:12:01
-category: 'Network'
+category: 'network'
 draft: true
 ---
 

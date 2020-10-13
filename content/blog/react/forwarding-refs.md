@@ -1,7 +1,7 @@
 ---
 title: 'React - Forwarding Refs'
 date: 2020-6-13 01:10:43
-category: 'general'
+category: 'react'
 draft: true
 ---
 

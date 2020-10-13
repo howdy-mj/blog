@@ -1,7 +1,7 @@
 ---
 title: 'Styled Components를 Global에서 사용하기(w/반응형)'
 date: 2020-9-16 21:37:13
-category: 'CSS'
+category: 'css'
 draft: false
 ---
 

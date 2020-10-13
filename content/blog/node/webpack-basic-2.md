@@ -1,7 +1,7 @@
 ---
 title: 'Webpack 웹팩 알아보기(2) : plugin'
 date: 2020-7-16 23:38:13
-category: 'Node.js'
+category: 'node'
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Git 알아보기'
 date: 2020-7-24 14:42:29
-category: 'Git'
+category: 'git'
 draft: false
 ---
 
