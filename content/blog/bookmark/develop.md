@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.30
+마지막 업데이트: 2020.10.14
 </div>
 
 <br />
@@ -82,6 +82,10 @@ draft: false
 - [리멤버](https://blog.dramancompany.com/)
 
 - [리디북스](https://www.ridicorp.com/blog/)
+
+- [뱅크샐러드]([https://blog.banksalad.com/tech/)
+
+- [크몽](https://brunch.co.kr/magazine/kmong-tech)
 
 ## 개발환경 세팅
 
