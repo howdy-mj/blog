@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.10.14
+마지막 업데이트: 2020.10.18
 </div>
 
 <br />
@@ -32,6 +32,8 @@ draft: false
 - [코드 악취를 맡는 후각 훈련의 시간](https://helloworld.kurly.com/blog/rms-refactoring/) (2020.06.09)
 
 - [컴퓨터과학과 프로그래밍 입문(MIT 강의)](http://www.snow.or.kr/lecture/applied_sciences/computer_science/4997.html) (2009)
+
+- [개발자를 위한 인프라 기초 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/index.html?fbclid=IwAR0A529efk5t-wiPpwNfIwoorwEQtAx8W5BhdmjApLeadmHlcJR_uocCm8U) (2018.11.09)
 
 ## 회고록 & 동기부여
 
@@ -86,6 +88,8 @@ draft: false
 - [뱅크샐러드]([https://blog.banksalad.com/tech/)
 
 - [크몽](https://brunch.co.kr/magazine/kmong-tech)
+
+- [쏘카](https://tech.socarcorp.kr/)
 
 ## 개발환경 세팅
 

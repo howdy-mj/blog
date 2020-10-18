@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.09.26
+마지막 업데이트: 2020.10.18
 </div>
 
 <br />
@@ -51,6 +51,8 @@ draft: false
 
 - [Deep JavaScript](https://exploringjs.com/deep-js/toc.html)
 
+- [2ality – JavaScript and more](https://2ality.com/)
+
 ## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
@@ -70,6 +72,10 @@ draft: false
 - [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/) (2019.12)
 
 - [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
+
+## Storybook
+
+- [SOCAR FRAME - SOCAR DESIGN SYSTEM](https://socarframe.socar.kr/8bb3aba4a/p/5857a5-socar-frame)
 
 ## WebGL
 
