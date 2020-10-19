@@ -45,6 +45,8 @@ EditorConfig는 XML을 제외한 Visual Studio가 지원하는 모든 언어에�
 
 - `!*.xml`: '.xml'을 제외한 파일에 적용
 
+`.editorconfig`
+
 ```config
 # 최상위에 있는 파일로 명시
 root = true
@@ -78,8 +80,6 @@ indent_style = space
 indent_size = 2
 ```
 
-<br />
-
 ### EditorConfig Properties
 
 - `indent_style`: 들여 쓰기를 'tab', 'space'중 어떤 걸로 할 것인지 설정
@@ -106,8 +106,6 @@ indent_size = 2
 - `insert_final_newline`: 'true'일 경우, 파일을 저장할 때 새 줄로 끝남
 
 - `root`: root 폴더의 파일에 설정하며, 'true'일 경우 `.editorconfig` 파일 검색을 중지
-
-<br />
 
 ## 결론
 
