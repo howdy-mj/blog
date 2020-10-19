@@ -43,6 +43,8 @@ draft: false
 
 - [Loadable Components - React code splitting](https://loadable-components.com/)
 
+- [React Icons](https://react-icons.github.io/react-icons/)
+
 ## Styling
 
 - [SASS](https://sass-lang.com/)
@@ -90,3 +92,9 @@ draft: false
 - [Carbon Design System](https://www.carbondesignsystem.com/)
 
 - [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
+
+## Server
+
+- [Loopback - create dynamic end-to-end REST APIs for Node.js](https://loopback.io/doc/index.html)
+
+- [Moleculer - Progressive microservices framework for Node.js.](https://moleculer.services/)

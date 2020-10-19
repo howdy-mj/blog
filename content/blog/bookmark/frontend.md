@@ -25,7 +25,11 @@ draft: false
 
 - [HTML Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/)
 
+- [시맨틱하게 HTML을 짠다는 것.](https://medium.com/@soeunlee/%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%95%98%EA%B2%8C-html%EC%9D%84-%EC%A7%A0%EB%8B%A4%EB%8A%94-%EA%B2%83-90612ffc988e) (2017.04.02)
+
 ## CSS
+
+- [CSS Snapshot 2018](https://www.w3.org/TR/css-2018/)
 
 - [Pseudo Class와 Pseudo Element 활용하기](https://asfirstalways.tistory.com/184) (2016.07.04)
 
@@ -101,6 +105,8 @@ draft: false
 
 - [Color Picker](http://www.flatuicolorpicker.com/)
 
+- [아티스트를 위한 색상 팔레트, 색상 구성표 - Adobe Color](https://color.adobe.com/ko/explore)
+
 - [Fonts In Use](https://fontsinuse.com/)
 
 - [Figma: the collaborative interface design tool](https://www.figma.com/)
@@ -117,4 +123,22 @@ draft: false
 
 ## Source
 
-- [Coverr](https://coverr.co/) (무료 동영상)
+- [Coverr - Free Videos](https://coverr.co/)
+
+- [Morguefile - Free photos for commercial use](https://morguefile.com/)
+
+- [Imagebase - Absolutely free images](https://www.imagebase.net/)
+
+- [Pixabay - 무료 이미지](https://pixabay.com/ko/)
+
+- [Unsplash: Beautiful Free Images & Pictures](https://unsplash.com/)
+
+- [Gratisography - Free High-Resolution Photos](https://gratisography.com/)
+
+- [Flickr](https://www.flickr.com/) (사진)
+
+- [Flaticon - Free vector icons](https://www.flaticon.com/)
+
+- [publicdomainvectors](https://publicdomainvectors.org/en/) (vector 이미지)
+
+- [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
