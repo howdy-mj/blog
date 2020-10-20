@@ -35,8 +35,9 @@ lang: 'ko'
 
 재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | Frontend Developer
 
-- TypeScript, React, Redux, Rematch
+- TypeScript, React, Redux(Rematch)
 - SCSS
+- Storybook을 활용해 디자인 시스템 개발, 정책 정리
 - Git flow, Notion, Slack으로 업무 진행
 - HTTP, Web Server와 WAS 세미나 발표
 
