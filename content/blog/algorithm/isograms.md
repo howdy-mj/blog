@@ -5,9 +5,7 @@ category: 'algorithm'
 draft: false
 ---
 
-## Isograms
-
-### 문제
+## 문제
 
 An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
@@ -17,7 +15,7 @@ isIsogram('aba') == false
 isIsogram('moOse') == false // -- ignore letter case
 ```
 
-### 내가 푼 방식
+## 내가 푼 방식
 
 `2020.10.30`
 
@@ -35,5 +33,7 @@ function isIsogram(str) {
   return true
 }
 ```
+
+<br />
 
 출처: [CodeWars](https://www.codewars.com/)
