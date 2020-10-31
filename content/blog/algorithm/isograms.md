@@ -17,7 +17,7 @@ isIsogram('moOse') == false // -- ignore letter case
 
 ## 내가 푼 방식
 
-`2020.10.30`
+2020.10.30 (`15m`)
 
 ```js
 function isIsogram(str) {

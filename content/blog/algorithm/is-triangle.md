@@ -13,7 +13,7 @@ Implement a method that accepts 3 integer values a, b, c. The method should retu
 
 ## 내 풀이
 
-`2020.10.30`: 10'
+2020.10.30 (`10m`)
 
 ```js
 function isTriangle(a, b, c) {
