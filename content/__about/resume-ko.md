@@ -1,6 +1,6 @@
 ---
 title: 'about'
-date: 2020-9-26 22:33:13
+date: 2020-11-04 22:33:13
 lang: 'ko'
 ---
 
@@ -33,7 +33,7 @@ lang: 'ko'
 
 ## 루트에너지(Rootenergy)
 
-재생에너지 크라우드 펀딩 플랫폼 | 20.08 - | Frontend Developer
+재생에너지 크라우드 펀딩 플랫폼 | 20.08 - 20.11 | Frontend Developer
 
 - TypeScript, React, Redux(Rematch)
 - SCSS
