@@ -2,7 +2,7 @@
 title: 'CRA + ESlint + Prettier + Typescript'
 date: 2020-8-22 14:22:13
 category: 'typescript'
-draft: false
+draft: true
 ---
 
 CRA로 만든 TypeScript 기반에 Eslint, Prettier 설정하는 법을 알아보자.
