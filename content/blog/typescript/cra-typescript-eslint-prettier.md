@@ -86,7 +86,7 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 
 <br />
 
-### 패키지 소개
+### 패키지 역할
 
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin): ESLint와 TypeScript를 같이 사용할 수 있도록 도와줌
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser): TypeScript를 ESTree-compatible(호환)로 변환하여 ESLint에서 사용할 수 있도록 해줌
@@ -98,7 +98,7 @@ ESLint와 Prettier는 [이전글](https://howdy-mj.me/node/eslint-and-prettier/)
 
 <br />
 
-### eslint config 소개
+### eslint config 설명
 
 `.eslintrc`
 
