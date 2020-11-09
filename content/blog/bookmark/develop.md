@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.10.18
+마지막 업데이트: 2020.11.09
 </div>
 
 <br />
@@ -61,6 +61,14 @@ draft: false
 
 - [ahn.heejong](https://ahnheejong.name/)
 
+- [Velopert - 1](https://velopert.com/)
+
+- [Velopert - 2](https://velog.io/@velopert)
+
+- [ZeroCho Blog](https://www.zerocho.com/)
+
+- [Captain Pangyo](https://joshua1988.github.io/)
+
 ### 기업
 
 - [카카오](https://tech.kakao.com/)
@@ -85,7 +93,7 @@ draft: false
 
 - [리디북스](https://www.ridicorp.com/blog/)
 
-- [뱅크샐러드]([https://blog.banksalad.com/tech/)
+- [뱅크샐러드](https://blog.banksalad.com/tech/)
 
 - [크몽](https://brunch.co.kr/magazine/kmong-tech)
 

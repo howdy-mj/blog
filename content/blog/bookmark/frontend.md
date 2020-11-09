@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.10.18
+마지막 업데이트: 2020.11.09
 </div>
 
 <br />
@@ -40,6 +40,8 @@ draft: false
 - [cubie-bezier](https://cubic-bezier.com/#.17,.67,.83,.67)
 
 - [Easing 함수 치트 시트](https://easings.net/ko)
+
+- [CSS generator/border](https://html-css-js.com/css/generator/border-outline/)
 
 ## JavaScript
 
@@ -120,6 +122,8 @@ draft: false
 - [서핏 - 디자이너를 위한 모든 디자인 콘텐츠](https://www.surfit.io/)
 
 - [Mobbin - Latest Mobile Design Pattern](https://mobbin.design/)
+
+- [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
 
 ## Source
 
