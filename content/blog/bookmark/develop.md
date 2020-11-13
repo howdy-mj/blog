@@ -35,9 +35,13 @@ draft: false
 
 - [개발자를 위한 인프라 기초 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/index.html?fbclid=IwAR0A529efk5t-wiPpwNfIwoorwEQtAx8W5BhdmjApLeadmHlcJR_uocCm8U) (2018.11.09)
 
+- [부트캠퍼를 위한 컴퓨터 과학](https://csbooks.wisedog.net/)
+
 ## 회고록 & 동기부여
 
 - [30년간 개발자로 살면서 배운 것](https://taegon.kim/archives/6546)
+
+- [5년차 개발자](https://blog.kingbbode.com/51)
 
 ## 기술 블로그
 
@@ -102,3 +106,5 @@ draft: false
 ## 개발환경 세팅
 
 - [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec) (2019.01.19)
+
+- [본격 macOS에 개발 환경 구축하기](https://subicura.com/2017/11/22/mac-os-development-environment-setup.html) (2020.07.06)
