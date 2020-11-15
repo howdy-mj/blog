@@ -137,7 +137,7 @@ export default combineReducers({
 
 이때, [combineReducers](https://github.com/reduxjs/redux/blob/master/src/combineReducers.ts) 코드를 보면 Redux가 어떻게 state의 변화를 감지하는지 알 수 있다.
 
-```ts{14, 17}
+```ts{15, 18}
 // ...
 let hasChanged = false
 const nextState: StateFromReducersMapObject<typeof reducers> = {}
