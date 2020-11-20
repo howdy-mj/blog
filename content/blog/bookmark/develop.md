@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.09
+마지막 업데이트: 2020.11.20
 </div>
 
 <br />
@@ -18,6 +18,12 @@ draft: false
 - [npmview](https://npmview.now.sh/)
 
 - [StatCounter](https://gs.statcounter.com/)
+
+- [CONNECT DEV - 웹/앱 개발을 위한 전반적인 지식을 정리하기 위한 위키](https://www.notion.so/CONNECT-DEV-000045ea17d94055b8a535fd7319a1db)
+
+- [DevDocs API](https://devdocs.io/)
+
+- [Dash for macOS](https://kapeli.com/dash) (유료)
 
 ## 커뮤니티
 
@@ -108,3 +114,7 @@ draft: false
 - [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec) (2019.01.19)
 
 - [본격 macOS에 개발 환경 구축하기](https://subicura.com/2017/11/22/mac-os-development-environment-setup.html) (2020.07.06)
+
+## 좋은 습관
+
+- [좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)

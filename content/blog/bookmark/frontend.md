@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.09
+마지막 업데이트: 2020.11.20
 </div>
 
 <br />
@@ -152,3 +152,5 @@ draft: false
 - [publicdomainvectors](https://publicdomainvectors.org/en/) (vector 이미지)
 
 - [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
+
+- [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)
