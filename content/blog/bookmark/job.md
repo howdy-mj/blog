@@ -1,8 +1,8 @@
 ---
-title: '개발자 면접 전 읽어볼 것'
-date: 2020-7-24 14:42:29
+title: '웹 개발자 면접 & 알고리즘'
+date: 2020-11-20 17:42:29
 category: 'bookmark'
-draft: true
+draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
