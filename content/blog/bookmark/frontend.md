@@ -41,6 +41,8 @@ draft: false
 
 - [CSS generator/border](https://html-css-js.com/css/generator/border-outline/)
 
+- [Bubbly - CSS speech bubbles made easy!](http://projects.verou.me/bubbly/) (말풍선 CSS)
+
 ## Web & Browser
 
 - [Rendering](https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609)
@@ -69,6 +71,8 @@ draft: false
 
 - [왜 타입스크립트에서 Generic 을 사용해야하는지와 타입스크립트 Generic 을 쓰게 되는 이유에 대한 사유](https://gist.github.com/hmmhmmhm/8c22c011c13dcc8b3001cc385558f586) (2020.08.06)
 
+- [자바스크립트를 개발자를 위한 타입스크립트](https://ahnheejong.gitbook.io/ts-for-jsdev/)
+
 ## React
 
 - [8 Tips to keep your code clean in React](https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9) (?.06.30)
@@ -76,6 +80,8 @@ draft: false
 - [How to become a pro with React setState() in 10 minutes](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/) (2018.10.06)
 
 - [[번역] useEffect 완벽가이드](https://rinae.dev/posts/a-complete-guide-to-useeffect-ko) (2019.10.09)
+
+- [React.js Examples](https://reactjsexample.com/)
 
 ## Webpack
 

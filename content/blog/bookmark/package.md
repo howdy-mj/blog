@@ -99,6 +99,8 @@ draft: false
 
 - [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
 
+- [Caple Design System](https://github.com/cobaltinc/caple-design-system)
+
 - [Lighthouse Design System](https://lighthouse.harbor.school/)
 
 - [Zeplin Styled Components](https://github.com/novemberfiveco/zeplin-styled-components)

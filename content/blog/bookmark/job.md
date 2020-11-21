@@ -31,6 +31,8 @@ draft: false
 
 - [JavaScript 알고리즘 및 자료 구조](https://github.com/trekhleb/javascript-algorithms/blob/master/README.ko-KR.md) (2020.11 업데이트)
 
+- [데브-인터뷰](https://dev-interview.com/interviews)
+
 ## 알고리즘
 
 <p>해외</p>

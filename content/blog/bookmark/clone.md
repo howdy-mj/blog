@@ -6,12 +6,18 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.08.25
+마지막 업데이트: 2020.11.22
 </div>
 
 <br />
 
-웹 개발자가 따라하면 좋을 프로젝트 모음
+웹 개발자가 클론 or 따라해보면 좋을 프로젝트 모음
+
+## React
+
+- [Editor](https://github.com/joostory/tistory-editor) (업데이트: 2020.08.22)
+
+## Vue
 
 - [Build Instagram Using TypeScript, Node, Express and Vue - Part 1](https://dev.to/calvintwr/build-instagram-using-typescript-node-express-and-vue-part-1-57do) (2020.06.11)
 
