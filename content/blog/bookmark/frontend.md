@@ -61,6 +61,8 @@ draft: false
 
 - [2ality – JavaScript and more](https://2ality.com/)
 
+- [The Top 3 New JavaScript ES 2021 (ES 12)](https://medium.com/better-programming/the-top-3-new-javascript-es-2021-es-12-features-im-excited-about-a3ac129efbb2) (2020.11.18)
+
 ## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)

@@ -18,3 +18,7 @@ draft: false
 ## Api
 
 - [Postgres Observability](https://pgstats.dev/)
+
+## CSS
+
+- [A Pure CSS Game - You Must Build a Lighthouse](https://codepen.io/ivorjetski/full/OJXbvdL)

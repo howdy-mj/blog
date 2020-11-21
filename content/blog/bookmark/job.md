@@ -6,7 +6,7 @@ draft: true
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.13
+마지막 업데이트: 2020.11.21
 </div>
 
 ## 포트폴리오
@@ -33,6 +33,20 @@ draft: true
 
 ## 알고리즘
 
+<p>해외</p>
+
 - [LeetCode](https://leetcode.com/)
 
 - [CodeWars](https://www.codewars.com/)
+
+- [CodeSignal - Coding Tests and Assessments for Technical Hiring](https://codesignal.com/)
+
+<p>국내</p>
+
+- [CodeUp 코드업](https://codeup.kr/)
+
+- [프로그래머스](https://programmers.co.kr/)
+
+- [백준](https://www.acmicpc.net/)
+
+- [SW Expert Academy - SWEA](https://swexpertacademy.com/main/main.do)

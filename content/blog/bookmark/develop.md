@@ -21,6 +21,8 @@ draft: false
 
 - [CONNECT DEV - 웹/앱 개발을 위한 전반적인 지식을 정리하기 위한 위키](https://www.notion.so/CONNECT-DEV-000045ea17d94055b8a535fd7319a1db)
 
+- [[IT 개발자와 일할 때 필요한 모든 개발지식] A to Z 자료 모음집 By 그랩](https://www.grabbing.me/IT-A-to-Z-By-1e1fbc981b7c4c03ac44943085ac8304)
+
 - [DevDocs API](https://devdocs.io/)
 
 - [Dash for macOS](https://kapeli.com/dash) (유료)
@@ -78,6 +80,8 @@ draft: false
 - [ZeroCho Blog](https://www.zerocho.com/)
 
 - [Captain Pangyo](https://joshua1988.github.io/)
+
+- [Tlog](http://tlog.tammolo.com/)
 
 ### 기업
 
