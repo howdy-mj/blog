@@ -6,14 +6,12 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.10.18
+마지막 업데이트: 2020.11.20
 </div>
 
 <br />
 
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
-
-- [Form Follows Function (fff project)](http://fff.cmiscm.com/#!/main)
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
 
@@ -41,6 +39,14 @@ draft: false
 
 - [Easing 함수 치트 시트](https://easings.net/ko)
 
+- [CSS generator/border](https://html-css-js.com/css/generator/border-outline/)
+
+- [Bubbly - CSS speech bubbles made easy!](http://projects.verou.me/bubbly/) (말풍선 CSS)
+
+## Web & Browser
+
+- [Rendering](https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609)
+
 ## JavaScript
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
@@ -57,15 +63,25 @@ draft: false
 
 - [2ality – JavaScript and more](https://2ality.com/)
 
+- [The Top 3 New JavaScript ES 2021 (ES 12)](https://medium.com/better-programming/the-top-3-new-javascript-es-2021-es-12-features-im-excited-about-a3ac129efbb2) (2020.11.18)
+
 ## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
+
+- [왜 타입스크립트에서 Generic 을 사용해야하는지와 타입스크립트 Generic 을 쓰게 되는 이유에 대한 사유](https://gist.github.com/hmmhmmhm/8c22c011c13dcc8b3001cc385558f586) (2020.08.06)
+
+- [자바스크립트를 개발자를 위한 타입스크립트](https://ahnheejong.gitbook.io/ts-for-jsdev/)
 
 ## React
 
 - [8 Tips to keep your code clean in React](https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9) (?.06.30)
 
 - [How to become a pro with React setState() in 10 minutes](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/) (2018.10.06)
+
+- [[번역] useEffect 완벽가이드](https://rinae.dev/posts/a-complete-guide-to-useeffect-ko) (2019.10.09)
+
+- [React.js Examples](https://reactjsexample.com/)
 
 ## Webpack
 
@@ -121,6 +137,8 @@ draft: false
 
 - [Mobbin - Latest Mobile Design Pattern](https://mobbin.design/)
 
+- [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
+
 ## Source
 
 - [Coverr - Free Videos](https://coverr.co/)
@@ -142,3 +160,5 @@ draft: false
 - [publicdomainvectors](https://publicdomainvectors.org/en/) (vector 이미지)
 
 - [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
+
+- [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)

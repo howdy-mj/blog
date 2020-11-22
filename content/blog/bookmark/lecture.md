@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.08.25
+마지막 업데이트: 2020.11.13
 </div>
 
 <br />
@@ -27,7 +27,7 @@ draft: false
 | [노마드코더](https://nomadcoders.co/) (한글)                   |                     HTML, CSS, JavaScript, React, React Native, Redux, GraphQL, Python, Node.js                      |
 | [FreeCodeCamp](https://www.freecodecamp.org/learn/) (영어)     |                    HTML, CSS, JavaScript, Bootstrap, jQuery, Sass, React, Redux, Node.js, Python                     |
 | [Coursera](https://www.coursera.org/) (영어)                   |                                      각국 대학 및 기업에서 제공하는 온라인 강좌                                      |
-|                                                                |                                                                                                                      |
+| [JavaScript30](https://javascript30.com/) (영어)               |                                                                                                                      | JavaScript 30일 챌린지 |
 
 ## 유료 강의
 
@@ -42,12 +42,10 @@ draft: false
 
 - [Free Programming Books - GoalKicker](https://goalkicker.com/) (무료)
 
-## 알고리즘
-
-- [LeetCode](https://leetcode.com/)
-
 ## API 연습
 
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 - [Mocky](https://designer.mocky.io/)
+
+- [Facebook for Developers](https://developers.facebook.com/docs/)
