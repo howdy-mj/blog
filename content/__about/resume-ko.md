@@ -6,6 +6,10 @@ lang: 'ko'
 
 # 김민정 (MJ KIM)
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2020.11.27
+</div>
+
 **저는 `______` 프론트개발자 입니다.**
 
 1. 좋은 코드, 간결한 코드를 작성하려는
@@ -33,13 +37,7 @@ lang: 'ko'
 
 ## 똑똑한개발자
 
-스타트업 전문 개발사
-
-|              |                                      |
-| -----------: | ------------------------------------ |
-|   **period** | 20.11 - 재직중                       |
-| **position** | Frontend Developer / Project Manager |
-| **projects** | (TBD)                                |
+스타트업 전문 개발사 | 20.11 - 재직중 | Frontend Developer / Project Manager
 
 - PWA
 - Next.js, TypeScript, MobX
@@ -48,10 +46,7 @@ lang: 'ko'
 
 ## 루트에너지(Rootenergy)
 
-|              |                    |
-| -----------: | ------------------ |
-|   **period** | 20.08 - 20.11      |
-| **position** | Frontend Developer |
+재생에너지 크라우드 펀딩 플랫폼 | 20.08 - 20.11 | Frontend Developer
 
 - TypeScript, React, Redux(Rematch)
 - SCSS
@@ -61,10 +56,7 @@ lang: 'ko'
 
 ## 플랜즈 커피(Planz Coffee)
 
-|              |                             |
-| -----------: | --------------------------- |
-|   **period** | 20.05 - 20.06               |
-| **position** | Frontend Developer (Intern) |
+자동화 음료 리테일 서비스 | 20.05 - 20.06 | Frontend Developer (Intern)
 
 - webpack으로 icon 크기 최적화 번들링 작업
 - Storybook으로 Icon, Font 구축 및 배포
@@ -72,10 +64,7 @@ lang: 'ko'
 
 ## BRPartners
 
-|              |               |
-| -----------: | ------------- |
-|   **period** | 18.10 - 20.01 |
-| **position** | Manager       |
+블록체인 컨설팅 | 18.10 - 20.01 | Manager
 
 - 블록체인 프로젝트 검토 및 보고서 작성
 - 암호화폐 거래소 시장 조사 및 기획
@@ -93,7 +82,7 @@ lang: 'ko'
 
 - 2020.06.23 - 2020.07.17 (기획 및 디자인 1주, 개발 3주)
 - JavaScript, Next.js, React, React Hooks, react-router, Styled-Component
-- github: [BFRun](https://github.com/one-iron/BFRun)
+- [BFRun - github](https://github.com/one-iron/BFRun)
 
 <br />
 
@@ -103,8 +92,7 @@ lang: 'ko'
 
 - 2020.05.11 - 2020.05.22 (약 2주)
 - JavaScript, React, React Hooks, react-router, Styled-Component, Redux
-- github: [wedac](https://github.com/howdy-mj/wedac-frontend)
-- 데모: [youtube](https://youtu.be/LdF1LG_R4Uo)
+- [wedac - github](https://github.com/howdy-mj/wedac-frontend), [youtube](https://youtu.be/LdF1LG_R4Uo)
 
 <br />
 
@@ -114,8 +102,7 @@ lang: 'ko'
 
 - 2020.04.20 - 2020.05.01 (약 2주)
 - JavaScript, React(Class), react-router, SCSS
-- github: [Paulba3](https://github.com/howdy-mj/PaulBa3-frontend)
-- 데모: [youtube](https://youtu.be/a1vKyWHA8pE)
+- [Paulba3 - github](https://github.com/howdy-mj/PaulBa3-frontend), [youtube](https://youtu.be/a1vKyWHA8pE)
 
 <br />
 
