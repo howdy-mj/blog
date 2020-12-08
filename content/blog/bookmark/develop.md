@@ -39,13 +39,25 @@ draft: false
 
 ## 공통
 
+### Git
+
 - [좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)
 
+- [Upptime](https://github.com/upptime/upptime)
+
+- [Shields: Quality metadata badges for open source projects](https://shields.io/)
+
+### Vim
+
 - [Interactive Vim tutorial](https://www.openvim.com/sandbox.html)
+
+### HTTP
 
 - [httpbin](http://httpbin.org/)
 
 - [HTTP 2.0](https://httpwg.org/specs/rfc7540.html)
+
+### 문서 작성
 
 - [기술 문서 작성 5단계](https://tech.kakaoenterprise.com/65)
 
@@ -141,6 +153,8 @@ draft: false
 
 - [쏘카](https://tech.socarcorp.kr/)
 
+- [44BITS](https://www.44bits.io/ko)
+
 <p>해외</p>
 
 - [Netflix](https://netflixtechblog.com/)
@@ -172,3 +186,5 @@ draft: false
 - [Oh My ZSH+ iTerm2로 터미널을 더 강력하게](https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec) (2019.01.19)
 
 - [본격 macOS에 개발 환경 구축하기](https://subicura.com/2017/11/22/mac-os-development-environment-setup.html) (2020.07.06)
+
+- [Dev Fonts](https://devfonts.gafi.dev/)

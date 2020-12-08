@@ -143,6 +143,8 @@ draft: false
 
 - [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
 
+- [Open Color](https://yeun.github.io/open-color/) (색 팔레트)
+
 ## Source
 
 - [Coverr - Free Videos](https://coverr.co/)
