@@ -264,8 +264,8 @@ class Doubler {
   }
 }
 
-const doubleStore = new Doubler(1)
-export default doubleStore
+const doubleClass = new Doubler(1)
+export default doubleClass
 ```
 
 2. class - `makeAutoObservable`
@@ -291,8 +291,8 @@ class Doubler {
   }
 }
 
-const doubleStore = new Doubler(1)
-export default doubleStore
+const doubleClassAuto = new Doubler(1)
+export default doubleClassAuto
 ```
 
 3. object
@@ -313,19 +313,16 @@ const doubleObject = observable({
 export default doubleObject
 ```
 
-만든 Store를 `src/store/index`에 넣어주자.
+만든 Store를 `src/store/index`에 넣어주자. 이번에는 `doubleClassAuto`를 사용해보겠다.
 
 ```ts
 import countClass from './countClass'
 import countObject from './countObject'
 import doubleClassAuto from './doubleClassAuto'
-import doubleObject from './doubleObject'
 
-const store = { countClass, countObject, doubleClassAuto, doubleObject }
+const store = { countClass, countObject, doubleClassAuto }
 export default store
 ```
-
-App에서는 `doubleClassAuto`로 사용해보겠다.
 
 `src/App.tsx`
 
