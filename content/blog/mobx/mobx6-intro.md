@@ -5,11 +5,11 @@ category: 'mobx'
 draft: false
 ---
 
-해당 글에서는 MobX로 간단하게 count Store를 만들어 볼 것이며, 여러가지 방식을 보여주는 것이 목적이다.
+해당 글에서는 MobX로 간단하게 count Store를 만들어 볼 것이며, 여러가지 방식을 보여주는 것이 목적이다. (완성된 코드는 [mobx-playground](https://github.com/howdy-mj/mobx-playground)에서 볼 수 있다)
 
-완성된 코드는 [Github: mobx-playground](https://github.com/howdy-mj/mobx-playground)에서 볼 수 있다.
+MobX는 자유도가 무척 높기 때문에, 필자가 작성한 방식이 정답이 아니며 '이렇게도 사용할 수 있구나' 정도로 보면 될 것 같다.
 
-MobX는 자유도가 무척 높기 때문에, 필자가 작성한 방식이 정답이 아니며 '이렇게도 사용할 수 있구나' 정도로만 보면 될 것 같다.
+<br />
 
 ### MobX란?
 
@@ -17,7 +17,7 @@ MobX는 자유도가 무척 높기 때문에, 필자가 작성한 방식이 정�
 
 MobX는 React 뿐만 아니라, Angular, Vue, Flutter, Dart에서도 사용이 가능하다.
 
-MobX의 러닝커브는 낮은편으로 초기에 작성해야하는 보일러플레이트 코드가 거의 없으며, state의 불변성도 걱정하지 않아도 된다. Redux를 사용해본 사람이라면 MobX가 꽤나 간단하다고 느껴질 것이다. 하지만 자유도가 매우 높아서 그 만큼 어려운 것 같다.
+MobX의 러닝커브는 낮은편으로 초기에 작성해야하는 보일러플레이트 코드가 거의 없으며, state의 불변성도 걱정하지 않아도 된다. Redux를 사용해본 사람이라면 MobX가 꽤나 간단하다고 느껴질 것이다. 하지만 자유도가 매우 높아서 그 만큼 잘 활용하기가 어려운 것 같다.
 
 ## MobX 핵심 개념
 
@@ -45,7 +45,7 @@ action은 state를 변경하는 것을 뜻한다. `makeObservable`을 사용하�
 
 ### computed
 
-computed values(계산된 값)는 다른 observable들에서 어떠한 정보를 도출하는데 사용할 수 있다. 이렇게만 봐서는 뭔지 모를 수 있는데 밑의 예시에서 한 번 살펴보자.
+computed values(계산된 값)는 다른 observable들에서 어떠한 정보를 도출하는데 사용할 수 있다. 이렇게만 봐서는 뭔지 모를 수 있는데 밑의 예시를 통해 같이 살펴보자.
 
 <br />
 
@@ -102,15 +102,17 @@ $ yarn add mobx mobx-react
 
 MobX를 리액트에서 사용하기 위해서는 클래스 컴포넌트를 지원하는 `mobx-react`, 함수 컴포넌트를 지원하는 `mobx-react-lite`가 필요했었다. 하지만 v6로 올라오면서 `mobx-react`에서도 함수 컴포넌트를 지원하여 하나로 해결이 가능해졌다.
 
-또한, MobX 6에서 decorators(ex. @action, @observable 등)가 deprecated 되었다.
+또한, MobX 6에서 decorators(ex. @action, @observable 등)들이 deprecated 되었다.
+
+<br />
 
 ### Store 구축
 
-해당 글에서는 class, objects 두 가지 형태로 구축해보겠다.
+해당 글에서는 class, object 두 가지 형태로 구축해보겠다.
 
 우선 `src/store` 폴더를 만들고, 그 안에 `count.ts`를 만든다.
 
-`src/store/count.ts`
+`src/store/count`
 
 1. class - `makeObservable`
 
@@ -187,7 +189,7 @@ export default countObject
 
 object로 만들면 코드가 더 줄어든다. observable로 감싸주기만 하면 된다.
 
-해당 state를 사용할 컴포넌트에서 따로 import 해도 되지만, 필자는 개인적으로 하나의 store에 넣는 것이 선호하기 때문에 `store/index.ts`를 만든다.
+이렇게 만든 Store는 사용할 컴포넌트에서 따로 import 해도 되지만, 필자는 개인적으로 하나의 store에 넣는 것이 선호하기 때문에 `src/store/index.ts`를 만든다.
 
 ```ts
 import countClass from './countClass'
@@ -230,9 +232,11 @@ export default App
 // export default observer(App) // 이렇게 감싸줄수도 있다
 ```
 
-이제 computed이 무엇인지 알아보기 위해 double Store를 만들어 보자.
+<br />
 
-`store/doubleClass.ts`
+이제 computed가 무엇인지 알아보기 위해 double Store를 만들어 보자. 마찬가지로 class, object 두 가지 형식으로 만들어 보겠다.
+
+`src/store/double.ts`
 
 1. class - `makeObservable`
 
@@ -309,6 +313,18 @@ const doubleObject = observable({
 export default doubleObject
 ```
 
+만든 Store를 `src/store/index`에 넣어주자.
+
+```ts
+import countClass from './countClass'
+import countObject from './countObject'
+import doubleClassAuto from './doubleClassAuto'
+import doubleObject from './doubleObject'
+
+const store = { countClass, countObject, doubleClassAuto, doubleObject }
+export default store
+```
+
 App에서는 `doubleClassAuto`로 사용해보겠다.
 
 `src/App.tsx`
@@ -365,16 +381,10 @@ export default App
 
 이런 기능을 통해 다른 action을 막거나 유저에게 알림을 줄수 있을 것 같다. 예를 들면, 어떤 물건을 장바구니에 담았을 때 자동으로 물건의 가격을 계산하면서 예산을 초과했을 경우 팝업창을 띄우거나, 싫어요를 특정 개수 이상 누를 경우 패널티를 부과 한다던지의 트리거 역할을 할 수 있을 것 같다.
 
-전체 코드: [Github: mobx-playground](https://github.com/howdy-mj/mobx-playground)
+<br />
+
+전체 코드: [mobx-playground](https://github.com/howdy-mj/mobx-playground)
 
 <br />
 
-**참고**
-
-<div style="font-size: 12px;">
-
-- [MobX](https://mobx.js.org/README.html)
-
-</div>
-
-<p style="font-size: 13px; font-style: italic">오역이 있을 수 있습니다. 피드백은 언제나 환영합니다!</p>
+<p style="font-size: 13px; font-style: italic; text-align: center">해당 글은 <a href="https://mobx.js.org/README.html" target="_blank">MobX 공식홈페이지</a>를 보고 작성하여 오역이 있을 수 있습니다. 피드백은 언제나 환영합니다!</p>
