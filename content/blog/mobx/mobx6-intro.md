@@ -5,7 +5,7 @@ category: 'mobx'
 draft: false
 ---
 
-해당 글에서는 MobX로 간단하게 count Store를 만들어 볼 것이며, 여러가지 방식을 보여주는 것이 목적이다. (완성된 코드는 [mobx-playground](https://github.com/howdy-mj/mobx-playground)에서 볼 수 있다)
+해당 글에서는 MobX로 간단하게 count를 변경하는 코드를 만들어 볼 것이며, 여러가지 방식을 보여주는 것이 목적이다. (완성된 코드는 [mobx-playground](https://github.com/howdy-mj/mobx-playground)에서 볼 수 있다)
 
 MobX는 자유도가 무척 높기 때문에, 필자가 작성한 방식이 정답이 아니며 '이렇게도 사용할 수 있구나' 정도로 보면 될 것 같다.
 
@@ -108,6 +108,16 @@ MobX를 리액트에서 사용하기 위해서는 클래스 컴포넌트를 지�
 
 ### Store 구축
 
+Stores는 Flux 아키텍쳐에서 볼 수 있으며, MVC의 Controller와 비교할 수 있다. 스토어의 주요 역할은 비즈니스 로직과 state를 컴포넌트에서 빼서 단독으로 프론트, 백에서 모두 사용할 수 있도록 만드는 것이다.
+
+MobX에서 규정하는 Store에는 Domain Stores(그 안에 Domain objects)와 UI Stores가 있다. 여기서는 Domain Store만 논하겠다.
+
+Domain Store는 하나 혹은 여러개가 있을 수 있으며, 하나의 Domain Store는 해당 애플리케이션에서 하나의 역할을 책임지고 수행해야 한다. 그리고 하나의 스토어 안에는 여러개의 domain objects가 있을 수 있다. 그리고 domain objects안에서 간단하게 state를 모델링할 수 있다.
+
+해당 글에서 만드는 것은 MobX의 state 모델링 하는 것에 속하지만, 이해하기 편하도록 Store라고 하겠다. _(추후 보완)_
+
+<br />
+
 해당 글에서는 class, object 두 가지 형태로 구축해보겠다.
 
 우선 `src/store` 폴더를 만들고, 그 안에 `count.ts`를 만든다.
@@ -189,7 +199,7 @@ export default countObject
 
 object로 만들면 코드가 더 줄어든다. observable로 감싸주기만 하면 된다.
 
-이렇게 만든 Store는 사용할 컴포넌트에서 따로 import 해도 되지만, 필자는 개인적으로 하나의 store에 넣는 것이 선호하기 때문에 `src/store/index.ts`를 만든다.
+이렇게 만든 Store<i>(정확히는 state model)</i>는 사용할 컴포넌트에서 따로 import 해도 되지만, 필자는 개인적으로 하나의 store에 넣는 것이 선호하기 때문에 `src/store/index.ts`를 만든다.
 
 ```ts
 import countClass from './countClass'
@@ -234,7 +244,7 @@ export default App
 
 <br />
 
-이제 computed가 무엇인지 알아보기 위해 double Store를 만들어 보자. 마찬가지로 class, object 두 가지 형식으로 만들어 보겠다.
+이제 computed가 무엇인지 알아보기 위해 액션(클릭)이 일어날 때마다, 계산된 값이 배가 되는 `double`을 만들어 보자. 마찬가지로 class, object 두 가지 형식으로 만들어 보겠다.
 
 `src/store/double.ts`
 
@@ -381,6 +391,10 @@ export default App
 <br />
 
 전체 코드: [mobx-playground](https://github.com/howdy-mj/mobx-playground)
+
+<br />
+
+MobX를 올바르고 더 잘 사용하기 위해서는 Flux 패턴 그리고 정확히 Domain Store, Domain Object, Model State가 무엇이고 어떻게 다른지 알아야 할 것 같다.
 
 <br />
 
