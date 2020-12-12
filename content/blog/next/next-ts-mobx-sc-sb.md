@@ -7,7 +7,7 @@ draft: false
 
 Next에 TypeScript, MobX, Styled-components, Storybook 까지 포함한 프로젝트를 세팅해보자.
 
-완성된 코드는 [Github](https://github.com/howdy-mj/next-ts-mobx-sc-sb-boilerplate)에서 볼 수 있다.
+Next 소개는 [이전글](https://howdy-mj.me/next.js/next-js-intro/)에서, 완성된 코드는 [Github](https://github.com/howdy-mj/next-ts-mobx-sc-sb-boilerplate)에서 볼 수 있다.
 
 ## 설치
 
@@ -344,7 +344,7 @@ export default class MyDocument extends Document {
 }
 ```
 
-본래 global에 있는 stylesheets과의 충돌을 피하기 위해, 개인이 설정한 CSS 파일은 오직 `pages_app.tsx`에서만 import 해야 한다.
+SSR은 사용자들이 요청하면 그때 미리 만들어 놓은 HTML을 먼저 보여주어 매우 빠르다. 하지만 styled-components는 자바스크립트이기 때문에 나중에 렌더가 된다. 즉, styled-component가 완전히 로딩되기 전에 페이지가 켜지기 때문에 스타일이 적용되기 전의 화면이 먼저 보이고, 화면 깜빡인 다음에 스타일을 불러온다. 따라서 위 처럼 ServerStyleSheet를 먼저 가져와야 한다.
 
 `pages/_app.tsx`
 
@@ -366,6 +366,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp;
 ```
+
+본래 global에 있는 stylesheets과의 충돌을 피하기 위해, 개인이 설정한 CSS 파일은 오직 `pages_app.tsx`에서만 import 해야 한다.
 
 `pages/index.tsx`
 
@@ -390,7 +392,7 @@ export default function Home() {
 
 <div style="text-align: center; font-size: 14px; color: gray;">
 <img src="./images/next-ts-mobx-sc-sb/02.png" alt="styled-components 설정">
-styled-components 설정 후
+Styles에서 reset에 설정한 내용 확인 가능
 </div>
 
 <br />
@@ -476,6 +478,8 @@ $ npx sb init
 <img src="./images/next-ts-mobx-sc-sb/04.png" alt="storybook" style="width: 220px;">
 Storybook 설치 후, 폴더 구조
 </div>
+
+<br />
 
 storybook을 설치하면 알아서 타입스크립트인 것을 감지하고 설정해준다. `package.json`을 가면 스토리북 관련 script가 추가된 것도 확인할 수 있다.
 
