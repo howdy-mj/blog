@@ -1,7 +1,7 @@
 ---
 title: 'Next.js getStaticProps undefined 에러'
 date: 2020-7-06 02:57:43
-category: 'next.js'
+category: 'next'
 draft: false
 ---
 
@@ -55,7 +55,7 @@ export default function HomePage(props) {
 }
 ```
 
-<p style="text-align: center; font-size: 14px;"><img src="./images/03.png" />
+<p style="text-align: center; font-size: 14px;"><img src="./images/getStaticProps/01.png" />
 console.log 결과
 </p>
 

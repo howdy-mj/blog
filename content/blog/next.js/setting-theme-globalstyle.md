@@ -1,7 +1,7 @@
 ---
 title: 'Next.js에서 Globalstyle 적용하기'
 date: 2020-7-15 20:38:43
-category: 'next.js'
+category: 'next'
 draft: false
 ---
 

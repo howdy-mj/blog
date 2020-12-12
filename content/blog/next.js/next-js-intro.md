@@ -1,7 +1,7 @@
 ---
 title: 'Next.js 설치, 라우팅, 구동방식'
 date: 2020-7-03 20:10:43
-category: 'next.js'
+category: 'next'
 draft: false
 ---
 
@@ -14,6 +14,8 @@ React는 CSR이기에 SEO가 안된다는 치명적인 단점이 있다. 물론 
 Next가 나오면서 SSR가 되며, 더 빠르게 페이지를 불러오기 위해 코드 스프릿도 지원한다.
 
 ## 설치
+
+_해당 글은 next 9.4.4 버전으로 작성되었습니다._
 
 ```sh
 $ npx create-next-app 폴더명
@@ -70,7 +72,7 @@ event - compiled successfully
 
 `npm run dev`을 하면 위의 코드가 CLI창에 뜨면서 `.next`라는 폴더가 생기는 것을 볼 수 있다.
 
-<p style="text-align: center;"><img src="./images/01.png">
+<p style="text-align: center;"><img src="./images/next-intro/01.png">
 </p>
 
 이를 통해 next.js는 자동으로 컴파일과 빌드(웹팩과 바벨로)를 진행하며 `/`에 페이지를 정적으로 페이지를 만드는 것을 확인할 수 있다.
@@ -118,7 +120,7 @@ function HomePage() {
 export default HomePage
 ```
 
-<p style="text-align: center"><img src="./images/02.png" ></p>
+<p style="text-align: center"><img src="./images/next-intro/02.png" ></p>
 
 그러면 위와 같은 화면이 렌더되며, About을 누르면 `localhost:3000/about`에 생성한 `about.js` 화면이 표시된다.
 
