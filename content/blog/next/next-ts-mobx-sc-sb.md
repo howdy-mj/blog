@@ -7,7 +7,7 @@ draft: false
 
 Next에 TypeScript, MobX, Styled-components, Storybook 까지 포함한 프로젝트를 세팅해보자.
 
-Next 소개는 [이전글](https://howdy-mj.me/next.js/next-js-intro/)에서, 완성된 코드는 [Github](https://github.com/howdy-mj/next-ts-mobx-sc-sb-boilerplate)에서 볼 수 있다.
+Next 소개는 [이전글](https://howdy-mj.me/next/next-js-intro/)에서, 완성된 코드는 [Github](https://github.com/howdy-mj/next-ts-mobx-sc-sb-boilerplate)에서 볼 수 있다.
 
 ## 설치
 
