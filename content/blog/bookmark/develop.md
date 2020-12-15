@@ -115,6 +115,8 @@ draft: false
 
 - [Tlog](http://tlog.tammolo.com/)
 
+- [Steady Study](https://ideveloper2.dev/)
+
 <p>해외</p>
 
 - [Addy Osmani](https://medium.com/@addyosmani)

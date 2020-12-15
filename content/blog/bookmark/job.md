@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.21
+마지막 업데이트: 2020.12.15
 </div>
 
 ## 포트폴리오
@@ -52,3 +52,5 @@ draft: false
 - [백준](https://www.acmicpc.net/)
 
 - [SW Expert Academy - SWEA](https://swexpertacademy.com/main/main.do)
+
+- [JS 100제](https://www.notion.so/JS-100-94d97d294dd14c9b911a02c840fa9f2d)
