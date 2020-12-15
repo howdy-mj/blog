@@ -1,7 +1,7 @@
 ---
 title: 'Next.js 설치, 라우팅, 구동방식'
 date: 2020-7-03 20:10:43
-category: 'next.js'
+category: 'next'
 draft: false
 ---
 
@@ -14,6 +14,8 @@ React는 CSR이기에 SEO가 안된다는 치명적인 단점이 있다. 물론 
 Next가 나오면서 SSR가 되며, 더 빠르게 페이지를 불러오기 위해 코드 스프릿도 지원한다.
 
 ## 설치
+
+_해당 글은 next 9.4.4 버전으로 작성되었습니다._
 
 ```sh
 $ npx create-next-app 폴더명
@@ -70,14 +72,14 @@ event - compiled successfully
 
 `npm run dev`을 하면 위의 코드가 CLI창에 뜨면서 `.next`라는 폴더가 생기는 것을 볼 수 있다.
 
-<p style="text-align: center;"><img src="./images/01.png">
+<p style="text-align: center;"><img src="./images/next-intro/01.png">
 </p>
 
-이를 통해 next.js는 자동으로 컴파일과 빌드(웹팩과 바벨로)를 진행하며 `/`에 페이지를 정적으로 페이지를 만드는 것을 확인할 수 있다.
+이를 통해 next는 자동으로 컴파일과 빌드(웹팩과 바벨로)를 진행하며 `/`에 페이지를 정적으로 페이지를 만드는 것을 확인할 수 있다.
 
 ## Router
 
-React와 달리 Next.js는 static한 페이지를 만들며, `pages` 폴더 안에 있는 js 파일이 하나의 URL처럼 작동된다.
+React와 달리 Next는 static한 페이지를 만들며, `pages` 폴더 안에 있는 js 파일이 하나의 URL처럼 작동된다.
 
 그렇다면 about 페이지를 만들어보자.
 
@@ -118,17 +120,17 @@ function HomePage() {
 export default HomePage
 ```
 
-<p style="text-align: center"><img src="./images/02.png" ></p>
+<p style="text-align: center"><img src="./images/next-intro/02.png" ></p>
 
 그러면 위와 같은 화면이 렌더되며, About을 누르면 `localhost:3000/about`에 생성한 `about.js` 화면이 표시된다.
 
-## Next.js의 SSR
+## Next의 SSR
 
-여기까지 와서 나는 Next.js가 어떻게 SSR이 가능한지 궁금해졌다.
+여기까지 와서 나는 Next가 어떻게 SSR이 가능한지 궁금해졌다.
 
-그러기 위해서는 Next.js의 구동 순서에 대해 알아야한다.
+그러기 위해서는 Next의 구동 순서에 대해 알아야한다.
 
-Next.js는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. 두 파일 모두 `pages` 폴더 안에 있어야 한다.
+Next는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. 두 파일 모두 `pages` 폴더 안에 있어야 한다.
 
 우리가 맨 처음에 프로젝트를 생성할 때 없는 파일이지만, Next 자체에서 제공하는 로직으로 실행된다. 따라서 프로젝트 입맛에 맞게 만들기 위해서는 커스터마이징을 해야 하는데 바로 이 두개의 파일에서 진행된다.
 

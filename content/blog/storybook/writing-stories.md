@@ -23,7 +23,7 @@ $ yarn storybook # 스토리북 서버
 ```
 
 <div style="text-align: center; font-size: 14px;"">
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b9411bd7-1218-4ed9-b7a0-b4bb5e831f9d/_2020-11-30__9.21.22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201130T122148Z&X-Amz-Expires=86400&X-Amz-Signature=e87da5acad2a32ae673b70708244fd619dff3dd93679cfdb940b2d19aba14cde&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22_2020-11-30__9.21.22.png%22" alt="폴더 구조">
+<img src="./images/writing-stories/01.png" alt="폴더 구조">
 <div>기존 폴더 구조</div>
 </div>
 
@@ -32,7 +32,7 @@ $ yarn storybook # 스토리북 서버
 ## 폴더 구조 변경
 
 <div style="text-align: center; font-size: 14px;">
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8c13592a-12d7-4f41-a8c4-e287a8f2cac4/_2020-11-30__10.20.53.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201130T132126Z&X-Amz-Expires=86400&X-Amz-Signature=7740132c26519534ee8723aca039a9bdff78f2633b2558ca3c0bd971269c59f7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22_2020-11-30__10.20.53.png%22" alt="변경한 폴더 구조">
+<img src="./images/writing-stories/02.png" alt="변경한 폴더 구조">
 <div>변경한 폴더 구조</div>
 </div>
 
@@ -47,7 +47,7 @@ $ yarn storybook
 해당 글에서는 Button 컴포넌트를 다루어 보겠다.
 
 <div style="text-align: center; font-size: 14px;">
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b846e121-68e4-4f53-b6b1-6d7b7d5bd565/_2020-11-30__10.27.17.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201130T133120Z&X-Amz-Expires=86400&X-Amz-Signature=5e41ece0a90a4c72c0dedd7d4abef654e443a7245d59e86077cc97800f6b2b00&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22_2020-11-30__10.27.17.png%22" alt="Button Docs">
+<img src="./images/writing-stories/03.png" alt="Button Docs">
 <div>Button Docs 화면</div>
 </div>
 
@@ -107,7 +107,7 @@ export const Button: React.FC<ButtonProps> = ({
 ```
 
 <div style="text-align: center; font-size: 14px;">
-<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7a83c43c-6caa-449f-931f-57afc088c8fc/_2020-11-30__10.26.59.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20201130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20201130T132728Z&X-Amz-Expires=86400&X-Amz-Signature=7f4828fa7e12e5c26c83d72c78b0e848126779007e6e81a42bff76ff55e433b8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22_2020-11-30__10.26.59.png%22" alt="Button stories">
+<img src="./images/writing-stories/04.png" alt="Button stories">
 <div>Button Stories 화면</div>
 </div>
 

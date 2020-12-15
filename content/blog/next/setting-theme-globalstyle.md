@@ -1,7 +1,7 @@
 ---
 title: 'Next.js에서 Globalstyle 적용하기'
 date: 2020-7-15 20:38:43
-category: 'next.js'
+category: 'next'
 draft: false
 ---
 
@@ -9,7 +9,7 @@ GlobalStyle은 User agent stylesheet(웹 브라우저의 기본 속성값)을 �
 
 ## Next.js에서 Globalstyle 적용하기
 
-Next.js는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. (참고: [Next.js 구동방식](https://howdy-mj.me/next.js/next-js-intro/#nextjs%EC%9D%98-ssr))
+Next.js는 `_app.js`와 `_document.js`가 제일 처음에 실행된다. (참고: [Next.js 구동방식](https://howdy-mj.me/next/next-js-intro/#nextjs%EC%9D%98-ssr))
 
 ```
 node_modules/
@@ -18,7 +18,7 @@ pages
 ├─ _document.js
 └─ index.js
 package.json
-packgae-lock.json
+package-lock.json
 ```
 
 Next.js의 기본 구조는 위와 같으며, GlobalStyle은 `_app.js`에서 설정하면 된다.
