@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.20
+마지막 업데이트: 2020.12.15
 </div>
 
 <br />
@@ -95,15 +95,15 @@ draft: false
 
 - [Semantic UI React](https://react.semantic-ui.com/)
 
-- [Carbon Design System](https://www.carbondesignsystem.com/)
-
-- [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
+* [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
 
 - [Caple Design System](https://github.com/cobaltinc/caple-design-system)
 
 - [Lighthouse Design System](https://lighthouse.harbor.school/)
 
 - [Zeplin Styled Components](https://github.com/novemberfiveco/zeplin-styled-components)
+
+- [figma-api-demo](https://github.com/figma/figma-api-demo) (figma-to-react)
 
 ## Server
 
