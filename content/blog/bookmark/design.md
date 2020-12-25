@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.15
+마지막 업데이트: 2020.12.25
 </div>
 
 <br />
@@ -29,6 +29,8 @@ draft: false
 
 - [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
 
+- [Two Color Combinations](https://2colors.colorion.co/)
+
 ## 트렌드
 
 - [Behance](https://www.behance.net/)
@@ -39,6 +41,8 @@ draft: false
 
 - [Fonts In Use](https://fontsinuse.com/)
 
+- [A guide of UI design trends for 2021](https://uxdesign.cc/a-guide-of-ui-design-trends-for-2021-637ac038cb99)
+
 ## 디자인 가이드
 
 - [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
@@ -47,9 +51,7 @@ draft: false
 
 - [SOCAR FRAME - SOCAR DESIGN SYSTEM](https://socarframe.socar.kr/8bb3aba4a/p/5857a5-socar-frame)
 
-- [Design System Basics in Figma](https://uxdesign.cc/design-system-basics-in-figma-6e66fbb5de85) (2018.07.29)
-
-- [Text fields & Forms design — UI components series](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0) (2020.05.25)
+- [RIDI Design System](https://ridi.design/)
 
 <br />
 
@@ -61,6 +63,16 @@ draft: false
 
 - [WFT UI-KIT](https://uikit.wfp.org/docs/index.html?path=/story/getting-started-intro--page)
 
+<br />
+
+<p>글, 사이트</p>
+
+- [Design Systems Repo](https://designsystemsrepo.com/)
+
+- [Design System Basics in Figma](https://uxdesign.cc/design-system-basics-in-figma-6e66fbb5de85) (2018.07.29)
+
+- [Text fields & Forms design — UI components series](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0) (2020.05.25)
+
 ## 디자인 툴
 
 - [Zeplin](https://zeplin.io/)
@@ -68,3 +80,5 @@ draft: false
 - [Figma](https://www.figma.com/)
 
 - [Sketch](https://www.sketch.com/)
+
+- [XELF](https://xelf.io/)
