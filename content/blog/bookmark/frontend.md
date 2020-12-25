@@ -136,3 +136,5 @@ draft: false
 - [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
 
 - [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)
+
+- [이미지 배경 제거](https://www.remove.bg/ko)
