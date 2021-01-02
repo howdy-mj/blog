@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.22
+마지막 업데이트: 2020.01.01
 </div>
 
 <br />
@@ -26,3 +26,9 @@ draft: false
 * [Build Instagram Using TypeScript, Node, Express and Vue - Part 3](https://dev.to/calvintwr/build-instagram-using-typescript-node-express-and-vue-part-3-4d1n) (2020.06.15)
 
 - [Build Instagram Using TypeScript, Node, Express and Vue - Part 4](https://dev.to/calvintwr/build-instagram-using-typescript-node-express-and-vue-part-4-23ll) (2020.06.15)
+
+## Setup
+
+- [2020 Complete Setup for Storybook, Nextjs, Typescript, SCSS and Jest](https://medium.com/swlh/2020-complete-setup-for-storybook-nextjs-typescript-scss-and-jest-1c9ce41e6481) (2020.08.03)
+
+- [Rollup.js+ Typescript + Storybook으로 구축하는 디자인 시스템](https://ideveloper2.dev/blog/2020-05-17--rollup-ts-%EB%A1%9C-%EB%94%94%EC%9E%90%EC%9D%B8%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/) (2020.05.17)
