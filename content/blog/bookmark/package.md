@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.15
+마지막 업데이트: 2021.01.02
 </div>
 
 <br />
@@ -74,6 +74,20 @@ draft: false
 - [Prettier](https://prettier.io/)
 
 - [ESLint](https://eslint.org/)
+
+## Testing
+
+- [Jest](https://jestjs.io/)
+
+- [Cypress](https://www.cypress.io/)
+
+- [Jasmine](https://jasmine.github.io/)
+
+- [Istanbul](https://istanbul.js.org/)
+
+- [sonar source](https://www.sonarsource.com/js/)
+
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 
 ## Image
 
