@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.20
+마지막 업데이트: 2021.01.02
 </div>
 
 <br />
@@ -26,6 +26,8 @@ draft: false
 - [Redux](https://redux.js.org/)
 
 - [Rematch](https://rematch.netlify.app/#/introduction)
+
+- [MobX](https://mobx.js.org/README.html)
 
 - [GraphQL](https://graphql.org/)
 
@@ -73,6 +75,20 @@ draft: false
 
 - [ESLint](https://eslint.org/)
 
+## Testing
+
+- [Jest](https://jestjs.io/)
+
+- [Cypress](https://www.cypress.io/)
+
+- [Jasmine](https://jasmine.github.io/)
+
+- [Istanbul](https://istanbul.js.org/)
+
+- [sonar source](https://www.sonarsource.com/js/)
+
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+
 ## Image
 
 - [SVGR - Transform SVG into React components](https://react-svgr.com/)
@@ -82,6 +98,8 @@ draft: false
 - [Ant Design](https://ant.design/)
 
 - [Material-UI](https://material-ui.com/)
+
+- [TOAST UI](https://ui.toast.com/)
 
 - [Storybook](https://storybook.js.org/)
 
@@ -95,15 +113,15 @@ draft: false
 
 - [Semantic UI React](https://react.semantic-ui.com/)
 
-- [Carbon Design System](https://www.carbondesignsystem.com/)
-
-- [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
+* [Chromatic: Storybook deployment, review and test](https://www.chromatic.com/)
 
 - [Caple Design System](https://github.com/cobaltinc/caple-design-system)
 
 - [Lighthouse Design System](https://lighthouse.harbor.school/)
 
 - [Zeplin Styled Components](https://github.com/novemberfiveco/zeplin-styled-components)
+
+- [figma-api-demo](https://github.com/figma/figma-api-demo) (figma-to-react)
 
 ## Server
 

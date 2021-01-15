@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.20
+마지막 업데이트: 2020.12.31
 </div>
 
 <br />
@@ -14,6 +14,14 @@ draft: false
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
+
+## 뉴스레터
+
+- [Frontend Focus](https://frontendfoc.us/)
+
+- [ES.next News](http://esnextnews.com/)
+
+- [JavaScript Weekly](https://javascriptweekly.com/)
 
 ## HTML
 
@@ -83,6 +91,10 @@ draft: false
 
 - [React.js Examples](https://reactjsexample.com/)
 
+<p>Next.js</p>
+
+- [Learn Next.js](https://masteringnextjs.com/)
+
 ## Webpack
 
 - [JavaScript Modules Part2 A Beginner’s Guide (번역)](https://hojong.me/javascript-modules-part-2) (2016.08.06)
@@ -92,10 +104,6 @@ draft: false
 - [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/) (2019.12)
 
 - [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
-
-## Storybook
-
-- [SOCAR FRAME - SOCAR DESIGN SYSTEM](https://socarframe.socar.kr/8bb3aba4a/p/5857a5-socar-frame)
 
 ## WebGL
 
@@ -112,32 +120,6 @@ draft: false
 - [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
 
 - [모두를 위한 대수적 효과](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/) (2019.07.21)
-
-## 디자인
-
-- [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
-
-- [Colorable](https://colorable.jxnblk.com/5a6049/d2cfba)
-
-- [Color Picker](http://www.flatuicolorpicker.com/)
-
-- [아티스트를 위한 색상 팔레트, 색상 구성표 - Adobe Color](https://color.adobe.com/ko/explore)
-
-- [Fonts In Use](https://fontsinuse.com/)
-
-- [Figma: the collaborative interface design tool](https://www.figma.com/)
-
-- [Design System Basics in Figma](https://uxdesign.cc/design-system-basics-in-figma-6e66fbb5de85) (2018.07.29)
-
-- [Behance](https://www.behance.net/)
-
-- [Text fields & Forms design — UI components series](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0) (?.05.25)
-
-- [서핏 - 디자이너를 위한 모든 디자인 콘텐츠](https://www.surfit.io/)
-
-- [Mobbin - Latest Mobile Design Pattern](https://mobbin.design/)
-
-- [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
 
 ## Source
 
@@ -162,3 +144,5 @@ draft: false
 - [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
 
 - [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)
+
+- [이미지 배경 제거](https://www.remove.bg/ko)
