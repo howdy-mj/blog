@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.15
+마지막 업데이트: 2020.12.31
 </div>
 
 <br />
@@ -14,6 +14,14 @@ draft: false
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
+
+## 뉴스레터
+
+- [Frontend Focus](https://frontendfoc.us/)
+
+- [ES.next News](http://esnextnews.com/)
+
+- [JavaScript Weekly](https://javascriptweekly.com/)
 
 ## HTML
 
