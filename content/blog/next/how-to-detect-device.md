@@ -1,6 +1,6 @@
 ---
 title: 'Next.js에서 userAgent 정보 가져오기'
-date: 2021-1-19 02:57:43
+date: 2021-1-20 02:57:43
 category: 'next'
 draft: false
 ---

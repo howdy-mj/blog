@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<div style="font-size: 12px; font-style: italic; text-align: right;">
+<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
 마지막 업데이트: 2021.01.18
-</div>
+</div> -->
 
 <br />
 
