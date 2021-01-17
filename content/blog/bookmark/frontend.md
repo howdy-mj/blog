@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.31
+마지막 업데이트: 2021.01.18
 </div>
 
 <br />
@@ -51,6 +51,10 @@ draft: false
 
 - [Bubbly - CSS speech bubbles made easy!](http://projects.verou.me/bubbly/) (말풍선 CSS)
 
+- [Shadows](https://brumm.af/shadows)
+
+- [CSS Scroll Shadows!](https://css-scroll-shadows.now.sh/?bgColor=e83ce2&shadowColor=222222&pxSize=15)
+
 ## Web & Browser
 
 - [Rendering](https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609)
@@ -73,9 +77,13 @@ draft: false
 
 - [The Top 3 New JavaScript ES 2021 (ES 12)](https://medium.com/better-programming/the-top-3-new-javascript-es-2021-es-12-features-im-excited-about-a3ac129efbb2) (2020.11.18)
 
+- [bestofjs](https://bestofjs.org/)
+
 ## TypeScript
 
 - [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
+
+- [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
 - [왜 타입스크립트에서 Generic 을 사용해야하는지와 타입스크립트 Generic 을 쓰게 되는 이유에 대한 사유](https://gist.github.com/hmmhmmhm/8c22c011c13dcc8b3001cc385558f586) (2020.08.06)
 
@@ -120,29 +128,3 @@ draft: false
 - [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
 
 - [모두를 위한 대수적 효과](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/) (2019.07.21)
-
-## Source
-
-- [Coverr - Free Videos](https://coverr.co/)
-
-- [Morguefile - Free photos for commercial use](https://morguefile.com/)
-
-- [Imagebase - Absolutely free images](https://www.imagebase.net/)
-
-- [Pixabay - 무료 이미지](https://pixabay.com/ko/)
-
-- [Unsplash: Beautiful Free Images & Pictures](https://unsplash.com/)
-
-- [Gratisography - Free High-Resolution Photos](https://gratisography.com/)
-
-- [Flickr](https://www.flickr.com/) (사진)
-
-- [Flaticon - Free vector icons](https://www.flaticon.com/)
-
-- [publicdomainvectors](https://publicdomainvectors.org/en/) (vector 이미지)
-
-- [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
-
-- [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)
-
-- [이미지 배경 제거](https://www.remove.bg/ko)
