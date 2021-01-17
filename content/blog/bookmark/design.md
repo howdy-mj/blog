@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.25
+마지막 업데이트: 2021.01.17
 </div>
 
 <br />
@@ -16,6 +16,8 @@ draft: false
 ## 색상
 
 - [Color Picker](http://www.flatuicolorpicker.com/)
+
+- [HTML Color Codes](https://htmlcolorcodes.com/)
 
 <br />
 
@@ -30,6 +32,8 @@ draft: false
 - [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
 
 - [Two Color Combinations](https://2colors.colorion.co/)
+
+- [calcolor](https://calcolor.co/)
 
 ## 트렌드
 
@@ -84,3 +88,5 @@ draft: false
 - [Sketch](https://www.sketch.com/)
 
 - [XELF](https://xelf.io/)
+
+- [WireFlow - designer tool](https://wireflow.co/)
