@@ -17,6 +17,10 @@ draft: false
 
 - [Public APIs](https://public-apis.io/)
 
+- [Daum 우편번호 API](http://postcode.map.daum.net/guide)
+
+- [도로명주소 API](https://www.juso.go.kr/addrlink/devAddrLinkRequestUse.do?menu=main&cPath=99JA)
+
 ## Video
 
 - [Coverr - Free Videos](https://coverr.co/)
