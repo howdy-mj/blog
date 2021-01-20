@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.17
+마지막 업데이트: 2021.01.20
 </div>
 
 <br />
@@ -18,6 +18,8 @@ draft: false
 - [Color Picker](http://www.flatuicolorpicker.com/)
 
 - [HTML Color Codes](https://htmlcolorcodes.com/)
+
+- [Color Tool](https://material.io/resources/color/)
 
 <br />
 
@@ -47,9 +49,13 @@ draft: false
 
 - [A guide of UI design trends for 2021](https://uxdesign.cc/a-guide-of-ui-design-trends-for-2021-637ac038cb99)
 
+- [75 Of The Coolest Color Combinations For 2021](https://www.designwizard.com/blog/design-trends/colour-combination)
+
 ## 디자인 가이드
 
 - [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
+
+- [On Type Patterns and Style Guides](https://css-tricks.com/on-type-patterns-and-style-guides/) (2021.01.19)
 
 ## 디자인 시스템
 
@@ -58,6 +64,8 @@ draft: false
 - [RIDI Design System](https://ridi.design/)
 
 - [Remember UI](https://dramancompany.github.io/remember-ui/)
+
+- [Spectrum, Adobe's design system](https://spectrum.adobe.com/)
 
 <br />
 

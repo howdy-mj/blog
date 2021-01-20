@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.18
-</div> -->
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.01.20
+</div>
 
 <br />
 
@@ -16,6 +16,16 @@ draft: false
 ## API
 
 - [Public APIs](https://public-apis.io/)
+
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
+
+- [Mocky - mock your APIs](https://designer.mocky.io/)
+
+- [Daum 우편번호 API](http://postcode.map.daum.net/guide)
+
+- [도로명주소 API](https://www.juso.go.kr/addrlink/devAddrLinkRequestUse.do?menu=main&cPath=99JA)
+
+- [Facebook for Developers](https://developers.facebook.com/docs/)
 
 ## Video
 
@@ -54,3 +64,5 @@ draft: false
 - [이미지 배경 제거](https://www.remove.bg/ko)
 
 - [NoDesign.dev](https://nodesign.dev/)
+
+- [Carbon - 코드 이미지로 변환](https://carbon.now.sh/)
