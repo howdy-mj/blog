@@ -1,5 +1,5 @@
 ---
-title: '개발자가 읽어보면 좋은 글 모음'
+title: '개발자가 읽어보면 좋은 글 및 블로그 모음'
 date: 2020-8-07 18:42:29
 category: 'bookmark'
 draft: false
@@ -182,6 +182,8 @@ draft: false
 - [Reddit](https://redditblog.com/)
 
 - [Spotify](https://engineering.atspotify.com/)
+
+- [Bloomberg](https://www.techatbloomberg.com/)
 
 ## 개발환경 세팅
 

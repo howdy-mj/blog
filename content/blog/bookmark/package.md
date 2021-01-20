@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.17
+마지막 업데이트: 2021.01.20
 </div>
 
 <br />
@@ -54,6 +54,8 @@ draft: false
 - [Less](http://lesscss.org/)
 
 - [MVP.css](https://andybrewer.github.io/mvp/)
+
+- [AnimXYZ](https://animxyz.com/)
 
 ### CSS-in-JS
 
@@ -134,3 +136,5 @@ draft: false
 - [Loopback - create dynamic end-to-end REST APIs for Node.js](https://loopback.io/doc/index.html)
 
 - [Moleculer - Progressive microservices framework for Node.js.](https://moleculer.services/)
+
+- [Mock Service Worker Docs Examples - API mocking of the next generation](https://mswjs.io/)

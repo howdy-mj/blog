@@ -41,11 +41,3 @@ draft: false
 ## 프로그래밍 언어 가이드북
 
 - [Free Programming Books - GoalKicker](https://goalkicker.com/) (무료)
-
-## API 연습
-
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
-
-- [Mocky](https://designer.mocky.io/)
-
-- [Facebook for Developers](https://developers.facebook.com/docs/)

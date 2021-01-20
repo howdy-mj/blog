@@ -25,4 +25,8 @@ draft: false
 
 - [emotion을 활용한 크몽 프론트엔드 스타일링 시스템](https://brunch.co.kr/@kmongdev/17) (크몽, 2020.03.13)
 
+- [네이티브 앱 → 리액트 네이티브 앱 전환 그리고 1년 후](https://ridicorp.com/story/react-native-1year-review/) (리디, 2021.01.04)
+
 ## 해외
+
+- [10 Insights from Adopting TypeScript at Scale](https://www.techatbloomberg.com/blog/10-insights-adopting-typescript-at-scale/) (Bloomberg, 2020.11.09)
