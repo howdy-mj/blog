@@ -7,7 +7,7 @@ lang: 'ko'
 # 김민정 (MJ KIM)
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.27
+마지막 업데이트: 2021.01.20
 </div>
 
 **저는 `______` 프론트개발자 입니다.**
@@ -43,6 +43,12 @@ lang: 'ko'
 - Next.js, TypeScript, MobX
 - Styled Components
 - Storybook
+
+<h4 style="border: 1px solid black; width: max-content; padding: 5px;">상시 작업</h4>
+
+- 내부 components 개발 및 업데이트
+- 스토리북을 활용하여 디자인 시스템 구축
+- 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
 
 ## 루트에너지(Rootenergy)
 
