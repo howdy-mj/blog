@@ -102,7 +102,7 @@ export const getStaticProps = ({ req }: NextPageContext) => {
 
 원래는 `getStaticProps`에서 특정 브라우저인지 알아내어 바로 props로 넘겨주고 싶었으나, undefined 이기 때문에 넘겨주지 못하고 useEffect를 사용할 수 밖에 없었다.
 
-```tsx{19, 28}
+```ts{19, 26}
 // 'pages/_app.tsx`에서 getStaticProps 사용
 import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
@@ -124,10 +124,8 @@ function MyApp(
   console.log('_app', userAgent); // output: undefined
 
   useEffect(() => {
-    const matchIE = navigator.userAgent.match(/MSIE|rv:|IEMobile/i);
-    if (matchIE) {
-      setCurrentBrowser(Boolean(matchIE));
-    }
+    const IE = navigator.userAgent.match(/MSIE|rv:|IEMobile/i)
+    setCurrentBrowser(Boolean(IE));
   }, []);
 
   console.log(currentBrowser); // output: false
@@ -159,19 +157,33 @@ export default MyApp;
 
 특정 페이지에서의 사용 기기를 알고 싶다면, 해당 페이지 내에서 `getInitialProps`를 사용하면 된다.
 
-전체 페이지에서 사용 기기를 알고 싶다면, `pages/_app.tsx`에서 `getStaticProps`와 `useEffect`에서 `match`로 특정 브라우저인지 아닌지를 Boolean 값으로 찾아내면 된다.
+전체 페이지에서 사용 기기를 알고 싶다면, `pages/_app.tsx`의 `useEffect`로 특정 브라우저인지 아닌지를 Boolean 값으로 반환하면 된다.
 
-```tsx
-useEffect(() => {
-  const matchIE = navigator.userAgent.match(/MSIE|rv:|IEMobile/i)
-  const Chrome = navigator.userAgent.match(/Chrome/i)
-  if (matchIE) {
-    setCurrentBrowser(Boolean(matchIE))
-  }
-  if (Chrome) {
-    console.log(Boolean(Chrome))
-  }
-}, [])
+```ts{14, 15}
+// pages/_app.tsx
+
+function MyApp({ Component, pageProps }: AppProps) {
+  const [isIE, setIsIE] = useState<boolean>(false)
+  const [isChrome, SetIsChrome] = useState<boolean>(false)
+
+  useEffect(() => {
+    const IE = navigator.userAgent.match(/MSIE|rv:|IEMobile/i)
+    const Chrome = navigator.userAgent.match(/Chrome/i)
+    setIsIE(Boolean(IE))
+    SetIsChrome(Boolean(Chrome))
+  }, [])
+
+  console.log('isIE', isIE) // output: false
+  console.log('isChrome', isChrome) // output: true
+
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  )
+}
+export default MyApp
 ```
 
 <br />
