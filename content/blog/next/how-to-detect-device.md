@@ -5,6 +5,10 @@ category: 'next'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.01.21
+</div>
+
 Next.js에서 라이브러리 설치 없이 유저가 사용하는 기기를 탐지하는 방법에 대해 알아보자.
 
 해당 글은 next `^10.0.3`, react `^17.0.1`, typescript `^4.1.3` 버전으로 작성되었다.
