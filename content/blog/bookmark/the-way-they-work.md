@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.31
+마지막 업데이트: 2021.01.26
 </div>
 
 <br />
