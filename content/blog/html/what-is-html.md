@@ -2,7 +2,7 @@
 title: 'HTML 살펴보기'
 date: 2021-01-23 01:58:00
 category: 'html'
-draft: false
+draft: true
 ---
 
 Web Storage, Socket API도 HTML 스펙안에 있음
