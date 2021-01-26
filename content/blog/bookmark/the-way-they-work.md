@@ -27,6 +27,8 @@ draft: false
 
 - [네이티브 앱 → 리액트 네이티브 앱 전환 그리고 1년 후](https://ridicorp.com/story/react-native-1year-review/) (리디, 2021.01.04)
 
+- [리덕스 잘 쓰고 계시나요?](https://ridicorp.com/story/how-to-use-redux-in-ridi) (리디, 2021.01.22)
+
 ## 해외
 
 - [10 Insights from Adopting TypeScript at Scale](https://www.techatbloomberg.com/blog/10-insights-adopting-typescript-at-scale/) (Bloomberg, 2020.11.09)

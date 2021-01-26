@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.21
+마지막 업데이트: 2021.01.26
 </div>
 
 Next.js에서 라이브러리 설치 없이 유저가 사용하는 기기를 탐지하는 방법에 대해 알아보자.
@@ -100,9 +100,9 @@ export const getStaticProps = ({ req }: NextPageContext) => {
 
 ## 모든 페이지에서 userAgent 알아내기
 
-`pages/_app.tsx`에서 제일 처음에 `getInitialProps`를 사용한 코드를 넣으면 `ReferenceError: navigator is not defined`와 같은 에러가 나왔다.
+`pages/_app.tsx`에서 제일 처음에 `getInitialProps`를 사용한 코드를 넣으면 `ReferenceError: navigator is not defined`와 같은 에러가 나왔다. 이는 SSR이기 때문에 CSR에서 알 수 있는 window나 브라우저 관련 변수를 잡아내지 못하는 것이다.
 
-하지만 정말 희한하게도 `getStaticProps`를 사용하면 참조에러가 나지 않는다. 둘다 SSR이기에 같은 에러가 나야 하지만 나지 않았다. 대신 console에 userAgent가 undefined로 뜬다. (이 역시 아직 이유를 찾지 못했다..)
+하지만 정말 희한하게도 `getStaticProps` 역시 SSR라 같은 참조에러가 나야하지만 그렇지 않는다. 대신 console에 userAgent가 undefined로 뜬다. (이 역시 아직 이유를 찾지 못했다..)
 
 원래는 `getStaticProps`에서 특정 브라우저인지 알아내어 바로 props로 넘겨주고 싶었으나, undefined 이기 때문에 넘겨주지 못하고 useEffect를 사용할 수 밖에 없었다.
 
