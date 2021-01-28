@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.12.31
+마지막 업데이트: 2021.01.26
 </div>
 
 <br />
@@ -26,6 +26,8 @@ draft: false
 - [emotion을 활용한 크몽 프론트엔드 스타일링 시스템](https://brunch.co.kr/@kmongdev/17) (크몽, 2020.03.13)
 
 - [네이티브 앱 → 리액트 네이티브 앱 전환 그리고 1년 후](https://ridicorp.com/story/react-native-1year-review/) (리디, 2021.01.04)
+
+- [리덕스 잘 쓰고 계시나요?](https://ridicorp.com/story/how-to-use-redux-in-ridi) (리디, 2021.01.22)
 
 ## 해외
 
