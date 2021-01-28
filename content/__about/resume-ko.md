@@ -7,7 +7,7 @@ lang: 'ko'
 # 김민정 (MJ KIM)
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
+마지막 업데이트: 2021.01.28
 </div>
 
 **저는 `______` 프론트개발자 입니다.**
@@ -39,23 +39,24 @@ lang: 'ko'
 
 스타트업 전문 개발사 | 20.11 - 재직중 | Frontend Developer / Project Manager
 
-- PWA
-- Next.js, TypeScript, MobX
-- Styled Components
-- Storybook
+```txt
+Next.js, TypeScript, MobX, Styled components, PWA, Storybook
+```
 
-<h4 style="border: 1px solid black; width: max-content; padding: 5px;">상시 작업</h4>
-
-- 내부 components 개발 및 업데이트
-- 스토리북을 활용하여 디자인 시스템 구축
+- 자주 사용되는 components 개발 및 업데이트
+- Storybook을 활용하여 디자인 시스템 구축
+- 각 프로젝트의 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
+- Notion, Slack으로 업무 진행
 
 ## 루트에너지(Rootenergy)
 
 재생에너지 크라우드 펀딩 플랫폼 | 20.08 - 20.11 | Frontend Developer
 
-- TypeScript, React, Redux(Rematch)
-- SCSS
+```txt
+React, TypeScript, Redux(Rematch), SCSS, Storybook
+```
+
 - Storybook을 활용해 디자인 시스템 개발, 정책 정리
 - Git flow, Notion, Slack으로 업무 진행
 - HTTP, Web Server와 WAS 세미나 발표
