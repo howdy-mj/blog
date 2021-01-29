@@ -15,6 +15,8 @@ draft: false
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
 
+자바스크립트, 타입스크립트 관련 북마크는 <a href="" target="_blank">여기</a>에서 볼 수 있습니다.
+
 ## 뉴스레터
 
 - [Frontend Focus](https://frontendfoc.us/)
@@ -62,42 +64,6 @@ draft: false
 ## Web & Browser
 
 - [Rendering](https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609)
-
-## JavaScript
-
-- [JavaScript Event KeyCodes](https://keycode.info/)
-
-- [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://medium.com/@Dongmin_Jang/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd) (2019.01.29)
-
-- [How JavaScript works: Under the hood of custom elements + Best practices on building reusable components](https://blog.sessionstack.com/how-javascript-works-under-the-hood-of-custom-elements-best-practices-on-building-reusable-e118e888de0c) (2018.08.06)
-
-- [JavaScript Promise](https://www.hanbit.co.kr/store/books/look.php?p_code=E5027975256) (ebook 무료)
-
-- [ES6 Browser Compatibility Table](https://kangax.github.io/compat-table/es6/)
-
-- [Deep JavaScript](https://exploringjs.com/deep-js/toc.html)
-
-- [2ality – JavaScript and more](https://2ality.com/)
-
-- [The Top 3 New JavaScript ES 2021 (ES 12)](https://medium.com/better-programming/the-top-3-new-javascript-es-2021-es-12-features-im-excited-about-a3ac129efbb2) (2020.11.18)
-
-- [bestofjs](https://bestofjs.org/)
-
-- [Advanced Promise Patterns: Promise Memoization](https://www.jonmellman.com/posts/promise-memoization) (2021.01.11)
-
-- [7 Tips for Clean Code in JavaScript You Should Know](https://dev.to/kais_blog/7-tips-for-clean-code-in-javascript-you-should-know-2533) (2021.01.06)
-
-## TypeScript
-
-- [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)
-
-- [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
-
-- [왜 타입스크립트에서 Generic 을 사용해야하는지와 타입스크립트 Generic 을 쓰게 되는 이유에 대한 사유](https://gist.github.com/hmmhmmhm/8c22c011c13dcc8b3001cc385558f586) (2020.08.06)
-
-- [자바스크립트를 개발자를 위한 타입스크립트](https://ahnheejong.gitbook.io/ts-for-jsdev/)
-
-- [TypeScript enum을 사용하지 않는 게 좋은 이유를 Tree-shaking 관점에서 소개합니다.](https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/) (2020.09.10)
 
 ## React
 
@@ -150,8 +116,6 @@ draft: false
 - [React-Spring Guide](https://bradwoods.io/guides/react-spring)
 
 - [React Spring Tutorial: Making Animated React Apps](https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps) (2020.03.03)
-
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
 - [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
 
