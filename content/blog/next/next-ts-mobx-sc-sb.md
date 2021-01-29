@@ -5,6 +5,10 @@ category: 'next'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.01.29
+</div>
+
 Next에 TypeScript, MobX, Styled-components, Storybook 까지 포함한 프로젝트를 세팅해보자.
 
 Next 소개는 [이전글](https://howdy-mj.me/next/next-js-intro/)에서, 완성된 코드는 [Github](https://github.com/howdy-mj/next-ts-mobx-sc-sb-boilerplate)에서 볼 수 있다.
@@ -279,7 +283,9 @@ export default theme
 
 theme에 대한 타입을 지정 후, 다시 theme에서 import 한다.
 
-`styles/theme.d.ts`
+`styles/styled.d.ts`
+
+> 타입을 지정하는 파일의 이름은 무조건 'styled.d.ts'여야 한다. 아니면 자동완성이 뜨지 않는다.
 
 ```ts
 import 'styled-components'
