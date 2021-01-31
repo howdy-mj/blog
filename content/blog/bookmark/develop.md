@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2020.11.22
+마지막 업데이트: 2021.01.31
 </div>
 
 <br />
@@ -22,6 +22,8 @@ draft: false
 - [DevDocs API](https://devdocs.io/)
 
 - [Dash for macOS](https://kapeli.com/dash) (유료)
+
+- [Devhints - TL;DR for developer documentation](https://devhints.io/)
 
 ## CS(개발 지식)
 

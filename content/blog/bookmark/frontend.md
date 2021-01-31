@@ -15,6 +15,8 @@ draft: false
 
 - [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
 
+<br />
+
 자바스크립트, 타입스크립트 관련 북마크는 <a href="" target="_blank">여기</a>에서 볼 수 있습니다.
 
 ## 뉴스레터

@@ -21,7 +21,7 @@ draft: false
 
 - [JavaScript Promise](https://www.hanbit.co.kr/store/books/look.php?p_code=E5027975256) (ebook 무료)
 
-<hr />
+<!-- <hr /> -->
 
 - [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://medium.com/@Dongmin_Jang/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd) (2019.01.29)
 
@@ -45,7 +45,7 @@ draft: false
 
 - [10 Javascript Design Patterns To Improve Your Code With](https://beforesemicolon.medium.com/10-javascript-design-patterns-to-improve-your-code-with-44c6f6c2ea94) (2021.01.27)
 
-## Etc.
+### Etc.
 
 - [JavaScript Event KeyCodes](https://keycode.info/)
 
@@ -57,7 +57,7 @@ draft: false
 
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
-<hr />
+<!-- <hr /> -->
 
 - [TypeScript: Search for typed packages](https://www.typescriptlang.org/dt/search?search=)
 
