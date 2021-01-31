@@ -17,7 +17,7 @@ draft: false
 
 <br />
 
-자바스크립트, 타입스크립트 관련 북마크는 <a href="" target="_blank">여기</a>에서 볼 수 있습니다.
+자바스크립트, 타입스크립트 관련 북마크는 <a href="https://howdy-mj.me/bookmark/javascript-and-typescript/" target="_blank">여기</a>에서 볼 수 있습니다.
 
 ## 뉴스레터
 
