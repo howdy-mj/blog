@@ -9,92 +9,95 @@ draft: false
 마지막 업데이트: 2021.01.20
 </div>
 
+<!-- - <a href="" target="_blank"></a> -->
+
 <br />
 
 프론트엔드 개발자가 참고하면 좋을 디자인, 디자인 시스템 관련 글, 사이트 모음
 
 ## 색상
 
-- [Color Picker](http://www.flatuicolorpicker.com/)
+- <a href="http://www.flatuicolorpicker.com/" target="_blank">Color Picker</a>
 
-- [HTML Color Codes](https://htmlcolorcodes.com/)
+- <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a>
 
-- [Color Tool](https://material.io/resources/color/)
+- <a href="https://material.io/resources/color/" target="_blank">Color Tool</a>
 
 <br />
 
 <p>팔레트 / 조합</p>
 
-- [아티스트를 위한 색상 팔레트, 색상 구성표 - Adobe Color](https://color.adobe.com/ko/explore)
+- <a href="https://color.adobe.com/ko/explore" target="_blank">아티스트를 위한 색상 팔레트, 색상 구성표 - Adobe Color</a>
 
-- [Colorable](https://colorable.jxnblk.com/5a6049/d2cfba)
+- <a href="https://colorable.jxnblk.com/5a6049/d2cfba" target="_blank">Colorable</a>
 
-- [Open Color](https://yeun.github.io/open-color/) (색 팔레트)
+- <a href="https://yeun.github.io/open-color/" target="_blank">Open Color</a> (색 팔레트)
 
-- [SchemeColor - Download Color Schemes](https://www.schemecolor.com/)
+- <a href="https://www.schemecolor.com/" target="_blank">SchemeColor - Download Color Schemes</a>
 
-- [Two Color Combinations](https://2colors.colorion.co/)
+- <a href="https://2colors.colorion.co/" target="_blank">Two Color Combinations</a>
 
-- [calcolor](https://calcolor.co/)
+- <a href="https://calcolor.co/" target="_blank">calcolor</a>
 
 ## 트렌드
 
-- [Behance](https://www.behance.net/)
+- <a href="https://www.behance.net/" target="_blank">Behance</a>
 
-- [Mobbin - Latest Mobile Design Pattern](https://mobbin.design/)
+- <a href="https://mobbin.design/" target="_blank">Mobbin - Latest Mobile Design Pattern</a>
 
-- [서핏 - 디자이너를 위한 모든 디자인 콘텐츠](https://www.surfit.io/)
+- <a href="https://www.surfit.io/" target="_blank">서핏 - 디자이너를 위한 모든 디자인 콘텐츠</a>
 
-- [Fonts In Use](https://fontsinuse.com/)
+- <a href="Fonts In Use" target="_blank">https://fontsinuse.com/</a>
 
-- [A guide of UI design trends for 2021](https://uxdesign.cc/a-guide-of-ui-design-trends-for-2021-637ac038cb99)
+- <a href="https://uxdesign.cc/a-guide-of-ui-design-trends-for-2021-637ac038cb99" target="_blank">A guide of UI design trends for 2021</a>
 
-- [75 Of The Coolest Color Combinations For 2021](https://www.designwizard.com/blog/design-trends/colour-combination)
+- <a href="https://www.designwizard.com/blog/design-trends/colour-combination" target="_blank">75 Of The Coolest Color Combinations For 2021</a>
 
 ## 디자인 가이드
 
-- [WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서](http://styleguide.co.kr/index.php)
+- <a href="http://styleguide.co.kr/index.php" target="_blank">WEB DESIGN STYLE GUIDE 웹 디자이너를 위한, 웹 스타일 가이드 지침서</a>
 
-- [On Type Patterns and Style Guides](https://css-tricks.com/on-type-patterns-and-style-guides/) (2021.01.19)
+- <a href="https://css-tricks.com/on-type-patterns-and-style-guides/" target="_blank">On Type Patterns and Style Guides</a> (2021.01.19)
 
 ## 디자인 시스템
 
-- [SOCAR FRAME - SOCAR DESIGN SYSTEM](https://socarframe.socar.kr/8bb3aba4a/p/5857a5-socar-frame)
+- <a href="https://socarframe.socar.kr/8bb3aba4a/p/5857a5-socar-frame" target="_blank">SOCAR FRAME - SOCAR DESIGN SYSTEM</a>
+- <a href="https://ridi.design/" target="_blank">RIDI Design System</a>
 
-- [RIDI Design System](https://ridi.design/)
+- <a href="https://dramancompany.github.io/remember-ui/" target="_blank">Remember UI</a>
 
-- [Remember UI](https://dramancompany.github.io/remember-ui/)
-
-- [Spectrum, Adobe's design system](https://spectrum.adobe.com/)
+- <a href="https://spectrum.adobe.com/" target="_blank">Spectrum, Adobe's design system</a>
 
 <br />
 
 <p>스토리북</p>
 
-- [Carbon Design System](https://www.carbondesignsystem.com/)
+- <a href="https://www.carbondesignsystem.com/" target="_blank">Carbon Design System</a>
 
-- [Caple Design System](https://design.caple.ai/?path=/story/*)
+- <a href="https://design.caple.ai/?path=/story/*" target="_blank">Caple Design System</a>
 
-- [WFT UI-KIT](https://uikit.wfp.org/docs/index.html?path=/story/getting-started-intro--page)
+- <a href="https://uikit.wfp.org/docs/index.html?path=/story/getting-started-intro--page" target="_blank">WFT UI-KIT</a>
 
 <br />
 
 <p>글, 사이트</p>
 
-- [Design Systems Repo](https://designsystemsrepo.com/)
+- <a href="https://designsystemsrepo.com/" target="_blank">Design Systems Repo</a>
 
-- [Design System Basics in Figma](https://uxdesign.cc/design-system-basics-in-figma-6e66fbb5de85) (2018.07.29)
+- <a href="https://uxdesign.cc/design-system-basics-in-figma-6e66fbb5de85" target="_blank">Design System Basics in Figma</a> (2018.07.29)
 
-- [Text fields & Forms design — UI components series](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0) (2020.05.25)
+- <a href="https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0" target="_blank">Text fields & Forms design — UI components series</a> (2020.05.25)
 
 ## 디자인 툴
 
-- [Zeplin](https://zeplin.io/)
+- <a href="" target="_blank"></a>
 
-- [Figma](https://www.figma.com/)
+- <a href="https://zeplin.io/" target="_blank">Zeplin</a>
 
-- [Sketch](https://www.sketch.com/)
+- <a href="https://www.figma.com/" target="_blank">Figma</a>
 
-- [XELF](https://xelf.io/)
+- <a href="https://www.sketch.com/" target="_blank">Sketch</a>
 
-- [WireFlow - designer tool](https://wireflow.co/)
+- <a href="https://xelf.io/" target="_blank">XELF</a>
+
+- <a href="https://wireflow.co/" target="_blank">WireFlow - designer tool</a>
