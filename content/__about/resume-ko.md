@@ -35,7 +35,7 @@ lang: 'ko'
 
 # Experience
 
-## 똑똑한개발자
+## 로켓메이커스
 
 스타트업 전문 개발사 | 20.11 - 재직중 | Frontend Developer / Project Manager
 
