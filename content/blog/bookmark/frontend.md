@@ -9,11 +9,13 @@ draft: false
 마지막 업데이트: 2021.01.20
 </div>
 
+<!-- - <a href="" target="_blank"></a> -->
+
 <br />
 
 프론트엔드가 읽어보면 좋을 글 혹은 사이트 모음
 
-- [실용주의 프런트 엔드 개발](https://peter-cho.gitbook.io/book/) (2020.07)
+- <a href="https://peter-cho.gitbook.io/book/" target="_blank">실용주의 프런트 엔드 개발</a> (2020.07)
 
 <br />
 
@@ -21,104 +23,75 @@ draft: false
 
 ## 뉴스레터
 
-- [Frontend Focus](https://frontendfoc.us/)
-
-- [ES.next News](http://esnextnews.com/)
-
-- [JavaScript Weekly](https://javascriptweekly.com/)
+- <a href="https://frontendfoc.us/" target="_blank">Frontend Focus</a>
+- <a href="http://esnextnews.com/" target="_blank">ES.next News</a>
+- <a href="https://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>
 
 ## HTML
 
-- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
-
-- [HTML Entity Reference](https://css-tricks.com/snippets/html/glyphs/)
-
-- [HTML Cheat Sheet](https://websitesetup.org/html5-cheat-sheet/)
-
-- [시맨틱하게 HTML을 짠다는 것.](https://medium.com/@soeunlee/%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%95%98%EA%B2%8C-html%EC%9D%84-%EC%A7%A0%EB%8B%A4%EB%8A%94-%EA%B2%83-90612ffc988e) (2017.04.02)
+- <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard</a>
+- <a href="https://css-tricks.com/snippets/html/glyphs/" target="_blank">HTML Entity Reference</a>
+- <a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank">HTML Cheat Sheet</a>
+- <a href="https://medium.com/@soeunlee/%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%95%98%EA%B2%8C-html%EC%9D%84-%EC%A7%A0%EB%8B%A4%EB%8A%94-%EA%B2%83-90612ffc988e" target="_blank">시맨틱하게 HTML을 짠다는 것.</a> (2017.04.02)
 
 ## CSS
 
-- [CSS Snapshot 2018](https://www.w3.org/TR/css-2018/)
-
-- [Pseudo Class와 Pseudo Element 활용하기](https://asfirstalways.tistory.com/184) (2016.07.04)
-
-- [10 Best Practices for Improving Your CSS](https://medium.com/better-programming/10-best-practices-for-improving-your-css-84c69aac66e) (2020.05.12)
-
-- [Ten modern layouts in one line of CSS](https://web.dev/one-line-layouts/) (2020.07.07)
-
-- [cubie-bezier](https://cubic-bezier.com/#.17,.67,.83,.67)
-
-- [Easing 함수 치트 시트](https://easings.net/ko)
-
-- [CSS generator/border](https://html-css-js.com/css/generator/border-outline/)
-
-- [Bubbly - CSS speech bubbles made easy!](http://projects.verou.me/bubbly/) (말풍선 CSS)
-
-- [Shadows](https://brumm.af/shadows)
-
-- [CSS Scroll Shadows!](https://css-scroll-shadows.now.sh/?bgColor=e83ce2&shadowColor=222222&pxSize=15)
-
-- [Centering in CSS](https://web.dev/centering-in-css/) (2020.12.16)
-
-- [Debug CSS Grid with Chrome DevTools](https://blog.logrocket.com/using-chrome-devtools-to-debug-css-grid/) (2021.01.04)
+- <a href="https://www.w3.org/TR/css-2018/" target="_blank">CSS Snapshot 2018</a>
+- <a href="https://asfirstalways.tistory.com/184" target="_blank">Pseudo Class와 Pseudo Element 활용하기</a> (2016.07.04)
+- <a href="https://medium.com/better-programming/10-best-practices-for-improving-your-css-84c69aac66e" target="_blank">10 Best Practices for Improving Your CSS</a> (2020.05.12)
+- <a href="https://web.dev/one-line-layouts/" target="_blank">Ten modern layouts in one line of CSS</a> (2020.07.07)
+- <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">cubie-bezier</a>
+- <a href="https://easings.net/ko" target="_blank">Easing 함수 치트 시트</a>
+- <a href="https://html-css-js.com/css/generator/border-outline/" target="_blank">CSS generator/border</a>
+- <a href="http://projects.verou.me/bubbly/" target="_blank">Bubbly - CSS speech bubbles made easy!</a> (말풍선 CSS)
+- <a href="https://brumm.af/shadows" target="_blank">Shadows</a>
+- <a href="https://css-scroll-shadows.now.sh/?bgColor=e83ce2&shadowColor=222222&pxSize=15" target="_blank">CSS Scroll Shadows!</a>
+- <a href="https://web.dev/centering-in-css/" target="_blank">Centering in CSS</a> (2020.12.16)
+- <a href="https://blog.logrocket.com/using-chrome-devtools-to-debug-css-grid/" target="_blank">Debug CSS Grid with Chrome DevTools</a> (2021.01.04)
 
 ## Web & Browser
 
-- [Rendering](https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609)
+- <a href="https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609" target="_blank">Rendering</a>
 
 ## React
 
-- [8 Tips to keep your code clean in React](https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9) (?.06.30)
+- <a href="https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9" target="_blank">8 Tips to keep your code clean in React</a> (2020.06.30)
+- <a href="https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/" target="_blank">How to become a pro with React setState() in 10 minutes</a> (2018.10.06)
+- <a href="https://rinae.dev/posts/a-complete-guide-to-useeffect-ko" target="_blank">[번역] useEffect 완벽가이드</a> (2019.10.09)
+- <a href="https://reactjsexample.com/" target="_blank">React.js Examples</a>
+- <a href="https://blog.isquaredsoftware.com/2021/01/blogged-answers-why-react-context-is-not-a-state-management-tool-and-why-it-doesnt-replace-redux/?fbclid=IwAR1OzMSnZOLRw0uKtXVFSRLEdumJlJ1nIfPQtT7WYiMz4pz4kpOlQYmqbvA" target="_blank">Why React Context is Not a "State Management" Tool (and Why It Doesn't Replace Redux)</a> (2021.01.18)
+- <a href="https://unicorn-utterances.com/posts/react-refs-complete-story/" target="_blank">React Refs: The Complete Story</a> (2020.12.01)
+- <a href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/" target="_blank">A (Mostly) Complete Guide to React Rendering Behavior</a> (2020.05.17)
 
-- [How to become a pro with React setState() in 10 minutes](https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/) (2018.10.06)
-
-- [[번역] useEffect 완벽가이드](https://rinae.dev/posts/a-complete-guide-to-useeffect-ko) (2019.10.09)
-
-- [React.js Examples](https://reactjsexample.com/)
-
-- [Why React Context is Not a "State Management" Tool (and Why It Doesn't Replace Redux)](https://blog.isquaredsoftware.com/2021/01/blogged-answers-why-react-context-is-not-a-state-management-tool-and-why-it-doesnt-replace-redux/?fbclid=IwAR1OzMSnZOLRw0uKtXVFSRLEdumJlJ1nIfPQtT7WYiMz4pz4kpOlQYmqbvA) (2021.01.18)
-
-- [React Refs: The Complete Story](https://unicorn-utterances.com/posts/react-refs-complete-story/) (2020.12.01)
-
-- [A (Mostly) Complete Guide to React Rendering Behavior](https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/) (2020.05.17)
+<br />
 
 <p>Next.js</p>
 
-- [Learn Next.js](https://masteringnextjs.com/)
+- <a href="https://masteringnextjs.com/" target="_blank">Learn Next.js</a>
 
 ## MobX
 
-- [ANNOUNCING MOBX 6](https://michel.codes/blogs/mobx6) (2020.12.24)
+- <a href="https://michel.codes/blogs/mobx6" target="_blank">ANNOUNCING MOBX 6</a> (2020.12.24)
 
 ## Unit Test
 
-- [Jest, Enzyme 을 통한 리액트 컴포넌트 유닛 테스팅](https://velopert.com/3587) (2018.03.04)
-
-- [Jest로 기본적인 테스트 작성하기](https://www.daleseo.com/jest-basic/) (2019.01.12)
+- <a href="https://velopert.com/3587" target="_blank">Jest, Enzyme 을 통한 리액트 컴포넌트 유닛 테스팅</a> (2018.03.04)
+- <a href="https://www.daleseo.com/jest-basic/" target="_blank">Jest로 기본적인 테스트 작성하기</a> (2019.01.12)
 
 ## Webpack
 
-- [JavaScript Modules Part2 A Beginner’s Guide (번역)](https://hojong.me/javascript-modules-part-2) (2016.08.06)
-
-- [Webpack 4의 Tree Shaking에 대한 이해](https://huns.me/development/2265) (2018.11.08)
-
-- [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/) (2019.12)
-
-- [자바스크립트 개발자를 위한 AST(번역)](https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers) (2018.06.19)
-
-- [Create-React-App의 Webpack 기본 설정 살펴보기](https://maxkim-j.github.io/posts/cra-webpack-config) (2020.05.26)
+- <a href="https://hojong.me/javascript-modules-part-2" target="_blank">JavaScript Modules Part2 A Beginner’s Guide (번역)</a> (2016.08.06)
+- <a href="https://huns.me/development/2265" target="_blank">Webpack 4의 Tree Shaking에 대한 이해</a> (2018.11.08)
+- <a href="https://joshua1988.github.io/webpack-guide/" target="_blank">웹팩 핸드북</a> (2019.12)
+- <a href="https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers" target="_blank">자바스크립트 개발자를 위한 AST(번역)</a> (2018.06.19)
+- <a href="https://maxkim-j.github.io/posts/cra-webpack-config" target="_blank">Create-React-App의 Webpack 기본 설정 살펴보기</a> (2020.05.26)
 
 ## WebGL
 
-- [WebGL Fundamentals](https://webglfundamentals.org/)
+- <a href="https://webglfundamentals.org/" target="_blank">WebGL Fundamentals</a>
 
 ## 기타
 
-- [React-Spring Guide](https://bradwoods.io/guides/react-spring)
-
-- [React Spring Tutorial: Making Animated React Apps](https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps) (2020.03.03)
-
-- [JSON Formatter & Validator](https://jsonformatter.curiousconcept.com/)
-
-- [모두를 위한 대수적 효과](https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/) (2019.07.21)
+- <a href="https://bradwoods.io/guides/react-spring" target="_blank">React-Spring Guide</a>
+- <a href="https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps" target="_blank">React Spring Tutorial: Making Animated React Apps</a> (2020.03.03)
+- <a href="https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/" target="_blank">모두를 위한 대수적 효과</a> (2019.07.21)
