@@ -13,16 +13,14 @@ draft: false
 
 ## Interactive Web
 
-- [Form Follows Function (fff project)](http://fff.cmiscm.com/#!/main)
-
-- [Plus X](https://plus-ex.com/)
-
-- [PULIP - 플립](https://www.pulipinc.com/)
+- <a href="http://fff.cmiscm.com/#!/main" target="_blank">Form Follows Function (fff project)</a>
+- <a href="https://plus-ex.com/" target="_blank">Plus X</a>
+- <a href="https://www.pulipinc.com/" target="_blank">PULIP - 플립</a>
 
 ## Api
 
-- [Postgres Observability](https://pgstats.dev/)
+- <a href="https://pgstats.dev/" target="_blank">Postgres Observability</a>
 
 ## CSS
 
-- [A Pure CSS Game - You Must Build a Lighthouse](https://codepen.io/ivorjetski/full/OJXbvdL)
+- <a href="https://codepen.io/ivorjetski/full/OJXbvdL" target="_blank">A Pure CSS Game - You Must Build a Lighthouse</a>

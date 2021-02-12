@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
+마지막 업데이트: 2021.02.12
 </div>
 
 <br />
@@ -15,54 +15,41 @@ draft: false
 
 ## API
 
-- [Public APIs](https://public-apis.io/)
-
-- [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
-
-- [Mocky - mock your APIs](https://designer.mocky.io/)
-
-- [Daum 우편번호 API](http://postcode.map.daum.net/guide)
-
-- [도로명주소 API](https://www.juso.go.kr/addrlink/devAddrLinkRequestUse.do?menu=main&cPath=99JA)
-
-- [Facebook for Developers](https://developers.facebook.com/docs/)
+- <a href="https://public-apis.io/" target="_blank">Public APIs</a>
+- <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a>
+- <a href="https://designer.mocky.io/" target="_blank">Mocky - mock your APIs</a>
+- <a href="http://postcode.map.daum.net/guide" target="_blank">Daum 우편번호 API</a>
+- <a href="https://www.juso.go.kr/addrlink/devAddrLinkRequestUse.do?menu=main&cPath=99JA" target="_blank">도로명주소 API</a>
+- <a href="https://developers.facebook.com/docs/" target="_blank">Facebook for Developers</a>
+- <a href="https://jsonformatter.curiousconcept.com/" target="_blank">JSON Formatter & Validator</a>
 
 ## Video
 
-- [Coverr - Free Videos](https://coverr.co/)
+- <a href="https://coverr.co/" target="_blank">Coverr - Free Videos</a>
 
 ## Image
 
-- [Morguefile - Free photos for commercial use](https://morguefile.com/)
-
-- [Imagebase - Absolutely free images](https://www.imagebase.net/)
-
-- [Pixabay - 무료 이미지](https://pixabay.com/ko/)
-
-- [Unsplash: Beautiful Free Images & Pictures](https://unsplash.com/)
-
-- [Gratisography - Free High-Resolution Photos](https://gratisography.com/)
-
-- [Flickr](https://www.flickr.com/)
+- <a href="https://morguefile.com/" target="_blank">Morguefile - Free photos for commercial use</a>
+- <a href="https://www.imagebase.net/" target="_blank">Imagebase - Absolutely free images</a>
+- <a href="https://pixabay.com/ko/" target="_blank">Pixabay - 무료 이미지</a>
+- <a href="https://unsplash.com/" target="_blank">Unsplash: Beautiful Free Images & Pictures</a>
+- <a href="https://gratisography.com/" target="_blank">Gratisography - Free High-Resolution Photos</a>
+- <a href="https://www.flickr.com/" target="_blank">Flickr</a>
 
 ## Icon, SVG, Logo
 
-- [seeklogo: Vector Logos, Logo Templates Free Download](https://seeklogo.com/)
-
-- [Flaticon - Free vector icons](https://www.flaticon.com/)
-
-- [publicdomainvectors](https://publicdomainvectors.org/en/)
-
-- [CSS Icons](https://css.gg/)
+- <a href="https://seeklogo.com/" target="_blank">seeklogo: Vector Logos, Logo Templates Free Download</a>
+- <a href="https://www.flaticon.com/" target="_blank">Flaticon - Free vector icons</a>
+- <a href="https://publicdomainvectors.org/en/" target="_blank">publicdomainvectors</a>
+- <a href="https://css.gg/" target="_blank">CSS Icons</a>
 
 ## Text
 
-- [한글입숨 - 무의미한 한글 텍스트 생성기](http://hangul.thefron.me/)
+- <a href="https://www.lipsum.com/" target="_blank">Lorem Ipsum</a>
+- <a href="http://hangul.thefron.me/" target="_blank">한글입숨 - 무의미한 한글 텍스트 생성기</a>
 
 ## Etc
 
-- [이미지 배경 제거](https://www.remove.bg/ko)
-
-- [NoDesign.dev](https://nodesign.dev/)
-
-- [Carbon - 코드 이미지로 변환](https://carbon.now.sh/)
+- <a href="https://www.remove.bg/ko" target="_blank">이미지 배경 제거</a>
+- <a href="https://nodesign.dev/" target="_blank">NoDesign.dev</a>
+- <a href="https://carbon.now.sh/" target="_blank">Carbon - 코드 이미지로 변환</a>
