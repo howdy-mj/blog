@@ -160,6 +160,8 @@ pinkDiv.addEventListener('click', function(e) {
 | `blur`  | No      | No         |
 | `focus` | No      | No         |
 
+<br />
+
 ### Mouse Event
 
 | Type         | Bubbles | Cancelable |
@@ -173,12 +175,16 @@ pinkDiv.addEventListener('click', function(e) {
 | `mousemover` | Yes     | Yes        |
 | `mouseup`    | Yes     | Yes        |
 
+<br />
+
 ### Wheel Event
 
 | Type     | Bubbles | Cancelable |
 | -------- | ------- | ---------- |
 | `wheel`  | Yes     | Yes        |
 | `scroll` | Yes     | No         |
+
+<br />
 
 ### Keyboard Event
 

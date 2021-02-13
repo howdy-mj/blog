@@ -45,3 +45,4 @@ draft: false
 - <a href="https://www.acmicpc.net/" target="_blank">백준</a>
 - <a href="https://swexpertacademy.com/main/main.do" target="_blank">SW Expert Academy - SWEA</a>
 - <a href="https://www.notion.so/JS-100-94d97d294dd14c9b911a02c840fa9f2d" target="_blank">JS 100제</a>
+- <a href="https://yeu.kr/#html" target="_blank">자바스크립트 웹개발용 특화 코딩 테스트</a>

@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.26
+마지막 업데이트: 2021.02.14
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -25,6 +25,7 @@ draft: false
 - <a href="https://brunch.co.kr/@kmongdev/17" target="_blank">emotion을 활용한 크몽 프론트엔드 스타일링 시스템</a> (크몽, 2020.03.13)
 - <a href="https://ridicorp.com/story/react-native-1year-review/" target="_blank">네이티브 앱 → 리액트 네이티브 앱 전환 그리고 1년 후</a> (리디, 2021.01.04)
 - <a href="https://ridicorp.com/story/how-to-use-redux-in-ridi" target="_blank">리덕스 잘 쓰고 계시나요?</a> (리디, 2021.01.22)
+- <a href="https://engineering.linecorp.com/ko/blog/line-manga-smooth-page-transition-with-page-stack/?fbclid=IwAR3dA1Bp8CKShH4M8EMCZIPyCBYXhCUWlYnRqyXz11Gf6O3TbTm3zc1iKBo" target="_blank">LINE MANGA: Page Stack을 이용해서 페이지 전환 처리하기</a> (라인망가, 2018.02.09)
 
 ## 해외
 

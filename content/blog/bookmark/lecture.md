@@ -69,6 +69,14 @@ draft: false
 
   <p style="font-size: 14px;">JavaScript 30일 챌린지</p>
 
+- <a href="https://masteringnextjs.com/" target="_blank">Learn Next.js</a>
+
+  <p style="font-size: 14px;">Next.js</p>
+
+- <a href="https://react2025.com/" target="_blank">React 2025</a>
+
+  <p style="font-size: 14px;">React.js</p>
+
 ## 유료 강의
 
 ### 국내
@@ -85,8 +93,10 @@ draft: false
 - <a href="https://www.udemy.com/" target="_blank">Udemy</a>
   <p style="font-size: 14px;">개발, 비즈니스, IT 및 소프트웨어, 사무 생산성, 자기 계발, 디자인, 마케팅, 건강 및 피트니스, 음악</p>
 
-## 프로그래밍 언어 가이드북
+## 문서, 책
 
 - <a href="https://goalkicker.com/" target="_blank">Free Programming Books - GoalKicker</a> (무료)
 
 - <a href="https://www.oreilly.com/" target="_blank">O'Reilly</a>
+
+- <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=E2375873090" target="_blank">유지보수하기 어렵게 코딩하는 방법: 평생 개발자로 먹고 살 수 있다</a> (무료)
