@@ -40,14 +40,18 @@ draft: false
 - <a href="https://asfirstalways.tistory.com/184" target="_blank">Pseudo Class와 Pseudo Element 활용하기</a> (2016.07.04)
 - <a href="https://medium.com/better-programming/10-best-practices-for-improving-your-css-84c69aac66e" target="_blank">10 Best Practices for Improving Your CSS</a> (2020.05.12)
 - <a href="https://web.dev/one-line-layouts/" target="_blank">Ten modern layouts in one line of CSS</a> (2020.07.07)
-- <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">cubie-bezier</a>
+- <a href="https://web.dev/centering-in-css/" target="_blank">Centering in CSS</a> (2020.12.16)
+- <a href="https://blog.logrocket.com/using-chrome-devtools-to-debug-css-grid/" target="_blank">Debug CSS Grid with Chrome DevTools</a> (2021.01.04)
+- <a href="https://www.joshwcomeau.com/css/rules-of-margin-collapse/" target="_blank">The Rules of Margin Collapse</a> (2020.12.16)
+
+<p>실습</p>
+
+- <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank">cubie-bezier</a> (easing 함수 속성)
 - <a href="https://easings.net/ko" target="_blank">Easing 함수 치트 시트</a>
 - <a href="https://html-css-js.com/css/generator/border-outline/" target="_blank">CSS generator/border</a>
 - <a href="http://projects.verou.me/bubbly/" target="_blank">Bubbly - CSS speech bubbles made easy!</a> (말풍선 CSS)
 - <a href="https://brumm.af/shadows" target="_blank">Shadows</a>
 - <a href="https://css-scroll-shadows.now.sh/?bgColor=e83ce2&shadowColor=222222&pxSize=15" target="_blank">CSS Scroll Shadows!</a>
-- <a href="https://web.dev/centering-in-css/" target="_blank">Centering in CSS</a> (2020.12.16)
-- <a href="https://blog.logrocket.com/using-chrome-devtools-to-debug-css-grid/" target="_blank">Debug CSS Grid with Chrome DevTools</a> (2021.01.04)
 
 ## Web & Browser
 
@@ -62,12 +66,13 @@ draft: false
 - <a href="https://blog.isquaredsoftware.com/2021/01/blogged-answers-why-react-context-is-not-a-state-management-tool-and-why-it-doesnt-replace-redux/?fbclid=IwAR1OzMSnZOLRw0uKtXVFSRLEdumJlJ1nIfPQtT7WYiMz4pz4kpOlQYmqbvA" target="_blank">Why React Context is Not a "State Management" Tool (and Why It Doesn't Replace Redux)</a> (2021.01.18)
 - <a href="https://unicorn-utterances.com/posts/react-refs-complete-story/" target="_blank">React Refs: The Complete Story</a> (2020.12.01)
 - <a href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/" target="_blank">A (Mostly) Complete Guide to React Rendering Behavior</a> (2020.05.17)
+- <a href="https://loshy244110.medium.com/react-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%84%A4%EC%9D%B4%EC%85%98-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-9c645c5046cd" target="_blank">[react] 페이지 네이션 구현하기</a> (2020.01.04)
 
-<br />
+<!-- <br />
 
-<p>Next.js</p>
+<p>Next.js</p> -->
 
-- <a href="https://masteringnextjs.com/" target="_blank">Learn Next.js</a>
+<!-- ## Redux -->
 
 ## MobX
 
@@ -80,6 +85,7 @@ draft: false
 
 ## Webpack
 
+- <a href="https://createapp.dev/" target="_blank">Create App - Frontend build config generator</a>
 - <a href="https://hojong.me/javascript-modules-part-2" target="_blank">JavaScript Modules Part2 A Beginner’s Guide (번역)</a> (2016.08.06)
 - <a href="https://huns.me/development/2265" target="_blank">Webpack 4의 Tree Shaking에 대한 이해</a> (2018.11.08)
 - <a href="https://joshua1988.github.io/webpack-guide/" target="_blank">웹팩 핸드북</a> (2019.12)

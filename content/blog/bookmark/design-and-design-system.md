@@ -47,11 +47,13 @@ draft: false
 
 - <a href="https://www.surfit.io/" target="_blank">서핏 - 디자이너를 위한 모든 디자인 콘텐츠</a>
 
-- <a href="Fonts In Use" target="_blank">https://fontsinuse.com/</a>
+- <a href="https://fontsinuse.com/" target="_blank">Fonts In Use</a>
 
 - <a href="https://uxdesign.cc/a-guide-of-ui-design-trends-for-2021-637ac038cb99" target="_blank">A guide of UI design trends for 2021</a>
 
 - <a href="https://www.designwizard.com/blog/design-trends/colour-combination" target="_blank">75 Of The Coolest Color Combinations For 2021</a>
+
+- <a href="https://dribbble.com/" target="_blank">Dribble - Discover the world's top designers & creatives</a>
 
 ## 디자인 가이드
 
@@ -88,9 +90,9 @@ draft: false
 
 - <a href="https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0" target="_blank">Text fields & Forms design — UI components series</a> (2020.05.25)
 
-## 디자인 툴
+- <a href="https://d2.naver.com/news/4194542" target="_blank">NAVER FE devtalk: 디자인 시스템에 대한 소개와 효율성 개선 및 구축 경험공유</a> (영상)
 
-- <a href="" target="_blank"></a>
+## 디자인 툴
 
 - <a href="https://zeplin.io/" target="_blank">Zeplin</a>
 

@@ -14,6 +14,7 @@ draft: false
 ## Interactive Web
 
 - <a href="http://fff.cmiscm.com/#!/main" target="_blank">Form Follows Function (fff project)</a>
+- <a href="https://bruno-simon.com/#cybertruck" target="_blank">\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_🚗\_\_</a>
 - <a href="https://plus-ex.com/" target="_blank">Plus X</a>
 - <a href="https://www.pulipinc.com/" target="_blank">PULIP - 플립</a>
 

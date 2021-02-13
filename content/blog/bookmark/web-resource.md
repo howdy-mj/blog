@@ -9,6 +9,8 @@ draft: false
 마지막 업데이트: 2021.02.12
 </div>
 
+<!-- - <a href="" target="_blank"></a> -->
+
 <br />
 
 웹 개발 시 필요한 리소스(ex. 이미지, 동영상, API, 디자인 등) 모음
@@ -53,3 +55,5 @@ draft: false
 - <a href="https://www.remove.bg/ko" target="_blank">이미지 배경 제거</a>
 - <a href="https://nodesign.dev/" target="_blank">NoDesign.dev</a>
 - <a href="https://carbon.now.sh/" target="_blank">Carbon - 코드 이미지로 변환</a>
+- <a href="https://textedit.tools/" target="_blank">Online Text Edit Tools</a>
+- <a href="http://www.pythontutor.com/visualize.html#mode=edit" target="_blank">Code Execution</a>

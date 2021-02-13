@@ -9,6 +9,8 @@ draft: false
 마지막 업데이트: 2021.01.31
 </div>
 
+<!-- - <a href="" target="_blank"></a> -->
+
 <br />
 
 개발자가 읽으면 좋을 글 혹은 사이트 모음
@@ -22,12 +24,18 @@ draft: false
 
 ## CS(개발 지식)
 
+<p>국내</p>
+
 - <a href="https://helloworld.kurly.com/blog/rms-refactoring/" target="_blank">코드 악취를 맡는 후각 훈련의 시간</a> (2020.06.09)
 - <a href="http://www.snow.or.kr/lecture/applied_sciences/computer_science/4997.html" target="_blank">컴퓨터과학과 프로그래밍 입문(MIT 강의)</a> (2009)
 - <a href="https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/index.html?fbclid=IwAR0A529efk5t-wiPpwNfIwoorwEQtAx8W5BhdmjApLeadmHlcJR_uocCm8U" target="_blank">개발자를 위한 인프라 기초 총정리</a> (2018.11.09)
 - <a href="https://csbooks.wisedog.net/" target="_blank">부트캠퍼를 위한 컴퓨터 과학</a>
 - <a href="https://www.notion.so/CONNECT-DEV-000045ea17d94055b8a535fd7319a1db" target="_blank">CONNECT DEV - 웹/앱 개발을 위한 전반적인 지식을 정리하기 위한 위키</a>
 - <a href="https://www.grabbing.me/IT-A-to-Z-By-1e1fbc981b7c4c03ac44943085ac8304" target="_blank">[IT 개발자와 일할 때 필요한 모든 개발지식] A to Z 자료 모음집 By 그랩</a>
+
+<p>해외</p>
+
+- <a href="https://www.acm.org/" target="_blank">Association for Computing Machinery</a>
 
 ## 공통
 
@@ -36,11 +44,7 @@ draft: false
 - <a href="https://meetup.toast.com/posts/106" target="_blank">좋은 git 커밋 메시지를 작성하기 위한 7가지 약속</a>
 - <a href="https://github.com/upptime/upptime" target="_blank">Upptime</a>
 - <a href="https://shields.io/" target="_blank">Shields: Quality metadata badges for open source projects</a>
-
-* []()
-
-- <a href="" target="_blank"></a>
-- <a href="" target="_blank"></a>
+- <a href="https://urbanbase.github.io/dev/2021/01/15/GitCommand.html" target="_blank">익숙해지면 좋을 깃(git) 명령어 모음집</a>
 
 ### Vim
 
@@ -65,6 +69,7 @@ draft: false
 <p>해외</p>
 
 - <a href="https://dev.to/" target="_blank">DEV Community</a>
+- <a href="https://web.dev/blog/" target="_blank">web.dev Blog</a>
 - <a href="https://morioh.com/explore" target="_blank">Social Network for Programmers and Developers</a>
 - <a href="https://juejin.cn/" target="_blank">掘金</a>
 
@@ -73,7 +78,7 @@ draft: false
 - <a href="https://taegon.kim/archives/6546" target="_blank">30년간 개발자로 살면서 배운 것</a>
 - <a href="https://blog.kingbbode.com/51" target="_blank">5년차 개발자</a>
 - <a href="https://news.hada.io/topic?id=3635" target="_blank">업계에서 6년 있은 뒤, 마음이 바뀐 소프트웨어 개발 토픽들</a> (2021.01)
-- <a href="" target="_blank"></a>
+- <a href="http://docs.likejazz.com/software-engineering-at-google/" target="_blank">구글의 소프트웨어 엔지니어링</a> (2017.05.10)
 
 ## 기술 블로그
 
@@ -95,6 +100,8 @@ draft: false
 - <a href="https://joshua1988.github.io/" target="_blank">Captain Pangyo</a>
 - <a href="http://tlog.tammolo.com/" target="_blank">Tlog</a>
 - <a href="https://ideveloper2.dev/" target="_blank">Steady Study</a>
+- <a href="https://blog.rhostem.com/" target="_blank">blog.rhostem</a>
+- <a href="https://dohoons.com/blog/" target="_blank">dohoons(도훈) \_(≥∇≤)ノミ ☆</a>
 
 <p>해외</p>
 
