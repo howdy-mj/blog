@@ -31,9 +31,11 @@ draft: false
 
 <!-- <hr /> -->
 
-#### New
+#### ES6+
 
 - <a href="https://medium.com/better-programming/the-top-3-new-javascript-es-2021-es-12-features-im-excited-about-a3ac129efbb2" target="_blank">The Top 3 New JavaScript ES 2021 (ES 12)</a> (2020.11.18)
+
+- <a href="https://blog.asamaru.net/2017/08/14/top-10-es6-features/" target="_blank">개발자가 필히 알아야 할 ES6 10가지 기능</a> (2017.08.14)
 
 ### How to use...
 

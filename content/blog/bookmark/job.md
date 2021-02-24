@@ -26,8 +26,12 @@ draft: false
 - <a href="http://www.bloter.net/archives/245110" target="_blank">네이버 면접시 듣게 되는 41가지 질문</a> (2015.12.02)
 - <a href="https://github.com/JaeYeopHan/Interview_Question_for_Beginner" target="_blank">Interview_Question_for_Beginner</a> (2020.06 업데이트)
 - <a href="https://github.com/lydiahallie/javascript-questions/blob/master/ko-KR/README-ko_KR.md" target="_blank">JavaScript Questions (한국어)</a> (2020.10 업데이트)
+- <a href="https://dev-interview.com" target="_blank">데브-인터뷰</a>
+
+## 개념 및 설명
+
 - <a href="https://github.com/trekhleb/javascript-algorithms/blob/master/README.ko-KR.md" target="_blank">JavaScript 알고리즘 및 자료 구조</a> (2020.11 업데이트)
-- <a href="https://dev-interview.com/interviews" target="_blank">데브-인터뷰</a>
+- <a href="https://github.com/AhaOfficial/nuxt-template/blob/master/docs/%EA%B8%B0%EC%B4%88_%EC%84%A4%EB%AA%85.md" target="_blank">기초 설명</a>
 
 ## 알고리즘
 
