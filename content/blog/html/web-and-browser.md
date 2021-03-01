@@ -62,3 +62,27 @@ Scripting
 운용의 용이성
 이해의 용이성
 견고성
+
+---
+
+## 웹 브라우저 구성
+
+- 브라우저 엔진 (렌더링 엔진)
+- 자바스크립트 엔진
+- 통신 모듈
+
+## 브라우저 엔진
+
+- 브라우저가 동작하는 데 필요한 기발 기술을 모두 포함하는 엔진
+- 브라우저 엔진에 따라서 동작 방식이 거의 유사하다.
+
+### 브라우저 엔진의 종류
+
+- Blink Engine (크롬, 오페라, 삼성인터넷, MS Edge)
+- Webkit Engine (safari)
+- Server Engine (firefox), Gecko Engine (초기 firefox)
+
+### IOS
+
+- 모든 브라우저가 WebKit 기반
+- Safari 브라우저에 스킨 씌우는 정도
