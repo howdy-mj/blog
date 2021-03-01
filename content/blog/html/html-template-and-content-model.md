@@ -1,5 +1,5 @@
 ---
-title: 'HTML 탬플릿 및 HTML Content Model'
+title: 'HTML 템플릿 및 HTML Content Model'
 date: 2021-03-01 19:58:00
 category: 'html'
 draft: false

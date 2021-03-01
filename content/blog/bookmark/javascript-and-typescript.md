@@ -19,6 +19,8 @@ draft: false
 
 ### Trend
 
+- <a href="https://tc39.es/" target="_blank">TC39: Specifying JavaScript.</a>
+
 - <a href="https://bestofjs.org/" target="_blank">Best Of JavaScript</a>
 
 ### Docs & PDF

@@ -27,9 +27,14 @@ draft: false
 - <a href="http://esnextnews.com/" target="_blank">ES.next News</a>
 - <a href="https://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>
 
+## 웹 표준화 기구
+
+- <a href="https://www.w3.org/" target="_blank">W3C (World Wide Web Consortium)</a>
+- <a href="https://wicg.io/" target="_blank">WICG (Web Incubator CG)</a>
+- <a href="https://whatwg.org/" target="_blank">WHATWG community</a>
+
 ## HTML
 
-- <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Living Standard</a>
 - <a href="https://css-tricks.com/snippets/html/glyphs/" target="_blank">HTML Entity Reference</a>
 - <a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank">HTML Cheat Sheet</a>
 - <a href="https://medium.com/@soeunlee/%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%95%98%EA%B2%8C-html%EC%9D%84-%EC%A7%A0%EB%8B%A4%EB%8A%94-%EA%B2%83-90612ffc988e" target="_blank">시맨틱하게 HTML을 짠다는 것.</a> (2017.04.02)
