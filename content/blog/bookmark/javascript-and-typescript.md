@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
-</div> -->
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.03.01
+</div>
 
 <!-- - <a href="" target="_blank"></a> -->
 
@@ -55,7 +55,7 @@ draft: false
 
 ### Design Pattern
 
-- [10 Javascript Design Patterns To Improve Your Code With](https://beforesemicolon.medium.com/10-javascript-design-patterns-to-improve-your-code-with-44c6f6c2ea94) (2021.01.27)
+- <a href="https://beforesemicolon.medium.com/10-javascript-design-patterns-to-improve-your-code-with-44c6f6c2ea94" target="_blank">10 Javascript Design Patterns To Improve Your Code With</a> (2021.01.27)
 
 ### Etc.
 
@@ -73,11 +73,15 @@ draft: false
 
 - <a href="https://ahnheejong.gitbook.io/ts-for-jsdev/" target="_blank">자바스크립트를 개발자를 위한 타입스크립트</a>
 
+- <a href="https://react-typescript-cheatsheet.netlify.app/" target="_blank">React TypeScript Cheatsheets</a>
+
 ### How to use...
 
 - <a href="https://gist.github.com/hmmhmmhm/8c22c011c13dcc8b3001cc385558f586" target="_blank">왜 타입스크립트에서 Generic을 사용해야하는지와 타입스크립트 Generic 을 쓰게 되는 이유에 대한 사유</a> (2020.08.06)
 
 - <a href="https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/" target="_blank">TypeScript enum을 사용하지 않는 게 좋은 이유를 Tree-shaking 관점에서 소개합니다.</a> (2020.09.10)
+
+- <a href="https://ui.toast.com/weekly-pick/ko_20210217?fbclid=IwAR1waLIyedGOqxaHBJP3WLnYGsVWC3XzX0deeoMYvQS_VHX5obhpoenOR0A" target="_blank">올해 버려야 할 타입스크립트 나쁜 버릇 10가지</a> (2021.02.17)
 
 ### Etc.
 
