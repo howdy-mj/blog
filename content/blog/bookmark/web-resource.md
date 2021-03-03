@@ -15,6 +15,10 @@ draft: false
 
 웹 개발 시 필요한 리소스(ex. 이미지, 동영상, API, 디자인 등) 모음
 
+- <a href="https://free-for.dev/#/" target="_blank">free-for.dev</a>
+
+- <a href="https://web.dev/devices-introduction/" target="_blank">Accessing hardware devices on the web</a> (2021.02.12)
+
 ## API
 
 - <a href="https://public-apis.io/" target="_blank">Public APIs</a>

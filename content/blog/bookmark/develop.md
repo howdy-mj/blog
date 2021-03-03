@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.31
+마지막 업데이트: 2021.03.03
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -79,6 +79,7 @@ draft: false
 - <a href="https://blog.kingbbode.com/51" target="_blank">5년차 개발자</a>
 - <a href="https://news.hada.io/topic?id=3635" target="_blank">업계에서 6년 있은 뒤, 마음이 바뀐 소프트웨어 개발 토픽들</a> (2021.01)
 - <a href="http://docs.likejazz.com/software-engineering-at-google/" target="_blank">구글의 소프트웨어 엔지니어링</a> (2017.05.10)
+- <a href="https://observablehq.com/@mbostock/10-years-of-open-source-visualization" target="_blank">10 Years of Open-Source Visualization</a> (2021.02.24, d3 개발자의 지난 10년 간의 후기)
 
 ## 기술 블로그
 

@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
+마지막 업데이트: 2021.03.03
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -48,6 +48,8 @@ draft: false
 - <a href="https://web.dev/centering-in-css/" target="_blank">Centering in CSS</a> (2020.12.16)
 - <a href="https://blog.logrocket.com/using-chrome-devtools-to-debug-css-grid/" target="_blank">Debug CSS Grid with Chrome DevTools</a> (2021.01.04)
 - <a href="https://www.joshwcomeau.com/css/rules-of-margin-collapse/" target="_blank">The Rules of Margin Collapse</a> (2020.12.16)
+- <a href="https://epicreact.dev/css-variables/" target="_blank">Use CSS Variables instead of React Context</a>
+- <a href="https://christianheilmann.com/2021/02/08/sharing-data-between-css-and-javascript-using-custom-properties/" target="_blank">Sharing data between CSS and JavaScript using custom properties</a> (2021.02.08)
 
 <p>실습</p>
 
@@ -57,6 +59,7 @@ draft: false
 - <a href="http://projects.verou.me/bubbly/" target="_blank">Bubbly - CSS speech bubbles made easy!</a> (말풍선 CSS)
 - <a href="https://brumm.af/shadows" target="_blank">Shadows</a>
 - <a href="https://css-scroll-shadows.now.sh/?bgColor=e83ce2&shadowColor=222222&pxSize=15" target="_blank">CSS Scroll Shadows!</a>
+- <a href="https://stripesgenerator.com/" target="_blank">CSS Stripes Generator</a>
 
 ## Web & Browser
 
@@ -64,7 +67,6 @@ draft: false
 
 ## React
 
-- <a href="https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9" target="_blank">8 Tips to keep your code clean in React</a> (2020.06.30)
 - <a href="https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/" target="_blank">How to become a pro with React setState() in 10 minutes</a> (2018.10.06)
 - <a href="https://rinae.dev/posts/a-complete-guide-to-useeffect-ko" target="_blank">[번역] useEffect 완벽가이드</a> (2019.10.09)
 - <a href="https://reactjsexample.com/" target="_blank">React.js Examples</a>
@@ -72,6 +74,11 @@ draft: false
 - <a href="https://unicorn-utterances.com/posts/react-refs-complete-story/" target="_blank">React Refs: The Complete Story</a> (2020.12.01)
 - <a href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/" target="_blank">A (Mostly) Complete Guide to React Rendering Behavior</a> (2020.05.17)
 - <a href="https://loshy244110.medium.com/react-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%84%A4%EC%9D%B4%EC%85%98-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-9c645c5046cd" target="_blank">[react] 페이지 네이션 구현하기</a> (2020.01.04)
+
+### Clean Code
+
+- <a href="https://medium.com/groww-engineering/8-tips-to-keep-your-code-clean-in-react-7706f631baf9" target="_blank">8 Tips to keep your code clean in React</a> (2020.06.30)
+- <a href="https://betterprogramming.pub/8-ways-to-write-clean-react-code-610c502ccf39" target="_blank">React Clean Code</a> (2021.02.25)
 
 <!-- <br />
 
@@ -88,6 +95,8 @@ draft: false
 - <a href="https://velopert.com/3587" target="_blank">Jest, Enzyme 을 통한 리액트 컴포넌트 유닛 테스팅</a> (2018.03.04)
 - <a href="https://www.daleseo.com/jest-basic/" target="_blank">Jest로 기본적인 테스트 작성하기</a> (2019.01.12)
 
+- <a href="https://medium.com/@drake_beth/how-to-test-images-in-react-a70053b1634a" target="_blank">How to Test Images in React</a> (2020.09.07)
+
 ## Webpack
 
 - <a href="https://createapp.dev/" target="_blank">Create App - Frontend build config generator</a>
@@ -96,13 +105,21 @@ draft: false
 - <a href="https://joshua1988.github.io/webpack-guide/" target="_blank">웹팩 핸드북</a> (2019.12)
 - <a href="https://gyujincho.github.io/2018-06-19/AST-for-JS-devlopers" target="_blank">자바스크립트 개발자를 위한 AST(번역)</a> (2018.06.19)
 - <a href="https://maxkim-j.github.io/posts/cra-webpack-config" target="_blank">Create-React-App의 Webpack 기본 설정 살펴보기</a> (2020.05.26)
+- <a href="https://nolanlawson.com/2021/02/23/javascript-performance-beyond-bundle-size/" target="_blank">JavaScript performance beyond bundle size</a> (2021.02.23)
 
 ## WebGL
 
 - <a href="https://webglfundamentals.org/" target="_blank">WebGL Fundamentals</a>
+
+## WebRTC
+
+- <a href="https://github.com/muaz-khan/WebRTC-Experiment" target="_blank">WebRTC-Experiment</a>
 
 ## 기타
 
 - <a href="https://bradwoods.io/guides/react-spring" target="_blank">React-Spring Guide</a>
 - <a href="https://shakuro.com/blog/react-spring-tutorial-making-animated-react-apps" target="_blank">React Spring Tutorial: Making Animated React Apps</a> (2020.03.03)
 - <a href="https://overreacted.io/ko/algebraic-effects-for-the-rest-of-us/" target="_blank">모두를 위한 대수적 효과</a> (2019.07.21)
+- <a href="https://web.dev/streams/" target="_blank">Streams—The definitive guide</a> (2021.02.19)
+
+<!-- - <a href="" target="_blank"></a> -->

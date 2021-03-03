@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
+마지막 업데이트: 2021.03.03
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -68,7 +68,7 @@ draft: false
 
 - <a href="https://dramancompany.github.io/remember-ui/" target="_blank">Remember UI</a>
 
-- <a href="https://spectrum.adobe.com/" target="_blank">Spectrum, Adobe's design system</a>
+* <a href="https://spectrum.adobe.com/" target="_blank">Spectrum, Adobe's design system</a>
 
 <br />
 
@@ -92,6 +92,12 @@ draft: false
 
 - <a href="https://d2.naver.com/news/4194542" target="_blank">NAVER FE devtalk: 디자인 시스템에 대한 소개와 효율성 개선 및 구축 경험공유</a> (영상)
 
+- <a href="https://medium.com/wadiz/%EC%99%80%EB%94%94%EC%A6%88%EC%9D%98-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-c7f32a948814" target="_blank">와디즈의 디자인 시스템 구축</a> (2021.03.05)
+
+- <a href="https://brunch.co.kr/@minnimalism/3?fbclid=IwAR3nat65hRgQnprVbQjaEPIQHmWRmEDO8BtDlt00D34QftEFh4A7M4Ro7gI" target="_blank">‘디자인 시스템’에 대해 얘기해보다 -Part 1</a> (2021.02.13)
+
+- <a href="https://blog.naver.com/minhyupp/222230365830" target="_blank">리액트(React)로 디자인 시스템 만들어보기!!(feat. storybook)</a> (2021.02.03)
+
 ## 디자인 툴
 
 - <a href="https://zeplin.io/" target="_blank">Zeplin</a>
@@ -103,3 +109,5 @@ draft: false
 - <a href="https://xelf.io/" target="_blank">XELF</a>
 
 - <a href="https://wireflow.co/" target="_blank">WireFlow - designer tool</a>
+
+<!-- - <a href="" target="_blank"></a> -->
