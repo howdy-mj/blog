@@ -37,17 +37,22 @@ lang: 'ko'
 
 ## 로켓메이커스
 
-스타트업 전문 개발사 | 20.11 - 재직중 | Frontend Developer / Project Manager
+스타트업 전문 개발사 | 20.11 - 21.03 | Frontend Developer / Project Manager
 
 ```txt
 Next.js, TypeScript, MobX, Styled components, PWA, Storybook
 ```
 
-- 자주 사용되는 components 개발 및 업데이트
+- 내부 UI 컴포넌트 유지보수 및 개발
 - Storybook을 활용하여 디자인 시스템 구축
-- 각 프로젝트의 프론트엔드 개발
+- 진행하는 프로젝트의 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
 - Notion, Slack으로 업무 진행
+
+#### 진행 프로젝트
+
+- <a href="https://fit-back.co/" target="_blank">핏백</a> (1:1 멘토 매칭 플랫폼)
+- <a href="https://taxsingoro.com/" target="_blank">신고로</a> (세무 신고 대행 플랫폼)
 
 ## 루트에너지(Rootenergy)
 
