@@ -7,7 +7,7 @@ lang: 'ko'
 # 김민정 (MJ KIM)
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.28
+마지막 업데이트: 2021.03.16
 </div>
 
 **저는 `______` 프론트개발자 입니다.**
@@ -45,14 +45,9 @@ Next.js, TypeScript, MobX, Styled components, PWA, Storybook
 
 - 내부 UI 컴포넌트 유지보수 및 개발
 - Storybook을 활용하여 디자인 시스템 구축
-- 진행하는 프로젝트의 프론트엔드 개발
+- 진행 프로젝트<div style="display: inline; font-size: 14px;">(<a href="https://fit-back.co/" target="_blank">핏백</a>, <a href="https://taxsingoro.com/" target="_blank">신고로</a>)</div>의 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
 - Notion, Slack으로 업무 진행
-
-#### 진행 프로젝트
-
-- <a href="https://fit-back.co/" target="_blank">핏백</a> (1:1 멘토 매칭 플랫폼)
-- <a href="https://taxsingoro.com/" target="_blank">신고로</a> (세무 신고 대행 플랫폼)
 
 ## 루트에너지(Rootenergy)
 
@@ -87,6 +82,12 @@ React, TypeScript, Redux(Rematch), SCSS, Storybook
 <br />
 
 # Side Project
+
+### Delta Labs
+
+- (진행 중)
+
+<br />
 
 ### BFRun
 
