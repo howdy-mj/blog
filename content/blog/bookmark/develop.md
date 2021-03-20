@@ -103,11 +103,13 @@ draft: false
 - <a href="https://ideveloper2.dev/" target="_blank">Steady Study</a>
 - <a href="https://blog.rhostem.com/" target="_blank">blog.rhostem</a>
 - <a href="https://dohoons.com/blog/" target="_blank">dohoons(도훈) \_(≥∇≤)ノミ ☆</a>
+- <a href="https://ooeunz.tistory.com/" target="_blank">윤자이 기술블로그</a>
 
 <p>해외</p>
 
 - <a href="https://medium.com/@addyosmani" target="_blank">Addy Osmani</a>
 - <a href="https://dev.to/lydiahallie" target="_blank">Lydia Hallie</a>
+- <a href="https://overreacted.io/" target="_blank">Overreacted</a>
 
 ### 기업
 
@@ -150,3 +152,5 @@ draft: false
 - <a href="https://medium.com/harrythegreat/oh-my-zsh-iterm2%EB%A1%9C-%ED%84%B0%EB%AF%B8%EB%84%90%EC%9D%84-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-a105f2c01bec" target="_blank">Oh My ZSH+ iTerm2로 터미널을 더 강력하게</a> (2019.01.19)
 - <a href="https://subicura.com/2017/11/22/mac-os-development-environment-setup.html" target="_blank">본격 macOS에 개발 환경 구축하기</a> (2020.07.06)
 - <a href="https://devfonts.gafi.dev/" target="_blank">Dev Fonts</a>
+
+<!-- - <a href="" target="_blank"></a> -->
