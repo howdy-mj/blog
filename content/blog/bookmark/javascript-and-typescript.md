@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.01
+마지막 업데이트: 2021.03.21
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -45,6 +45,8 @@ draft: false
 
 - <a href="https://blog.sessionstack.com/how-javascript-works-under-the-hood-of-custom-elements-best-practices-on-building-reusable-e118e888de0c" target="_blank">How JavaScript works: Under the hood of custom elements + Best practices on building reusable components</a> (2018.08.06)
 
+- <a href="https://medium.com/trabe/using-switch-true-in-javascript-986e8ad8ae4f" target="_blank">Using switch(true) in JavaScript</a> (2019.09.23)
+
 ### Tips
 
 - <a href="https://dev.to/kais_blog/7-tips-for-clean-code-in-javascript-you-should-know-2533" target="_blank">7 Tips for Clean Code in JavaScript You Should Know</a> (2021.01.06)
@@ -52,6 +54,8 @@ draft: false
 ### Async
 
 - <a href="https://www.jonmellman.com/posts/promise-memoization" target="_blank">Advanced Promise Patterns: Promise Memoization</a> (2021.01.11)
+
+- <a href="https://zellwk.com/blog/async-await-in-loops/?utm_source=ESnextNews.com&utm_medium=Weekly+Newsletter&utm_campaign=2021-03-09" target="_blank">JavaScript async and await in loops</a> (2019.05.01)
 
 ### Design Pattern
 
@@ -86,3 +90,5 @@ draft: false
 ### Etc.
 
 - <a href="https://www.typescriptlang.org/dt/search?search=" target="_blank">TypeScript: Search for typed packages</a>
+
+<!-- - <a href="" target="_blank"></a> -->
