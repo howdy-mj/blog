@@ -35,6 +35,12 @@ lang: 'ko'
 
 # Experience
 
+## 비브로스
+
+간평 병원 예약접수 서비스 | 21.03 - 재직중 | Frontend Developer
+
+<i>업데이트 예정</i>
+
 ## 로켓메이커스
 
 스타트업 전문 개발사 | 20.11 - 21.03 | Frontend Developer / Project Manager
@@ -45,7 +51,7 @@ Next.js, TypeScript, MobX, Styled components, PWA, Storybook
 
 - 내부 UI 컴포넌트 유지보수 및 개발
 - Storybook을 활용하여 디자인 시스템 구축
-- 진행 프로젝트<div style="display: inline; font-size: 14px;">(<a href="https://fit-back.co/" target="_blank">핏백</a>, <a href="https://taxsingoro.com/" target="_blank">신고로</a>)</div>의 프론트엔드 개발
+- 각 프로젝트의 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
 - Notion, Slack으로 업무 진행
 
