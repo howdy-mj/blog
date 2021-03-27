@@ -37,7 +37,7 @@ lang: 'ko'
 
 ## 비브로스
 
-간평 병원 예약접수 서비스 | 21.03 - 재직중 | Frontend Developer
+간편 병원 예약접수 서비스 | 21.03 - 재직중 | Frontend Developer
 
 <i>업데이트 예정</i>
 
