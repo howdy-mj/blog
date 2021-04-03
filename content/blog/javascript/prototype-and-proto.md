@@ -1,5 +1,5 @@
 ---
-title: '[[Prototype]], __proto__과 prototype'
+title: '[[Prototype]], __proto__와 prototype'
 date: 2021-4-04 01:30:00
 category: 'javascript'
 draft: false
