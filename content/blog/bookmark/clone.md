@@ -2,7 +2,7 @@
 title: '웹 개발자 프로젝트 모음'
 date: 2020-8-23 13:42:29
 category: 'bookmark'
-draft: false
+draft: true
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
