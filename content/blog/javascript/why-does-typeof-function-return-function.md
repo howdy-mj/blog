@@ -1,6 +1,6 @@
 ---
 title: '왜 함수의 타입은 object가 아닌 function을 반환할까?'
-date: 2021-4-10 00:00:00
+date: 2021-4-16 00:00:00
 category: 'javascript'
 draft: false
 ---

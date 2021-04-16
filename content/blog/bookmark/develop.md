@@ -48,7 +48,7 @@ draft: false
 
 ### Vim
 
-- [Interactive Vim tutorial](https://www.openvim.com/sandbox.html)
+- <a href="https://www.openvim.com/sandbox.html" target="_blank">Interactive Vim tutorial</a>
 
 ### HTTP
 

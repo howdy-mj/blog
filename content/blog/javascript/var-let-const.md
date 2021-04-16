@@ -39,16 +39,16 @@ const myNumber = 23
 자바스크립트에서 변수 선언은 `선언 → 초기화` 단계를 거쳐 수행된다.
 
 - **선언 단계**: 변수명을 등록하여 자바스크립트 엔진에 변수의 존재를 알린다.
-- **초기화 단계**: 값을 저장하기 위한 메모리 공간을 확보하고 암묵적으로 undefined를 할당해 초기화한다.
+- **초기화 단계**: 값을 저장하기 위한 메모리 공간을 확보하고 암묵적으로 <span class="return">undefined</span>를 할당해 초기화한다.
 
 ```js
 var kmj
 console.log(kmj) // output: undefined
 ```
 
-var 키워드를 이용한 변수 선언은 선언 단계와 초기화 단계가 동시에 진행되어, kmj에 암묵적으로 undefined를 할당해 초기화한다.
+var 키워드를 이용한 변수 선언은 선언 단계와 초기화 단계가 동시에 진행되어, kmj에 암묵적으로 <span class="return">undefined</span>를 할당해 초기화한다.
 
-그런데 반대로, console을 먼저 찍어도 반환 값이 undefined로 나온다.
+그런데 반대로, console을 먼저 찍어도 반환 값이 <span class="return">undefined</span>로 나온다.
 
 ```js
 console.log(kmj) // output: undefined
