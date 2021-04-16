@@ -61,17 +61,39 @@ typeof new Function('x', 'return x') // output: 'function'
 
 하지만 함수는 일반 객체와 다르게 **'호출이 가능'**하다. 함수 객체는 함수로서 동작하기 위해 함수 객체만을 위한 <span class="variable">[[Environment]]</span>, <span class="variable">[[FormalParameters]]</span> 등의 내부 슬롯과 <span class="variable">[[Call]]</span>, <span class="variable">[[Construct]]</span> 같은 내부 메서드를 추가로 갖고 있다. <span style="font-size: 14px;">(ECMA-262: <a href="https://262.ecma-international.org/11.0/#table-6" target="_blank" class="link">함수 객체의 내부 메서드</a>)</span>
 
+<br>
+
 ### 자바스크립트에서 함수를 인지하는 단계
 
-자바스크립트에서 `typeof`를 할 때, 해당 객체 안에 <span class="variable">[[Call]]</span>가 있으면 <span class="return">function</span>으로 반환되는 것을 알았다.
+자바스크립트에서 `typeof`를 할 때, 해당 객체 안에 <span class="variable">[[Call]]</span>이란 내부 메서드가 있으면 <span class="return">function</span>으로 반환되는 것을 알았다.
 
 그렇다면 다시 의문점이 생긴다. 도대체 자바스크립트는 어떻게 함수 객체를 만들 때, 다른 객체와 다르게 함수인걸 인지하고 <span class="variable">[[Call]]</span>을 생성해주는 걸까?
 
-<a href="https://262.ecma-international.org/11.0/#table-6" target="_blank" class="link">ECMA-262의 [[Call]]</a> 내용을 읽어보니, 해당 객체가 함수 표현이 호출(call)을 통해 실행 되었을 때 <span class="variable">[[Call]]</span>이 호출(invoked)된다.
+<a href="https://262.ecma-international.org/11.0/#table-6" target="_blank">ECMA-262의 [[Call]]</a> 내용을 읽어보니, 해당 객체가 **함수 정의 방법**을 통해 실행 되었을 때 <span class="variable">[[Call]]</span>이 호출된다. 그리고 <span class="variable">[[Construct]]</span>는 객체를 생성할 때, **super**나 **new** 연산자가 실행되었을 때 호출된다.
 
-그리고 <span class="variable">[[Construct]]</span>는 객체를 생성할 때, **super**나 **new** 생성자가 호출(call)되었을 때 호출(invoked)된다.
+함수 정의 방법에는 함수 선언문, 함수 표현식, Function 생성자 함수 그리고 화살표 함수 이렇게 크게 4가지가 존재한다.
 
-<!-- <div style="text-align: center;"><img src="https://i.stack.imgur.com/Kfe6W.png" alt="img" /></div> -->
+```js
+// 1. 함수 선언문
+function hello(name) {
+  return `Hello ${name}`
+}
+
+// 2. 함수 표현식
+const hello = function(name) {
+  return `Hello ${name}`
+}
+
+// 3. Function 생성자 함수
+const hello = new Function('name', 'return name')
+
+// 4. 화살표 함수
+const hello = name => `Hello ${name}`
+```
+
+_(결국은 function 키워드 일것이란 생각이 어느정도 맞았다...)_
+
+<br />
 
 ### [[Call]]과 [[Construct]]
 
@@ -95,6 +117,8 @@ new func()
 
 - constructor: 함수 선언문, 함수 표현식, 클래스
 - non-constructor: 화살표 함수, 메서드(ES6 메서드 축약 표현)
+
+즉, ES6 이전의 모든 함수는 일반 함수로 호출 가능한 <span class="variable">callable</span>이면서도, 생성자 함수로 호출할 수 있는 <span class="variable">constructor</span>이다.
 
 ```js
 const a = function() {}
@@ -121,51 +145,32 @@ const arrowC = new c() // output: Uncaught TypeError: c is not a constructor
 
 이는 `instanceof` 메서드를 사용하면 알 수 있다. `instanceof`는 해당 값의 프로토체인을 타고 올라가 그 위 객체의 타입을 반환해준다.
 
+```js
+const func = a => a
+func instanceof Function // true
+func instanceof Object // true
+
+const arr = []
+arr instanceof Array // true
+arr instanceof Object // true
+
+const obj = {}
+obj instanceof Object // true
+
+const current = new Date()
+current instanceof Date // true
+current instanceof Object // true
+```
+
 <br>
-<br>
-<br>
 
----
+<div>
 
-### 함수 객체
+**추후 추가할 내용**
 
-[https://262.ecma-international.org/11.0/#function-object](https://262.ecma-international.org/11.0/#function-object)
+- constructor, non-constructor의 실질적인 차이
 
-[[Call]](thisArgument, argumentsList)
-
-얘는 빌트인 함수 객체를 위한 내부 메서드인데, thisArgument와 argumentList(ECMA스크립트 언어 값 리스트)를 받을 수 있음.
-
-[[Construct]](argumentList, newTarget)
-
-얘는 빌트인 함수 객체를 위한 내부 메서드인데, 파라미터로는 argumentList와 newTarget을 받는다.
-
-[[Call]]과 다르게 constructor 객체를 지원한다. 모든 constructor는 함수 객체이다. 그러므로, constructor는 constructor 함수나 constructor 함수 객체를 참조될 수 있다.
-
-'new' operator나 'super'를 부름.
-
-- [https://javascript.info/constructor-new](https://javascript.info/constructor-new)
-
-https://262.ecma-international.org/11.0/#sec-call
-7.3.13 Call ( F, V [ , argumentsList ] )
-The abstract operation Call is used to call the [[Call]] internal method of a function object. The operation is called with arguments F, V, and optionally argumentsList where F is the function object, V is an ECMAScript language value that is the this value of the [[Call]], and argumentsList is the value passed to the corresponding argument of the internal method. If argumentsList is not present, a new empty List is used as its value. This abstract operation performs the following steps:
-
-If argumentsList is not present, set argumentsList to a new empty List.
-If IsCallable(F) is false, throw a TypeError exception.
-Return ? F.[[Call]](V, argumentsList).
-7.3.14 Construct ( F [ , argumentsList [ , newTarget ] ] )
-The abstract operation Construct is used to call the [[Construct]] internal method of a function object. The operation is called with arguments F, and optionally argumentsList, and newTarget where F is the function object. argumentsList and newTarget are the values to be passed as the corresponding arguments of the internal method. If argumentsList is not present, a new empty List is used as its value. If newTarget is not present, F is used as its value. This abstract operation performs the following steps:
-
-If newTarget is not present, set newTarget to F.
-If argumentsList is not present, set argumentsList to a new empty List.
-Assert: IsConstructor(F) is true.
-Assert: IsConstructor(newTarget) is true.
-Return ? F.[[Construct]](argumentsList, newTarget).
-
-그런데 class Person {} 도 function으로 나오네.... p424
-
---
-
-p469
+</div>
 
 <br />
 
@@ -173,8 +178,12 @@ p469
 
 <div style="font-size: 12px;">
 
-- https://stackoverflow.com/questions/42467581/why-does-typeof-function-return-function
+- <a href="https://262.ecma-international.org/11.0/" target="_blank">ECMAScript 2020</a>
 
-- https://medium.com/jspoint/what-are-internal-slots-and-internal-methods-in-javascript-f2f0f6b38de
+- 모던 자바스크립트 Deep Dive, 이웅모 (2020)
+
+- <a href="https://stackoverflow.com/questions/42467581/why-does-typeof-function-return-function" target="_blank">Why does typeof function return “function”?</a>
+
+- <a href="https://medium.com/jspoint/what-are-internal-slots-and-internal-methods-in-javascript-f2f0f6b38de" target="_blank">What are “Internal Slots” and “Internal Methods” in JavaScript?</a>
 
 </div>

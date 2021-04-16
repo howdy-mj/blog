@@ -12,3 +12,5 @@ draft: true
 ## 객체 종류
 
 native object, built-in object, host object
+
+<!-- <div style="text-align: center;"><img src="https://i.stack.imgur.com/Kfe6W.png" alt="img" /></div> -->
