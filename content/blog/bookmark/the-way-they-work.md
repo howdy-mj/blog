@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.02.14
+마지막 업데이트: 2021.04.28
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -26,6 +26,7 @@ draft: false
 - <a href="https://ridicorp.com/story/react-native-1year-review/" target="_blank">네이티브 앱 → 리액트 네이티브 앱 전환 그리고 1년 후</a> (리디, 2021.01.04)
 - <a href="https://ridicorp.com/story/how-to-use-redux-in-ridi" target="_blank">리덕스 잘 쓰고 계시나요?</a> (리디, 2021.01.22)
 - <a href="https://engineering.linecorp.com/ko/blog/line-manga-smooth-page-transition-with-page-stack/?fbclid=IwAR3dA1Bp8CKShH4M8EMCZIPyCBYXhCUWlYnRqyXz11Gf6O3TbTm3zc1iKBo" target="_blank">LINE MANGA: Page Stack을 이용해서 페이지 전환 처리하기</a> (라인망가, 2018.02.09)
+- <a href="https://medium.com/modusign/%EB%AA%A8%EB%91%90%EC%8B%B8%EC%9D%B8-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%ED%8C%80%EC%97%90%EC%84%9C-%EA%B0%9C%EB%B0%9C%EC%97%90%EC%84%9C-%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80-%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-d171609d68c2" target="_blank">모두싸인 프론트엔드 팀에서 개발에서 배포까지 하는 방법</a> (모두싸인, 2020.10.09)
 
 ## 해외
 
