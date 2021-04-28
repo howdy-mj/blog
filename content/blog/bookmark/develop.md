@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.03
+마지막 업데이트: 2021.04.27
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -21,6 +21,7 @@ draft: false
 - <a href="https://devdocs.io/" target="_blank">DevDocs API</a>
 - <a href="https://kapeli.com/dash" target="_blank">Dash for macOS</a> (유료)
 - <a href="https://devhints.io/" target="_blank">Devhints - TL;DR for developer documentation</a>
+- <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a>
 
 ## CS(개발 지식)
 
@@ -110,6 +111,7 @@ draft: false
 - <a href="https://medium.com/@addyosmani" target="_blank">Addy Osmani</a>
 - <a href="https://dev.to/lydiahallie" target="_blank">Lydia Hallie</a>
 - <a href="https://overreacted.io/" target="_blank">Overreacted</a>
+- <a href="https://daveceddia.com/archives/" target="_blank">Every Post Ever - Dave Ceddia</a>
 
 ### 기업
 
@@ -130,6 +132,7 @@ draft: false
 - <a href="https://brunch.co.kr/magazine/kmong-tech" target="_blank">크몽</a>
 - <a href="https://tech.socarcorp.kr/" target="_blank">쏘카</a>
 - <a href="https://www.44bits.io/ko" target="_blank">44BITS</a>
+- <a href="https://medium.com/modusign" target="_blank">모두싸인</a>
 
 <p>해외</p>
 
