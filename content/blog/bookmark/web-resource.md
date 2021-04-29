@@ -30,6 +30,7 @@ draft: false
 - <a href="https://www.juso.go.kr/addrlink/devAddrLinkRequestUse.do?menu=main&cPath=99JA" target="_blank">도로명주소 API</a>
 - <a href="https://developers.facebook.com/docs/" target="_blank">Facebook for Developers</a>
 - <a href="https://jsonformatter.curiousconcept.com/" target="_blank">JSON Formatter & Validator</a>
+- <a href="https://data.seoul.go.kr/" target="_blank">서울 열린데이터 광장</a>
 
 ## Video
 

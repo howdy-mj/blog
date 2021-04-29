@@ -74,6 +74,7 @@ draft: false
 - <a href="https://unicorn-utterances.com/posts/react-refs-complete-story/" target="_blank">React Refs: The Complete Story</a> (2020.12.01)
 - <a href="https://blog.isquaredsoftware.com/2020/05/blogged-answers-a-mostly-complete-guide-to-react-rendering-behavior/" target="_blank">A (Mostly) Complete Guide to React Rendering Behavior</a> (2020.05.17)
 - <a href="https://loshy244110.medium.com/react-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%84%A4%EC%9D%B4%EC%85%98-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-9c645c5046cd" target="_blank">[react] 페이지 네이션 구현하기</a> (2020.01.04)
+- <a href="https://react-typescript-cheatsheet.netlify.app/" target="_blank">React TypeScript Cheatsheets</a>
 
 ### Clean Code
 
