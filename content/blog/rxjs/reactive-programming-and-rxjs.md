@@ -1,6 +1,6 @@
 ---
 title: '반응형 프로그래밍과 RxJS'
-date: 2021-5-5 00:00:00
+date: 2021-5-3 22:00:00
 category: 'rxjs'
 draft: false
 ---
@@ -91,9 +91,9 @@ Pull과 Push는 두개의 다른 프로토콜로, <span class="definition">데�
 
 Pull은 소비자가 언제 생산자에서 데이터를 받아올지 결정한다. 생산자는 언제 소비자에게 데이터를 전달해야 하는지 모른다.
 
-자바스크립트의 모든 함수는 Pull에 해당한다. 함수는 데이터의 생산자이며, 함수를 호출하는 코드는 단일 반환 값을 '꺼냄'으로써 데이터를 소비한다.
+자바스크립트의 모든 함수는 Pull에 해당한다. 함수는 데이터의 생산자이며, 함수를 호출하는 코드는 단일 반환 값을 '꺼냄'(pull)으로써 데이터를 소비한다.
 
-ES2015에서 소개 된 제너레이터 함수와 이터레이터(<span class="return">function\*</span>) 역시 pull에 해당한다. <span class="return">iterator.next()</span>은 소비자로 여러 개의 값을 iterator(생산자)에서 '꺼낸다'.
+ES2015에서 소개 된 제너레이터 함수와 이터레이터(<span class="return">function\*</span>) 역시 pull에 해당한다. <span class="return">iterator.next()</span>은 소비자로 여러 개의 값을 iterator(생산자)에서 '꺼낸다'(pull).
 
 어떠한 조건 혹은 소비자 값에 따라 이벤트가 발동(active)되며, 이 때 생산자를 호출(passive)한다.
 
@@ -101,9 +101,9 @@ ES2015에서 소개 된 제너레이터 함수와 이터레이터(<span class="r
 
 Push는 생산자가 언제 소비자에게 데이터를 보낼지 결정하며, 소비자는 언제 데이터를 받을지 모른다.
 
-Promise는 자바스크립트에서 가장 많이 쓰이는 Push다. Promise(생산자)는 callback(소비자)에서 나온 값을 전달하고, 함수와 다르게 언제 해당 callback 값을 보낼지 결정한다.
+Promise는 자바스크립트에서 가장 많이 쓰이는 Push다. Promise(생산자)는 callback(소비자)에서 나온 값을 전달하고, 함수와 다르게 언제 해당 callback 값을 보낼지(push) 결정한다.
 
-RxJS에서는 Observable이라는 새로운 Push를 내보였다. Observable은 여러 값의 생산자로 값들을 Observer(소비자)에게 보낸다.
+RxJS에서는 Observable이라는 새로운 Push를 내보였다. Observable은 여러 값의 생산자로 값들을 Observer(소비자)에게 보낸다(push).
 
 생산자가 변화를 감지하고 이벤트를 발동(active)시키며, 이벤트 처리는 소비자(passive)에게 맡긴다. 이때 데이터 스트림은 생산자에서 소비자로만 이동하며 다른 방향으로 이동하지 않는다. 즉, RxJS와 관련된 스트림은 항상 업스트림 Observable에서 다운스트림 Observer로 흐른다.
 
@@ -120,7 +120,7 @@ RxJS에서는 Observable이라는 새로운 Push를 내보였다. Observable은 
 - <span class="return bold">Observable</span>은 동기 또는 비동기적으로 호출될 때부터 0에서 (잠재적으로) 무한대의 값을 반환할 수 있는 느긋한 계산법이다.
 
 <div class="explain">
-  <p>* 느긋한 계산법(Lazy evaluation, 혹은 지연 평가)은 계산의 결과값이 필요할 때까지 계산을 늦추는 기법이다.</p>
+  <p>* 느긋한 계산법(Lazy evaluation, 혹은 지연 평가)은 계산의 결과값이 필요할 때까지 계산을 늦추는 기법이다. 값을 미리 저장하지 않아 공간을 절약할 수 있고, 값이 꼭 필요할 때만 계산하기 때문에 성능에도 좋은 영향을 준다.</p>
 </div>
 
 <br />
@@ -136,7 +136,6 @@ RxJS를 써보지 않은 상태에서 위의 내용만 봤을 때, Promise와 Ob
 - Promise는 객체를 생성할 때 바로 실행되어 즉시 로딩(eager)이라 부른다. 모든 `then()`은 같은 계산 값을 공유한다.
 
 ```js
-// Promise
 // 최초 실행 (생성 및 실행)
 let promise =
   new Promise() <
@@ -152,7 +151,6 @@ promise.then(value => {
 - Observable은 소비자가 구독(subscription)하기 전까지는 실행되지 않아 지연 로딩(lazy)이라 부른다. `subscribe()`는 여러 번 호출될 수 있으며, 각각의 구독은 모두 자신만의 계산 값을 갖고 있다.
 
 ```js
-// Observable
 import { Observable } from 'rxjs'
 // 선언 (생성)
 const observable$ =
@@ -195,7 +193,6 @@ observable$.subscribe(console.log) // output: 1 2
 - Promise는 `then()` 하나로 데이터의 조작과 반환을 같이 진행한다.
 
 ```js
-// Promise
 promise.then(v => 2 * v)
 ```
 
@@ -221,10 +218,13 @@ subscription.unsubscribe()
 - Promise는 `then()`이나 `catch()`를 사용하는데, 위치에 따라 에러를 처리하는 로직이 달라져야 한다.
 
 ```js
-// Promise
-promise.then(() => {
-  throw new Error('my error')
-})
+promise
+  .then(() => {
+    throw new Error('my error')
+  })
+  .catch(error => {
+    alert(error)
+  })
 ```
 
 - Observable은 `subscribe()`는 에러도 함께 처리할 수 있으며, 자동으로 구독을 취소한다. Observable은 에러 처리 로직을 한 군데에 집중할 수 있다.
@@ -364,13 +364,27 @@ console.log('after')
 
 Observable은 나중에 다른 글에서 더 자세하게 작성할 예정이다.
 
+## RxJS의 이점
+
+- for, while 등 반복문에서는 비동기를 인식하지 못하는 문제(주로 반복 사이의 지연 시간 또는 대기 시간을 인식하지 못함)를 해결할 수 있다.
+
+- 각 콜백 내에서 try/catch 블록을 중첩할 경우 코드가 금방 복잡해지는데, 이를 깔끔하게 작성할 수 있다.
+
+- 비즈니스 로직을 실행해야 할 경우, 중첩된 콜백 구조가 아닌 데이터 흐름을 파악할 수 있는 코드 작성이 가능하다.
+
+- 이벤트 또는 장기 실행 작업이 멋대로 작동되어 취소해야 할 때, 미리 정한 시간이 지나면 이벤트를 자동으로 취소할 수 있다.
+
+- 스로틀링, 디바운싱을 사용하여 프로그램에 전반적으로 안정성을 줄 수 있다.
+
+- UI 단에서 발생하는 이벤트들의 메모리 누수와 브라우저 프로세스의 크기를 제어할 수 있다.
+
 ## 번외) 함수형 프로그래밍(Functional Programming)
 
 공식문서에서 'Rx는 옵저버 패턴, 이터레이터 패턴 그리고 함수형 프로그래밍(Functional Programming)을 조합하여 이벤트 시퀀스를 이상적으로 관리할 수 있다'고 정의하고 있다.
 
 > ReactiveX combines the Observer pattern with the Iterator pattern and functional programming with collections to fill the need for an ideal way of managing sequences of events.
 
-이 중, 반응형 프로그래밍은 함수형 프로그래밍을 기반으로 구축되어 Rx에서 가장 중요한 개념이라 볼 수 있다. 따라서 본 글에서 함수형 프로그래밍에 대해서만 간략하게 다뤄보겠다.
+이 중, 반응형 프로그래밍은 함수형 프로그래밍을 기반으로 구축되어 Rx에서 가장 중요한 개념이라 볼 수 있다. 본 글에서 함수형 프로그래밍에 대해서만 간략하게 다뤄보겠다. (추후 다른 글에서 따로 작성할 예정이다)
 
 <div class="explain">
   <p>- <span class="bold">옵저버 패턴</span>은 객체의 상태 변화를 관찰하는 옵저버들의 목록을 객체에 등록하여 상태 변화가 있을 때마다 메서드 등을 통해 객체가 직접 목록의 각 옵저버에게 통지하도록 하는 디자인 패턴이다.</p>
@@ -379,52 +393,29 @@ Observable은 나중에 다른 글에서 더 자세하게 작성할 예정이다
 
 ### 함수형 프로그래밍 특징
 
-#### 1. 부가작용이 없다(side effect free)
+#### - 부가작용이 없다(Side effect free)
 
 - 반드시 하나 이상의 인자(입력)를 받고, 항상 같은 결과 값을 반환하는 순수 함수이다.
 
 - 함수 범위는 인수와 그 안에 선언된 모든 지역 변수로 구성되며, 이 외의 작업(외부 변수 수정, console 출력, HTML 페이지 요소 렌더링 등)은 부가 작용으로 간주하여 피하거나 최소한으로 격리해야 한다.
 
-- 어플리케이션의 상태가 일반적으로 공유되고 객체의 메서드와 함께 배치되는 객체 지향 프로그래밍과 대조된다.
+<!-- - 어플리케이션의 상태가 일반적으로 공유되고 객체의 메서드와 함께 배치되는 객체 지향 프로그래밍과 대조된다. -->
 
-#### 2. 명령형(Imperative)이 아닌 선언형(Declarative)이다.
+#### - 명령형(Imperative)이 아닌 선언형(Declarative)이다.
 
-- 명령형 프로그램은 원하는 결과를 얻기 위해 특정 단계를 설명하는 코드를 사용하는 반면, 선언형 프로그램은 흐름 제어를 추상화하고 데이터 흐름을 설명하는 코드를 사용한다.
+- 명령형 프로그램은 원하는 결과를 얻기 위해 특정 단계를 설명하는 코드(ex. for, if, switch 등)를 사용하는 반면, 선언형 프로그램은 흐름 제어를 추상화하고 데이터 흐름을 설명하는 코드(ex. map, filter 등)를 사용한다.
 
-- 명령형은 for, if, switch, throw 등을 자주 사용하며, 선언형은 map, filter 등의 결과값을 바로 출력하는 데 집중한다.
-
-- 방법 보다는 어떤 것에 더 집중한다.
-
-#### 3. 불변성(immutable)
+#### - 불변성(Immutable)
 
 - 데이터를 생성하거나 변수가 선언된 후, 이를 변경하거나 수정하지 않는다.
 
-#### 4. 고차함수를 통한 재사용(HoF)
+- 데이터 변경이 필요한 경우, 원본 데이터의 복사본을 만들어 수정 작업을 진행한다.
 
-- 자바스크립트에서 함수는 데이터로 취급되는 일급 함수인데, 이를 변수에 할당하고 다른 함수로 전달하여, 함수에서 반환될 수 있다.
+#### - 고차함수를 통한 재사용(HoF)
 
-- 재사용 목적으로 커링 함수를 만들거나 인수를 함수에 부분적으로 적용할 수 있다.
+- 함수에 함수를 파라미터로 전달할 수 있으며, 함수의 반환값으로 함수를 사용할 수 있다.
 
 - 콜백 함수, 프로미스, 모나드 등을 사용하여 액션, 효과 또는 비동기 흐름을 추상화하거나 분리시킨다.
-
-#### 5. 지연 평가
-
-- 지연 평가는 코드가 실제로 필요할 때 까지 호출되지 않는 것을 말하며, 함수는 그 결과가 다른 표현식의 일부로 사용되기 전까지 계산되지 않는다.
-
-- 값을 미리 저장하지 않아 공간을 절약할 수 있고, 값이 꼭 필요할 때만 계산하기 때문에 프로그램 성능에도 긍정적인 영향을 준다.
-
-<br />
-
-### RxJS로 쉽게 해결 가능한 것
-
-함수형 프로그래밍과 반응형 프로그래밍 패러다임이 결합한 RxJS로 아래와 같은 문제를 쉽게 해결할 수 있다.
-
-- 비동기 함수가 있는 친숙한 제어 흐름 구조(for, while등 반복문)들은 비동기를 인식하지 못하여 제대로 작동하지 않는다. 즉, 이들 구조는 반복 사이의 지연 시간 또는 대기 시간을 인식하지 못한다.
-- 각 콜백 내에서 try/catch 블록이 중첩되면 에러 처리 전략이 금방 복잡해진다.
-- 비즈니스 로직은 지원해야 하는 중첩된 콜백 구조 안에서 밀접하게 결합될 수 있다.
-- 이벤트 또는 장기 실행 작업이 멋대로 작동하거나 취소해야 할 때, 미리 정한 시간이 지나면 이벤트를 취소할 숭 ㅣㅆ는 메커니즘을 둘 수 있다.
-- 스로틀링, 디바운싱을 사용하여 전반적인 프로그램 안정성을 준다.
-- 자바스크립트 애플리케이션은 메모리 관리를 걱정하지 않아도 되지만, 점차 ui가 더 커지고 풍부해지면서 이벤트 리스너들이 메모리 누수를 일으키고 브라우저 프로세스의 크기가 커지고 있는데, 이를 제어할 수 있다.
 
 <br />
 
@@ -432,31 +423,12 @@ Observable은 나중에 다른 글에서 더 자세하게 작성할 예정이다
 
 <div style="font-size: 12px;">
 
-- http://reactivex.io/
-
-- https://rxjs-dev.firebaseapp.com/guide/overview
-
-- https://thebook.io/006934/part01/ch01/04/03-02/
-
-- https://feel5ny.github.io/2018/03/25/angular_observable/
-
-- https://poiemaweb.com/angular-rxjs-observable
-
-- https://angular.kr/guide/comparing-observables
-
-- https://developers.redhat.com/blog/2017/06/30/5-things-to-know-about-reactive-programming/
-
-- https://medium.com/javascript-everyday/javascript-theory-promise-vs-observable-d3087bc1239a
-
-- https://sungjk.github.io/2017/07/17/fp.html
-
-- https://engineering.linecorp.com/ko/blog/functional-programing-language-and-line-game-cloud/
-
-<!-- - https://tech.kakao.com/2017/01/09/daummovie-rxjs/ -->
-
-<!-- - https://www.uwanttolearn.com/android/pull-vs-push-imperative-vs-reactive-reactive-programming-android-rxjava2-hell-part2/ -->
-
-<!-- RxJs 사용법 -->
-<!-- - https://m.blog.naver.com/PostView.nhn?blogId=bkcaller&logNo=221627461671&proxyReferer=https:%2F%2Fwww.google.com%2F -->
+- <a href="http://reactivex.io/" target="_blank">ReactiveX</a>
+- <a href="https://rxjs-dev.firebaseapp.com/guide/overview" target="_blank">RxJS</a>
+- RxJS 반응형 프로그래밍, 2019
+- <a href="https://angular.kr/guide/comparing-observables" target="_blank">Observable vs. Promise</a>
+- <a href="https://developers.redhat.com/blog/2017/06/30/5-things-to-know-about-reactive-programming/" target="_blank">5 Things to Know About Reactive Programming</a>
+- <a href="https://medium.com/javascript-everyday/javascript-theory-promise-vs-observable-d3087bc1239a" target="_blank">JavaScript Theory: Promise vs Observable</a>
+- <a href="https://sungjk.github.io/2017/07/17/fp.html" target="_blank">번역 - 함수형 프로그래밍이란 무엇인가?</a>
 
 </div>
