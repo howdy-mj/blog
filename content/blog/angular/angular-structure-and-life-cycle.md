@@ -21,7 +21,7 @@ $ ng new <프로젝트명>
 $ cd <프로젝트명>
 ```
 
-본 글에서 <span class="return">@angular/core</span>는 `~11.2.12`, <span class="return">rxjs</span>는 `~6.6.0`, <span class="return">typescript</span>는 `~4.1.5` 버전을 사용했다.
+> 본 글에서 <span class="return">@angular/core</span>는 `~11.2.12`, <span class="return">rxjs</span>는 `~6.6.0`, <span class="return">typescript</span>는 `~4.1.5` 버전을 사용했다.
 
 ```shell
 # 로컬에서 실행
@@ -252,6 +252,117 @@ export class BlueTextDirective {
 <br />
 
 ## 컴포넌트 라이프 싸이클
+
+`src/app/components`안에 life-cycle 컴포넌트를 만들어보자.
+
+```shell
+$ ng g component components/life-cycle
+# 혹은 폴더에 우클릭해서 'Angular: generate a component'로 생성 가능
+```
+
+만들고나면 해당 컴포넌트가 자동으로 `app.module.ts`에 추가된다. 그리고 화면에서 볼 수 있게 하기 위해 life-cycle 컴포넌트를 뷰 단에 추가한다.
+
+<span class="file-location">src/app/app.component.html</span>
+
+```html
+<h1>{{ title }}</h1>
+
+<div blueText>blue title: {{ title }}</div>
+
+<h2>Angular Life Cycle</h2>
+<app-life-cycle></app-life-cycle>
+```
+
+<div class="img-div" style="width: 300px">
+  <img src="./images/angular-basic/life-cycle-view.png" alt="life-cycle component">
+  <p>life-cycle 컴포넌트</p>
+</div>
+
+### 라이프싸이클 순서
+
+컴포넌트나 디렉티브 클래스의 생성자를 실행하면서, 인스턴스를 초기화하고 나면 정해진 시점에 라이프싸이클 메서드가 실행된다.
+
+<div class="img-div" style="width: 300px">
+  <img src="https://www.oreilly.com/library/view/angular-up-and/9781491999820/assets/auar_0401.png" alt="Angular LifeCycle">
+  <p>https://www.oreilly.com/library/view/angular-up-and/9781491999820/ch04.html</p>
+</div>
+
+#### <span class="variable">ngOnChanges()</span>
+
+- 입력 프로퍼티로 바인딩된 값이 변경될때마다 실행
+- 컴포넌트에 입력 프로퍼티가 없거나, 선언하고 사용하지 않는다면 ngOnChanges()가 실행되지 않음
+
+- 바인딩 된 입력 프로퍼티 값이 처음 설정되거나 변경될 때 실행. 이 메서드는 프로퍼티의 이전 값과 현재 값을 표현하는 SimpleChanges 객체를 인자로 받음.
+- 이 메서드는 매우 자주 실행되어, 이 메서드로 복잡한 로직을 작성하면 성능이 크게 저하될 수 있음
+
+#### <span class="variable">ngOnInit()</span>
+
+- 디렉티브나 컴포넌트에 바인딩 된 입력 프로퍼티 값이 처음 할당한 후에 실행
+
+#### <span class="variable">ngDoCheck()</span>
+
+- ngOnInit()이 실행된 직후에 한 번 실행되며, 변화 감지 싸이클이 실행되면서 ngOnChanges()가 실행된 이후에 실행
+
+- Angular가 검출하지 못한 변화에 반응하거나, Angular가 변화를 감지하지 못하게 할 때 사용
+
+#### <span class="variable">ngAfterContentInit()</span>
+
+- ngDoCheck()가 처음 실행된 후 한 번 실행
+
+- Angular 외부 컨텐츠를 컴포넌트나 디렉티브 뷰에 프로젝션한 이후에 실행
+
+#### <span class="variable">ngAfterContentChecked()</span>
+
+- ngAfterContentInit()이 실행된 후, ngDoCheck()가 실행된 이후마다 실행
+
+- Angular가 디렉티브 컴포넌트에 프로젝션된 컨텐츠를 검사하고 난 후에 실행
+
+#### <span class="variable">ngAfterViewInit()</span>
+
+- ngAfterContentChecked()가 처음 실행된 후에 한 번 실행
+
+- Angular 컴포넌트나 디렉티브 화면과 자식 컴포넌트 화면을 초기화한 후에 실행
+
+#### <span class="variable">ngAfterViewChecked()</span>
+
+- ngAfterViewInit()가 실행된 후, ngAfterContentChecked()가 실행된 이후마다 실행
+
+- Angular가 컴포넌트나 디렉티브 화면과 자식 화면을 검사한 후에 실행
+
+#### <span class="variable">ngOnDestroy()</span>
+
+- Angular가 디렉티브나 컴포넌트 인스턴스를 종료하기 직전에 실행
+
+- Angular가 디렉티브나 컴포넌트 인스턴스를 종료하기 전에 실행. 이 메서드는 옵저버블을 구독 해지하거나 이벤트 핸들러를 제거하는 등 메모리 누수를 방지하는 로직을 작성하는 용도로 사용
+
+<span class="file-location">src/app/components/life-cycle.component.ts</span>
+
+```ts
+import { Component, OnInit } from '@angular/core'
+
+@Component({
+  selector: 'app-life-cycle',
+  templateUrl: './life-cycle.component.html',
+  styleUrls: ['./life-cycle.component.scss'],
+})
+export class LifeCycleComponent implements OnInit {
+  constructor() {
+    console.log('constructor')
+  }
+
+  ngOnInit(): void {
+    console.log('ngOnInit')
+  }
+}
+```
+
+위의 경우 console에는 constructor 다음으로 ngOnInit이 각 한 번씩 찍힌다.
+
+다른 페이지를 이동할 경우에는 어떤 것이 실행될지 알아보기 위해 페이지를 만들어 본다.
+
+```shell
+$ ng g component pages/hello-world
+```
 
 <br />
 
