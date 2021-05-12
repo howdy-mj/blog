@@ -19,7 +19,7 @@ draft: false
 
 CRA에서 eject를 하지 않아도, root 폴더에 `craco.config.js`를 추가함으로 eslint, babel, postcss 등을 쉽게 설정할 수 있다.
 
-CRA 3.\*, Yarn, NPM, Lerna, custom react-scripts에서 사용가능하다.
+CRA 4.\*, Yarn, NPM, Lerna, custom react-scripts에서 사용가능하다.
 
 <br />
 
@@ -42,7 +42,7 @@ module.exports = {
       options: {
         source: 'tsconfig',
         baseUrl: './src',
-        tsConfigPath: 'tsconfig.extend.json',
+        tsConfigPath: './tsconfig.extend.json',
       },
     },
   ],
