@@ -5,6 +5,13 @@ category: 'typescript'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic; ">
+업데이트: 2021.05.17 <br />
+- 주요 내용: config에서 @typescript-eslint 삭제
+</div>
+
+<br />
+
 CRA로 만든 TypeScript 기반에 ESlint, Prettier 설정하는 법을 알아보자.
 
 원래 타입스크립트에서는 TSLint가 있었지만, 2019년 2월에 ESLint로 마이그레이션을 [발표](https://github.com/palantir/tslint/issues/4534)하며, 2020년 1월에 완전히 적용되었다.
@@ -46,13 +53,8 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 ```json
 {
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["react", "prettier"],
   "parserOptions": {
     "ecmaVersion": 6,
     "ecmaFeatures": {
@@ -66,6 +68,12 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
   "ignorePatterns": ["*.config.js"]
 }
 ```
+
+<div style="font-style: italic;">
+
+<a href="https://github.com/prettier/eslint-config-prettier/blob/main/CHANGELOG.md#version-800-2021-02-21" target="_blank">eslint-config-prettier Version 8.0.0</a>에서 prettier config가 하나로 합쳐졌다. 따라서 기존에 있던 @typescript-eslint은 삭제해도 된다.
+
+</div>
 
 `.prettierrc`
 
