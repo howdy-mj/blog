@@ -1,6 +1,6 @@
 ---
-title: 'Angular 구조 및 라이프싸이클'
-date: 2021-5-15 00:00:00
+title: 'Angular 파일 구조 소개'
+date: 2021-5-19 00:00:00
 category: 'angular'
 draft: false
 ---
@@ -68,7 +68,6 @@ Angular 프로젝트를 생성하면 기본으로 만들어지는 모듈과 컴�
 |     디렉티브     | ng generate directive <디렉티브 이름> |
 |      서비스      | ng generate service <서비스 이름>     |
 |       모듈       | ng generate module <모듈 이름>        |
-|      파이프      | ng generate pipe <파이프 이름>        |
 
 혹은 폴더에서 마우스 우클릭을 해서 component, service, module 등을 만들 수 있다.
 
@@ -243,165 +242,68 @@ export class BlueTextDirective {
 
 ### Pipe
 
-<br />
-
-## 컴포넌트 라이프 싸이클
-
-`src/app/components`안에 life-cycle 컴포넌트를 만들어보자.
+파이프(pipe)는 템플릿에서 사용되며, 화면에 표시하는 형식만 변경하고 싶을 때 사용한다.
 
 ```shell
-$ ng g component components/life-cycle
-# 혹은 폴더에 우클릭해서 'Angular: generate a component'로 생성 가능
+$ ng generate component components/pipe
 ```
 
-만들고나면 해당 컴포넌트가 자동으로 `app.module.ts`에 추가된다. 그리고 화면에서 볼 수 있게 하기 위해 life-cycle 컴포넌트를 뷰 단에 추가한다.
-
-<span class="file-location">src/app/app.component.html</span>
-
-```html
-<h1>{{ title }}</h1>
-
-<div blueText>blue title: {{ title }}</div>
-
-<h2>Angular Life Cycle</h2>
-<app-life-cycle></app-life-cycle>
-```
-
-<div class="img-div" style="width: 300px">
-  <img src="./images/angular-basic/import-life-cycle.png" alt="life-cycle component">
-  <p>life-cycle 컴포넌트</p>
-</div>
-
-### 라이프싸이클 순서
-
-컴포넌트나 디렉티브 클래스의 생성자를 실행하면서, 인스턴스를 초기화하고 나면 정해진 시점에 라이프싸이클 메서드가 실행된다.
-
-<div class="img-div" style="width: 300px">
-  <img src="https://www.oreilly.com/library/view/angular-up-and/9781491999820/assets/auar_0401.png" alt="Angular LifeCycle">
-  <p>https://www.oreilly.com/library/view/angular-up-and/9781491999820/ch04.html</p>
-</div>
-
-본 글에서는 일반적으로 자주 사용하는 초록색 박스 위주로 다룬다.
-
-간단하게 숫자를 더하기/빼기하는 컴포넌트를 만들어보자.
-
-<span class="file-location">src/app/components/life-cycle.component.ts</span>
+<span class="file-location">src/app/components/pipe/pipe.component.ts</span>
 
 ```ts
-import { Component, DoCheck, OnChanges, OnDestroy, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-life-cycle',
-  templateUrl: './life-cycle.component.html',
-  styleUrls: ['./life-cycle.component.scss'],
+  selector: 'app-pipe',
+  templateUrl: './pipe.component.html',
+  styleUrls: ['./pipe.component.scss'],
 })
-export class LifeCycleComponent
-  implements OnInit, OnChanges, DoCheck, OnDestroy {
-  val: number = 0
+export class PipeComponent implements OnInit {
+  now = new Date()
 
-  constructor() {
-    console.log('constructor')
-  }
+  constructor() {}
 
-  ngOnChanges(): void {
-    console.log('ngOnChanges')
-  }
-
-  ngOnInit(): void {
-    console.log('ngOnInit')
-  }
-
-  ngDoCheck(): void {
-    console.log('ngDoCheck')
-  }
-
-  ngOnDestroy(): void {
-    console.log('ngOnDestroy')
-  }
-
-  plus() {
-    this.val += 1
-  }
-
-  abstract() {
-    this.val -= 1
-  }
+  ngOnInit(): void {}
 }
 ```
 
-<span class="file-location">src/app/components/life-cycle.component.html</span>
+<span class="file-location">src/app/components/pipe/pipe.component.html</span>
 
 ```html
-<p>현재 숫자: {{ val }}</p>
-<div>
-  <button (click)="plus()">plus</button>
-  <button (click)="abstract()">abstract</button>
-</div>
+<div>{{ now }}</div>
+<!-- 결과: Wed May 19 2021 17:03:16 GMT+0900 (대한민국 표준시) -->
+
+<div>{{ now | date }}</div>
+<!-- 결과: May 19, 2021 -->
+
+<div>{{ now | date: "y년 MM월 dd일" }}</div>
+<!-- 결과: 2021년 05월 19일 -->
 ```
 
-<div class="img-div" style="width: 300px">
-  <img src="./images/angular-basic/lc-view.png" alt="Angular LifeCycle">
-</div>
+날짜 외에도, 화폐, 대소문자, 소숫점, 퍼센트, 비동기 등의 pipe가 있다.
 
-위의 console을 확인해보면 아래와 같다.
+```html
+{{ 'howdy-mj' | uppercase }}
+<!-- 결과: HOWDY-MJ -->
 
-<div class="img-div" style="width: 300px">
-  <img src="./images/angular-basic/lc-console-1.png" alt="Angular LifeCycle">
-</div>
+{{ 10000 | currency }}
+<!-- 결과: $10,000.00 -->
+<!-- 화폐 단위는 i18n 가이드에 있는 것을 따른다. -->
 
-다른 페이지를 이동할 경우에는 어떤 것이 실행될지 알아보기 위해 페이지를 만들어 본다.
+{{ 1.2345 | number: "1.2-2" }}
+<!-- 결과: 1.23 -->
+{{ 1.2345 | number: "3.2-2" }}
+<!-- 결과: 001.23 -->
 
-```shell
-$ ng g component pages/hello-world
+{{ 0.1234 | percent }}
+<!-- 결과: 12% -->
+{{ 0.1234 | percent: "2.1" }}
+<!-- 결과: 12.3% -->
 ```
 
-#### <span class="variable">ngOnChanges()</span>
+더 자세한 건 공식문서의 <a href="https://angular.io/api?type=pipe" target="_blank">Pipe API List</a>를 참고하면 된다.
 
-- 입력 프로퍼티로 바인딩된 값이 변경될때마다 실행
-- 컴포넌트에 입력 프로퍼티가 없거나, 선언하고 사용하지 않는다면 ngOnChanges()가 실행되지 않음
-
-- 바인딩 된 입력 프로퍼티 값이 처음 설정되거나 변경될 때 실행. 이 메서드는 프로퍼티의 이전 값과 현재 값을 표현하는 SimpleChanges 객체를 인자로 받음.
-- 이 메서드는 매우 자주 실행되어, 이 메서드로 복잡한 로직을 작성하면 성능이 크게 저하될 수 있음
-
-#### <span class="variable">ngOnInit()</span>
-
-- 디렉티브나 컴포넌트에 바인딩 된 입력 프로퍼티 값이 처음 할당한 후에 실행
-
-#### <span class="variable">ngDoCheck()</span>
-
-- ngOnInit()이 실행된 직후에 한 번 실행되며, 변화 감지 싸이클이 실행되면서 ngOnChanges()가 실행된 이후에 실행
-
-- Angular가 검출하지 못한 변화에 반응하거나, Angular가 변화를 감지하지 못하게 할 때 사용
-
-#### <span class="variable">ngAfterContentInit()</span>
-
-- ngDoCheck()가 처음 실행된 후 한 번 실행
-
-- Angular 외부 컨텐츠를 컴포넌트나 디렉티브 뷰에 프로젝션한 이후에 실행
-
-#### <span class="variable">ngAfterContentChecked()</span>
-
-- ngAfterContentInit()이 실행된 후, ngDoCheck()가 실행된 이후마다 실행
-
-- Angular가 디렉티브 컴포넌트에 프로젝션된 컨텐츠를 검사하고 난 후에 실행
-
-#### <span class="variable">ngAfterViewInit()</span>
-
-- ngAfterContentChecked()가 처음 실행된 후에 한 번 실행
-
-- Angular 컴포넌트나 디렉티브 화면과 자식 컴포넌트 화면을 초기화한 후에 실행
-
-#### <span class="variable">ngAfterViewChecked()</span>
-
-- ngAfterViewInit()가 실행된 후, ngAfterContentChecked()가 실행된 이후마다 실행
-
-- Angular가 컴포넌트나 디렉티브 화면과 자식 화면을 검사한 후에 실행
-
-#### <span class="variable">ngOnDestroy()</span>
-
-- Angular가 디렉티브나 컴포넌트 인스턴스를 종료하기 직전에 실행
-
-- Angular가 디렉티브나 컴포넌트 인스턴스를 종료하기 전에 실행. 이 메서드는 옵저버블을 구독 해지하거나 이벤트 핸들러를 제거하는 등 메모리 누수를 방지하는 로직을 작성하는 용도로 사용
+<br />
 
 <br />
 
@@ -411,6 +313,6 @@ $ ng g component pages/hello-world
 
 - <a href="https://angular.io/" target="_blank">Angular</a>
 
-- https://www.ngdevelop.tech/angular/architecture/
+- <a href="https://www.ngdevelop.tech/angular/architecture/" target="_blank">Angular Architecture</a>
 
 </div>
