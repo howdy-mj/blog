@@ -8,6 +8,10 @@ draft: false
 <div style="font-size: 12px; font-style: italic; ">
 업데이트: 2021.05.12 <br />
 - 주요 내용: @emotion/core 10.0.28 => @emotion/react 11.4.0
+<br />
+<br />
+업데이트: 2021.05.19 <br />
+- 주요 내용: Global에서 사용하기, type 설정
 </div>
 
 ## emotion.js란?
@@ -30,6 +34,7 @@ $ npm install @emotion/react
 // 해당 글에서 사용된 버전
 "dependencies": {
     "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "react": "^17.0.2",
     "@emotion/babel-plugin": "^11.3.0"
 }
@@ -81,6 +86,14 @@ $ npm install -D @babel/preset-react @emotion/babel-plugin
 ```
 
 하지만 이것도 제대로 작동하지 않아서 우선 공식 문서에 나온 방법대로 진행한다. _(+추후 추가)_
+
+만약 `@emotion/styled`를 사용한다면, 위의 import를 하지 않아도 바로 사용할 수 있다.
+
+```js
+import styled from '@emotion/styled'
+```
+
+그리고 Global Theme으로 설정한 변수를 바로 사용하기에는 `@emotion/styled`가 훨씬 편하다. 사용법은 `styled-components`와 똑같다.
 
 ### 기본 구조
 
@@ -148,7 +161,7 @@ $ npm install @emotion/styled @emotion/react
 ```js
 import styled from '@emotion/styled'
 
-const DivStyle = styled.button`
+const DivStyle = styled.div`
   background-color: hotpink;
   font-size: 24px;
   border-radius: 4px;
@@ -324,6 +337,135 @@ render(
 이 외에도, 미리 breakpoint를 선언하여 재사용 가능하게 만드는 법과 `facepaint` 패키지를 설치하여 더 쉽게 breakpoints를 만들 수도 있다.
 
 <a href="https://emotion.sh/docs/media-queries" target="_blank">emotion - Media Queries</a>
+
+## Global Theme 및 Typescript 설정
+
+`styled-components`와 매우 비슷하다. (<a href="https://www.howdy-mj.me/css/styled-components-with-global-style/" target="_blank" class="post-link small">Styled Components를 Global에서 사용하기(w/반응형)</a>)
+
+`src/styles/global.tsx`
+
+```ts
+import { Global, css } from '@emotion/react'
+
+const style = css`
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    box-sizing: border-box;
+  }
+`
+
+const GlobalStyle = () => {
+  return <Global styles={style} />
+}
+
+export default GlobalStyle
+```
+
+`src/styles/theme.ts`
+
+```ts
+export const size = {
+  largest: '75em', // 1200px
+  large: '56.25em', // 900px
+  medium: '37.5em', // 600px
+  small: '31.25em', // 500px
+  smallest: '25em', // 400px
+}
+
+const theme = {
+  mainColor: '#0000ff',
+  mq: {
+    laptop: `@media only screen and (min-width: ${size.largest})`,
+    tablet: `@media only screen and (min-width: ${size.large})`,
+    mobile: `@media only screen and (min-width: ${size.small})`,
+  },
+}
+
+export default theme
+```
+
+`src/styles/emotion.d.ts`
+
+```ts
+import '@emotion/react'
+
+declare module '@emotion/react' {
+  export interface Theme {
+    mainColor: string
+    mq: {
+      laptop: string
+      tablet: string
+      mobile: string
+    }
+  }
+}
+```
+
+타입스크립트를 사용할 경우, theme에 대한 타입 지정이 필요하다. `theme.ts`에서 설정한 것과 동일한 구조의 타입을 넣어주며, 파일 이름은 `emotion.d.ts`여야 한다.
+
+`src/index.tsx`
+
+```jsx
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+
+import { ThemeProvider } from '@emotion/react'
+import theme from '@styles/theme' // 위치한 경로 설정
+import GlobalStyle from '@styles/global' // 위치한 경로 설정
+
+import App from './App'
+
+ReactDOM.render(
+  <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
+  </BrowserRouter>,
+  document.getElementById('root')
+)
+```
+
+잘 설정 되었다면, 어느 컴포넌트에서는 props로 꺼내 사용할 수 있다.
+
+```jsx
+// 1. @emotion/styled
+import styled from '@emotion/styled'
+
+interface LayoutProps {
+  children: React.ReactChild;
+}
+
+const Layout = ({ children }: LayoutProps) => {
+  return <LayoutWrap>{children}</LayoutWrap>
+}
+
+const LayoutWrap = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+
+  ${props => props.theme.mq.tablet} {
+    max-width: 800px;
+  }
+`
+
+export default Layout
+```
+
+```jsx
+// 2. @emotion/react
+/** @jsxImportSource @emotion/react */
+
+const Login = () => {
+  return <div css={theme => ({ color: theme.mainColor })}>Login</div>
+}
+
+export default Login
+```
 
 <br>
 
