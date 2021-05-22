@@ -170,7 +170,7 @@ W3School에 [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)이 
 
 ### (2) SVGR
 
-```sh
+```shell
 # Node API
 $ npm install @svgr/core
 # or
@@ -189,7 +189,7 @@ Webpack으로 설치한다면, SVG 파일을 바로 React Component로 import가
 여기서는 Webpack으로 설명하겠다.
 Webpack으로 사용하려면 아래와 같은 설정이 필요하다.
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 {

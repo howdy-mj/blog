@@ -48,7 +48,7 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 
 이후, root 폴더에 `.eslintrc`와 `.prettierrc` 파일 생성 후 밑의 내용을 작성한다.
 
-`.eslintrc`
+<span class="file-location">.eslintrc</span>
 
 ```json
 {
@@ -75,7 +75,7 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 
 </div>
 
-`.prettierrc`
+<span class="file-location">.prettierrc</span>
 
 ```json
 {
@@ -108,7 +108,7 @@ ESLint와 Prettier는 [이전글](https://howdy-mj.me/node/eslint-and-prettier/)
 
 ### eslint config 설명
 
-`.eslintrc`
+<span class="file-location">.eslintrc</span>
 
 ```json
 {

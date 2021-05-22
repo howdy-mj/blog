@@ -49,7 +49,7 @@ Git flow에는 5가지 종류의 브랜치가 존재한다.
 
 `master` 브랜치는 프로젝트에 git init을 하면 자동으로 나타나지만, `develop` 브랜치는 따로 생성해 줘야 한다.
 
-```sh
+```shell
 $ git branch develop
 # develop 브랜치 생성
 
@@ -61,7 +61,7 @@ $ git push -u origin develop
 
 만약 git-flow 라이브러리를 쓴다면 `git flow init`으로 `develop` 브랜치를 만들 수 있다.
 
-```sh
+```shell
 $ git flow init
 Initialized empty Git repository in ~/project/.git/
 No branches exist yet. Base branches must be created now.
@@ -93,7 +93,7 @@ $ git branch
 
 **feature 브랜치 생성**:
 
-```sh
+```shell
 $ git checkout develop
 # develop 브랜치에서 생성하기 위해 이동
 
@@ -103,7 +103,7 @@ $ git checkout -b feature/브랜치명
 
 만약 git flow 확장을 쓰고 있다면,
 
-```sh
+```shell
 $ git flow feature start feature/브랜치명
 ```
 
@@ -111,14 +111,14 @@ $ git flow feature start feature/브랜치명
 
 해당 `feature` 브랜치에서 모든 작업이 완료 되었다면, `develop` 브랜치에 merge해야 한다.
 
-```sh
+```shell
 $ git checkout develop
 $ git merge feature/브랜치명
 ```
 
 만약 git flow 확장을 쓰고 있다면,
 
-```sh
+```shell
 $ git flow feature finish feature/브랜치명
 ```
 
@@ -133,14 +133,14 @@ $ git flow feature finish feature/브랜치명
 
 **release 브랜치 생성**:
 
-```sh
+```shell
 $ git checkout develop
 $ git checkout -b relase/0.1.0
 ```
 
 만약 git flow 확장을 쓰고 있다면,
 
-```sh
+```shell
 $ git flow release start 0.1.0
 ```
 
@@ -148,14 +148,14 @@ $ git flow release start 0.1.0
 
 **release 브랜치 merge**:
 
-```sh
+```shell
 $ git checkout master
 $ git merge release/0.1.0
 ```
 
 만약 git flow 확장을 쓰고 있다면,
 
-```sh
+```shell
 $ git flow release finish '0.1.0'
 ```
 
@@ -170,14 +170,14 @@ $ git flow release finish '0.1.0'
 
 **hotfix 브랜치 생성**:
 
-```sh
+```shell
 $ git checkout master
 $ git checkout -b hotfix/브랜치명
 ```
 
 만약 git flow 확장을 쓰고 있다면,
 
-```sh
+```shell
 $ git flow hotfix start hotfix/브랜치명
 ```
 
@@ -185,18 +185,17 @@ $ git flow hotfix start hotfix/브랜치명
 
 `release` 브랜치와 비슷하게 `master`와 `develop`에 모두 merge 된다.
 
-```sh
+```shell
 $ git checkout master
 $ git merge hotfix/브랜치명
 $ git checkout develop
 $ git merge hotfix/브랜치명
-$ git branch -D hotfix/브랜치명
-# merge된 브랜치 삭제
+$ git branch -D hotfix/브랜치명 # merge된 브랜치 삭제
 ```
 
 git flow 명령어,
 
-```sh
+```shell
 $ git flow hotfix finish hotfix_branch
 ```
 

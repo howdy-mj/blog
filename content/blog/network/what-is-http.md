@@ -84,7 +84,7 @@ Body: <본문>
 
 **[ 요청 ]**
 
-```sh
+```shell
 GET /doc/test.html HTTP/1.1
 ```
 
@@ -94,7 +94,7 @@ GET /doc/test.html HTTP/1.1
 
 **[ 응답 ]**
 
-```sh
+```shell
 HTTP/1.1 200 OK
 ```
 
@@ -120,7 +120,7 @@ Connection: kepp-alive
 
 **b. 요청 헤더**: 서버에게 요청의 세부 정보 제공
 
-```sh
+```shell
 Accept: */*
 User-Agent: Mozilla/5.0
 Cookie: 쿠키 값
@@ -132,7 +132,7 @@ Cookie: 쿠키 값
 
 **c. 응답 헤더**: 브라우저에게 응답의 세부 정보 제공
 
-```sh
+```shell
 Server: gws
 Age:
 Set-Cookie:
@@ -144,7 +144,7 @@ Set-Cookie:
 
 **d. 엔터티 헤더**: 바디의 컨텐츠를 나타냄
 
-```sh
+```shell
 Content-Type: text/html, application/json; charset=UTF-8
 Content-Length: 345
 ```

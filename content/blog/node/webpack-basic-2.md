@@ -11,7 +11,7 @@ draft: false
 
 공식홈페이지의 [Basic Plugin Architecture](https://webpack.js.org/contribute/writing-a-plugin/)를 따라해보자.
 
-`hello-world-plugin.js`
+<span class="file-location">hello-world-plugin.js</span>
 
 ```js
 class HelloWorldPlugin {
@@ -28,7 +28,7 @@ module.exports = HelloWorldPlugin
 
 loader가 함수형으로 정의된 것과 다르게, plugin은 클래스형으로 정의된다.
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 const HelloWorldPlugin = require('./hello-world-plugin')
@@ -40,7 +40,7 @@ module.exports = {
 
 설정을 마치고 `npm run build`를 하면 'Hello World!'가 찍힌 것을 볼 수 있다.
 
-```sh{3}
+```shell{3}
 $ npm run build
 
 Hello World!
@@ -165,7 +165,7 @@ class HelloWorldPlugin {
 
 [배너플러그인](https://webpack.js.org/plugins/banner-plugin/)은 build 된 것의 제일 상단에 작성한 내용을 보여준다.
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 const webpack = require('webpack');
@@ -192,7 +192,7 @@ module.exports = {
 
 현재 환경을 알기 위해서는 `process.env.NODE_ENV`로 접근하면 어떤 환경인지 알 수 있다.
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 module.exports = {
@@ -225,11 +225,11 @@ module.exports = {
 
 [CleanWebpackPlugin](https://github.com/johnagan/clean-webpack-plugin)은 빌드 이전의 결과물을 제거해주는 플러그인이다.
 
-```sh
+```shell
 $ npm install -D clean-webpack-plugin
 ```
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 const { CleanWebpackPlugin }= require('clean-webpack-plugin');

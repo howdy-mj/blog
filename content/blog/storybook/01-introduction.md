@@ -53,7 +53,7 @@ draft: false
 
 CRA 환경에서 설치해야 한다.
 
-```sh
+```shell
 # 원하는 폴더 위치에서
 $ npx create-react-app 폴더명
 $ cd 폴더명

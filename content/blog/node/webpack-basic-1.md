@@ -36,7 +36,7 @@ UMD(Universal Module Definition)는 AMD 기반으로 CommonJS 방식까지 지�
 
 <br />
 
-`add.js`
+<span class="file-location">add.js</span>
 
 ```js
 exports function add(a, b) {
@@ -44,7 +44,7 @@ exports function add(a, b) {
 }
 ```
 
-`app.js`
+<span class="file-location">app.js</span>
 
 ```js
 const math = require('./add.js')
@@ -69,7 +69,7 @@ math.add(1, 2) // output: 3;
 
 웹팩3까지는 `webpack`만 설치해도 됐었는데, 웹팩4부터는 `webpack-cli`를 같이 설치해야 커맨드라인에 webpack 명령어를 사용할 수 있다.
 
-```sh
+```shell
 # webpack 설치
 $ npm install --save-dev webpack
 # or
@@ -85,7 +85,7 @@ $ yarn add webpack-cli --dev
 
 설치가 잘 되었다면, `node_moduels/.bin`에서 webpack과 webpack-cli를 볼 수 있다. 해당 경로에 가서 `webpack -h`를 치면 [명령어](https://webpack.js.org/api/cli/)를 볼 수 있는데, 우리가 필수로 봐야할 세 가지는 `--mode`, `--entry`, `--output, -o`이다.
 
-```sh
+```shell
 Config options:
   --mode      Enable production optimizations or development hints.
               [선택: "development", "production", "none"]
@@ -124,7 +124,7 @@ module.exports = {
 
 그럼 `index.html`에서 `<script src="dist/main.js"></script>`로 바꾸어도 전과 똑같은 화면이 나오는 것을 볼 수 있다.이렇게 `type="module"`을 삭제해도 여러개의 모듈을 하나로 합쳐주는 것을 알 수 있다.
 
-```sh
+```shell
 $ npx webpack --config webpack.config.js
 
 Hash: 97818daee5ecbc71e023
@@ -167,13 +167,13 @@ module: {
 
 만약 CSS를 포함하여 빌드해야 하는데 로더가 없다면 CSS 문법을 이해하지 못하여 에러가 발생한다.
 
-`app.js`
+<span class="file-location">app.js</span>
 
 ```js
 import './app.css'
 ```
 
-`app.css`
+<span class="file-location">app.css</span>
 
 ```css
 body {
@@ -195,11 +195,11 @@ body {
 
 설치
 
-```sh
+```shell
 $ npm install --save-dev css-loader
 ```
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 module.exports = {
@@ -216,7 +216,7 @@ module.exports = {
 
 이렇게 설정하고 아까 실패했던 빌드를 하면 정상 처리된 걸 볼 수 있다.
 
-```sh
+```shell
 $ npm run build
 
 Hash: 341fc5e0ff2d91722adf
@@ -245,11 +245,11 @@ styled-loader는 자바스크립트 안에 있는 것을 HTML에 알려준다. �
 
 설치
 
-```sh
+```shell
 $ npm install --save-dev style-loader
 ```
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 module: {
@@ -273,7 +273,7 @@ HTML의 개발자 도구를 열어 Elements를 보면 `<head>`에 `<style>`에 �
 로더는 CSS 뿐만 아니라, 이미지 파일도 처리할 수 있다.
 이번에는 `app.css`에서 배경색상이 아닌, 이미지로 불러와서 build를 해보자.
 
-`app.css`
+<span class="file-location">app.css</span>
 
 ```css
 body {
@@ -285,11 +285,11 @@ body {
 
 [file-loader](https://webpack.js.org/loaders/file-loader/) 설치
 
-```sh
+```shell
 $ npm install file-loader --save-dev
 ```
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js{8, 9}
 module: {
@@ -341,11 +341,11 @@ module: {
 
 설치
 
-```sh
+```shell
 $ npm install url-loader --save-dev
 ```
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 {

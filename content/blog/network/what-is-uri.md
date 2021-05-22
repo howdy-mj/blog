@@ -11,7 +11,7 @@ URI(Uniform Resource Identifier, 통합 자원 식별자)는 언제 어디서든
 
 ## 1. URI 구조
 
-```sh
+```shell
 scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 ```
 
@@ -42,7 +42,7 @@ http://www.ietf.org/rfc/rfc2396.txt
 
 어떤 프로토콜을 사용할지 알린다.
 
-```sh
+```shell
 scheme = 영문 * (영문 / 숫자 / "+" / "-" / "." )
 ```
 
@@ -115,7 +115,7 @@ path = /                 ; "/"로 시작하거나 비어있음
 
 요청받을 리소스의 범위를 좁히기 위해 질문이나 질의로 식별할 수 있다.
 
-```sh
+```shell
 query = * (문자 / "/" / "?" )
 ```
 
@@ -130,7 +130,7 @@ query = * (문자 / "/" / "?" )
 
 북마크 역할을 한다.
 
-```sh
+```shell
 fragment = * (문자 / "/" / "?" )
 ```
 

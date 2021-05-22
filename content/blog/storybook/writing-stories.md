@@ -55,9 +55,9 @@ $ yarn storybook
 
 문서화를 함으로써, 만들어 둔 컴포넌트에 어떤 props가 있는지, 어떻게 사용해야 하는지 굳이 알려줄 필요 없이 스토리북 서버에서 바로 확인 가능하다.
 
-`components/Button/index.tsx`
+<span class="file-location">components/Button/index.tsx</span>
 
-```ts
+```tsx
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -113,9 +113,9 @@ export const Button: React.FC<ButtonProps> = ({
 
 그리고 해당 props일 때 어떤 UI를 가지는지도 스토리북에서 바로 확인이 가능하다.
 
-`components/Button/Button.stories.tsx`
+<span class="file-location">components/Button/Button.stories.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0'

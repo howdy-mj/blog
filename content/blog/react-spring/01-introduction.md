@@ -12,7 +12,7 @@ react-spring은 spring-physics 기반의 애니메이션 라이브러리로, 대
 
 **react-spring 설치**
 
-```sh
+```shell
 $ npm install react-spring
 ```
 

@@ -25,7 +25,7 @@ src
     └─ 1-Button.sotries.js
 ```
 
-`src/stories/1-Button.js`
+<span class="file-location">src/stories/1-Button.js</span>
 
 ```jsx
 import React from 'react'
@@ -42,7 +42,7 @@ const Button = ({ disabled, name, clicked }) => {
 export default Button
 ```
 
-`src/stories/1-Button.css`
+<span class="file-location">src/stories/1-Button.css</span>
 
 ```css
 .Button {
@@ -54,7 +54,7 @@ export default Button
 }
 ```
 
-`src/stories/1-Button.stories.js`
+<span class="file-location">src/stories/1-Button.stories.js</span>
 
 ```jsx
 import React from 'react'

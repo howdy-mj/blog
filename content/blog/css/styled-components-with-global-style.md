@@ -13,8 +13,8 @@ Styled Components는 CSS-in-JS의 하나로, CSS를 하나의 컴포넌트로 �
 
 **Styled Components 설치**
 
-```sh
-npm install --save styled-components
+```shell
+$ npm install --save styled-components
 ```
 
 <iframe
@@ -43,7 +43,7 @@ Button 자체가 하나의 Component가 되어 props도 바로 넘겨줄 수 있
 
 아래 예제에서는 메인컬러와 반응형을 다뤄보겠다.
 
-`src/style/theme.js`
+<span class="file-location">src/style/theme.js</span>
 
 ```js
 const size = {
@@ -70,7 +70,7 @@ Breakpoint는 기기의 크기보다는 비슷한 종류를 묶어 정하는 것
 
 그리고 브라우저에 존재하는 기본 CSS 스타일(user agent stylesheet)을 제거해주기 위해 `global.js`도 만들어 보자.
 
-`src/style/global.js`
+<span class="file-location">src/style/global.js</span>
 
 ```js
 import { createGlobalStyle } from 'styled-components'
@@ -91,7 +91,7 @@ export default GlobalStyle
 
 이제 만든 두개의 `.js` 파일을 전역에 적용시켜 보자.
 
-```js
+```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'

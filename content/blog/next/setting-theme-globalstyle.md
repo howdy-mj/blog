@@ -23,7 +23,7 @@ package-lock.json
 
 Next.js의 기본 구조는 위와 같으며, GlobalStyle은 `_app.js`에서 설정하면 된다.
 
-`_app.js`
+<span class="file-location">\_app.js</span>
 
 ```js
 // external modules
@@ -61,7 +61,7 @@ export default WrappedApp
 
 GlobalStyle의 기본 틀은 아래와 같다.
 
-`GlobalStyle.js`
+<span class="file-location">GlobalStyle.js</span>
 
 ```js
 const GlobalStyle = props => {

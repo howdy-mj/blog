@@ -45,9 +45,9 @@ EditorConfig는 XML을 제외한 Visual Studio가 지원하는 모든 언어에�
 
 - `!*.xml`: '.xml'을 제외한 파일에 적용
 
-`.editorconfig`
+<span class="file-location">.editorconfig</span>
 
-```config
+```shell
 # 최상위에 있는 파일로 명시
 root = true
 

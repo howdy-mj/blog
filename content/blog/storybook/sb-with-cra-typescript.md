@@ -47,7 +47,7 @@ $ yarn storybook
 
 우선 `src` 폴더에는 `stories` 폴더와 `App.tsx`, `index.tsx`를 제외하고 모두 제거하자.
 
-`src/index.tsx`
+<span class="file-location">src/index.tsx</span>
 
 ```ts
 import React from 'react'
@@ -62,7 +62,7 @@ ReactDOM.render(
 )
 ```
 
-`src/App.tsx`
+<span class="file-location">src/App.tsx</span>
 
 ```ts
 import React from 'react'
@@ -78,7 +78,7 @@ export default App
 
 코드 문법 확인 및 정리를 위해 VSCoded에 ESLint, Prettier-Code formatter를 설치한 후, 프로젝트 최상단 root에 `.prettierrc`를 설정해 준다.
 
-`.prettierrc`
+<span class="file-location">.prettierrc</span>
 
 ```js
 {
@@ -97,7 +97,7 @@ $ yarn add styled-components @types/styled-components
 
 브라우저의 기본 CSS 스타일(User Agent Stylesheet)를 제거해주기 위해 src 안에 styles 폴더를 생성 후, `global.ts` 파일을 생성하고 `index.tsx`에서 import 한다.
 
-`src/styles/global.ts`
+<span class="file-location">src/styles/global.ts</span>
 
 ```ts
 import { createGlobalStyle } from 'styled-components'
@@ -135,9 +135,9 @@ const theme = {
 export default theme
 ```
 
-`src/index.tsx`
+<span class="file-location">src/index.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
@@ -193,9 +193,9 @@ _(기존의 `svg.tsx`를 `allSvg.tsx`로 바꾼다)_
 
 components 폴더 안에 svg 폴더를 만들고 `allSvg.tsx`를 옮긴다. 그리고 곳에 `Svg.tsx`도 만든다.
 
-`src/components/svg/Svg.tsx`
+<span class="file-location">src/components/svg/Svg.tsx</span>
 
-```ts
+```tsx
 import React, { FC } from 'react'
 
 export interface SvgProps {
@@ -243,7 +243,7 @@ export const SVG: FC<SvgProps> = ({
 
 그 후, 기존에 `allSvg.tsx`에 있던 것도 모두 위의 컴포넌트로 대체한다. (OptionSVG는 하지 않음)
 
-```ts
+```tsx
 import React from 'react'
 import { SVG } from './Svg'
 
@@ -276,9 +276,9 @@ localhost:3000에서 정상적으로 작동하는 것을 볼 수 있다.
 
 그리고 이제 `src/stories` 안에 있는걸 다 삭제하고, Svg 스토리북을 만들어 보자.
 
-`src/stories/Svg.stories.tsx`
+<span class="file-location">src/stories/Svg.stories.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 import { SVG, SvgProps } from '../components/svg/Svg'
@@ -347,8 +347,7 @@ Compass.args = {
 ### SVG 스토리북 문서화
 
 개인적으로 해당 컴포넌트에 어떤 것이 있는지 한 눈에 보고 싶어서 'All'을 만들어 놓는다.
-
-`src/stories/Svg.stories.tsx`
+<span class="file-location">src/stories/Svg.stories.tsx</span>
 
 ```tsx
 // ...

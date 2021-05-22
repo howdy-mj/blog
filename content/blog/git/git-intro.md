@@ -73,7 +73,7 @@ Repository는 Local과 Remote로 나뉘는데, Local은 자신의 컴퓨터에 �
 
 **Local repository 생성**:
 
-```sh
+```shell
 $ mkdir git-test # 폴더 생성
 $ cd git-test # 해당 폴더로 이동
 $ git init # 폴더에 git repository 생성
@@ -81,7 +81,7 @@ $ git init # 폴더에 git repository 생성
 
 **GitHub에서 Clone**:
 
-```sh
+```shell
 $ git clone 주소 # 내 컴퓨터에 복제
 $ cd 폴더명 # 해당 폴더로 이동
 ```
@@ -92,7 +92,7 @@ $ cd 폴더명 # 해당 폴더로 이동
 
 파일을 수정하고 수정사항을 Remote repository에 반영하고 싶다면, `add`, `commit`, `push`로 업로드 할 수 있다.
 
-```sh
+```shell
 $ git add .
 # 수정된 파일 전부 stage 상태로 변경
 
@@ -111,7 +111,7 @@ $ git push origin master
 
 그 외, 자주 쓰는 명령어:
 
-```sh
+```shell
 $ git remote add origin 주소
 # remote repo에 연걸하기
 
@@ -142,7 +142,7 @@ $ git stash drop
 
 branch(브랜치) 관련 명령어:
 
-```sh
+```shell
 $ git branch
 # 모든 브랜치 및 현재 위치한 브랜치 보기
 

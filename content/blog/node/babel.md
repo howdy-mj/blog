@@ -23,7 +23,7 @@ draft: false
 
 _컴파일(compile)은 사람이 작성한 코드를 컴퓨터가 이해할 수 있도록 바꿔주는 과정이고, 트랜스파일(transpile)은 다른 실행 환경에서 돌아갈 수 있는 언어로 바꿔주는 과정이다_
 
-```sh
+```shell
 $ npm install -D @babel/core  @babel/cli
 ```
 
@@ -31,7 +31,7 @@ $ npm install -D @babel/core  @babel/cli
 
 `@babel/core`는 바벨을 사용할 때 항상 필요한 패키지이고, `@babel/cli`는 터미널에서 커맨드를 입력해 바벨을 사용할 때 필요한 패키지이다.
 
-`app.js`
+<span class="file-location">app.js</span>
 
 ```js
 const name = 'kmj'
@@ -40,7 +40,7 @@ const name = 'kmj'
 
 바벨 설치가 완료되면, `app.js`에 ES6에 추가된 것을 만들고, `node_modules/.bin`에 추가된 바벨 명령어를 사용할 수 있다.
 
-```sh
+```shell
 $ npx babel app.js
 # const name = 'kmj';
 # `Hello, ${name}`
@@ -56,7 +56,7 @@ $ npx babel app.js
 
 ### 플러그인
 
-`bable-plugin.js`
+<span class="file-location">babel-plugin.js</span>
 
 ```js
 module.exports = function myplugin() {
@@ -80,7 +80,7 @@ IE에서 알아볼 수 있도록, `const`를 `var`로 변환하는 플러그인�
 
 이후 플러그인을 실행하는 커맨드를 치면 변환되는 것을 확인할 수 있다.
 
-```sh
+```shell
 $ npx babel app.js --plugins ./babel-plugin.js
 # VariableDeclaration() kind: const
 # var name = 'kmj';
@@ -91,11 +91,11 @@ $ npx babel app.js --plugins ./babel-plugin.js
 
 `const`를 `var`로 바꾸어주는 [block-scoping](https://babeljs.io/docs/en/babel-plugin-transform-block-scoping) 플러그인, 화살표 함수를 지원해주는 [arrow-functions](https://babeljs.io/docs/en/babel-plugin-transform-arrow-functions) 플러그인 그리고 ES5부터 지원하는 [strict-mode](https://babeljs.io/docs/en/babel-plugin-transform-strict-mode) 플러그인 등을 설치하고, `babel.config.js` 파일에 설정해두면 된다.
 
-```sh
+```shell
 $ npm install -D @babel/plugin-transform-block-scoping @babel/plugin-transform-arrow-functions @babel/plugin-transform-strict-mode
 ```
 
-`babel.config.js`
+<span class="file-location">babel.config.js</span>
 
 ```js
 module.exports = {
@@ -109,7 +109,7 @@ module.exports = {
 
 이후 다시 바벨을 실행하면 아래와 같은 결과를 볼 수 있다.
 
-```sh
+```shell
 $ npx babel app.js
 "use strict";
 
@@ -126,7 +126,7 @@ $ npx babel app.js
 
 프리셋을 사용하기 위해 이전에 설정해 놓은 것을 약간 수정해보자.
 
-`mypreset.js`
+<span class="file-location">mypreset.js</span>
 
 ```js
 module.exports = function myPreset() {
@@ -152,11 +152,11 @@ module.exports = {
 
 그 중에서도, IE 지원을 위해 env 프리셋을 먼저 알아보자.
 
-```sh
+```shell
 $ npm install -D @babel/preset-env
 ```
 
-`babel.config.js`
+<span class="file-location">babel.config.js</span>
 
 ```js
 module.exports = {
@@ -166,7 +166,7 @@ module.exports = {
 
 이후 다시 빌드해보면 `const`가 `var`로 바뀌고, 템플릿 리터럴도 ES5에 맞게 바뀐 것을 확인할 수 있다.
 
-```sh
+```shell
 $ npx babel app.js
 # "use strict";
 
@@ -182,13 +182,13 @@ $ npx babel app.js
 
 바벨은 웹팩의 loader 형태로 제공되는 데 이것이 `babel-loader`이다.
 
-```sh
+```shell
 $ npm install -D babel-loader
 ```
 
 설치 후, 웹팩에 로더를 추가해준다.
 
-`webpack.config.js`
+<span class="file-location">webpack.config.js</span>
 
 ```js
 module.exports = {

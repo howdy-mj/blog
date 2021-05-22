@@ -213,7 +213,7 @@ const divStyle = css`
 
 이렇게 바로 `css`에 label을 넣어 변경하는 방법도 있지만, 이는 매번 label 값을 넣어줘야 하고, 다른 개발자들과 같이 일하기에도 불편하기 때문에 `.babelrc`를 만들어 저장하는 것을 권장한다.
 
-`.babelrc`
+<span class="file-location">.babelrc</span>
 
 ```json
 {
@@ -342,7 +342,7 @@ render(
 
 `styled-components`와 매우 비슷하다. (<a href="https://www.howdy-mj.me/css/styled-components-with-global-style/" target="_blank" class="post-link small">Styled Components를 Global에서 사용하기(w/반응형)</a>)
 
-`src/styles/global.tsx`
+<span class="file-location">src/styles/global.tsx</span>
 
 ```ts
 import { Global, css } from '@emotion/react'
@@ -365,7 +365,7 @@ const GlobalStyle = () => {
 export default GlobalStyle
 ```
 
-`src/styles/theme.ts`
+<span class="file-location">src/styles/theme.ts</span>
 
 ```ts
 export const size = {
@@ -388,7 +388,7 @@ const theme = {
 export default theme
 ```
 
-`src/styles/emotion.d.ts`
+<span class="file-location">src/styles/emotion.d.ts</span>
 
 ```ts
 import '@emotion/react'
@@ -407,7 +407,7 @@ declare module '@emotion/react' {
 
 타입스크립트를 사용할 경우, theme에 대한 타입 지정이 필요하다. `theme.ts`에서 설정한 것과 동일한 구조의 타입을 넣어주며, 파일 이름은 `emotion.d.ts`여야 한다.
 
-`src/index.tsx`
+<span class="file-location">src/index.tsx</span>
 
 ```jsx
 import ReactDOM from 'react-dom'

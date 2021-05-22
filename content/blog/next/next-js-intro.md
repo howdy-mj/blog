@@ -17,7 +17,7 @@ Next가 나오면서 SSR가 되며, 더 빠르게 페이지를 불러오기 위�
 
 _해당 글은 next 9.4.4 버전으로 작성되었습니다._
 
-```sh
+```shell
 $ npx create-next-app 폴더명
 $ npm install next react react-dom
 ```
@@ -45,7 +45,7 @@ package.json
 packgae-lock.json
 ```
 
-`index.js`
+<span class="file-location">index.js</span>
 
 ```js
 function HomePage() {
@@ -57,7 +57,7 @@ export default HomePage
 
 그 후, `npm run dev`로 서버를 돌리면 http://localhost:3000 에서 서버가 열린다.
 
-```sh
+```shell
 $ npm run dev
 
 ready - started server on http://localhost:3000
@@ -92,7 +92,7 @@ package.json
 packgae-lock.json
 ```
 
-`pages/about.js`
+<span class="file-location">pages/about.js</span>
 
 ```js
 function About() {

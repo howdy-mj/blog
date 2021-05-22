@@ -74,7 +74,7 @@ $ cd mobx-playground
 
 `src` 폴더 안에 있는 index, App을 제외하고 모두 지운다.
 
-`src/index.tsx`
+<span class="file-location">src/index.tsx</span>
 
 ```ts
 import React from 'react'
@@ -84,7 +84,7 @@ import App from './App'
 ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
-`src/App.tsx`
+<span class="file-location">src/App.tsx</span>
 
 ```ts
 import React from 'react'
@@ -122,7 +122,7 @@ Domain Store는 하나 혹은 여러개가 있을 수 있으며, 하나의 Domai
 
 우선 `src/store` 폴더를 만들고, 그 안에 `count.ts`를 만든다.
 
-`src/store/count`
+<span class="file-location">src/store/count.ts</span>
 
 1. class - `makeObservable`
 
@@ -246,7 +246,7 @@ export default App
 
 이제 computed가 무엇인지 알아보기 위해 액션(클릭)이 일어날 때마다, 계산된 값이 배가 되는 `double`을 만들어 보자. 마찬가지로 class, object 두 가지 형식으로 만들어 보겠다.
 
-`src/store/double.ts`
+<span class="file-location">src/store/double.ts</span>
 
 1. class - `makeObservable`
 
@@ -334,7 +334,7 @@ const store = { countClass, countObject, doubleClassAuto }
 export default store
 ```
 
-`src/App.tsx`
+<span class="file-location">src/App.tsx</span>
 
 ```ts
 import React from 'react'

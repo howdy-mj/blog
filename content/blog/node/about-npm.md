@@ -59,7 +59,7 @@ npm은 Node.js를 통해 다운받아야 한다.
 
 Node의 설치 유무를 보기 위해 버전 체크를 해보자.
 
-```sh
+```shell
 node -v
 npm -v
 ```
@@ -70,7 +70,7 @@ npm -v
 
 그 후, `package.json` 생성을 위해 아래와 같은 코드를 치자.
 
-```sh
+```shell
 npm init
 # or 질문 없이 바로 시작하고 싶다면
 npm init -y
@@ -92,7 +92,7 @@ npm init -y
 **모듈 스코프**
 모듈 스코프는 전역과 분리된 모듈만의 독립된 스코프이다. 모듈 스코프에 선언된 변수나 함수는 외부에서 접근할 수 없고, 별도로 `export`한 변수와 함수만 외부에서 접근할 수 있다. (ex. `<script type="module" src="./A.js>`)
 
-`A.js`
+<span class="file-location">A.js</span>
 
 ```js
 const name = 'foo'
@@ -101,7 +101,7 @@ export function getName() {
 }
 ```
 
-`B.js`
+<span class="file-location">B.js</span>
 
 ```js
 import { getName } from 'A'
@@ -243,7 +243,7 @@ export function sayHello() {
 
 만약, 특정 버전의 패키지를 다운받고 싶다면 아래처럼 쓰면 된다:
 
-```sh
+```shell
 npm install 패키지명@x.y.z
 ```
 
@@ -251,7 +251,7 @@ npm install 패키지명@x.y.z
 
 ### Getting help:
 
-```sh
+```shell
 npm help # npm 관련 도움
 npm <command> -h # 특정 command 도움
 ```
@@ -265,13 +265,13 @@ npm <command> -h # 특정 command 도움
 
 첫 번째, 오직 현재 폴더(directory)에서만 패키지를 사용할 것이라면 **로컬**에 설치 한다.
 
-```sh
+```shell
 npm install 패키지명
 ```
 
 두 번째, 현재 폴더뿐만 아니라 어디서든 패키지를 사용할 것이라면 **전역**에 설치한다.
 
-```sh
+```shell
 npm install 패키지명 -g
 ```
 
@@ -281,7 +281,7 @@ npm install 패키지명 -g
 
 이럴 때 update란 명령어를 사용하면 된다.
 
-```sh
+```shell
 npm update 패키지명    # 특정 패키지 업데이트
 npm update            # 전체 패키지 업데이트
 npm update 패키지명 -g # 전역 패키지 업데이트
@@ -291,7 +291,7 @@ npm update 패키지명 -g # 전역 패키지 업데이트
 
 설치했던 패키지가 더이상 필요 없어진다면 패키지를 삭제해서 `node_modules`안의 내용도 없애 주는 것이 좋다.
 
-```sh
+```shell
 npm uninstall 패키지명
 # or
 npm r 패키지명
@@ -306,7 +306,7 @@ npm r 패키지명 -g
 
 프로젝트를 공유할 때 용량이 큰 _node modules_ 를 공유하기보단, `package.json`을 공유하면 다른 사람도 쉽게 패키지를 다운 받을 수 있다.
 
-```sh
+```shell
 npm install
 ```
 
@@ -314,7 +314,7 @@ npm install
 
 설치한 패키지를 확인하는 방법은 직접 `package.json`을 열어보는 방법과 CLI에 치는 방법이 있다.
 
-```sh
+```shell
 npm list
 ```
 
@@ -326,7 +326,7 @@ npm 배포를 하려면 먼저 [npm 회원가입](https://www.npmjs.com/signup)�
 
 회원가입을 했다면 터미널에서 `npm login`을 입력하고 계정 정보를 입력해야 한다.
 
-```sh
+```shell
 $ npm login
 # Username:
 # Password:
@@ -348,7 +348,7 @@ Logged in as howdy-mj on https://registry.npmjs.org/
 
 우선 `howdy-first`라는 폴더를 만들고 안에 `package.json` 파일을 만들어 주겠다.
 
-`package.json`
+<span class="file-location">package.json</span>
 
 ```json
 {
@@ -371,7 +371,7 @@ _해당 패키지를 배포할 때는 name과 version만 썼다_
 
 이제 터미널에 `npm publish`를 입력하면 배포가 완료된다.
 
-```sh
+```shell
 $ npm publish
 D:\VSCode\hooks-practice\src\howdy-first>npm publish
 npm notice

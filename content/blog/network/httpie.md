@@ -30,7 +30,7 @@ HTTPie는 디버깅과 APIs, HTTP 서버, 웹 서비스와 상호작용 및 디�
 
 macOs는 Homebrew를 통해 설치하는 것을 추천한다.
 
-```sh
+```shell
 $ brew install httpie
 
 # 버전 확인
@@ -44,7 +44,7 @@ _모든 예시는 HTTPie 서버를 이용한다_
 
 기본 구조는 아래와 같으며, `http --help`를 치면 더 자세히 알 수 있다.
 
-```sh
+```shell
 $ http <메서드> URL
 ```
 
@@ -71,7 +71,7 @@ $ http <메서드> URL
 
 ### `PUT` 메서드 사용
 
-```sh
+```shell
 $ http PUT httpbin.org/put X-API-Token:123 name=kmj
 ```
 
@@ -96,12 +96,12 @@ $ http localhost:포트번호 Host:example.com
 만약 스킴이 비어있다면 `http://`를 기본으로 설정한다.
 HTTPie에는 `https` 명령어도 있어서 해당 스킴을 기본으로 사용할 수도 있다.
 
-```sh
+```shell
 $ https example.org
 # => https://example.org
 ```
 
-```sh
+```shell
 $ http localhost:80 Host:kmj
 HTTP/1.1 200 OK
 Connection: keep-alive
@@ -119,7 +119,7 @@ host: kmj
 - `--body, -b`: 응답 바디만 출력
 - `--verbose, -v`: 전체 HTTP 요청/응답 출력
 
-```sh
+```shell
 # 자세한 정보 출력
 $ http -v httpie.org
 

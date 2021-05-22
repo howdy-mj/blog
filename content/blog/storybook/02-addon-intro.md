@@ -49,7 +49,7 @@ module.exports = {
 
 만약 설치가 안되어있다면, 아래처럼 입력하면 된다.
 
-```sh
+```shell
 $ npm install --save-dev @storybook/addon-actions
 ```
 
@@ -86,7 +86,7 @@ Knobs는 component의 props를 스토리북 화면에서 바로 반영시켜주�
 
 **Knobs 설치**
 
-```sh
+```shell
 $ npm install --save-dev @storybook/addon-knobs
 ```
 
@@ -108,7 +108,7 @@ module.exports = {
 이상하게 나는 Knobs를 깔 때마다 에러가 나서
 `node_modules`랑 `package-lock.json`을 지우고 다시 `npm install`, `npm update`를 해야 정상적으로 작동된다...
 
-```sh
+```shell
 $ rm -rf package-lock.json node_modules
 $ npm install
 $ npm update
@@ -126,7 +126,7 @@ MDX를 사용하면 마크다운으로 react component를 더 쉽게 문서화�
 
 **Docs 설치**
 
-```sh
+```shell
 $ npm install --save-dev @storybook/addon-docs
 ```
 

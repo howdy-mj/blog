@@ -18,7 +18,7 @@ draft: false
 타입스크립트 설치를 위해서 먼저 Node가 설치 되어 있어야 한다.
 
 ```shell
-npm install -g typescript ts-node
+$ npm install -g typescript ts-node
 ```
 
 타입스크립트를 설치하는 것은 알겠지만, `ts-node`가 무엇일까?
@@ -28,7 +28,7 @@ npm install -g typescript ts-node
 <div style="text-align: center;"><img src="https://www.graycelltech.com/wp-content/uploads/2018/09/arrows1-1.png">
 <p style="font-size: 11px; color: gray;">https://dzone.com/articles/what-is-typescript-and-why-use-it</p></div>
 
-`index.ts`
+<span class="file-location">index.ts</span>
 
 ```ts
 import axios from 'axios'
@@ -43,14 +43,14 @@ axios.get(url).then(response => {
 위와 같은 `.ts` 파일이 있다고 하면, 이를 브라우저가 이해하기 위해서는 `.js` 파일로 변환 후, 실행해 줘야 한다.
 
 ```shell
-tsc index.ts # index.js 파일 생성
-node index.js # index.js 파일 실행
+$ tsc index.ts # index.js 파일 생성
+$ node index.js # index.js 파일 실행
 ```
 
 이 두 가지를 한번에 해줄 수 있는 것이 바로 `ts-node`이다.
 
 ```shell
-ts-node index.ts # index.js 파일 생성 및 실행
+$ ts-node index.ts # index.js 파일 생성 및 실행
 # 결과
 # { userId: 1, id: 1, title: 'delectus aut autem', completed: false }
 ```

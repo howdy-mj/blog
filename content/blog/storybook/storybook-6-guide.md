@@ -35,7 +35,7 @@ $ yarn storybook
 - 기존 버전에서 6.0으로 마이그레이션 하는 프로젝트는 설정해 둔 타입스크립트 webpack/babel config와 `@storybook/preset-typescript`를 삭제하고 재 설정할 것을 권장한다.
 - Storybook 5.3에서 소개한 `main.js` 파일에 `stories` property를 넣으면 되고, 기존에 glob이 인식되지 않은 문제도 해결했다.
 
-`./storybook/main.js`
+<span class="file-location">./storybook/main.js</span>
 
 ```js
 {
@@ -60,7 +60,7 @@ $npx sb@next migrate upgrade-hierarchy-separators --glob="*/**/*.stories.@(tsx|j
 
 - 현재는 'roots'를 기본으로 보여주지만, disable도 가능하다.
 
-`.storybook/manager.js`
+<span class="file-location">./storybook/manager.js</span>
 
 ```js
 import addons from '@storybook/addons'

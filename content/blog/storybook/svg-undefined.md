@@ -27,7 +27,7 @@ console.log(SVGFile) // undefined
 
 이는 스토리북의 기본 webpack 설정에 이미 file-loader로 svg를 변환하고 있기 때문에 나는 에러이다.
 
-`storybook/preview/base-webpack.config.js`
+<span class="file-location">storybook/preview/base-webpack.config.js</span>
 
 ```js
 // ...
@@ -51,7 +51,7 @@ console.log(SVGFile) // undefined
 $ npm install @svgr/webpack --save-dev
 ```
 
-`./storybook/main.js`
+<span class="file-location">./storybook/main.js</span>
 
 ```js
 // ...

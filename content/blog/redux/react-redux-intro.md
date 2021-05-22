@@ -42,7 +42,7 @@ src
 └─ index.js
 ```
 
-`src/index.js`
+<span class="file-location">src/index.js</span>
 
 ```js
 import React from 'react'
@@ -52,7 +52,7 @@ import App from './components/App'
 ReactDOM.render(<App />, document.querySelector('#root'))
 ```
 
-`src/components/App.js`
+<span class="file-location">src/components/App.js</span>
 
 ```js
 import React from 'react'
@@ -83,7 +83,7 @@ export default App
 
 본격적으로 리덕스로 상태관리를 하기 위해 먼저 action creators를 만든다.
 
-`src/actions/index.js`
+<span class="file-location">src/actions/index.js</span>
 
 ```js
 // action creator
@@ -96,7 +96,7 @@ export const selectSong = song => {
 }
 ```
 
-`src/reducers/index.js`
+<span class="file-location">src/reducers/index.js</span>
 
 ```js
 // 노래 목록을 알려주는 reducer
@@ -124,7 +124,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
 
 그러기 위해서 우선 reducer를 하나로 묶어 준다.
 
-`src/reducers/index.js`
+<span class="file-location">src/reducers/index.js</span>
 
 ```js
 import { combineReducers } from 'redux'
@@ -161,7 +161,7 @@ export default combineReducers({
 
 ### 전역에서 state 가져오기
 
-`src/index.js`
+<span class="file-location">src/index.js</span>
 
 ```js
 import React from 'react'
@@ -185,7 +185,7 @@ ReactDOM.render(
 
 노래 목록을 볼 수 있는 components를 만들고, `App.js`에서 불러온다.
 
-`src/components/SongList.js`
+<span class="file-location">src/components/SongList.js</span>
 
 ```js
 import React from 'react'
@@ -197,7 +197,7 @@ const SongList = () => {
 export default SongList
 ```
 
-`src/components/App.js`
+<span class="file-location">src/components/App.js</span>
 
 ```js
 import React from 'react'
@@ -237,7 +237,7 @@ connect()() // output: '하우디엠제이'
 
 위와 같은 원리로, 내가 가져오고 싶은 components에서도 아래처럼 connect로 감싸주어야 한다.
 
-`src/components/SongList.js`
+<span class="file-location">src/components/SongList.js</span>
 
 ```js{11}
 import React from 'react'
@@ -306,7 +306,7 @@ const mapStateToProps = state => {
 
 이제 가져온 props로 화면을 구성해보자.
 
-`src/components/SongList.js`
+<span class="file-location">src/components/SongList.js</span>
 
 ```js
 // ...
@@ -327,7 +327,7 @@ const SongList = props => {
 }
 ```
 
-`src/components/App.js`
+<span class="file-location">src/components/App.js</span>
 
 ```js
 // ...
@@ -355,7 +355,7 @@ const App = () => {
 
 이제 오른쪽 Select 버튼을 눌렀을 때, 실제로 리덕스에 반영하기 위해 행동을 취해주는 action creator를 가져오자. 이때 가져온 action creator는 `connect()`의 두 번째 인자에 작성한다.
 
-`src/components/SongList.js`
+<span class="file-location">src/components/SongList.js</span>
 
 ```js{26,27,28}
 import React from 'react'
@@ -397,7 +397,7 @@ export default connect(mapStateToProps, {
 
 아무것도 없었던 `dispatch()`가 `selectSong()`으로 바뀐 것을 확인할 수 있다. 이제 button에 onClick 함수를 추가하여 제대로 동작하는지 확인해보자.
 
-`src/components/SongList.js`
+<span class="file-location">src/components/SongList.js</span>
 
 ```js{10}
 // ...
@@ -479,7 +479,7 @@ export default connect(mapStateToProps)(SongList)
 
 ### SongDetail 구현
 
-`src/components/SongDetail.js`
+<span class="file-location">src/components/SongDetail.js</span>
 
 ```js{8}
 import React from 'react'
@@ -501,7 +501,7 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps)(SongDetail)
 ```
 
-`src/components/App.js`
+<span class="file-location">src/components/App.js</span>
 
 ```js
 import React from 'react'
@@ -530,8 +530,9 @@ console을 확인해보면, 처음에는 `null`이었다가, select 누른 노�
 
 이제 `selectedSong`이 있을 때, 화면에 나타나게 해보자.
 
+<span class="file-location">src/components/SongDetail.js</span>
+
 ```js
-// src/components/SongDetail.js
 // ...
 const SongDetail = ({ selectedSong }) => {
   return (

@@ -30,7 +30,7 @@ $ yarn add craco-alias -D
 
 패키지 설치 후, root 폴더에서 아래의 파일을 생성하자.
 
-`craco.config.js`
+<span class="file-location">craco.config.js</span>
 
 ```js
 const CracoAlias = require('craco-alias')
@@ -63,7 +63,7 @@ module.exports = {
 
 <br />
 
-`tsconfig.extend.json`
+<span class="file-location">tsconfig.extend.json</span>
 
 ```json
 {
@@ -90,7 +90,7 @@ ex. `"@styles/*": ["./styles/*"],`이라면 마지막 `,`를 삭제
 
 그리고 `tsconfig.json`, `package.json` 파일에서 아래의 항목을 추가/수정 한다.
 
-`tsconfig.json`
+<span class="file-location">tsconfig.json</span>
 
 ```json
 {
@@ -101,7 +101,7 @@ ex. `"@styles/*": ["./styles/*"],`이라면 마지막 `,`를 삭제
 }
 ```
 
-`package.json`
+<span class="file-location">package.json</span>
 
 ```json
 "scripts": {

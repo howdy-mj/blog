@@ -106,7 +106,7 @@ export const getStaticProps = ({ req }: NextPageContext) => {
 
 원래는 `getStaticProps`에서 특정 브라우저인지 알아내어 바로 props로 넘겨주고 싶었으나, undefined 이기 때문에 넘겨주지 못하고 useEffect를 사용할 수 밖에 없었다.
 
-```ts{19, 26}
+```tsx{19, 26}
 // 'pages/_app.tsx`에서 getStaticProps 사용
 import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
@@ -163,7 +163,7 @@ export default MyApp;
 
 전체 페이지에서 사용 기기를 알고 싶다면, `pages/_app.tsx`의 `useEffect`로 특정 브라우저인지 아닌지를 Boolean 값으로 반환하면 된다.
 
-```ts{14, 15}
+```tsx{14, 15}
 // pages/_app.tsx
 
 function MyApp({ Component, pageProps }: AppProps) {

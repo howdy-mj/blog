@@ -72,7 +72,7 @@ $ yarn dev
 
 ### ESLint, Prettier
 
-```sh
+```shell
 $ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 ```
@@ -331,7 +331,7 @@ const theme: DefaultTheme = {
 
 <span class="file-location">pages/\_document.tsx</span>
 
-```ts
+```tsx
 import Document, { DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -367,7 +367,7 @@ SSR은 사용자들이 요청하면 그때 미리 만들어 놓은 HTML을 먼�
 
 <span class="file-location">pages/\_app.tsx</span>
 
-```ts
+```tsx
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
@@ -390,7 +390,7 @@ export default MyApp;
 
 <span class="file-location">pages/index.tsx</span>
 
-```ts
+```tsx
 import Head from 'next/head'
 
 export default function Home() {
@@ -450,7 +450,7 @@ export default countStore
 
 <span class="file-location">pages/count.tsx</span>
 
-```ts
+```tsx
 import { observer } from 'mobx-react'
 import styled from 'styled-components'
 
@@ -566,7 +566,7 @@ Next는 static한 구조를 지니고 있어 React처럼 eject를 하거나 별�
 
 <span class="file-location">pages/counts.tsx</span>
 
-```ts
+```tsx
 import CountContainer from '@containers/Count'
 
 const CountPage: React.FC = () => {
@@ -578,7 +578,7 @@ export default CountPage
 
 <span class="file-location">containers/Count/index.tsx</span>
 
-```ts
+```tsx
 import { observer } from 'mobx-react'
 
 import countStore from '@store/count'

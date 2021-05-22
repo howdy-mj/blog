@@ -25,7 +25,7 @@ ESLint는 configuration 파일이 있어야 실행 가능하기 때문에 `.esli
 
 사용하고 싶은 [규칙](https://eslint.org/docs/rules/)을 해당 파일에 넣으면 된다.
 
-`.eslintrc.json`
+<span class="file-location">.eslintrc.json</span>
 
 ```json
 {
@@ -68,11 +68,11 @@ ESLint에는 자주 사용하는 규칙 모음이 있는데, 하나는 [airbnb �
 
 ### Prettier 설치 및 설정
 
-```sh
+```shell
 $ npm install --save --dev prettier
 ```
 
-`app.js`
+<span class="file-location">app.js</span>
 
 ```js
 const hello = 'double'
@@ -80,7 +80,7 @@ const hello = 'double'
 
 이렇게 된 것을 prettier를 실행하면 아래처럼 나온다.
 
-```sh
+```shell
 $ npx prettier app.js
 
 const hello = "double";
@@ -94,7 +94,7 @@ const hello = "double";
 
 그렇기 때문에 ESLint와 Prettier를 같이 쓰며, 충돌하는 부분은 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) 패키지를 통해 ESLint 규칙을 끈다.
 
-```sh
+```shell
 $ npm install --save-dev eslint-config-prettier
 ```
 
@@ -114,7 +114,7 @@ $ npm install --save-dev eslint-config-prettier
 
 이번 글에서는 ESLint 익스텐션을 설치한 후,
 
-`.vscode/settings.json`
+<span class="file-location">.vscode/settings.json</span>
 
 ```json
 {
