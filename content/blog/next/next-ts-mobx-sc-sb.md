@@ -52,7 +52,7 @@ Next 소개는 [이전글](https://howdy-mj.me/next/next-js-intro/)에서, 완�
 
 ### Next, TypeScript
 
-```sh
+```shell
 $ yarn create-next-app # 설치 중간에 폴더명 설정
 $ cd 폴더명
 $ yarn add next react react-dom
@@ -79,7 +79,7 @@ $ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier eslint-plug
 
 root 폴더에 아래 두 개의 파일을 만든다.
 
-`.eslintrc`
+<span class="file-location">.eslintrc</span>
 
 ```json
 {
@@ -105,7 +105,7 @@ root 폴더에 아래 두 개의 파일을 만든다.
 }
 ```
 
-`.prettierrc`
+<span class="file-location">.prettierrc</span>
 
 ```json
 {
@@ -120,7 +120,7 @@ root 폴더에 아래 두 개의 파일을 만든다.
 
 ### Styled-components
 
-```sh
+```shell
 $ yarn add styled-components
 $ yarn add -D @types/styled-components babel-plugin-styled-components
 ```
@@ -129,7 +129,7 @@ Next는 SSR이기 때문에 styled-components의 babel 설정을 따로 해줘�
 
 root 폴더에 `.babelrc`를 만들어서 아래와 같이 작성하자.
 
-`.babelrc`
+<span class="file-location">.babelrc</span>
 
 ```json
 {
@@ -189,7 +189,7 @@ root 폴더에 `.babelrc`를 만들어서 아래와 같이 작성하자.
 
 이제 기존 `styles` 폴더 안에 있는 것을 삭제하고, User agent sheet를 초기화 할 reset과 전역에서 사용할 theme 변수 파일을 만들어보자.
 
-`styles/reset.ts`
+<span class="file-location">styles/reset.ts</span>
 
 ```ts
 import { createGlobalStyle } from 'styled-components'
@@ -242,7 +242,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle
 ```
 
-`styles/theme.ts`
+<span class="file-location">styles/theme.ts</span>
 
 ```ts
 export const size = {
@@ -283,7 +283,7 @@ export default theme
 
 theme에 대한 타입을 지정 후, 다시 theme에서 import 한다.
 
-`styles/styled.d.ts`
+<span class="file-location">styles/styled.d.ts</span>
 
 > 타입을 지정하는 파일의 이름은 무조건 'styled.d.ts'여야 한다. 아니면 자동완성이 뜨지 않는다.
 
@@ -319,7 +319,7 @@ declare module 'styled-components' {
 }
 ```
 
-`styles/theme.ts`
+<span class="file-location">styles/theme.ts</span>
 
 ```ts
 import { DefaultTheme } from 'styled-components'
@@ -329,7 +329,7 @@ const theme: DefaultTheme = {
 }
 ```
 
-`pages/_document.tsx`
+<span class="file-location">pages/\_document.tsx</span>
 
 ```ts
 import Document, { DocumentContext } from 'next/document'
@@ -365,7 +365,7 @@ export default class MyDocument extends Document {
 
 SSR은 사용자들이 요청하면 그때 미리 만들어 놓은 HTML을 먼저 보여주어 매우 빠르다. 하지만 styled-components는 자바스크립트이기 때문에 나중에 렌더가 된다. 즉, styled-component가 완전히 로딩되기 전에 페이지가 켜지기 때문에 스타일이 적용되기 전의 화면이 먼저 보이고, 화면 깜빡인 다음에 스타일을 불러온다. 따라서 위 처럼 ServerStyleSheet를 먼저 가져와야 한다.
 
-`pages/_app.tsx`
+<span class="file-location">pages/\_app.tsx</span>
 
 ```ts
 import type { AppProps } from 'next/app';
@@ -388,7 +388,7 @@ export default MyApp;
 
 본래 global에 있는 stylesheets과의 충돌을 피하기 위해, 개인이 설정한 CSS 파일은 오직 `pages_app.tsx`에서만 import 해야 한다.
 
-`pages/index.tsx`
+<span class="file-location">pages/index.tsx</span>
 
 ```ts
 import Head from 'next/head'
@@ -418,7 +418,7 @@ Styles에서 reset에 설정한 내용 확인 가능
 
 ### MobX
 
-```sh
+```shell
 $ yarn add mobx mobx-react
 ```
 
@@ -426,7 +426,7 @@ MobX 소개와 예제는 [이전글](https://howdy-mj.me/mobx/mobx6-intro/)로 �
 
 함수형을 쓰기 때문에 별도의 Class config는 주지 않는다.
 
-`store/count.ts`
+<span class="file-location">store/count.ts</span>
 
 ```ts
 import { makeAutoObservable } from 'mobx'
@@ -448,7 +448,7 @@ const countStore = new Count()
 export default countStore
 ```
 
-`pages/count.tsx`
+<span class="file-location">pages/count.tsx</span>
 
 ```ts
 import { observer } from 'mobx-react'
@@ -489,7 +489,7 @@ Next MobX 적용
 
 ### Storybook
 
-```sh
+```shell
 $ npx sb init
 ```
 
@@ -510,7 +510,7 @@ components는 storybook에 내제된 컴포넌트 들을 사용할 것이며, �
 
 `components`안에 만들 Button, Header 컴포넌트 코드는 [여기](https://github.com/howdy-mj/writing-stories/tree/master/src/components)에서 볼 수 있다.
 
-`완성될 폴더 구조`
+### 완성될 폴더 구조
 
 ```
 .storybook
@@ -541,7 +541,7 @@ styles
 
 Next는 static한 구조를 지니고 있어 React처럼 eject를 하거나 별도의 라이브러리(ex. CRACO) 없이 절대 경로 설정이 가능하다.
 
-`tsconfig.json`
+<span class="file-location">tsconfig.json</span>
 
 ```json
 {
@@ -564,7 +564,7 @@ Next는 static한 구조를 지니고 있어 React처럼 eject를 하거나 별�
 
 개인의 취향이지만, 필자는 모든 로직은 `pages`가 아닌 `containers` 폴더에서 처리하기 때문에 모두 옮겼다.
 
-`pages/counts.tsx`
+<span class="file-location">pages/counts.tsx</span>
 
 ```ts
 import CountContainer from '@containers/Count'
