@@ -576,7 +576,7 @@ const CountPage: React.FC = () => {
 export default CountPage
 ```
 
-`containers/Count/index.tsx`
+<span class="file-location">containers/Count/index.tsx</span>
 
 ```ts
 import { observer } from 'mobx-react'
