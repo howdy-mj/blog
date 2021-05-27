@@ -69,7 +69,7 @@ Angular 프로젝트를 생성하면 기본으로 만들어지는 모듈과 컴�
 |      서비스      | ng generate service <서비스 이름>     |
 |       모듈       | ng generate module <모듈 이름>        |
 
-혹은 폴더에서 마우스 우클릭을 해서 component, service, module 등을 만들 수 있다.
+혹은 <a href="https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics" target="_blank">Angular Schematics</a> Extension을 설치 한 후, 폴더에서 마우스 우클릭을 해서 component, service, module 등을 만들 수 있다.
 
 <div class="img-div" style="width: 350px">
   <img src="./images/angular-basic/right-click.png" alt="생성">

@@ -2,6 +2,7 @@
 title: 'CRA + Typescript + ESlint + Prettier'
 date: 2020-11-08 03:22:13
 category: 'boilerplate'
+thumbnail: '../../assets/logo_blue.png'
 draft: false
 ---
 
