@@ -1,7 +1,7 @@
 ---
 title: 'CRA + Typescript + ESlint + Prettier'
 date: 2020-11-08 03:22:13
-category: 'typescript'
+category: 'boilerplate'
 draft: false
 ---
 
@@ -16,7 +16,7 @@ CRA로 만든 TypeScript 기반에 ESlint, Prettier 설정하는 법을 알아�
 
 원래 타입스크립트에서는 TSLint가 있었지만, 2019년 2월에 ESLint로 마이그레이션을 [발표](https://github.com/palantir/tslint/issues/4534)하며, 2020년 1월에 완전히 적용되었다.
 
-해당 글은 VSCode를 사용하며, ESLint, Prettier extensions이 이미 설치된 상태이며, react `^17.0.1`, typescript `^4.0.3` 버전으로 작성되었다.
+해당 글은 VSCode를 사용하며, ESLint, Prettier extensions이 이미 설치된 상태이며, react `^17.0.2`, typescript `^4.1.2` 버전으로 작성되었다.
 
 ## 폴더 생성 및 설치
 
@@ -26,7 +26,7 @@ $ yarn create react-app cra-settings --template typescript
 $ cd cra-settings
 
 # 패키지 설치
-$ yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier eslint-plugin-react prettier -D
+$ yarn add eslint-plugin-prettier eslint-plugin-react prettier -D
 ```
 
 _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 된다_
@@ -36,13 +36,11 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 ```json
 // ...
 "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
-    "prettier": "^2.1.2"
-  }
+  "eslint-plugin-prettier": "^3.4.0",
+  "eslint-config-prettier": "^8.3.0",
+  "eslint-plugin-react": "^7.23.2",
+  "prettier": "^2.3.0"
+}
 // ...
 ```
 
@@ -52,7 +50,6 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 
 ```json
 {
-  "parser": "@typescript-eslint/parser",
   "extends": ["plugin:prettier/recommended"],
   "plugins": ["react", "prettier"],
   "parserOptions": {
@@ -96,8 +93,6 @@ _CRA에 ESLint가 포함되어 있기 때문에 따로 설치를 안해줘도 �
 
 ### 패키지 역할
 
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin): ESLint와 TypeScript를 같이 사용할 수 있도록 도와줌
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser): TypeScript를 ESTree-compatible(호환)로 변환하여 ESLint에서 사용할 수 있도록 해줌
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): ESLint와 Prettier의 충돌을 막아줌
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): React에서 ESLint 명세 규정
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier): Prettier를 ESLint 규칙으로 실행하고 문제점을 ESLint로 보고
@@ -112,18 +107,8 @@ ESLint와 Prettier는 [이전글](https://howdy-mj.me/node/eslint-and-prettier/)
 
 ```json
 {
-  "parser": "@typescript-eslint/parser", // @typescript-eslint/parser
-  "extends": [
-    "plugin:react/recommended", // eslint-plugin-react
-    "plugin:@typescript-eslint/recommended", // @typescript-eslint/eslint-plugin
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended" // eslint-plugin-prettier
-  ],
-  "plugins": [
-    "react", // eslint-plugin-react
-    "@typescript-eslint", // @typescript-eslint/eslint-plugin
-    "prettier"
-  ],
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["react", "prettier"],
   "parserOptions": {
     // ESLint는 es6 이후의 문법을 알지 못하기 때문에 설정
     // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
