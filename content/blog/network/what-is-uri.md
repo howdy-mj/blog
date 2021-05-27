@@ -15,7 +15,7 @@ URI(Uniform Resource Identifier, 통합 자원 식별자)는 언제 어디서든
 scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
 ```
 
-- sheme과 host를 제외하고는 모두 선택 사항이다.
+- scheme과 host를 제외하고는 모두 선택 사항이다.
 - `[user[:password]@]host[:port]` 는 authority로 묶을 수 있다.
 
 <br />

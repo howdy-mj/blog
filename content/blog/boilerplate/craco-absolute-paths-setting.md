@@ -1,7 +1,7 @@
 ---
 title: 'CRA + Typescript 절대경로 설정 (w/craco)'
 date: 2020-10-11 20:03:56
-category: 'typescript'
+category: 'boilerplate'
 draft: false
 ---
 

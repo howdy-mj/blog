@@ -1,7 +1,8 @@
 ---
 title: 'Next.js + TypeScript + MobX + Styled-components + Storybook'
 date: 2020-12-13 02:10:43
-category: 'next'
+category: 'boilerplate'
+thumbnail: '../../assets/logo_blue.png'
 draft: false
 ---
 
