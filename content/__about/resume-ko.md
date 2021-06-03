@@ -7,7 +7,7 @@ lang: 'ko'
 # 김민정 (MJ KIM)
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.16
+마지막 업데이트: 2021.06.03
 </div>
 
 **저는 `______` 프론트개발자 입니다.**
@@ -39,33 +39,39 @@ lang: 'ko'
 
 간편 병원 예약접수 서비스 | 21.03 - 재직중 | Frontend Developer
 
-<i>업데이트 예정</i>
+```txt
+Angular, RxJS, TypeScript, SCSS
+React, TypeScript, Redux, redux-toolkit, styled-components, Storybook
+```
+
+- 병원 어드민 유지보수 및 개발
+- Jira, Confluence, Jandi
 
 ## 로켓메이커스
 
 스타트업 전문 개발사 | 20.11 - 21.03 | Frontend Developer / Project Manager
 
 ```txt
-Next.js, TypeScript, MobX, Styled components, PWA, Storybook
+Next.js, TypeScript, MobX, styled-components, PWA, Storybook
 ```
 
 - 내부 UI 컴포넌트 유지보수 및 개발
 - Storybook을 활용하여 디자인 시스템 구축
 - 각 프로젝트의 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
-- Notion, Slack으로 업무 진행
+- Notion, Slack
 
 ## 루트에너지(Rootenergy)
 
 재생에너지 크라우드 펀딩 플랫폼 | 20.08 - 20.11 | Frontend Developer
 
 ```txt
-React, TypeScript, Redux(Rematch), SCSS, Storybook
+React, TypeScript, Redux, Rematch, SCSS, Storybook
 ```
 
 - Storybook을 활용해 디자인 시스템 개발, 정책 정리
-- Git flow, Notion, Slack으로 업무 진행
 - HTTP, Web Server와 WAS 세미나 발표
+- Notion, Slack
 
 ## 플랜즈 커피(Planz Coffee)
 
@@ -88,12 +94,6 @@ React, TypeScript, Redux(Rematch), SCSS, Storybook
 <br />
 
 # Side Project
-
-### Delta Labs
-
-- (진행 중)
-
-<br />
 
 ### BFRun
 
@@ -126,10 +126,6 @@ React, TypeScript, Redux(Rematch), SCSS, Storybook
 <br />
 
 # Education
-
-### Wecode
-
-20.03 - 20.06 | WeCode 부트캠프 과정 수료
 
 ### 북경대학교 (Peking University)
 
