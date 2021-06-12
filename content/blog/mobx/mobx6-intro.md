@@ -76,7 +76,7 @@ $ cd mobx-playground
 
 <span class="file-location">src/index.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
@@ -86,7 +86,7 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 <span class="file-location">src/App.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 
 const App: React.FC = () => {
@@ -100,7 +100,7 @@ export default App
 $ yarn add mobx mobx-react
 ```
 
-MobX를 리액트에서 사용하기 위해서는 클래스 컴포넌트를 지원하는 `mobx-react`, 함수 컴포넌트를 지원하는 `mobx-react-lite`가 필요했었다. 하지만 v6로 올라오면서 `mobx-react`에서도 함수 컴포넌트를 지원하여 하나로 해결이 가능해졌다.
+React에서 MobX를 쉽게 사용하게 해주는 써드파티 라이브러리로, `mobx-react`와 `mobx-react-lite`가 있는데, `mobx-react`는 클래스형 컴포넌트와 hooks를 모두 지원하고, `mobx-react-lite`는 훅스만 지원한다. MobX를 사용하려는 프로젝트에서 이미 hooks를 사용중이라면, 조금 더 가벼운 `mobx-react-lite` 사용을 권장한다.
 
 또한, MobX 6에서 decorators(ex. @action, @observable 등)들이 deprecated 되었다.
 
@@ -201,7 +201,7 @@ object로 만들면 코드가 더 줄어든다. observable로 감싸주기만 �
 
 이렇게 만든 Store<i>(정확히는 state model)</i>는 사용할 컴포넌트에서 따로 import 해도 되지만, 필자는 개인적으로 하나의 store에 넣는 것이 선호하기 때문에 `src/store/index.ts`를 만든다.
 
-```ts
+```tsx
 import countClass from './countClass'
 import countObject from './countObject'
 
@@ -211,7 +211,7 @@ export default store
 
 잘 동작하는지 확인하기 위해 `src/App.tsx`를 아래처럼 작성한다.
 
-```ts
+```tsx
 import React from 'react'
 import { observer } from 'mobx-react'
 import store from './store'
@@ -336,7 +336,7 @@ export default store
 
 <span class="file-location">src/App.tsx</span>
 
-```ts
+```tsx
 import React from 'react'
 import { autorun } from 'mobx'
 import { observer } from 'mobx-react'
