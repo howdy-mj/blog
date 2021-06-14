@@ -59,7 +59,7 @@ with observable streams</span>)</span>라고 정의하고 있다.
 
 Rx를 설명하는데 가장 핵심이 되는 단어가 바로 <span class="definition">Observable(옵저버블)</span>인데, 공식문서에서 이를 여러 개의 값을 Push하는 것으로 정의하고 있다.
 
-<div class="img-div" style="width: 300px;">
+<div class="img-div">
   <img src="./images/reactive-programming-rxjs/observable.png" alt="observable">
   <p>https://rxjs-dev.firebaseapp.com/guide/observable</p>
 </div>
@@ -80,7 +80,7 @@ Pull과 Push는 두개의 다른 프로토콜로, <span class="definition">데�
   <p>* Passive는 이벤트를 기다리는 수동적인 상태, Active는 이벤트를 발동시키는 능동적인 상태를 나타내는 것으로 추측한다.</p>
 </div>
 
-<div class="img-div">
+<div class="img-refer">
   <img src="https://drek4537l1klr.cloudfront.net/daniels/Figures/02fig12_alt.jpg" alt="down stream">
   <p>https://livebook.manning.com/book/rxjs-in-action/chapter-2/164</p>
 </div>
@@ -107,7 +107,7 @@ RxJS에서는 Observable이라는 새로운 Push를 내보였다. Observable은 
 
 생산자가 변화를 감지하고 이벤트를 발동(active)시키며, 이벤트 처리는 소비자(passive)에게 맡긴다. 이때 데이터 스트림은 생산자에서 소비자로만 이동하며 다른 방향으로 이동하지 않는다. 즉, RxJS와 관련된 스트림은 항상 업스트림 Observable에서 다운스트림 Observer로 흐른다.
 
-<div class="img-div" style="width: 400px;">
+<div class="img-refer">
   <img src="https://drek4537l1klr.cloudfront.net/daniels/Figures/01fig12.jpg" alt="down stream">
   <p>https://livebook.manning.com/book/rxjs-in-action/chapter-1/147</p>
 </div>
