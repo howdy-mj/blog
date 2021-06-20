@@ -1,5 +1,5 @@
 ---
-title: 'VR, AR, XR'
+title: 'VR, AR, XR, MR'
 date: 2021-06-20 00:00:00
 category: 'bookmark'
 draft: false
@@ -13,7 +13,7 @@ draft: false
 
 <!-- <br /> -->
 
-VR, AR, XR 관련 북마크 모음
+VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 북마크 모음
 
 ## Developer Docs
 
