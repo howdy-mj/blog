@@ -49,8 +49,10 @@ RFC 편집자는 매 문서에 일련번호와 함께 배포하며, 절대 폐�
 
 그렇다면 HTTP의 요청과 응답은 어떻게 생겼을까? 아래 그림과 같이 메세지 형태를 취하고 있다.
 
-<div style="text-align: center;"><img src="https://rmohan.com/wp-content/uploads/2012/09/HTTP_RequestResponseMessages.png" style="width: 600px">
-<p style="font-size: 11px; color: gray;">https://rmohan.com/?p=1488</p></div>
+<div class="img-refer">
+  <img src="https://www.oreilly.com/library/view/http-the-definitive/1565925092/httpatomoreillycomsourceoreillyimages96838.png" style="width: 600px">
+  <p>https://www.oreilly.com/library/view/http-the-definitive/1565925092/ch01s05.html</p>
+</div>
 
 HTTP 메세지는 요청과 응답으로 나뉘고 모두 `시작줄, 헤더, 본문`으로 이루어져 있다.
 
@@ -84,7 +86,7 @@ Body: <본문>
 
 **[ 요청 ]**
 
-```shell
+```http
 GET /doc/test.html HTTP/1.1
 ```
 
@@ -94,7 +96,7 @@ GET /doc/test.html HTTP/1.1
 
 **[ 응답 ]**
 
-```shell
+```http
 HTTP/1.1 200 OK
 ```
 
@@ -110,7 +112,7 @@ HTTP/1.1 200 OK
 
 **a. 일반 헤더:** 메세지에 대한 기본적인 정보 제공
 
-```
+```http
 Via: 1.1 proxy-62.irenes-sip.net
 Connection: kepp-alive
 ```
@@ -120,7 +122,7 @@ Connection: kepp-alive
 
 **b. 요청 헤더**: 서버에게 요청의 세부 정보 제공
 
-```shell
+```http
 Accept: */*
 User-Agent: Mozilla/5.0
 Cookie: 쿠키 값
@@ -132,7 +134,7 @@ Cookie: 쿠키 값
 
 **c. 응답 헤더**: 브라우저에게 응답의 세부 정보 제공
 
-```shell
+```http
 Server: gws
 Age:
 Set-Cookie:
@@ -144,7 +146,7 @@ Set-Cookie:
 
 **d. 엔터티 헤더**: 바디의 컨텐츠를 나타냄
 
-```shell
+```http
 Content-Type: text/html, application/json; charset=UTF-8
 Content-Length: 345
 ```
@@ -153,12 +155,12 @@ Content-Length: 345
 - Content-Length: 본문의 길이나 크기
 
 <details>
-    <summary>🔍 용어: MIME</summary>
+    <summary>용어: MIME</summary>
       <span style="font-weight: bold; font-size: 14px;">MIME(Multipurpose Internet Mail Extensions)</span>: 자료 파일 변환을 위한 포맷
     <ul style="font-size: 14px;">
-        <li>MIME에는 메세지 종류를 나타내는 content-type, 메세지 인코딩 방식을 나타내는 content-transfer-encoding 같은 추가 정보 정의</li>
-        <li>MIME 타입은 type/subtype 형식으로 타입에는 텍스트, 이미지, 오디오 등이, 서브타입에는 어떤 타입인지 구체적으로 서술</li>
-        <li>웹 서버는 받은 요청이 어떤 것인지 빠르게 알아내기 위해 모든 HTTP 객체 데이터에 MIME 타입을 붙인다.</li>
+      <li>웹 서버는 받은 요청이 어떤 것인지 빠르게 알아내기 모든 HTTP 객체 데이터에 MIME 타입을 붙임</li>
+      <li>MIME에는 메세지 종류를 나타내는 <span class="variable">content-type</span>, 메세지 인코딩 방식을 나타내는 <span class="variable">content-transfer-encoding</span> 등 같은 정보 정의</li>
+      <li>MIME 타입은 type/subtype 형식으로 타입텍스트, 이미지, 오디오 등이, 서브타입에는 어떤 타입인지 구체적으로 서술</li>
     </ul>
   </details>
 
@@ -207,13 +209,13 @@ HTTP/FTP와 HTTP/POP 등은 다른 프로토콜이란 걸 바로 알 수 있지�
 
 _('클라이언트 측 프로토콜/서버 측 프로토콜'로 작성한다.)_
 
-  <details>
-    <summary>🔍 용어: FTP, POP</summary>
+<details>
+    <summary>용어: FTP, POP</summary>
     <ul style="font-size: 14px;">
-        <li><span style="font-weight: bold;">FTP(File Transfer Protocol)</span>: 파일을 교환하기 위해 사용</li>
-        <li><span style="font-weight: bold;">POP(Post Office Protocol)</span>: 이메일을 가져오는데 사용</li>
+      <li><span style="font-weight: bold;">FTP(File Transfer Protocol)</span>: 파일을 교환하기 위해 사용</li>
+      <li><span style="font-weight: bold;">POP(Post Office Protocol)</span>: 이메일을 가져오는데 사용</li>
     </ul>
-  </details>
+</details>
 
 <br />
 
@@ -222,19 +224,18 @@ _('클라이언트 측 프로토콜/서버 측 프로토콜'로 작성한다.)_
 <div style="font-size: 12px;">
 
 - HTTP 완벽 가이드, 2014, 인사이트
-- [https://httpwg.org/](https://httpwg.org/)
-- [https://rmohan.com/?p=1488](https://rmohan.com/?p=1488)
-- [https://developer.mozilla.org/ko/docs/Web/HTTP/Messages](https://developer.mozilla.org/ko/docs/Web/HTTP/Messages)
-- [https://evan-moon.github.io/2019/11/10/header-of-tcp/](https://evan-moon.github.io/2019/11/10/header-of-tcp/)
-- [https://www.oreilly.com/library/view/http-the-definitive/1565925092/ch04s01.html](https://www.oreilly.com/library/view/http-the-definitive/1565925092/ch04s01.html)
-- [https://medium.com/webeveloper/http-요청과-응답-2209bc82f239](https://medium.com/webeveloper/http-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-2209bc82f239)
-- [http://www.ktword.co.kr/abbr_view.php?m_temp1=1829](http://www.ktword.co.kr/abbr_view.php?m_temp1=1829)
-- [http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=651&id=1283](http://www.ktword.co.kr/abbr_view.php?nav=&m_temp1=651&id=1283)
-- [https://bohemihan.tistory.com/entry/3일차-8-활용-CGI-소개](https://bohemihan.tistory.com/entry/3%EC%9D%BC%EC%B0%A8-8-%ED%99%9C%EC%9A%A9-CGI-%EC%86%8C%EA%B0%9C)
-- [https://tools.ietf.org/pdf/rfc3875.pdf](https://tools.ietf.org/pdf/rfc3875.pdf)
-- [https://www.oreilly.com/openbook/cgi/ch01_01.html](https://www.oreilly.com/openbook/cgi/ch01_01.html)
-- [http://lnr.irb.hr/ebooks/1575211416/ch17.htm](http://lnr.irb.hr/ebooks/1575211416/ch17.htm)
-- [http://www.whizkidtech.redprince.net/cgi-bin/tutorial](http://www.whizkidtech.redprince.net/cgi-bin/tutorial)
-- [https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html](https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html)
+- <a href="https://httpwg.org/" target="_blank">The IETF HTTP Working Group</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Messages" target="_blank">MDN - HTTP 메시지</a>
+- <a href="https://evan-moon.github.io/2019/11/10/header-of-tcp/" target="_blank">TCP의 헤더에는 어떤 정보들이 담겨있는걸까?</a>
+- <a href="https://www.oreilly.com/library/view/http-the-definitive/1565925092/ch04s01.html" target="_blank">O'Reilly - TCP Connections
+  </a>
+- <a href="https://medium.com/webeveloper/http-요청과-응답-2209bc82f239" target="_blank">HTTP 요청과 응답</a>
+- <a href="http://www.ktword.co.kr/abbr_view.php?m_temp1=1829" target="_blank">정보통신기술용어해설 - Proxy 프록시, 프락시</a>
+- <a href="https://bohemihan.tistory.com/entry/3일차-8-활용-CGI-소개" target="_blank">CGI 소개</a>
+- <a href="https://tools.ietf.org/pdf/rfc3875.pdf" target="_blank">The Common Gateway Interface (CGI) Version 1.1</a>
+- <a href="https://www.oreilly.com/openbook/cgi/ch01_01.html" target="_blank">O'Reilly - The Common Gateway Interface (CGI)</a>
+- <a href="http://lnr.irb.hr/ebooks/1575211416/ch17.htm" target="_blank">Combining JavaScript, CGI, and SSI</a>
+- <a href="http://www.whizkidtech.redprince.net/cgi-bin/tutorial" target="_blank">CGI Programming Is Simple!</a>
+- <a href="https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html" target="_blank">[OS] 프로세스와 스레드의 차이</a>
 
 </div>

@@ -110,3 +110,16 @@
 .small {
   font-size: 14px;
 }
+
+// 용어 정리
+details {
+  summary {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+    &::before {
+      content: '🔍  ';
+    }
+  }
+}

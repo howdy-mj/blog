@@ -91,7 +91,7 @@ indent_size = 2
 - `end_of_line`: 'lf', 'cr', 'crlf'중 하나로 줄바꿈 설정
 
   <details>
-    <summary>🔍 용어: LF, CR, CRLF</summary>
+    <summary>용어: LF, CR, CRLF</summary>
     <ul style="font-size: 14px;">
         <li><span style="font-weight: bold;">LF(Line Feed, \n)</span>: 커서를 다음 줄로 이동</li>
         <li><span style="font-weight: bold;">CR(Carriage Return, \r)</span>: 현재 커서를 줄 바꿈 없이 가장 좌측으로 이동</li>

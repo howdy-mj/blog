@@ -148,7 +148,7 @@ export default class TrailsExample extends React.PureComponent {
 ```
 
 ```css
-// css
+/** css */
 .box {
   cursor: pointer;
   position: relative;
@@ -232,7 +232,7 @@ export default class App extends React.PureComponent {
 ```
 
 ```css
-// css
+/** css */
 .reveals-main {
   width: 100%;
   height: 100%;

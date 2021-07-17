@@ -9,6 +9,8 @@ draft: false
 마지막 업데이트: 2020.08.27
 </div>
 
+<br />
+
 > 최초의 인터넷은 단순한 정보 전달만 가능했지만 점차 서로 정보를 교환할 수 있게 되었고, 최근은 개인 맞춤형 콘텐츠 및 서비스 제공 시대까지 이르렀다. 이러한 인터넷의 발전에 따라 웹의 동작 원리도 바뀌었다.
 
 ## Web이란?
@@ -19,29 +21,30 @@ draft: false
 2. 해당 공간의 위치(주소) ex. URL
 3. 해당 문서나 자원에 접근하는 프로토콜 ex. HTTP
 
-  <details>
-    <summary style="font-weight: bold;">프로토콜</summary>
-    <div style="font-size: 14px;">
-    프로토콜은 5개의 계층으로 나뉘는데, 위로 갈수록 사용자(클라이언트)와 가까운 작업을, 아래로 갈수록 기계와 가까운 작업을 담당한다.
+<div style="margin-top: 20px; font-size: 15px;">
+  <p>
+    <strong>*프로토콜</strong>
+    <span>: 프로토콜은 5개의 계층으로 나뉘는데, 위로 갈수록 사용자(클라이언트)와 가까운 작업을, 아래로 갈수록 기계와 가까운 작업을 담당한다.</span>
+  </p>
 
-![](./images/protocol.png)
+  <div class="img-div" style="width: 450px">
+    <img src="./images/protocol.png" />
+  </div>
 
-    <ol>
-        <li><span style="font-weight: bold;">애플리케이션 계층</span>: 서버와 클라이언트의 통신. ex. HTTP, SMTP, POP3, FTP 등</li>
-        <li><span style="font-weight: bold;">통신 계층</span>: 데이터를 확실히 송/수신하기 위해 작동. 데이터를 `패킷`이라는 단위로 나누어 보내고, 이를 다시 조립하여 원래 데이터로 만듬. ex. TCP, UDP</li>
-        <li><span style="font-weight: bold;">네트워크 계층</span>: 수신측 컴퓨터까지 데이터를 전달하기 위해 작동. 전달된 데이터의 손상 여부나 수신측이 잘 받았는지에 대해서는 관여하지 않음 ex. IP</li>
-        <li><span style="font-weight: bold;">데이터 링크 계층</span>: 네트워크에 직접 연결된 기기 간을 전송할 수 있도록 만듬. ex. Ethernet, PPP 등</li>
-        <li><span style="font-weight: bold;">물리 계층</span>: 데이터를 신호로, 신호를 데이터로 변환.</li>
-    </ol>
+  <ol>
+    <li><span style="font-weight: bold;">애플리케이계층</span>: 서버와 클라이언트의 통신. ex. HTTP, SMTP, POP3, FTP 등</li>
+    <li><span style="font-weight: bold;">통신 계층</span>: 데이터를 확실히 송/수신하기 위해 작동. 데이터`패킷`이라는 단위로 나누어 보내고, 이를 다시 조립하여 원데이터로 만듬. ex. TCP, UDP</li>
+    <li><span style="font-weight: bold;">네트워계층</span>: 수신측 컴퓨터까지 데이터를 전달하기 위작동. 전달된 데이터의 손상 여부나 수신측이 잘 받았는지대해서는 관여하지 않음 ex. IP</li>
+    <li><span style="font-weight: bold;">데이터 링계층</span>: 네트워크에 직접 연결된 기기 간을 전송할 있도록 만듬. ex. Ethernet, PPP 등</li>
+    <li><span style="font-weight: bold;">물리 계층</span>: 데이터를 신호로, 신호를 데이터로 변환.</li>
+  </ol>
 
 이 다섯 가지의 프로토콜을 조합하면 다양한 애플리케이션이나 기기를 처리할 수 있다.
 
-    </div>
-
-  </details>
+</div>
 
 <details>
-  <summary>🔍 용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
+  <summary>용어: 하이퍼텍스트, HTML, URL, HTTP</summary>
   <ul style="font-size: 14px;">
       <li><span style="font-weight: bold;">하이퍼텍스트(HyperText)</span>: 한 문서에서 다른 문서의 위치 정보를 심어서 양쪽을 연결해주는 텍스트</li>
       <li><span style="font-weight: bold;">HTML(HyperText Language)</span>: 웹을 위한 마크업*(태그 등을 이용해 문서나 데이터 구조를 명기하는 언어 중 하나)* 언어</li>
@@ -69,7 +72,7 @@ draft: false
 - 2010년 이후, PC 뿐만이 아니라, 모바일, 태블릿 등 1인 1단말기가 보편화 되면서 개인화, 맞춤화 등의 인식이 생겼다. 컴퓨터 역시 시맨틱 웹(Semantic Web) 기술을 이용해 웹 페이지에 담긴 내용을 이해하고 사용자에게 맞춤형 콘텐츠 및 서비스를 제공할 수 있게 되었다.
 
   <details>
-      <summary>🔍 용어: 시맨틱 웹</summary>
+      <summary>용어: 시맨틱 웹</summary>
       <ul style="font-size: 14px;">
           <li>시맨틱: 페이지의 태그를 통해 의미 부여를 할 수 있는 기능</li>
           <li>시맨틱 웹은 '의미론적인 웹'이라는 뜻으로, 인터넷 상의 리소스(웹 문서, 파일, 서비스 등)에 대한 정보와 자원 사이의 정보를 기계가 처리할 수 있는 온톨로지 형태로 표현하고, 이를 자동화된 기계(컴퓨터)가 처리하도록 하는 프레임워크이자 기술이다.</li>
@@ -139,7 +142,7 @@ draft: false
 여기서 알 수 있듯이, Web Server와 WAS의 가장 큰 차이는 동적 데이터(비즈니스 로직) 처리 가능 여부이다.
 
 <details>
-    <summary>🔍 용어: 비즈니스 로직(Business Logic)</summary>
+    <summary>용어: 비즈니스 로직(Business Logic)</summary>
     <ul style="font-size: 14px;">
         <li>동적 데이터 생성 및 작업</li>
         <li>클라이언트가 원하는 데이터를 보여주기 위해, 데이터베이스에 연결, 생성, 변경, 저장하는 작업</li>
@@ -184,7 +187,7 @@ CGI는 하나의 요청을 하나의 프로세스를 생성해서 처리한다. 
 반면 WAS는 동일 페이지에 대한 요청이 여러 개인 경우 1개의 프로세스에 요청된 개수만큼 스레드가 생성되어 처리하기 때문에 메모리 절약이 가능하다.
 
   <details>
-    <summary>🔍 용어: 프로세스, 스레드</summary>
+    <summary>용어: 프로세스, 스레드</summary>
     <ul style="font-size: 14px;">
         <li><span style="font-weight: bold;">프로세스(Process)</span>: 컴퓨터에서 연속적으로 실행되고 있는 프로그램</li>
         <li><span style="font-weight: bold;">스레드(Thread):</span>: 프로세스 내에서 실행되는 여러 흐름의 단위</li>
@@ -205,7 +208,7 @@ CGI는 하나의 요청을 하나의 프로세스를 생성해서 처리한다. 
 공식 홈페이지에 `Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임` 이라고 나와 있다.
 
 <details>
-    <summary>🔍 용어: V8, JavaScript 엔진, 런타임</summary>
+    <summary>용어: V8, JavaScript 엔진, 런타임</summary>
     <ul style="font-size: 14px;">
         <li>V8: C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 웹어셈블리(C/C++을 웹에서 동작할 수 있도록 컴파일) 엔진</li>
         <li>JavaScript 엔진: 자바스크립트를 해석하고 실행하는 프로그램 또는 언어</li>

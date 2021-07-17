@@ -148,7 +148,7 @@ root 폴더에 `.babelrc`를 만들어서 아래와 같이 작성하자.
 ```
 
 <details>
-  <summary>🔍  <strong>development, production에 따른 babel 세팅</strong></summary>
+  <summary>development, production에 따른 babel 세팅</summary>
 
 ```json
 {
