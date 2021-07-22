@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.21
+마지막 업데이트: 2021.07.22
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -16,6 +16,8 @@ draft: false
 자바스크립트, 타입스크립트 좋은 글 or 사이트 모음
 
 ## JavaScript
+
+- <a href="https://rinae.dev/posts/how-javascript-works-summary" target="_blank">'자바스크립트는 왜 이모양인가' 읽기</a>
 
 ### Trend
 

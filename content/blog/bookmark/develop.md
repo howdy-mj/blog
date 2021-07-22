@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.04.27
+마지막 업데이트: 2021.07.22
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -33,6 +33,7 @@ draft: false
 - <a href="https://csbooks.wisedog.net/" target="_blank">부트캠퍼를 위한 컴퓨터 과학</a>
 - <a href="https://www.notion.so/CONNECT-DEV-000045ea17d94055b8a535fd7319a1db" target="_blank">CONNECT DEV - 웹/앱 개발을 위한 전반적인 지식을 정리하기 위한 위키</a>
 - <a href="https://www.grabbing.me/IT-A-to-Z-By-1e1fbc981b7c4c03ac44943085ac8304" target="_blank">[IT 개발자와 일할 때 필요한 모든 개발지식] A to Z 자료 모음집 By 그랩</a>
+- <a href="https://github.com/gyoogle/tech-interview-for-developer" target="_blank">신입 개발자 전공 지식 & 기술 면접 백과사전</a>
 
 <p>해외</p>
 

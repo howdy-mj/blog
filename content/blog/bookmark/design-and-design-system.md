@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.03
+마지막 업데이트: 2021.07.22
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -14,6 +14,8 @@ draft: false
 <br />
 
 프론트엔드 개발자가 참고하면 좋을 디자인, 디자인 시스템 관련 글, 사이트 모음
+
+- <a href="https://www.notion.so/zagmaster/Cue-ration-1d738d06be06465ba03f7ae93ddbf9d3" target="_blank">Cue-ration</a>
 
 ## 색상
 
@@ -54,6 +56,8 @@ draft: false
 - <a href="https://www.designwizard.com/blog/design-trends/colour-combination" target="_blank">75 Of The Coolest Color Combinations For 2021</a>
 
 - <a href="https://dribbble.com/" target="_blank">Dribble - Discover the world's top designers & creatives</a>
+
+- <a href="https://www.notefolio.net/" target="_blank">노트폴리오 - 크리에이티브 네트워크</a>
 
 ## 디자인 가이드
 

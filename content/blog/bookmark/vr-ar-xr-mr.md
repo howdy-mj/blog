@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.06.20
-</div> -->
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.07.22
+</div>
 
 <!-- - <a href="" target="_blank"></a> -->
 
@@ -46,5 +46,10 @@ VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 �
 ## 예시
 
 - <a href="https://immersive-web.github.io/webxr-samples/" target="_blank">WebXR Sample Pages</a>
+
+## 관련 블로그
+
+- <a href="https://localjoost.github.io/" target="_blank">
+  DotNetByExample - The Next Generation</a>
 
 <!-- - <a href="" target="_blank"></a> -->

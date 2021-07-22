@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.03.03
+마지막 업데이트: 2021.07.22
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -64,6 +64,11 @@ draft: false
 ## Web & Browser
 
 - <a href="https://www.notion.so/Rendering-994f91c0b5cc493481876d04be028b76#c9ec14ab7cd648ff80dbdaaab88bc609" target="_blank">Rendering</a>
+- <a href="https://blog.rhostem.com/posts/2018-07-22-web-architecture-101" target="_blank">[번역] 웹 아키텍쳐 입문</a> (2018.07.28)
+
+### 실습
+
+- <a href="https://astexplorer.net/" target="_blank">AST Explorer</a>
 
 ## React
 

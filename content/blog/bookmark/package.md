@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.04.16
+마지막 업데이트: 2021.07.22
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -20,6 +20,8 @@ draft: false
 - <a href="https://vuejs.org/" target="_blank">Vue.js</a>
 - <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
 - <a href="https://angular.io/" target="_blank">Angular</a>
+
+- <a href="https://nx.dev/" target="_blank">Nx: Smart, Extensible Build Framework</a>
 
 ### React
 
@@ -97,3 +99,9 @@ draft: false
 - <a href="https://csslayout.io/" target="_blank">CSS Layout</a>
 - <a href="https://github.com/c9fe/exoteric" target="_blank">exoteric</a>
 - <a href="https://hacker-ui.com/" target="_blank">Hacker UI</a>
+
+## Monitoring & Error Tracking
+
+- <a href="https://sentry.io/welcome/" target="_blank">Sentry: Application Monitoring and Error Tracking Software</a>
+
+<!-- - <a href="" target="_blank"></a> -->
