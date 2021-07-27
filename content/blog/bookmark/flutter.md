@@ -5,9 +5,9 @@ category: 'bookmark'
 draft: false
 ---
 
-<!-- <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.01.20
-</div> -->
+<div style="font-size: 12px; font-style: italic; text-align: right;">
+마지막 업데이트: 2021.07.27
+</div>
 
 <!-- - <a href="" target="_blank"></a> -->
 
@@ -49,5 +49,57 @@ Flutter(플러터) 개발자가 참고하면 좋은 글, 문서, 사이트 모�
 
 - <a href="https://medium.com/flutter-community/creating-services-to-do-the-work-in-your-flutter-app-93d6c4aa7697" target="_blank">Creating services to do the work in your Flutter app
   </a>
+
+  - <a href="https://angad14723.medium.com/clean-architecture-using-getx-in-flutter-b77e398886fe" target="_blank">Clean Architecture Using GetX in Flutter.</a> (2021.02.22)
+
+  - <a href="https://medium.com/dreamwod-tech/complete-flutter-app-walkthrough-part-1-4278496698cf" target="_blank">Complete Flutter app walkthrough part 1</a> (2021.02.10)
+
+## Packages
+
+### State Management
+
+- <a href="https://pub.dev/packages/get" target="_blank">get</a> (State, Navigation, Dependencies Manager)
+
+- <a href="https://pub.dev/packages/flutter_bloc" target="_blank">flutter_bloc</a>
+
+- <a href="https://pub.dev/packages/provider" target="_blank">provider</a>
+
+### Local Storage
+
+- <a href="https://pub.dev/packages/shared_preferences" target="_blank">shared_preferences</a>
+
+### User Action
+
+- <a href="https://pub.dev/packages/pull_to_refresh" target="_blank">pull_to_refresh</a>
+
+### UI & Resource
+
+- <a href="https://pub.dev/packages/carousel_slider" target="_blank">carousel_slider</a>
+
+- <a href="https://pub.dev/packages/google_fonts" target="_blank">google_fonts</a>
+
+- <a href="https://pub.dev/packages/animated_text_kit" target="_blank">animated_text_kit</a>
+
+- <a href="https://pub.dev/packages/convex_bottom_bar" target="_blank">convex_bottom_bar</a>
+
+- <a href="https://pub.dev/packages/flutter_native_splash" target="_blank">flutter_native_splash</a>
+
+### Connect other platforms
+
+- <a href="https://pub.dev/packages/firebase_core" target="_blank">firebase_core</a>
+
+- <a href="https://pub.dev/packages/googleapis" target="_blank">googleapis</a>
+
+- <a href="https://pub.dev/packages/sign_in_with_apple" target="_blank">sign_in_with_apple</a>
+
+### Etc.
+
+- <a href="https://pub.dev/packages/flutter_local_notifications" target="_blank">flutter_local_notifications</a>
+
+- <a href="https://pub.dev/packages/url_launcher" target="_blank">url_launcher</a>
+
+- <a href="https://pub.dev/packages/location" target="_blank">location</a>
+
+- <a href="https://pub.dev/packages/intl" target="_blank">intl</a>
 
 <!-- - <a href="" target="_blank"></a> -->
