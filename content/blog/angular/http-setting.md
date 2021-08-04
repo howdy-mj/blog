@@ -5,9 +5,9 @@ category: 'angular'
 draft: false
 ---
 
-프로젝트를 초기에 api 요청 관련해서 config 파일을 만들어두면 여러모로 편리하다.
+프로젝트를 초기에 api 관련 설정 파일을 만들어두면 나중에 작업하기 편하다.
 
-Angular의 `@angular/common` 안에 http 관련 패키지가 존재하여 이를 사용하면 된다.
+Angular는 `@angular/common` 안에 있는 http 패키지를 사용하면 된다.
 
 ## 프로젝트 생성
 
@@ -24,7 +24,7 @@ $ ng serve
 $ yarn start
 ```
 
-http를 사용하기에 앞서, `src/app.module.ts`에서 <span class="variable">HttpClientModule</span>을 import 해야 한다.
+http 작업을 하기 위해 `src/app.module.ts`에서 <span class="variable">HttpClientModule</span>을 import 해야 한다.
 
 <span class="file-location">src/app.module.ts</span>
 
@@ -64,7 +64,7 @@ export class ApiService {
 }
 ```
 
-<span class="variable">Injectable</span>이기 때문에 다른 곳의 module에서 import하지 않아도 바로 사용할 수 있다.
+> <span class="variable">Injectable</span>이기 때문에 다른 module에서 import하지 않아도 바로 사용할 수 있다.
 
 <br />
 
@@ -75,7 +75,6 @@ export class ApiService {
 ```ts
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
-import { Observable } from 'rxjs'
 
 @Injectable({
   providedIn: 'root',
@@ -92,16 +91,16 @@ export class ApiService {
 <span class="file-location">src/environments/environments.ts</span>
 
 ```ts
-// test 서버
+// environment.test.ts
 export const environment = {
   production: false,
-  base_url: 'https://test.api.example.com',
+  baseUrl: 'https://test.api.example.com',
 }
 
-// production 서버
+// environment.prod.ts
 export const environment = {
   production: true,
-  base_url: 'https://api.example.com',
+  baseUrl: 'https://api.example.com',
 }
 ```
 
@@ -111,7 +110,7 @@ export const environment = {
 import { environment } from '../../environments/environment'
 // ...생략
 export class ApiService {
-  public BASE_URL = environment.base_url
+  public BASE_URL = environment.baseUrl
 }
 ```
 
@@ -151,8 +150,6 @@ export class ApiService {
   }
 }
 ```
-
-<br />
 
 Angular의 http의 return 타입은 모두 <span class="return">Observable</span>이기 때문에, 할당할 변수의 타입도 Observable로 지정해야 한다.
 
