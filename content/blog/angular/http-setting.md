@@ -5,9 +5,9 @@ category: 'angular'
 draft: false
 ---
 
-프로젝트를 초기에 api 관련 설정 파일을 만들어두면 나중에 작업하기 편하다.
+프로젝트 초기에 api 설정 파일을 만들어두면 나중에 작업하기 편하다.
 
-Angular는 `@angular/common` 안에 있는 http 패키지를 사용하면 된다.
+Angular는 `@angular/common` 안에 존재하는 http 패키지를 사용하면 된다.
 
 ## 프로젝트 생성
 
