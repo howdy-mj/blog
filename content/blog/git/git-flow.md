@@ -5,25 +5,27 @@ category: 'git'
 draft: false
 ---
 
+<div style="font-size: 12px; font-style: italic;">
+업데이트: 2021.08.22
+</div>
+
+<br>
+
 <p style="font-size: 13px; font-style: italic"><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank">Gitflow Workflow</a>을 주로 참고했으며 오역이 있을 수 있습니다. 피드백은 언제나 환영합니다!</p>
 
 ## Git flow란?
 
-Git을 사용해본 사람이라면 누구나 한 번쯤 Git flow를 들어봤을 것이다.
+Git flow는 [Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)이 만들 었으며, 규모가 큰 프로젝트 배포를 중점으로 브랜치 관리를 엄격하게 하는 모델이다.
+
+기존의 Git Workflow에서 새로운 개념이나 명령어는 없으며, 각각의 브랜치에 특정한 역할을 부여하여 체계적으로 만든 것이다.
+
+<br />
 
 ### 설치
 
 Git flow를 사용하기 위해서는 사전에 git이 설치되어야 하며, Git flow는 MacOS, Linus, Windows에서 작동된다.
 
 자신의 운영체제에 따라 설치하는 방법이 다르다. OSX 시스템에서는 `brew install git-flow`를, 윈도우는 [Git 다운](https://git-scm.com/download/win) 후, `git flow init`을 실행할 수 있다.
-
-<br />
-
-### 배경
-
-Git flow는 [Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)이 만들 었으며, 규모가 큰 프로젝트 배포를 중점으로 브랜치 관리를 엄격하게 하는 모델이다.
-
-기존의 Git Workflow에서 새로운 개념이나 명령어는 없으며, 각각의 브랜치에 특정한 역할을 부여하여 체계적으로 만든 것이다.
 
 <br />
 
@@ -34,7 +36,7 @@ Git flow에는 5가지 종류의 브랜치가 존재한다.
 <div style="text-align: center;"><img src="https://miro.medium.com/max/638/0*PRJYeVCeztuOuddN.jpg">
 <p style="font-size: 11px; color: gray;">https://medium.com/@olivier.bossel/git-flow-the-right-way-to-go-f2a65c315818</p></div>
 
-프로젝트의 히스토리를 기록하는 base 브랜치로 `master`와 `develop` 브랜치, 백업이나 협업 용으로 사용하는 `feature` 브랜치, 배포를 위해 존재하는 `release` 브랜치 그리고 제품(production) 패치(patch)를 위해 있는 `hotfix` 브랜치가 있다.
+프로젝트의 히스토리를 기록하는 base 브랜치로 `master`와 `develop` 브랜치, 백업이나 협업 용으로 사용하는 `feature` 브랜치, 배포를 위해 존재하는 `release` 브랜치 그리고 서비스를 빠르게 수정하고 업데이트해야 하기 위해 `hotfix` 브랜치가 있다.
 
 ### Master, Develop
 
@@ -84,7 +86,9 @@ $ git branch
 
 ### Feature
 
-`feature` 브랜치는 새로운 기능(feature) 추가/개발할 때 사용되며, 백업이나 협업을 위해 중앙 repository에 push 될 수 있어야 한다. 하지만 이를 `master`에 바로 업데이트 하는 것이 아니라, `develop` 브랜치를 부모 브랜치로 삼아 merge한다. `feature`는 **절대** `master` 브랜치와 바로 연결되어서는 안된다.
+`feature` 브랜치는 새로운 기능(feature) 추가/개발할 때 사용되며, 백업이나 협업을 위해 중앙 repository에 push 될 수 있어야 한다. 하지만 이를 `master`에 바로 업데이트 하는 것이 아니라, `develop` 브랜치를 부모 브랜치로 삼아 merge한다.
+
+`feature`는 **절대** `master` 브랜치와 바로 연결되어서는 안된다.
 
 <div style="text-align: center;"><img src="https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg?cdnVersion=1146">
 <p style="font-size: 11px; color: gray;">https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow</p></div>
@@ -119,8 +123,10 @@ $ git merge feature/브랜치명
 만약 git flow 확장을 쓰고 있다면,
 
 ```shell
-$ git flow feature finish feature/브랜치명
+$ git flow feature finish 브랜치명
 ```
+
+자동으로 `feature/브랜치명`으로 생성되고 해당 브랜치로 이동된다.
 
 <br />
 
@@ -178,8 +184,10 @@ $ git checkout -b hotfix/브랜치명
 만약 git flow 확장을 쓰고 있다면,
 
 ```shell
-$ git flow hotfix start hotfix/브랜치명
+$ git flow hotfix start 브랜치명
 ```
+
+`hotfix/브랜치명`으로 생성 후, 해당 브랜치로 이동된다.
 
 **hotfix 브랜치 merge**:
 
@@ -196,7 +204,7 @@ $ git branch -D hotfix/브랜치명 # merge된 브랜치 삭제
 git flow 명령어,
 
 ```shell
-$ git flow hotfix finish hotfix_branch
+$ git flow hotfix finish 브랜치명
 ```
 
 <br />
