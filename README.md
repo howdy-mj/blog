@@ -6,7 +6,6 @@
 
 [![Financial Contributors on Open Collective](https://opencollective.com/gatsby-starter-bee/all/badge.svg?label=financial+contributors)](https://opencollective.com/gatsby-starter-bee) [![Greenkeeper badge](https://badges.greenkeeper.io/JaeYeopHan/gatsby-starter-bee.svg)](https://greenkeeper.io/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JaeYeopHan/gatsby-starter-bee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JaeYeopHan/gatsby-starter-bee/alerts/)
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/gatsby-starter-bee/deploys)
 
@@ -60,6 +59,24 @@ In this template...
       <li>< Taenylog />: https://taeny.dev/</li>
       <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
       <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
+      <li>Garima's Tech Blog: https://garimasingh.netlify.app/ </li>
+      <li>DevRappers.dev: https://devrappers.dev/</li>
+      <li>Let's doodle: https://duduling-blog.netlify.app/</li>
+      <li>noopy.dev: https://noopy.dev/</li>
+      <li>Hong_Devlog: https://hong-dev.github.io/</li>
+      <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
+      <li>muse.kim: https://muse.kim/</li>
+      <li>cereme.dev: https://cereme.dev</li>
+      <li>taekki.dev: https://taekki.dev</li>
+      <li>kkh913's Developer Blog: https://kkh913.github.io</li>
+      <li>Merrily, Code: https://merrily-code.netlify.app/</li>
+      <li>jeeneee's devlog: https://jeeneee.dev</li>
+      <li>Noah's devlog: https://noah0316.github.io/</li>
+      <li>bobs log: https://undefine.me</li>
+      <li>irosyadi: https://irosyadi.netlify.app</li>
+      <li>yujolog: https://yujo11.github.io/</li>
+      <li>hexdrinker's devlog: https://hexdrinker.dev</li>
+      <li>gparkki.io: https://gparkkii.github.io/</li>
     </ul>
   </p>
 </details>
@@ -107,7 +124,12 @@ You can write...
 npm run post
 ```
 
+<<<<<<< HEAD
 👉 Use **gatsby-post-gen** (https://github.com/JaeYeopHan/gatsby-post-gen)
+=======
+👉 Use **gatsby-post-gen** (<https://github.com/JaeYeopHan/gatsby-post-gen>)
+
+> > > > > > > upstream/master
 
 ### 4. Fix meta data
 
@@ -172,7 +194,10 @@ src/styles
 - Favicon image! (replace file in `/content/assets/felog.png`)
 - Header gradient! (\$theme-gradient `/styles/variables.scss`)
 - Utterances repository! (replace repository address in `/gatsby-meta-config.js`)
-  - ⚠️ Please check, this guide(https://utteranc.es/)
+  <<<<<<< HEAD
+  - # ⚠️ Please check, this guide(https://utteranc.es/)
+  - ⚠️ Please check, this guide(<https://utteranc.es/>)
+    > > > > > > > upstream/master
 
 ## ☕ Like it?
 
@@ -180,7 +205,15 @@ src/styles
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
 </a>
 
+<<<<<<< HEAD
+
 ## 🤔 If...
+
+=======
+
+## 🤔 If
+
+> > > > > > > upstream/master
 
 If you are currently writing in the Medium, consider migration with [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
 

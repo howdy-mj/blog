@@ -1,8 +1,8 @@
 ---
 title: 'Quick Start'
-date: 2019-5-31 16:21:13
+date: 2020-07-05 17:21:13
 category: 'development'
-draft: true
+draft: false
 ---
 
 # Getting Started 😎

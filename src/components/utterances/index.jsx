@@ -4,12 +4,19 @@ import * as Dom from '../../utils/dom'
 import { THEME } from '../../constants'
 
 const src = 'https://utteranc.es/client.js'
+<<<<<<< HEAD
 const repo = 'howdy-mj/blog'
+=======
+>>>>>>> upstream/master
 const branch = 'master'
 const DARK_THEME = 'photon-dark'
 const LIGHT_THEME = 'github-light'
 
+<<<<<<< HEAD
 export const Utterences = ({ repo }) => {
+=======
+export const Utterances = ({ repo }) => {
+>>>>>>> upstream/master
   const rootElm = React.createRef()
 
   useEffect(() => {
@@ -32,5 +39,9 @@ export const Utterences = ({ repo }) => {
     rootElm.current.appendChild(utterances)
   }, [])
 
+<<<<<<< HEAD
   return <div className="utterences" ref={rootElm} />
+=======
+  return <div className="utterances" ref={rootElm} />
+>>>>>>> upstream/master
 }

@@ -37,6 +37,19 @@ export const Bio = () => (
                       Tistory
                     </a>
                   )}
+                  {social.instagram && (
+                    <a href={`https://www.instagram.com/${social.instagram}`}>
+                      Instagram
+                    </a>
+                  )}
+                  {social.medium && (
+                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
+                  )}
+                  {social.twitter && (
+                    <a href={`https://twitter.com/${social.twitter}`}>
+                      Twitter
+                    </a>
+                  )}
                   {social.facebook && (
                     <a href={`https://www.facebook.com/${social.facebook}`}>
                       Facebook
@@ -65,7 +78,7 @@ export const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/profile.png/" }) {
       childImageSharp {
         fixed(width: 72, height: 72) {
           ...GatsbyImageSharpFixed
@@ -82,6 +95,9 @@ const bioQuery = graphql`
           facebook
           linkedin
           resume
+          twitter
+          medium
+          instagram
         }
       }
     }
