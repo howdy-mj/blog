@@ -6,9 +6,12 @@ module.exports = {
   siteUrl: `https://howdy-mj.me/`,
   social: {
     github: `howdy-mj`,
-    tistory: `kim-mj`,
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
+    medium: ``,
+    twitter: ``,
+    instagram: ``,
+    tistory: `kim-mj`,
     resume: `about`,
   },
   icon: `content/assets/logo_trans.png`,
