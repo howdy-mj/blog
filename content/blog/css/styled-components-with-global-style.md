@@ -118,7 +118,7 @@ ReactDOM.render(
 const MainWrap = styled.main`
   width: 1200px;
 
-  @media ${props => props.theme.table} {
+  @media ${props => props.theme.tablet} {
     width: 100%;
     margin: 0 auto;
   }
