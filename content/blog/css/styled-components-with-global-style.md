@@ -17,13 +17,12 @@ Styled Components는 CSS-in-JS의 하나로, CSS를 하나의 컴포넌트로 �
 $ npm install --save styled-components
 ```
 
-<iframe
-     src="https://codesandbox.io/embed/styled-components-button-f89hh?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-     title="Styled-Components Button"
+<iframe src="https://codesandbox.io/embed/styled-components-intro-1tk8k?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styled-components-intro"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 Button 자체가 하나의 Component가 되어 props도 바로 넘겨줄 수 있다.
 
