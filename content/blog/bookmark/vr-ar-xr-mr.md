@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.07.22
+마지막 업데이트: 2021.09.15
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -17,13 +17,25 @@ VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 �
 
 ## Developer Docs
 
+### Web
+
+- <a href="https://doc.babylonjs.com/" target="_blank">Babylon.js</a>
+
+- <a href="https://threejs.org/" target="_blank">three.js</a>
+
+- <a href="https://aframe.io/" target="_blank">A-Frame</a>
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL API</a>
+
+- <a href="https://www.w3.org/TR/webxr/" target="_blank">WebXR Device API</a>
+
 ### VR
 
 - <a href="https://developer.oculus.com/" target="_blank">Oculus - For Developers</a>
 
 ### AR
 
-- <a href="https://sparkar.facebook.com/ar-studio/" target="_blank">Spark AR</a>
+- <a href="https://sparkar.facebook.com/ar-studio/" target="_blank">Facebook - Spark AR</a>
 
 - <a href="https://developer.apple.com/kr/augmented-reality/" target="_blank">Apple - ARKit</a>
 
@@ -41,15 +53,9 @@ VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 �
 
 - <a href="https://developer.vuforia.com/" target="_blank">Vuforia</a>
 
-### Web
+## Platforms
 
-- <a href="https://doc.babylonjs.com/" target="_blank">Babylon.js</a>
-
-- <a href="https://threejs.org/" target="_blank">three.js</a>
-
-- <a href="https://aframe.io/" target="_blank">A-Frame</a>
-
-- <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" target="_blank">WebGL API</a>
+- <a href="https://www.nvidia.com/en-us/omniverse/" target="_blank">NVIDIA OMNIVERSE</a>
 
 ## 예시
 
