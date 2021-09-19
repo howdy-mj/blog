@@ -5,9 +5,9 @@ category: 'general'
 draft: false
 ---
 
-<span class="definition">정규표현식(Regular Expression)</span>은 일정한 패턴을 가진 문자열의 집할을 표현하기 위해 사용하는 형식 언어(Formal Language: <span class="small">특정 법칙에 따라 적절하게 구성된 문자열들의 집합</span>)다.
+<span class="definition">정규표현식(Regular Expression)</span>은 일정한 패턴을 가진 문자열의 집할을 표현하기 위해 사용하는 형식 언어<span class="small">(Formal Language: 특정 법칙에 따라 적절하게 구성된 문자열들의 집합)</span>다.
 
-쉽게 말해, 해당 문자열이 어떠한 패턴을 갖고 있는지 여부를 알려준다. 주로 이메일, 비밀번호, 휴대폰번호 등의 패턴이 맞는지 확인할 때 사용한다.
+쉽게 말해, 내가 작성한 값이 어떠한 패턴을 준수하고 있는지를 알려준다. 주로 이메일, 비밀번호, 휴대폰번호 등의 패턴이 맞는지 확인할 때 사용한다.
 
 <a href="https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects" target="_blank">ECMAScript 262</a>에서도 정규표현식 객체를 정의하고 있으며, 정규표현식 리터럴과 RegExp 생성자 함수로 생성할 수 있다.
 
@@ -356,7 +356,7 @@ const onlyAlphabetRegExp = /^[a-zA-Z]+$/
 // 특수문자로만 이루어진 패턴
 const symbolRegExp = /[^a-zA-Z0-9]/
 
-// 특정 확장자 파일 (ex. )
+// 특정 확장자 파일 (ex. tx, tsx, js, jsx 확장자)
 const fileTypeRegExp = /^[\S]+\.(ts|tsx|js|jsx)$/
 ```
 
