@@ -7,7 +7,7 @@ lang: 'ko'
 # 김민정 (MJ KIM)
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.06.03
+마지막 업데이트: 2021.10.01
 </div>
 
 **저는 `______` 프론트개발자 입니다.**
@@ -15,29 +15,27 @@ lang: 'ko'
 1. 좋은 코드, 간결한 코드를 작성하려는
 2. 공부하는 것을 좋아하고 기록하고 공유하는
 3. 협업과 커뮤니티를 좋아하는
-4. 어떤 사람이 되고 싶은지 고민하고 그런 사람이 되기 위해 노력하는
 
 **저는 `______` 조직을 선호합니다.**
 
 1. 언제나 투명하고 솔직한 의사소통이 이루어지는
-2. 구성원 간 신뢰를 기반으로 자율적으로 일하는
-3. 불필요한 커뮤니케이션을 줄여 효율적으로 움직이는
-4. 한 명이 앞서 나가는 것보다 다 같이 성장하는
+2. 불필요한 커뮤니케이션을 줄여 효율적으로 움직이는
+3. 한 명이 앞서 나가는 것보다 다 같이 성장하는
 
 |                  |                               |
 | ---------------: | ----------------------------- |
 |       **GitHub** | <https://github.com/howdy-mj> |
-|    **Tech Blog** | <https://howdy-mj.me/>        |
+|    **Tech Blog** | <https://www.howdy-mj.me/>    |
 | **General Blog** | <https://kim-mj.tistory.com/> |
 |        **Email** | <hi.minjungkim@gmail.com>     |
 
 <br />
 
-# Experience
+# Work Experience
 
 ## 비브로스
 
-간편 병원 예약접수 서비스 | 21.03 - 재직중 | Frontend Developer
+간편 병원 예약접수 서비스 / 21.03 - 재직중 / Frontend Developer
 
 ```txt
 Angular, RxJS, TypeScript, SCSS
@@ -45,11 +43,11 @@ React, TypeScript, Redux, redux-toolkit, styled-components, Storybook
 ```
 
 - 병원 어드민 유지보수 및 개발
-- Jira, Confluence, Jandi
+- Confluence, Jandi, Notion
 
 ## 로켓메이커스
 
-스타트업 전문 개발사 | 20.11 - 21.03 | Frontend Developer / Project Manager
+SI / 20.11 - 21.03 / Frontend Developer & Project Manager
 
 ```txt
 Next.js, TypeScript, MobX, styled-components, PWA, Storybook
@@ -57,13 +55,13 @@ Next.js, TypeScript, MobX, styled-components, PWA, Storybook
 
 - 내부 UI 컴포넌트 유지보수 및 개발
 - Storybook을 활용하여 디자인 시스템 구축
-- 각 프로젝트의 프론트엔드 개발
+- 프로젝트 프론트엔드 개발
 - 클라이언트, 개발자, 디자이너와 소통하며 프로젝트 일정 조율
 - Notion, Slack
 
 ## 루트에너지(Rootenergy)
 
-재생에너지 크라우드 펀딩 플랫폼 | 20.08 - 20.11 | Frontend Developer
+재생에너지 크라우드 펀딩 플랫폼 / 20.08 - 20.11 / Frontend Developer
 
 ```txt
 React, TypeScript, Redux, Rematch, SCSS, Storybook
@@ -75,7 +73,7 @@ React, TypeScript, Redux, Rematch, SCSS, Storybook
 
 ## 플랜즈 커피(Planz Coffee)
 
-자동화 음료 리테일 서비스 | 20.05 - 20.06 | Frontend Developer (Intern)
+자동화 음료 리테일 서비스 / 20.05 - 20.06 / Frontend Developer (Intern)
 
 - webpack으로 icon 크기 최적화 번들링 작업
 - Storybook으로 Icon, Font 구축 및 배포
@@ -83,7 +81,7 @@ React, TypeScript, Redux, Rematch, SCSS, Storybook
 
 ## BRPartners
 
-블록체인 컨설팅 | 18.10 - 20.01 | Manager
+블록체인 컨설팅 / 18.10 - 20.01 / Manager
 
 - 블록체인 프로젝트 검토 및 보고서 작성
 - 암호화폐 거래소 시장 조사 및 기획
@@ -95,13 +93,32 @@ React, TypeScript, Redux, Rematch, SCSS, Storybook
 
 # Side Project
 
+<h3 style="text-decoration: underline;">Personal</h3>
+
+### Trading-log(티록)
+
+코인 매매 일지 (~ing)
+
+- React, TypeScript, Redux, emotion / Firebase / Vercel
+- [Github](https://github.com/howdy-mj/trading-log)
+
+### is-validated
+
+Validation 라이브러리 (~ing)
+
+- [Github](https://github.com/howdy-mj/is-validated), [npm](https://www.npmjs.com/package/is-validated)
+
+<br>
+
+<h3 style="text-decoration: underline;">Team</h3>
+
 ### BFRun
 
 웹 개발 입문자가 보면 좋을 유명 크리에이터분들의 동영상(유튜브) 모음 사이트
 
 - 2020.06.23 - 2020.07.17 (기획 및 디자인 1주, 개발 3주)
-- JavaScript, Next.js, React, React Hooks, react-router, Styled-Component
-- [BFRun - github](https://github.com/one-iron/BFRun)
+- Next.js, JavaScript, styled-components
+- [Github](https://github.com/one-iron/BFRun)
 
 <br />
 
@@ -110,8 +127,8 @@ React, TypeScript, Redux, Rematch, SCSS, Storybook
 국내 암호화폐 거래소 지닥 클론
 
 - 2020.05.11 - 2020.05.22 (약 2주)
-- JavaScript, React, React Hooks, react-router, Styled-Component, Redux
-- [wedac - github](https://github.com/howdy-mj/wedac-frontend), [youtube](https://youtu.be/LdF1LG_R4Uo)
+- React, JavaScript, Redux, styled-components
+- [Github](https://github.com/howdy-mj/wedac-frontend), [Youtube](https://youtu.be/LdF1LG_R4Uo)
 
 <br />
 
@@ -120,8 +137,12 @@ React, TypeScript, Redux, Rematch, SCSS, Storybook
 카페 폴 바셋 클론
 
 - 2020.04.20 - 2020.05.01 (약 2주)
-- JavaScript, React(Class), react-router, SCSS
-- [Paulba3 - github](https://github.com/howdy-mj/PaulBa3-frontend), [youtube](https://youtu.be/a1vKyWHA8pE)
+- React(Class), JavaScript, SCSS
+- [Github](https://github.com/howdy-mj/PaulBa3-frontend), [Youtube](https://youtu.be/a1vKyWHA8pE)
+
+# Etc.
+
+- 패스트캠퍼스: 시크릿코드 프론트엔드 실무 완성편 MobX 강의
 
 <br />
 
