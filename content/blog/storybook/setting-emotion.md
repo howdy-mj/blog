@@ -144,7 +144,9 @@ export default {
   <p>Uncaught TypeError: Cannot read properties of undefined (reading 'content')</p>
 </div>
 
-해당 버전의 Storybook에서는 `@storybook/addon-essentials` 안에 `@storybook/addon-docs`가 포함되어 있다. 그리고 addon-docs의 package.json을 보니 emotion 버전이 10이었다. (<a href="https://github.com/storybookjs/storybook/blob/next/addons/docs/package.json#L108:L109" target="_blank">참조</a>)
+해당 버전의 Storybook에서는 `@storybook/addon-essentials` 안에 `@storybook/addon-docs`가 포함되어 있다. 그리고 addon-docs의 package.json을 보니 emotion을 보니 `@emotion/core 10.1.1` 버전이었다. (<a href="https://github.com/storybookjs/storybook/blob/next/addons/docs/package.json#L108:L109" target="_blank">참조</a>)
+
+따라서 스토리북이 구동할 때 필요한 패키지가 무엇인지 알려줘야 한다. 그리고 그 일을 도와주는 것이 <span class="return">resolve</span>의 역할이다.
 
 ### webpackFinal
 
