@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 12px; font-style: italic; text-align: right;">
-마지막 업데이트: 2021.09.15
+마지막 업데이트: 2021.10.24
 </div>
 
 <!-- - <a href="" target="_blank"></a> -->
@@ -41,6 +41,10 @@ VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 �
 
 - <a href="https://developers.google.com/ar" target="_blank">Google - ARCore</a>
 
+### XR
+
+- <a href="https://www.khronos.org/openxr/" target="_blank">OpenXR</a>
+
 ### MR
 
 - <a href="https://docs.microsoft.com/ko-kr/windows/mixed-reality/" target="_blank">Microsoft - Mixed Reality</a>
@@ -57,13 +61,23 @@ VR(가상현실), AR(증강현실), XR(확장현실), MR(융합현실) 관련 �
 
 - <a href="https://www.nvidia.com/en-us/omniverse/" target="_blank">NVIDIA OMNIVERSE</a>
 
-## 예시
+- <a href="https://hubs.mozilla.com/" target="_blank">Hubs - mozilla</a>
+
+## Examples
 
 - <a href="https://immersive-web.github.io/webxr-samples/" target="_blank">WebXR Sample Pages</a>
 
-## 관련 블로그
+## 관련 자료
+
+### 글
 
 - <a href="https://localjoost.github.io/" target="_blank">
   DotNetByExample - The Next Generation</a>
+
+- <a href="https://01.org/blogs/darktears/2019/rendering-immersive-web-experiences-threejs-webxr" target="_blank">RENDERING IMMERSIVE WEB EXPERIENCES WITH THREE.JS AND WEBXR</a>
+
+### 영상
+
+- <a href="https://www.youtube.com/watch?v=bUk87y2VgCk" target="_blank">#2 윤석찬 / Mozilla Hubs를 통한 WebXR (가상현실) 구현하기</a>
 
 <!-- - <a href="" target="_blank"></a> -->
