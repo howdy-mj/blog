@@ -1,19 +1,12 @@
 .about {
-  h1 {
-    border-left: 12px solid #0f6ae5;
-    padding-left: 8px;
-    padding-bottom: 0px;
-    line-height: 1.05;
-  }
-
   h2 {
-    position: relative;
     display: inline-block;
+    margin-top: 1rem;
     &::after {
       position: absolute;
       display: inline-block;
       top: 0;
-      right: -14px;
+      right: -18px;
       width: 12px;
       height: 12px;
       border-radius: 50%;
