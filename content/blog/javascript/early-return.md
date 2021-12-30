@@ -13,7 +13,7 @@ draft: false
 
 ### Early return
 
-Early return은 조건과 맞지 않는 결과를 일찍 반환하는 것이다. 그래서 `if/else` 대신 `if/return`을 사용한다. 
+Early return은 조건과 맞지 않는 결과를 일찍 반환하는 것이다. 그래서 `if/else` 대신 `if/return`을 사용한다.
 
 #### 장점
 
@@ -22,11 +22,13 @@ Early return은 조건과 맞지 않는 결과를 일찍 반환하는 것이다.
 
 <br />
 
-기존 회원에게는 5% 할인 쿠폰을, 오늘 이후에 가입한 회원에게 신규회원 이벤트 팝업을 띄워준다고 가정해보자.
+기존 회원에게는 5% 할인 쿠폰을, 오늘 이후에 가입한 회원에게 신규회원 이벤트 팝업을 띄워주는 조건문을 만들어보자.
 
 ```js
-const openEventPopup = score => {
-  if (userCreatedDate - new Date() < 0) {
+const openEventPopup = () => {
+  const isCreatedBeforeEventUser = userCreatedDate - new Date() < 0
+
+  if (isCreatedBeforeEventUser) {
     return <DiscountCouponModal />
   } else {
     return <NewbieEventModal />
@@ -34,13 +36,16 @@ const openEventPopup = score => {
 }
 ```
 
-만약 서비스를 갓 오픈 한 곳이라면, 신규 회원이 많을 테지만 그 반대라면 대부분이 기존 회원일 것이다. 따라서 위의 코드는 불필요한 일을 여러 번 반복하는 꼴이다.
+이는 주로 운영한지 오래 되어 신규 회원보다 기존 회원이 더 많을 경우에 사용한다.
 
-따라서, 신규 회원 팝업을 early return 하는 것이 좋다.
+만약 서비스를 갓 오픈 하여 기존 회원보다 신규 회원이 더 많을 경우, 위의 코드는 불필요한 일을 여러 번 반복하는 꼴이다. 따라서, 신규 회원 팝업을 early return 하는 것이 좋다.
 
 ```js
-const openEventPopup = score => {
-  if (new Date() -  userCreatedDate < 0) {
+// 기존 회원보다 신규 회원이 더 많을 경우
+const openEventPopup = () => {
+  const isCreatedAfterEventUser = new Date() - userCreatedDate < 0
+
+  if (isCreatedAfterEventUser) {
     return <NewbieEventModal />
   }
   return <DiscountCouponModal />
@@ -55,9 +60,9 @@ const getRoom = (userGender, category) => {
   if (!gender.includes(userGender)) {
     return '성별을 입력해주세요'
   }
-  
-  const isMale = userGender === 'male';
-  const isFemale = userGender === 'female';
+
+  const isMale = userGender === 'male'
+  const isFemale = userGender === 'female'
 
   if (isMale) {
     if (category) {
@@ -101,7 +106,6 @@ const updateName = name => {
   }
 }
 ```
-
 
 <br />
 
