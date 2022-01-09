@@ -112,7 +112,7 @@ document.getElementById('reset').addEventListener('click', () => {
 
 위의 코드에서, `Make Red` 버튼을 누르면 박스에 trigger라는 글자가 생기도록하는 로직만 추가했다.
 
-```jsx
+```js
 const observer = new MutationObserver(mutations => {
   console.log('mutations', mutations)
 
@@ -139,8 +139,10 @@ console을 보면 왜 이렇게 나오는지 알 수 있는데, 이는 빨간색
 
 따라서 객체에 필요없는 이벤트는 관찰하면 안되고, 우리가 원하는 순서대로 실행이 보장되어야 한다. 그래서 **ReactiveX(Rx)**가 나왔다고 생각된다.
 
-> <a href="https://reactivex.io/intro.html">ReactiveX</a> is a library for composing asynchronous and event-based programs by using observable sequences.
-> It extends the observer pattern to support sequences of data and/or events and adds operators that allow you to compose sequences together declaratively
+> <a href="https://reactivex.io/intro.html" target="_blank">ReactiveX</a> is a library for composing asynchronous and event-based programs by using observable sequences.
+> It extends the observer pattern to support sequences of data and/or events and adds operators that allow you to compose sequences together declaratively...
+> 
+> ReactiveX는 옵저버블 순서를 이용하여 비동기와 이벤트 기반 프로그램을 조합하는 라이브러리다. observer 패턴을 확장하여 데이터 및/또는 이벤트의 순서를 지원하고 선언적으로 순서를 조합할 수 있는 오퍼레이터를 추가해준다.
 
 ## React와 RxJS
 
@@ -150,7 +152,15 @@ React도 state의 변화를 감지하고 UI를 업데이트하기 때문에 ‘R
 > <i>(중략)</i>
 > There is an internal joke in the team that React should have been called “Schedule” because React does not want to be fully “reactive”.
 
-<p class="small" style="text-align: right; margin-bottom: 20px;">출처: <a href="https://reactjs.org/docs/design-principles.html#scheduling" target="_blank">React Design Principles</a></p>
+<p class="small" style="text-align: right; margin-bottom: 10px;">출처: <a href="https://reactjs.org/docs/design-principles.html#scheduling" target="_blank">React Design Principles</a></p>
+
+<details style="margin-bottom: 20px">
+  <summary>용어: pull, push</summary>
+  <ul class="small">
+    <li>pull: Function, iterator 등 대부분의 자바스크립트 함수는 모두 pull 방식으로, 받은 값을 리턴하는 방식을 뜻한다.</li>
+    <li>push: Promise와 Observalbe처럼 이벤트를 발생시켜 데이터를 변경하는 방식을 뜻한다.</li>
+  </ul>
+</details>
 
 React의 `setState()` UI가 바뀌어야만 할 때 사용하는 비동기 메서드로 pull 방식이다. 동시에 React는 glue 코드<span class="small">(\*호환되지 않는 코드를 실행하기 위한 코드)</span>가 되고 싶다고 표명했다. 아마 UI를 렌더링하기 위해 유저들이 최소한의 코드만을 작성하는 것을 뜻하는 것 같다. _(단, 최근 Svelte의 등장으로 React가 어떻게 바뀔 지 모르겠다)_
 
@@ -162,7 +172,7 @@ React의 `setState()` UI가 바뀌어야만 할 때 사용하는 비동기 메�
 
 Hooks는 어떤 컴포넌트에 묶여있는 state인 반면, Observables는 독립적으로 존재하는 객체다.
 
-Hooks로도 promises, async iterators, throttling, debouncing 등 비동기 이벤트를 처리할 수 있지만, Observables처럼 여러 개의 비동기 이벤트들을 다룰 수 없다.
+Hooks로도 promises, async iterators, throttling, debouncing 등 비동기 이벤트를 처리할 수 있지만, Observables처럼 여러 개의 비동기 이벤트들을 한 번에 다룰 수 없다.
 
 ```jsx
 new Observable(() => {
@@ -182,7 +192,7 @@ useEffect(() => {
 
 이 둘은 비슷한 형태의 API를 갖고 있는데, 가장 큰 차이점은 아래와 같다.
 
-Observables은 어떤것을 명백하게 구독할 때까지 이벤트의 실행을 미루며, state가 하고 있던 것을 처리한다. 반면, useEffect는 React의 렌더가 될때까지 이벤트의 실행을 미루고, state를 관련되어 있는 컴포넌트에 묶는다. 또한, useEffect는 값을 방출하지 않지만, Observables은 변경된 값을 push하여 호출한 구독자에게 알려준다(여기서 사이드 이펙트가 일어날 수 있다).
+Observables은 어떤것을 명백하게 구독할 때까지 이벤트의 실행을 미루며, state가 하고 있던 것을 처리한다. 반면, useEffect는 React의 렌더가 될때까지 이벤트의 실행을 미루고, state를 관련되어 있는 컴포넌트에 바인딩한다. 또한, useEffect는 값을 방출하지 않지만, Observables은 변경된 값을 push하여 호출한 구독자에게 알려준다(여기서 사이드 이펙트가 일어날 수 있다).
 
 Observable은 React에 속한 것이 아니기 때문에, 그 값을 자동으로 컴포넌트에 묶을 수 없다. 반면, Hooks는 여러 개의 이벤트를 trigger하여 발동되도록 조작하기 어렵다. 따라서 해당 기능들이 필요한 곳에 적재적소하게 사용할 줄 알아야 한다.
 
