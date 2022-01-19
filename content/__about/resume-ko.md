@@ -30,7 +30,7 @@ lang: 'ko'
 
 <br>
 
-저에 대해 더 알고 싶으시다면, <a href="https://docs.google.com/document/d/1QgEXvEF7vkXTqaAr-O9NWSEO4A-Yq7K4On3tVHW25dc/edit#" target="_blank">이력서</a>를 참고해주세요.
+저에 대해 더 알고 싶으시다면, <a href="https://howdy-mj-resume.vercel.app/" target="_blank">이력서</a>를 참고해주세요.
 
 항상 열려있습니다.
 
