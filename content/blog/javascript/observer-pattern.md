@@ -44,7 +44,7 @@ GoF 디자인 패턴은 객체지향을 기반으로 23개의 디자인 패턴�
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-Observer 아래의 `Start`와 `Disconnect` 버튼으로 관찰할지 말지를 결정할 수 있으며, Target 박스 아래의 버튼으로 박스의 속성을 변경할 수 있다. 로직은 아래와 같다.
+Observer 아래의 `Start`와 `Disconnect` 버튼으로 객체(_여기서는 박스_)를 관찰할지 말지를 결정할 수 있으며, Target 박스 아래의 버튼으로 박스의 속성을 변경할 수 있다. 로직은 아래와 같다.
 
 ```js
 // observe할 대상 node, 해당 예시에서는 박스
@@ -141,7 +141,7 @@ console을 보면 왜 이렇게 나오는지 알 수 있는데, 이는 빨간색
 
 > <a href="https://reactivex.io/intro.html" target="_blank">ReactiveX</a> is a library for composing asynchronous and event-based programs by using observable sequences.
 > It extends the observer pattern to support sequences of data and/or events and adds operators that allow you to compose sequences together declaratively...
-> 
+>
 > ReactiveX는 옵저버블 순서를 이용하여 비동기와 이벤트 기반 프로그램을 조합하는 라이브러리다. observer 패턴을 확장하여 데이터 및/또는 이벤트의 순서를 지원하고 선언적으로 순서를 조합할 수 있는 오퍼레이터를 추가해준다.
 
 ## React와 RxJS
@@ -149,7 +149,7 @@ console을 보면 왜 이렇게 나오는지 알 수 있는데, 이는 빨간색
 React도 state의 변화를 감지하고 UI를 업데이트하기 때문에 ‘React가 Reactive의 뜻이지 않을까?’라는 생각을 해 본 적 있다. 하지만 공식문서를 보면 그렇지 않다는 걸 알 수 있었다.
 
 > React, however, sticks to the “pull” approach where computations can be delayed until necessary.
-> <i>(중략)</i>
+> <i style="display: block">(중략)</i>
 > There is an internal joke in the team that React should have been called “Schedule” because React does not want to be fully “reactive”.
 
 <p class="small" style="text-align: right; margin-bottom: 10px;">출처: <a href="https://reactjs.org/docs/design-principles.html#scheduling" target="_blank">React Design Principles</a></p>
@@ -192,7 +192,7 @@ useEffect(() => {
 
 이 둘은 비슷한 형태의 API를 갖고 있는데, 가장 큰 차이점은 아래와 같다.
 
-Observables은 어떤것을 명백하게 구독할 때까지 이벤트의 실행을 미루며, state가 하고 있던 것을 처리한다. 반면, useEffect는 React의 렌더가 될때까지 이벤트의 실행을 미루고, state를 관련되어 있는 컴포넌트에 바인딩한다. 또한, useEffect는 값을 방출하지 않지만, Observables은 변경된 값을 push하여 호출한 구독자에게 알려준다(여기서 사이드 이펙트가 일어날 수 있다).
+Observables은 이벤트 실행이 되기 전까지, state의 값을 변경하지 않는다. 반면, useEffect는 React의 렌더가 될때까지 이벤트의 실행을 미루고, state를 관련되어 있는 컴포넌트에 바인딩한다. 또한, useEffect는 값을 방출하지 않지만, Observables은 변경된 값을 push하여 호출한 구독자에게 알려준다(여기서 사이드 이펙트가 일어날 수 있다).
 
 Observable은 React에 속한 것이 아니기 때문에, 그 값을 자동으로 컴포넌트에 묶을 수 없다. 반면, Hooks는 여러 개의 이벤트를 trigger하여 발동되도록 조작하기 어렵다. 따라서 해당 기능들이 필요한 곳에 적재적소하게 사용할 줄 알아야 한다.
 
