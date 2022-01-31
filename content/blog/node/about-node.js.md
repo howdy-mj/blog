@@ -14,7 +14,7 @@ draft: false
 
 그렇다면 Node.js란 무엇일까?
 
-[공식 홈페이지](https://nodejs.org/en/about/)에서는 <span style="font-style: italic; font-weight: bold">Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임이다. Node.js는 싱글 스레드 이벤트 루프 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적</span>이라 정의하고 있다.
+<a href="https://nodejs.org/en/about/" target="_blank">공식 홈페이지</a>에서는 <span style="font-style: italic; font-weight: bold">Node.js®는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임이다. Node.js는 싱글 스레드 이벤트 루프 기반, Non-Blocking I/O 모델을 사용해 가볍고 효율적</span>이라 정의하고 있다.
 
 그럼 다음의 키워드에 대해 하나씩 살펴보자.
 
@@ -27,7 +27,7 @@ draft: false
 
 ### V8
 
-[V8](https://v8.dev/)은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실행할 수 있는 새로운 유형의 코드, C/C++을 웹에서 동작할 수 있도록 컴파일 해줌) 엔진이다. Node.js의 런타임으로도 사용된다.
+<a href="https://v8.dev/" target="_blank">V8</a>은 C++로 작성된 구글의 오픈소스 고성능 자바스크립트와 WebAssembly(웹어셈블리: JavaScript API를 사용하여 최신 웹 브라우저에서 실행할 수 있는 새로운 유형의 코드, C/C++을 웹에서 동작할 수 있도록 컴파일 해줌) 엔진이다. Node.js의 런타임으로도 사용된다.
 
 ### 자바스크립트 엔진(JavaScript Engine)
 
@@ -94,7 +94,7 @@ console.log('Bye')
 
 Node.js로 서버를 만들다 보면, npm 패키지에 포함되지 않은 기능이 필요하거나 더 좋은 성능(빠른 속도, 적은 메모리 등)이 필요 할 때가 있다. 이럴 때 다른 프로그래밍 언어(Java, C, C++, Python)를 활용할 수 있으며, 해당 언어의 라이브러리에도 연결할 수 있다.
 
-어떻게 import해서 쓰는지는 [Node.js v14.4.0 Documentation](https://nodejs.org/dist/latest-v14.x/docs/api/)을 참고하길 바란다.
+어떻게 import해서 쓰는지는 <a href="https://nodejs.org/dist/latest-v14.x/docs/api/" target="_blank">Node.js v14.4.0 Documentation</a>을 참고하길 바란다.
 
 <br>
 

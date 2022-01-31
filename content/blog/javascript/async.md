@@ -5,9 +5,14 @@ category: 'javascript'
 draft: false
 ---
 
+<div style="font-size: 14px; font-style: italic;">
+해당 글보다 2022.2.1에 새로 작성한 <a href="https://www.howdy-mj.me/javascript/asyncronous-programming/" target="_blank">자바스크립트의 비동기 프로그래밍</a> 글을 봐주세요!
+
+</div>
+
 ## 비동기(Asynchronous) 함수란?
 
-자바스크립트는 [싱글스레드](https://howdy-mj.me/node/about-node.js/#%EC%8A%A4%EB%A0%88%EB%93%9Cthread)이기 때문에 한 번에 하나의 작업만 수행할 수 있다. 이를 해결하기 위해 **비동기**가 생겼다.
+자바스크립트는 <a href="https://www.howdy-mj.me/node/about-node.js/#%EC%8A%A4%EB%A0%88%EB%93%9Cthread" target="_blank">싱글스레드</a>이기 때문에 한 번에 하나의 작업만 수행할 수 있다. 이를 해결하기 위해 **비동기**가 생겼다.
 
 비동기란 특정 코드의 처리가 끝나기 전에 다음 코드를 실행할 수 있는 것을 뜻한다.
 
@@ -87,7 +92,7 @@ step1(function(err, value1) {
 
 ### Promise
 
-위의 콜백 문제를 해결하기 위해 ES2015에 Promise가 도입되었다.
+<span class="fix">위의 콜백 문제를 해결하기 위해 ES2015에 Promise가 도입되었다.</span> 콜백 함수의 error, success의 처리를 보다 간단하게 하기 위해 Promise가 생겼다.
 
 Promise는 latency, delay(지연) 때문에 현재 당장 얻을 수 없지만 가까운 미래에 얻을 수 있는 데이터에 접근하기 위한 방법을 제공한다. Promise로 비동기 작업이 완료된 후 결과 값을 받을 수 있다.
 
@@ -152,9 +157,11 @@ promise.then(res => console.log(res)).catch(err => console.error(err))
 // output: 에러 발생
 ```
 
+그러나 Promise도 중첩으로 인해 콜백과 동일한 hell이 발생할 수 있다.
+
 <br />
 
-#### 어떤게 먼저 실행될까?
+#### Quiz: 어떤게 먼저 실행될까?
 
 ```js
 console.log('hi')
@@ -197,7 +204,7 @@ second
 
 ### async await
 
-async await를 ES2017에 등장한 것인데, Promise의 메서드 체이닝을 더 깔끔한 코드를 작성할 수 있게끔 만들어진 것이다.
+async await를 ES2017에 등장한 것인데, <span class="fix">Promise의 메서드 체이닝을 더 깔끔한 코드를 작성할 수 있게끔 만들어진 것이다.</span> 콜백 hell을 없애줄 수 있게 되었다.
 
 async await의 기본 구조를 아래와 같다.
 
