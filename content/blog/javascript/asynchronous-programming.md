@@ -183,7 +183,7 @@ console.log('종료')
 먼저 알아야 할 점은, 대부분의 브라우저는 <a href="https://www.w3.org/TR/hr-time/" target="_blank">W3C 권장사항</a>에 따라 디스플레이 주사율과 일치한 횟수로 콜백 함수를 호출한다. 그래서 보통 60FPS로 화면을 렌더링하고, 이는 콜백의 수가 보통 1초에 60회, 16ms(0.016초)에 하나씩 실행된다.
 
 <div class="img-div center">
-  <img src="https://ww.namu.la/s/020670fcb9f57ed9e3f4b159f1d29c5da73debf0f96845e10e933c09573736fde276cc8154c8e224f111ae90a81808f62c1b67096ebc4f8cdef0e3c9c2bade8eb3e161a86e73017ade5610bd181f14476d78dc0cc7c85e81c69f1e4911df97f1" alt="프레임" style="width: 200px">
+  <img src="./images/asynchronous-programming/fps.gif" alt="프레임" style="width: 200px">
   <p>https://namu.wiki/w/FPS</p>
 </div>
  
