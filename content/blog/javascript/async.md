@@ -6,7 +6,7 @@ draft: false
 ---
 
 <div style="font-size: 14px; font-style: italic;">
-해당 글보다 2022.2.1에 새로 작성한 <a href="https://www.howdy-mj.me/javascript/asyncronous-programming/" target="_blank">자바스크립트의 비동기 프로그래밍</a> 글을 봐주세요!
+해당 글보다 2022.2.1에 새로 작성한 <a href="https://www.howdy-mj.me/javascript/asynchronous-programming/" target="_blank">자바스크립트의 비동기 프로그래밍</a> 글을 봐주세요!
 
 </div>
 
