@@ -75,11 +75,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
 ### module
 
+모듈은 하나의 클래스 혹은 특정 목적을 가진 함수다. 모듈 스코프가 따로 존재하여 외부에 공개하려면 export로 내보내야 하며, 사용하려면 import로 가져와야 한다.
+
 ```html
-<script type="module" src="index.js"></script>
+<script type="module" src="index.mjs"></script>
 ```
 
-스크립트를 자바스크립트 모듈로 간주한다. 자바스크립트 모듈은 <span class="return">defer</span>에 영향을 받지 않는다. _(모듈은 추후 다른 글에서 자세히 다뤄 볼 예정이다)_
+스크립트를 자바스크립트 모듈(`mjs` 확장자가 모듈임을 명시)로 간주한다. 자바스크립트 모듈은 항상 지연 실행되어, <span class="return">defer</span>와 동일하게 실행된다. _(모듈은 추후 다른 글에서 자세히 다뤄 볼 예정이다)_
 
 ## crossorigin
 
