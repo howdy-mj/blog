@@ -112,7 +112,7 @@ export default App
 
 <span class="file-location">components/Title.tsx</span>
 
-```tsx
+```tsx{8}
 import React from 'react'
 
 interface TitleI {
@@ -129,7 +129,7 @@ export default React.memo(Title)
 
 <span class="file-location">utils/index.ts</span>
 
-```ts
+```ts{2}
 export const getAvgPerHour = (totalList: string[]) => {
   console.log('getAvgPerHour 함수')
   if (totalList.length === 0) return 0
@@ -187,15 +187,13 @@ const onChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
 
 위에서 dependency 배열에 넘기는 값은 모두 원시 타입일 경우이다.
 
-React는 얕은 비교를 하기 때문에 원시 타입은 판단 가능하지만, 참조 타입은 렌더가 될 때마다 참조 메모리 주소가 달라지면서 우리가 보기에는 같은 값이더라도, 다른 값으로 인지하여 렌더를 일으킨다.
+React는 얕은 비교를 하기 때문에 원시 타입은 판단 가능하지만, 참조 타입은 렌더가 될 때마다 참조 메모리 주소가 달라진다. 따라서 우리가 보기에는 같은 값이더라도, React는 다른 값으로 인지하여 렌더를 일으킨다.
 
 <span class="file-location">App.tsx</span>
 
-```tsx{8}
+```tsx{6}
 const App = () => {
-  const person = useMemo(() => {
-    return { name: 'kmj' }
-  }, [])
+  const person = { name: 'kmj' }
 
   return (
     <>
@@ -207,7 +205,7 @@ const App = () => {
 
 <span class="file-location">components/Title.tsx</span>
 
-```tsx
+```tsx{11}
 import React, { useEffect, useRef } from 'react'
 
 interface TitleI {
@@ -218,7 +216,7 @@ interface TitleI {
 }
 
 const Title = ({ title, person }: TitleI) => {
-  console.log('Title 렌더')
+  console.log('Title 렌더') // 렌더될때마다 console에 찍힘
   return (
     <>
       <h1>{title}</h1>
@@ -232,7 +230,9 @@ export default React.memo(Title)
 
 만약 이처럼 Title 컴포넌트에 person이라는 참조 타입을 넘기게 된다면, 아무리 `React.memo`로 감싸고 있더라도 React는 다른 값으로 인식하여 계속 console이 찍히는 것을 볼 수 있다. 때문에 넘겨줄 때, `useMemo`를 통해 person의 이전 값을 기억해두면 된다.
 
-```tsx
+<span class="file-location">App.tsx</span>
+
+```tsx{1}
 const person = useMemo(() => {
   return { name: 'kmj' }
 }, [])
