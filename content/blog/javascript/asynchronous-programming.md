@@ -71,7 +71,7 @@ console.log('Bye')
 큐는 먼저 들어간 데이터가 먼저 나오는 특징(FIFO, First In First Out)을 갖고 있다.
 
 <div class="img-div center">
-  <img src="https://3524023706-files.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGckN3OAfinKuVIrkMj%2F-LGjIwmjHovgBD55pyYN%2F-LGjJ2PgttAq3IXc2VEF%2Fezgif.com-video-to-gif-2.gif?alt=media&token=91a8e7dc-32e0-4259-aeb3-c2e6a701b49c" alt="queue">
+  <img src="./images/asynchronous-programming/queue.gif" alt="프레임" style="width: 200px">
   <p>https://garychang.gitbook.io/data-structure/lecture1-stack-and-queue/lecture1.2-queue-lie</p>
 </div>
 
@@ -80,7 +80,7 @@ console.log('Bye')
     <div style="font-size: 14px;">
       <li>스택은 나중에 들어간 데이터가 먼저 나오는 특징(LIFO, Last In First Out)의 특징을 갖고 있다.</li>
       <div class="img-div center">
-        <img src="https://3524023706-files.gitbook.io/~/files/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGckN3OAfinKuVIrkMj%2F-LGeSRCLyGzxFvh8HqlY%2F-LGeSgvUuWVE8FMubL2B%2Fezgif.com-video-to-gif.gif?alt=media&token=9ec70955-00c2-42e3-837e-ae2d8a176a28" alt="stack">
+       <img src="./images/asynchronous-programming/stack.gif" alt="프레임" style="width: 200px">
         <p>https://garychang.gitbook.io/data-structure/lecture1-stack-and-queue/lecture1.1-stack-dui</p>
       </div>
       <li>그래서 위에 콜 스택은 나중에 들어간 데이터가 먼저 빠지고, 큐는 우->좌로 실행된다.</li>
@@ -201,8 +201,8 @@ console.log('종료')
 그러나 `setTimeout()`과 `setInterval()` 모두 시간 기반의 함수가 아니며, 앞의 콜백 함수가 종료 시에 실행된다. 게다가 만약 컴퓨터 성능이 안 좋다면, 프레임(16ms) 시작 때 함수 실행이 늦어져 화면과 싱크가 맞지 않아 애니메이션이 끊겨 보이는 현상(ex. 위 gif의 15FPS)이 일어난다.
 
 <div class="img-div center">
-  <img src="https://developers.google.com/web/fundamentals/performance/rendering/images/optimize-javascript-execution/settimeout.jpg?hl=ko" alt="setTimeout fires">
-  <p>https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution?hl=ko</p>
+  <img src="https://web-dev.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/iq5yVSd4wRskoD8GywR7.jpg?auto=format&w=1600" alt="setTimeout fires">
+  <p>https://web.dev/optimize-javascript-execution/</p>
 </div>
 
 반면 <a href="https://developer.mozilla.org/ko/docs/Web/API/Window/requestAnimationFrame" target="_blank">requestAnimationFrame()</a>는 콜백을 실행하는 시점에 `DOMHighResTimeStamp`가 전달되어 시간 기반으로 작동하는 함수로 프레임(16ms) 시작 때 실행을 보장한다. 때문에 무한 스크롤을 구현할 때 `setTimeout()` 기반의 throttle 대신 `requestAnimationFrame()`을 사용해야 한다.
