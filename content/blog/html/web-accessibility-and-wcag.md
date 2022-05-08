@@ -11,21 +11,19 @@ draft: false
 
 그렇다보니 필자는 이를 단순하게 _웹 접근성 = 시맨틱 마크업_, 시맨틱 마크업은 곧 적절한 곳에 올바른 HTML 태그를 작성하는 것이라고만 인지하고 있었다.
 
-그러나 생각했던 것과는 달리 상세하고 복잡한 규정이 존재했다.
+그러나 생각했던 것과는 달리 더 상세하고 복잡한 규정이 존재했다.
 
 ## 웹 접근성(Web Accessibility)
 
 웹은 누구나 어떤 것으로 접속해도 모두가 동일한 기능을 사용할 수 있어야 한다. 이 문장만 봤을 때는 쉽게 체감되지 않을 수 있다.
 
-장애를 가진 사람들도 웹에 있는 기능을 온전히 다 사용할 수 있게 설계 및 개발된 것을 말한다. 시각 장애인의 경우 웹 페이지의 내용을 소리내어 읽어 주어 알려줄 수 있어야 하며, 청각 장애인의 경우 오디오로 된 내용은 텍스트로 읽을 수 있도록 만들어야 한다.
+장애를 가진 사람들도 웹에 있는 기능을 다 사용할 수 있어야 한다. 시각 장애인의 경우 웹 페이지의 내용을 소리내어 읽어 주어 알려줄 수 있어야 하며, 청각 장애인의 경우 오디오로 된 내용은 텍스트로 읽을 수 있도록 만들어야 한다.
 
-이 외, 일상 생활에서 웹 접근성이 잘 준수되어 있다면,
+이 외, 웹 접근성이 잘 준수되어 있다면,
 
 - 앱을 깔지 않고도 모바일 웹이 PC와 동일하게 동작하여, 모든 기능을 사용할 수 있다.
 - 손가락을 다쳐 키보드 사용이 불편할 경우, 가상 키보드로 입력할 수 있다.
 - 인터넷 속도가 느려서 이미지가 늦게 뜨지만 이미지에 대한 설명이 있어 어떤 내용인지 알 수 있다.
-
-이처럼 웹 접근성은 매우 중요한 역할을 한다.
 
 지금은 <a href="https://www.w3.org/WAI/" target="_blank">W3C(World Wide Web Consortium)</a>에서 HTML, CSS등의 웹 표준을 개발 중이며, 산하에 WAI(Web Accessibility Initiative, 웹 접근성 이니셔티브)가 웹 접근성과 관련된 지침을 계속 개발하고 정의하고 있다.
 
@@ -156,7 +154,7 @@ draft: false
 
 ### 4. Robust(견고성)
 
-콘텐츠는 <a href="https://www.w3.org/TR/WCAG22/#dfn-assistive-technologies" target="_blank">보조 기술(assistive technologies)</a>을 포함한 다양한 사용자 에이전트에 의해 해석될 수 있도록 견고해야 한다.
+콘텐츠는 <a href="https://www.w3.org/TR/WCAG22/#dfn-assistive-technologies" target="_blank">보조 기술(assistive technologies)</a><i class="small">(추후 보충)</i>을 포함한 다양한 사용자 에이전트에 의해 해석될 수 있도록 견고해야 한다.
 
 **4.1 Compatible (호환 가능)**
 
@@ -166,9 +164,9 @@ draft: false
 
 ## 예제 및 평가
 
-해당 글에서는 어떤 지침이 있는지 간단하게 훑어본 것이기 때문에 이해하기 어려울 수 있다. WCAG에서 만든 <a href="https://www.w3.org/WAI/WCAG22/quickref" target="_blank">빠른 참고 자료</a>를 보면, 규칙에 해당하는 예제를 볼 수 있어 쉽게 이해할 수 있다.
+해당 글에서는 어떤 지침이 있는지 간단하게 훑어본 것이기 때문에 이해하기 어려울 수 있다.
 
-국내는 <a href="http://www.kwacc.or.kr/Accessibility/Certification" target="_blank">국가표준 한국형 웹 콘텐츠 접근성 지침 2.1(KWCAG 2.1)</a>(2015년 3월 개정)을 따르고 있으며, 각 항목마다 세부 설명도 첨부되어 있다.
+WCAG에서 만든 <a href="https://www.w3.org/WAI/WCAG22/quickref" target="_blank">빠른 참고 자료</a>를 보면, 규칙에 해당하는 예제를 볼 수 있다. 국내는 <a href="http://www.kwacc.or.kr/Accessibility/Certification" target="_blank">국가표준 한국형 웹 콘텐츠 접근성 지침 2.1(KWCAG 2.1)</a>(2015년 3월 개정)을 따르고 있으며, 각 항목마다 세부 설명도 첨부되어 있다.
 
 사이트가 웹 접근성을 잘 지켰는지 확인해보려면, 크롬 브라우저의 <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn" target="_blank">Screen Reader</a>를 통해 확인해볼 수 있다. 무료에 음성도 제공하여 간편하다.
 
