@@ -14,7 +14,7 @@ draft: false
 1990년, 팀 버너스리(Tim Berners-Lee)는 CERN(유럽 입자 물리 연구소)에 있었는데, 연구 자료의 관리와 공유를 쉽게 하기 위해 어디서든 자료를 열람할 수 있는 시스템을 만들었다.
 
 <div class="img-div" style="width: 500px">
-  <img src="https://cds.cern.ch/record/2665088/files/FirstProposalMarch1989.jpg?subformat=icon-1440" alt="버너스리의 인콰이어(Enquire) 제안서">
+  <img src="./history-of-web/proposal-of-information-management.jpg" alt="버너스리의 인콰이어(Enquire) 제안서">
   <p>https://cds.cern.ch/record/2665088</p>
 </div>
 
@@ -138,7 +138,7 @@ IE 4.0 출시를 축하하기 위해 IE 직원들이 Netscape 본사 앞에 IE �
   </div>
 
   <div class="img-div" style="width: 500px">
-    <img src="http://home.snafu.de/tilman/mozilla/mozilla-uber-alles.jpg" alt="IE 로고 위에 Netscape 용 배치">
+    <img src="./history-of-web/netscape-on-ie.jpg" alt="IE 로고 위에 Netscape 용 배치">
     <p>http://home.snafu.de/tilman/mozilla/stomps.html</p>
   </div>
 </div>
@@ -193,7 +193,7 @@ Ajax는 브라우저에서 제공하는 Web API인 <span class="variable">XMLHtt
 Ajax가 나오기 전에는, 어떤 몇 개의 단어가 수정되어 브라우저가 이를 서버에 요쳥하면, 서버는 다시 그 페이지 전체를 만들어 전달해주었고, 브라우저는 이를 보여주기 위해 새로고침되어 화면을 보여주었다. 그리고 브라우저는 서버에서 응답을 받을 때까지 아무것도 하지 못하고 기다려야 했다.
 
 <div class="img-div" style="text-align: center">
-  <img src="https://web.archive.org/web/20061107032631im_/http://www.adaptivepath.com/images/publications/essays/ajax-fig1_small.png" alt="Ajax">
+  <img src="./history-of-web/ajax.png" alt="Ajax">
   <p>https://web.archive.org/web/20061107032631/http://www.adaptivepath.com/publications/essays/archives/000385.php</p>
 </div>
 
