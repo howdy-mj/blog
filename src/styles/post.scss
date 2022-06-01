@@ -13,7 +13,10 @@
 .variable {
   font-family: 'Times New Roman';
 }
-
+// 정의된 객체..?
+.object {
+  font-family: Consolas, Monaco, monospace;
+}
 // 반환 값
 .return {
   font-family: monospace;
@@ -24,6 +27,26 @@
   font-family: Roboto;
   font-weight: bold;
   line-height: 1;
+}
+
+// ecmascript
+.terminal {
+  display: inline-block;
+  font-family: monospace;
+  font-weight: bold;
+  white-space: no-wrap;
+}
+.nonterminal {
+  font-family: 'Times New Roman';
+  font-style: italic;
+}
+.opt {
+  font-family: monospace;
+  color: #b58900;
+}
+.notation {
+  font-family: 'Times New Roman';
+  color: #2aa198;
 }
 
 /* 이미지 */
@@ -107,6 +130,13 @@
 .bold {
   font-weight: bold;
   line-height: 1;
+}
+
+.italic {
+  font-style: italic;
+}
+.normal {
+  font-style: normal;
 }
 
 .underline {
