@@ -21,7 +21,7 @@ Headless를 그대로 번역하면 '머리가 없는'이라는 뜻이다.
 
 ## Component 기반 UI 라이브러리 vs Headless UI 라이브러리
 
-물론 언제나 Headless 라이브러리가 컴포넌트 기반의 라이브러리보다 좋다는 건 아니다. 모두 장단점이 존재하며, 프로젝트 상황에 맞게 사용하면 된다.
+물론 언제나 Headless 라이브러리가 컴포넌트 기반의 라이브러리보다 좋다는 건 아니다. 모두 장단점이 존재하며, 상황에 맞게 사용하면 된다.
 
 ### Component 기반 UI 라이브러리
 
@@ -95,23 +95,29 @@ Headless는 기능은 있지만 스타일이 없는 라이브러리로, 유명�
 
 <br>
 
-디자인이 그렇게 중요하지 않고, 커스텀할 곳이 많지 않다면 Component 기반 라이브러리를 사용하면 된다. 만약 반응형에 따라 디자인이 달라지고, 기능 변경이나 추가가 많이 발생한다면 Headless 라이브러리를 사용하는 것이 추후 유지보수에 좋을 것 같다.
+디자인이 그렇게 중요하지 않고, 커스텀할 곳이 많지 않다면 Component 기반 라이브러리를 사용하면 된다. 하지만 만약 반응형에 따라 디자인이 달라지고, 기능 변경이나 추가가 많이 발생한다면 Headless 라이브러리를 사용하는 것이 추후 유지보수에 좋을 것 같다.
 
 혹은 회사에 디자이너가 없거나 기한이 촉박한 프로젝트라면, 아예 특정 UI 라이브러리만을 사용해서 만드는 경우도 있다.
 
 ## Headless Component를 만드는 원칙
 
+하지만 아직 Headless 라이브러리에는 컴포넌트의 종류가 상대적으로 적다. 그래서 바로 사용해야 하는 컴포넌트가 없다면 만들어야 한다.
+
 사실 Headless Component를 만드는 원칙이라기 보다는, 유지보수 하기 좋은 컴포넌트를 만드는 원칙이라고 볼 수 있다.
 
-만드려는 컴포넌트에 어떤 메서드가 있어야 하는지를 먼저 결정하기보다, 먼저 그 컴포넌트가 **무엇을 수행할 수 있는지**부터 결정해야 한다. 그리고 사용자가 사용할 수 있는 기능들과 방법을 제공해야 한다. 이후에 그 기능을 어떻게 수행할 지 결정하면 된다.
+만드려는 컴포넌트에 어떤 메서드가 있는지를 먼저 결정하기보다, 그 컴포넌트가 **무엇을 수행할 수 있는지**부터 결정해야 한다. 그리고 사용자가 사용할 수 있는 기능들과 방법을 제공해야 한다. 이후에 그 기능을 어떻게 수행할 지 구현하면 된다.
 
-여기서 중요한 점은 기능은 어떻게 수행할지는 컴포넌트 내부에 정의하는 것으로, 외부의 다른 컴포넌트들이나 사용자가 전혀 알지 않아도 된다. 밑의 예시로 한 번 알아보자.
+여기서 중요한 점은 기능은 어떻게 구현할지는 컴포넌트 내부에 정의하는 것으로, 외부의 다른 컴포넌트들이나 사용자가 전혀 알지 않아도 된다. 밑의 예시로 한 번 알아보자.
 
 <div style="margin-bottom: 30px"></div>
 
 ### Checkbox 컴포넌트를 Headless로 리팩토링하기
 
-그냥 Checkbox 컴포넌트를 만들었다면 아래와 같을 것이다. (최소한의 기능만 만들었다)
+<div class="img-div center">
+  <img src="./images/headless-components/checkbox-component.gif" alt="체크박스 컴포넌트" style="border: 1px solid gray;">
+</div>
+
+위와 같은 Checkbox 컴포넌트를 만든다면 아래와 같을 것이다.
 
 <span class="file-location">Checkbox.tsx</span>
 
@@ -135,7 +141,7 @@ const Checkbox = () => {
 export default Checkbox
 ```
 
-이를 다른 곳에서 바로 가져와서 사용할 수 있게 하려면 어떤 내용을 체크하는 지에 대한 라벨, 체크가 되었는지의 상태 값, 체크하는 로직을 props를 받아야 한다. 수정한다면 아래와 같은 형태가 될 것이다.
+이를 다른 곳에서 바로 사용할 수 있게 하려면 어떤 내용을 체크하는 지에 대한 라벨, 체크가 되었는지의 상태 값, 체크하는 로직을 props를 받아야 한다. 수정한다면 아래와 같은 형태가 될 것이다.
 
 <span class="file-location">Checkbox.tsx</span>
 
@@ -173,9 +179,9 @@ export default function App() {
 }
 ```
 
-만약 Checkbox를 사용하는 모든 곳에서 디자인과 기능이 동일하다면 이대로 두고 사용해도 문제는 없을 것이다.
+만약 Checkbox를 사용하는 모든 곳에서 디자인과 기능이 동일하다면 이대로 사용해도 문제없다.
 
-하지만 만약 특정 페이지들에서만 색상을 다르게 한다던지, 모바일에서는 체크박스가 오른쪽으로 옮겨야 한다던지 등의 레이아웃의 변경이 필요하다면 어떻게 해야할까? 디자인이 살짝 다르다는 이유로 컴포넌트를 새로 만들기 시작한다면 유지보수 하기가 점점 힘들어질 것이다.
+하지만 만약 특정 페이지들에서만 색상을 다르게 한다던지, 모바일에서는 체크박스가 오른쪽으로 옮겨야 한다던지 등의 레이아웃의 변경이 필요하다면 어떻게 해야할까? 디자인이 살짝 다르다는 이유로 컴포넌트를 새로 만들거나 내부에서 분기처리로 수정하기 시작한다면, 유지보수가 점점 더 힘들어질 것이다.
 
 <br>
 
@@ -183,8 +189,8 @@ export default function App() {
 
 #### Checkbox 컴포넌트는 무엇을 하는 컴포넌트일까?
 
-- 상태에 대한 설명이 있다.
-- 마우스로 체크박스나 설명을 클릭할 수 있다.
+- 상태에 대한 라벨(설명)이 있다.
+- 마우스로 체크박스나 라벨을 클릭할 수 있다.
 - 체크가 안 된 상태라면 박스가 비어있고, 체크가 된 상태면 박스가 ✓ 아이콘이 생긴다.
 
 #### 사용자가 할 수 있는 기능은 무엇일까?
@@ -203,13 +209,13 @@ Headless 컴포넌트를 만드는 방식은 다양한데, 그 중 세 가지 �
 
 ### 1. Compound Component
 
-Headless UI, Radix UI등 많은 Headless UI 라이브러리가 Compound 컴포넌트 방식을 사용한다.
+Material UI, Reach UI등 많은 UI 라이브러리가 Compound 컴포넌트를 사용한다.
 
 > Compound components is a pattern where components are used together such that they share an implicit state that lets them communicate with each other in the background.
 
 Compound 컴포넌트란 같이 사용되는 컴포넌트들의 상태(state) 값을 공유할 수 있게 만들어주는 패턴이다. 코드로 한 번 알아보자.
 
-<span class="file-location">Checkbox.tsx</span>
+<span class="file-location">CheckboxWrapper.tsx</span>
 
 ```tsx
 import * as React from 'react'
@@ -282,7 +288,7 @@ export default CheckboxWrapper
 <span class="file-location">App.tsx</span>
 
 ```tsx
-import CheckboxWrapper from './Checkbox'
+import CheckboxWrapper from './CheckboxWrapper'
 
 export default function App() {
   const [isChecked, setIsChecked] = useState(false)
@@ -299,13 +305,15 @@ export default function App() {
 }
 ```
 
-`CheckboxWrapper` 하위에 어떤 컴포넌트가 있는지 볼 수 있으며, 각 컴포넌트에 적절한 state를 넘겨줄 수 있다. 하지만 처음에 작성해야 하는 코드량이 꽤 많다.
+컴포넌트 내부에서 state를 공유하기 위해 Context API를 사용해서 처음에 작성해야 하는 코드가 꽤 많다.
+
+하지만 컴포넌트를 사용하는 곳에서는 `<CheckboxWrapper />` 하위에 어떤 컴포넌트가 있는지 볼 수 있고, 위치도 자유롭게 수정 가능하다.
 
 <br>
 
 ### 2. Function as Child Component
 
-Function as Child Component는 자식으로 함수를 받아서 그걸 바로 화면으로 보여줄 수 있다.
+Function as Child Component는 자식에 어떤 것이 들어올지 예상할 수 없기 때문에 `children` prop으로 받아 그대로 전달하는 것이다.
 
 <span class="file-location">CheckboxHeadless.ts</span>
 
@@ -352,13 +360,13 @@ export default function App() {
 }
 ```
 
-첫 번째 방식보다 작성해야 하는 코드량이 훨씬 적다. 사용하려는 state 값을 위에서 따로 선언할 필요가 없으며, 다른 컴포넌트에 해당 state를 가져다 쓸 실수가 적어진다. 관련된 코드가 한 곳에 모여 있어 읽기 편하다.
+Compound 컴포넌트보다 작성해야 하는 코드량이 훨씬 적다. 사용하려는 state 값을 위에서 따로 선언할 필요가 없어, 다른 컴포넌트에 해당 state를 실수로 넣을 일이 적어진다. 그리고 관련된 코드가 한 곳에 모여 있어 읽기 편하다.
 
 <br>
 
 ### 3. Custom hooks
 
-Headless가 스타일은 없고 로직만 존재하는 것을 뜻하는데, 커스텀 훅 역시 비슷하다.
+React를 사용해본 사람이라면 가장 익숙할 법한 커스텀 훅이다.
 
 <span class="file-location">useCheckbox.ts</span>
 
@@ -426,9 +434,11 @@ Calendar의 인터페이스는 위와 같을 것이며, 우리는 Calendar의 �
 
 ## 결론
 
-Headless 컴포넌트는 스타일이 없고 로직만 존재하는 것을 뜻한다. 마크업과 스타일 변경에 자유롭기 때문에 기능 변경이 많은 곳에서 사용하기 유용하다.
+Headless 컴포넌트는 스타일이 없고 로직만 존재하는 것을 뜻한다. 마크업과 스타일 수정이 자유롭기 때문에 기능 변경이 많은 곳에서 유용하다. 하지만 장단점이 명확하니 상황에 맞게 도입해야 한다.
 
-사실 기능은 언제든 변경될 수 있다. 따라서 유지보수 하기 좋은 컴포넌트를 만들어야 하며, 변경에 쉽게 대응하기 위해서는 컴포넌트가 들고 있어야 하는 것이 무언인지 알고 외부와 내부를 완전히 분리해야 한다. 외부가 변경되었다 하더라도 내부 컴포넌트가 영향을 받아서도 안되고, 내부가 수정되었다 하더라도 외부가 변경되어서도 안된다.
+그리고 사실 기능은 언제든 변경될 수 있다. 따라서 어느 컴포넌트든 유지보수 하기 좋은 컴포넌트를 만들어야 한다. 유지보수 하기 좋은 컴포넌트란, 변경에 쉽게 대응할 수 있는 컴포넌트다. Headless라는 개념도 변경에 쉽게 대응하기 위해 생겨난 것이라 생각한다.
+
+변경에 쉽게 대응하기 위해서는 컴포넌트가 무엇을 하는지 알아야 하며, 내부와 외부에 두어야 할 것을 완전히 분리해야 한다. 외부가 변경되었다 하더라도 내부 컴포넌트가 영향을 받아서도 안되고, 내부가 수정되었다 하더라도 외부가 변경되어서도 안된다.
 
 <br>
 
