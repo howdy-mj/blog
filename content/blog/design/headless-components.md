@@ -25,7 +25,7 @@ Headless를 그대로 번역하면 '머리가 없는'이라는 뜻이다.
 
 ### Component 기반 UI 라이브러리
 
-Component 기반 라이브러리는 기능과 스타일이 존재하는 라이브러리를 말하며, 대표적으로 <a href="https://mui.com/" target="_blank">Material UI</a>, <a href="https://ant.design/" target="_blank">Ant Design</a>가 있다.
+Component 기반 UI 라이브러리는 기능과 스타일이 존재하는 라이브러리를 말하며, 대표적으로 <a href="https://mui.com/" target="_blank">Material UI</a>, <a href="https://ant.design/" target="_blank">Ant Design</a>가 있다.
 
 <div style="margin-bottom: 30px"></div>
 
@@ -61,7 +61,7 @@ Component 기반 라이브러리는 기능과 스타일이 존재하는 라이�
 
 ### Headless UI 라이브러리
 
-Headless는 기능은 있지만 스타일이 없는 라이브러리로, 유명한 것에는 <a href="https://headlessui.dev/" target="_blank">Headless UI</a>, <a href="https://www.radix-ui.com/" target="_blank">Radix UI</a>, <a href="https://github.com/reach/reach-ui" target="_blank">Reach UI</a> 등이 있다.
+Headless는 기능은 있지만 스타일이 없는 라이브러리로, <a href="https://headlessui.dev/" target="_blank">Headless UI</a>, <a href="https://www.radix-ui.com/" target="_blank">Radix UI</a>, <a href="https://github.com/reach/reach-ui" target="_blank">Reach UI</a> 등이 있다.
 
 <div style="margin-bottom: 30px"></div>
 
@@ -95,7 +95,7 @@ Headless는 기능은 있지만 스타일이 없는 라이브러리로, 유명�
 
 <br>
 
-디자인이 그렇게 중요하지 않고, 커스텀할 곳이 많지 않다면 Component 기반 라이브러리를 사용하면 된다. 하지만 만약 반응형에 따라 디자인이 달라지고, 기능 변경이나 추가가 많이 발생한다면 Headless 라이브러리를 사용하는 것이 추후 유지보수에 좋을 것 같다.
+디자인이 그렇게 중요하지 않고, 커스텀할 곳이 많지 않다면 Component 기반 라이브러리를 사용하면 된다. 하지만 만약 반응형에 따라 디자인이 달라지고, 기능 변경이나 추가가 많이 발생한다면 Headless 라이브러리가 유지보수에 더 좋을 것 같다.
 
 혹은 회사에 디자이너가 없거나 기한이 촉박한 프로젝트라면, 아예 특정 UI 라이브러리만을 사용해서 만드는 경우도 있다.
 
@@ -181,7 +181,7 @@ export default function App() {
 
 만약 Checkbox를 사용하는 모든 곳에서 디자인과 기능이 동일하다면 이대로 사용해도 문제없다.
 
-하지만 만약 특정 페이지들에서만 색상을 다르게 한다던지, 모바일에서는 체크박스가 오른쪽으로 옮겨야 한다던지 등의 레이아웃의 변경이 필요하다면 어떻게 해야할까? 디자인이 살짝 다르다는 이유로 컴포넌트를 새로 만들거나 내부에서 분기처리로 수정하기 시작한다면, 유지보수가 점점 더 힘들어질 것이다.
+하지만 만약 특정 페이지들에서만 색상을 다르게 한다던지, 모바일에서는 체크박스를 오른쪽으로 옮겨야 한다던지 등의 레이아웃의 변경이 필요하다면 어떻게 해야할까? 디자인이 살짝 다르다는 이유로 컴포넌트를 새로 만들거나 내부에서 분기 처리하여 수정하기 시작한다면, 유지보수가 점점 더 힘들어질 것이다.
 
 <br>
 
@@ -360,7 +360,7 @@ export default function App() {
 }
 ```
 
-Compound 컴포넌트보다 작성해야 하는 코드량이 훨씬 적다. 사용하려는 state 값을 위에서 따로 선언할 필요가 없어, 다른 컴포넌트에 해당 state를 실수로 넣을 일이 적어진다. 그리고 관련된 코드가 한 곳에 모여 있어 읽기 편하다.
+Compound 컴포넌트보다 작성해야 하는 코드량이 훨씬 적다. 사용하려는 state 값을 위에서 따로 선언할 필요가 없어, 다른 컴포넌트에 해당 state를 실수로 넣을 일이 적어진다. 그리고 관련된 코드가 한 곳에 모여 있어 읽기 편하다. 하지만 다른 곳에서 해당 state를 공유할 경우, `CheckboxHeadless`가 감싸야 할 코드량이 많아지는 단점이 있다.
 
 <br>
 
@@ -438,7 +438,7 @@ Headless 컴포넌트는 스타일이 없고 로직만 존재하는 것을 뜻�
 
 그리고 사실 기능은 언제든 변경될 수 있다. 따라서 어느 컴포넌트든 유지보수 하기 좋은 컴포넌트를 만들어야 한다. 유지보수 하기 좋은 컴포넌트란, 변경에 쉽게 대응할 수 있는 컴포넌트다. Headless라는 개념도 변경에 쉽게 대응하기 위해 생겨난 것이라 생각한다.
 
-변경에 쉽게 대응하기 위해서는 컴포넌트가 무엇을 하는지 알아야 하며, 내부와 외부에 두어야 할 것을 완전히 분리해야 한다. 외부가 변경되었다 하더라도 내부 컴포넌트가 영향을 받아서도 안되고, 내부가 수정되었다 하더라도 외부가 변경되어서도 안된다.
+변경에 쉽게 대응하기 위해서는 해당 컴포넌트가 무엇을 하는지 알아야 하며, 내부와 외부에 두어야 할 것을 완전히 분리해야 한다. 외부가 변경되었다 하더라도 내부 컴포넌트가 영향을 받아서도 안되고, 내부가 수정되었다 하더라도 외부가 변경되어서도 안된다.
 
 <br>
 
