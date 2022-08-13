@@ -64,8 +64,8 @@ document.body.appendChild(newTextDiv)
 그렇다면 DOM이 어떻게 브라우저로 동작 되는 걸까? 해당 글에서는 간단하게만 다뤄보며 Webkit을 기준으로 작성되었다.
 
 <div style="text-align: center;">
-<img src="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png" alt="dom" >
-<p style="font-size: 12px; color: gray;">https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/</p>
+<img src="https://web-dev.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/S9TJhnMX1cu1vrYuQRqM.png?auto=format&w=1248" alt="dom" >
+<p style="font-size: 12px; color: gray;">https://web.dev/howbrowserswork/</p>
 </div>
 
 브라우저가 HTML을 전달 받으면, 곧 이를 변환(파싱)하고 노드들로 이루어진 DOM 트리를 만든다. 그 후, 외부의 CSS 파일과 각 노드들의 inline 스타일을 파싱하여 스타일을 입힌 Render 트리를 만든다.
